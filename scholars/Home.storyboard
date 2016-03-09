@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5dx-Cw-All">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="DGe-qa-wyU">
+            <objects>
+                <navigationController id="5dx-Cw-All" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="tabbar_profile_highlight" id="HvO-CZ-XJX"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B2m-Bp-f4c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="R4O-SD-Jsf" kind="relationship" relationship="rootViewController" id="Bb4-C8-1Hh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6AM-M2-Bmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-429" y="343"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="hdX-Pi-Z3x">
+            <objects>
+                <viewController storyboardIdentifier="SCHomeViewController" id="R4O-SD-Jsf" customClass="SCHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QJe-ao-Zu7"/>
+                        <viewControllerLayoutGuide type="bottom" id="wDU-QA-1OX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r1x-qv-Q6g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" keyboardDismissMode="interactive" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UGT-iv-Mws">
+                                <rect key="frame" x="0.0" y="14" width="600" height="115"/>
+                                <color key="backgroundColor" red="0.23586200490000001" green="1" blue="0.96382193110000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="mul-s1-TbG"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="93F-9Z-Ron">
+                                    <size key="itemSize" width="158" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SCHomeCollectionViewCell" id="RPp-Fv-iY0" customClass="SCHomeCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="40" width="158" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.28349029819999999" blue="0.14092791020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="customSize" width="158" height="50"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="R4O-SD-Jsf" id="EL7-oh-Zhw"/>
+                                    <outlet property="delegate" destination="R4O-SD-Jsf" id="GYp-Cq-xza"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45370384064436353" green="0.98823529409999999" blue="0.73251263791774834" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UGT-iv-Mws" secondAttribute="trailing" id="4MZ-dS-HaS"/>
+                            <constraint firstItem="UGT-iv-Mws" firstAttribute="top" secondItem="QJe-ao-Zu7" secondAttribute="bottom" constant="-50" id="Xkk-2f-w9p"/>
+                            <constraint firstItem="UGT-iv-Mws" firstAttribute="leading" secondItem="r1x-qv-Q6g" secondAttribute="leading" id="q2Q-v3-3bg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Zs-av-UNn"/>
+                    <connections>
+                        <outlet property="collectionView" destination="UGT-iv-Mws" id="gYD-XX-3YR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0o-fG-6JF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="343"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_profile_highlight" width="48" height="32"/>
+    </resources>
+</document>

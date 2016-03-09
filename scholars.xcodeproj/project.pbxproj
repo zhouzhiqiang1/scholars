@@ -15,6 +15,11 @@
 		4A9512C61C9054CD002658FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9512C41C9054CD002658FB /* LaunchScreen.storyboard */; };
 		4A9512D11C9054CD002658FB /* scholarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512D01C9054CD002658FB /* scholarsTests.m */; };
 		4A9512DC1C9054CD002658FB /* scholarsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512DB1C9054CD002658FB /* scholarsUITests.m */; };
+		4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */; };
+		4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512ED1C905969002658FB /* SCRootBarViewController.m */; };
+		4A9512F11C905BD1002658FB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9512F01C905BD1002658FB /* Home.storyboard */; };
+		4A9513011C90659B002658FB /* SCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9513001C90659B002658FB /* SCHomeViewController.m */; };
+		4A9513041C9065A8002658FB /* SCHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9513031C9065A8002658FB /* SCHomeCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		4A9512D71C9054CD002658FB /* scholarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scholarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9512DB1C9054CD002658FB /* scholarsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scholarsUITests.m; sourceTree = "<group>"; };
 		4A9512DD1C9054CD002658FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A9512E91C90591D002658FB /* SCRootNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRootNavigationViewController.h; sourceTree = "<group>"; };
+		4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootNavigationViewController.m; sourceTree = "<group>"; };
+		4A9512EC1C905969002658FB /* SCRootBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRootBarViewController.h; sourceTree = "<group>"; };
+		4A9512ED1C905969002658FB /* SCRootBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootBarViewController.m; sourceTree = "<group>"; };
+		4A9512F01C905BD1002658FB /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4A9512FF1C90659B002658FB /* SCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHomeViewController.h; path = Code/Home/SCHomeViewController.h; sourceTree = "<group>"; };
+		4A9513001C90659B002658FB /* SCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHomeViewController.m; path = Code/Home/SCHomeViewController.m; sourceTree = "<group>"; };
+		4A9513021C9065A8002658FB /* SCHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHomeCollectionViewCell.h; path = View/Home/SCHomeCollectionViewCell.h; sourceTree = "<group>"; };
+		4A9513031C9065A8002658FB /* SCHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHomeCollectionViewCell.m; path = View/Home/SCHomeCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +115,21 @@
 		4A9512B51C9054CD002658FB /* scholars */ = {
 			isa = PBXGroup;
 			children = (
+				4A9512EF1C905B98002658FB /* Storyboard */,
+				4A9512F31C906172002658FB /* Code */,
+				4A9512FA1C9063E2002658FB /* View */,
 				4A9512B91C9054CD002658FB /* AppDelegate.h */,
 				4A9512BA1C9054CD002658FB /* AppDelegate.m */,
 				4A9512BC1C9054CD002658FB /* ViewController.h */,
 				4A9512BD1C9054CD002658FB /* ViewController.m */,
-				4A9512BF1C9054CD002658FB /* Main.storyboard */,
 				4A9512C21C9054CD002658FB /* Assets.xcassets */,
 				4A9512C41C9054CD002658FB /* LaunchScreen.storyboard */,
 				4A9512C71C9054CD002658FB /* Info.plist */,
 				4A9512B61C9054CD002658FB /* Supporting Files */,
+				4A9512E91C90591D002658FB /* SCRootNavigationViewController.h */,
+				4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */,
+				4A9512EC1C905969002658FB /* SCRootBarViewController.h */,
+				4A9512ED1C905969002658FB /* SCRootBarViewController.m */,
 			);
 			path = scholars;
 			sourceTree = "<group>";
@@ -138,6 +158,49 @@
 				4A9512DD1C9054CD002658FB /* Info.plist */,
 			);
 			path = scholarsUITests;
+			sourceTree = "<group>";
+		};
+		4A9512EF1C905B98002658FB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4A9512BF1C9054CD002658FB /* Main.storyboard */,
+				4A9512F01C905BD1002658FB /* Home.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		4A9512F21C906147002658FB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A9512FF1C90659B002658FB /* SCHomeViewController.h */,
+				4A9513001C90659B002658FB /* SCHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		4A9512F31C906172002658FB /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				4A9512F21C906147002658FB /* Home */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		4A9512FA1C9063E2002658FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A9512FE1C9064D5002658FB /* Home */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4A9512FE1C9064D5002658FB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A9513021C9065A8002658FB /* SCHomeCollectionViewCell.h */,
+				4A9513031C9065A8002658FB /* SCHomeCollectionViewCell.m */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +309,7 @@
 				4A9512C61C9054CD002658FB /* LaunchScreen.storyboard in Resources */,
 				4A9512C31C9054CD002658FB /* Assets.xcassets in Resources */,
 				4A9512C11C9054CD002658FB /* Main.storyboard in Resources */,
+				4A9512F11C905BD1002658FB /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */,
+				4A9513041C9065A8002658FB /* SCHomeCollectionViewCell.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
 				4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */,
+				4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */,
 				4A9512B81C9054CD002658FB /* main.m in Sources */,
+				4A9513011C90659B002658FB /* SCHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +564,7 @@
 				4A9512E21C9054CD002658FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A9512E31C9054CD002658FB /* Build configuration list for PBXNativeTarget "scholarsTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +573,7 @@
 				4A9512E51C9054CD002658FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A9512E61C9054CD002658FB /* Build configuration list for PBXNativeTarget "scholarsUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +582,7 @@
 				4A9512E81C9054CD002658FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
