@@ -7,14 +7,17 @@
 //
 
 #import "SCHomeViewController.h"
-#import "SCHomeCollectionViewCell.h"
+#import "SCHotViewController.h"
 
 @interface SCHomeViewController ()
-@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
 @implementation SCHomeViewController
+
+- (NSArray<NSString *> *)titles {
+    return @[@"热门", @"新闻", @"段子",@"你好", @"支持我", @"点赞"];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,49 +29,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark <UICollectionViewDataSource>
+#pragma mark - WMPageController DataSource
+- (NSInteger)numbersOfChildControllersInPageController:(WMPageController *)pageController {
+    return self.titles.count;
+}
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-
-    return 1;
+- (NSString *)pageController:(WMPageController *)pageController titleAtIndex:(NSInteger)index {
+    return self.titles[index];
 }
 
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+- (UIViewController *)pageController:(WMPageController *)pageController viewControllerAtIndex:(NSInteger)index {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
+    SCHotViewController *hotView = [sb instantiateViewControllerWithIdentifier:@"SCHotViewController"];
+//    pageController.title = @"Line";
+//    pageController.menuViewStyle = WMMenuViewStyleLine;
+//    pageController.titleSizeSelected = 15;
+    pageController.menuViewStyle = WMMenuViewStyleLine;
+    pageController.titleColorNormal = [UIColor brownColor];
+    pageController.titleColorSelected = [UIColor purpleColor];
 
-    return 10;
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-//    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
-    
-    NSString *homeCollectionViewCell = @"SCHomeCollectionViewCell";
-    
-    SCHomeCollectionViewCell *homeCollectionView = [collectionView dequeueReusableCellWithReuseIdentifier:homeCollectionViewCell forIndexPath:indexPath];
-    homeCollectionView.titleLabel.text = @"12312";
-    
-    return homeCollectionView;
-}
-
-#pragma mark --UICollectionViewDelegateFlowLayout
-//定义每个UICollectionView 的大小
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    return CGSizeMake(100, 35);
-}
-//定义每个UICollectionView 的 margin
--(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
-{
-    return UIEdgeInsetsMake(0, 0, 0, 0);
-}
-#pragma mark --UICollectionViewDelegate
-//UICollectionView被选中时调用的方法
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-//    UICollectionViewCell * cell = (UICollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-//    cell.backgroundColor = [UIColor whiteColor];
+    return hotView;
 }
 
 

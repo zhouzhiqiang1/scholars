@@ -19,7 +19,9 @@
 		4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512ED1C905969002658FB /* SCRootBarViewController.m */; };
 		4A9512F11C905BD1002658FB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9512F01C905BD1002658FB /* Home.storyboard */; };
 		4A9513011C90659B002658FB /* SCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9513001C90659B002658FB /* SCHomeViewController.m */; };
-		4A9513041C9065A8002658FB /* SCHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9513031C9065A8002658FB /* SCHomeCollectionViewCell.m */; };
+		5170B32AD66868A92D1EE638 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC905B201A04C14CA6E63179 /* libPods.a */; };
+		DDD0F7581C912A7600F81EBF /* SCHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0F7571C912A7600F81EBF /* SCHotViewController.m */; };
+		DDD0F7601C9150BE00F81EBF /* ORColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0F75F1C9150BE00F81EBF /* ORColorUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +65,13 @@
 		4A9512F01C905BD1002658FB /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4A9512FF1C90659B002658FB /* SCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHomeViewController.h; path = Code/Home/SCHomeViewController.h; sourceTree = "<group>"; };
 		4A9513001C90659B002658FB /* SCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHomeViewController.m; path = Code/Home/SCHomeViewController.m; sourceTree = "<group>"; };
-		4A9513021C9065A8002658FB /* SCHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHomeCollectionViewCell.h; path = View/Home/SCHomeCollectionViewCell.h; sourceTree = "<group>"; };
-		4A9513031C9065A8002658FB /* SCHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHomeCollectionViewCell.m; path = View/Home/SCHomeCollectionViewCell.m; sourceTree = "<group>"; };
+		C7A0347DB6C9F51FCD74CB16 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CCEED669B0F500150937771F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DC905B201A04C14CA6E63179 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD0F7561C912A7600F81EBF /* SCHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHotViewController.h; path = Code/Home/SCHotViewController.h; sourceTree = "<group>"; };
+		DDD0F7571C912A7600F81EBF /* SCHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHotViewController.m; path = Code/Home/SCHotViewController.m; sourceTree = "<group>"; };
+		DDD0F75E1C9150BE00F81EBF /* ORColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORColorUtil.h; path = Other/ColorUtil/ORColorUtil.h; sourceTree = "<group>"; };
+		DDD0F75F1C9150BE00F81EBF /* ORColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORColorUtil.m; path = Other/ColorUtil/ORColorUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5170B32AD66868A92D1EE638 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		406CB07369DF932379FE0C26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC905B201A04C14CA6E63179 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A9512AA1C9054CD002658FB = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,8 @@
 				4A9512CF1C9054CD002658FB /* scholarsTests */,
 				4A9512DA1C9054CD002658FB /* scholarsUITests */,
 				4A9512B41C9054CD002658FB /* Products */,
+				6153F8FF4EAD98C151FA234E /* Pods */,
+				406CB07369DF932379FE0C26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +143,7 @@
 				4A9512C21C9054CD002658FB /* Assets.xcassets */,
 				4A9512C41C9054CD002658FB /* LaunchScreen.storyboard */,
 				4A9512C71C9054CD002658FB /* Info.plist */,
+				DDD0F7591C91503C00F81EBF /* Other */,
 				4A9512B61C9054CD002658FB /* Supporting Files */,
 				4A9512E91C90591D002658FB /* SCRootNavigationViewController.h */,
 				4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */,
@@ -163,8 +182,7 @@
 		4A9512EF1C905B98002658FB /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				4A9512BF1C9054CD002658FB /* Main.storyboard */,
-				4A9512F01C905BD1002658FB /* Home.storyboard */,
+				DDD0F7161C91082000F81EBF /* Home */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -174,6 +192,8 @@
 			children = (
 				4A9512FF1C90659B002658FB /* SCHomeViewController.h */,
 				4A9513001C90659B002658FB /* SCHomeViewController.m */,
+				DDD0F7561C912A7600F81EBF /* SCHotViewController.h */,
+				DDD0F7571C912A7600F81EBF /* SCHotViewController.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -197,10 +217,43 @@
 		4A9512FE1C9064D5002658FB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4A9513021C9065A8002658FB /* SCHomeCollectionViewCell.h */,
-				4A9513031C9065A8002658FB /* SCHomeCollectionViewCell.m */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		6153F8FF4EAD98C151FA234E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCEED669B0F500150937771F /* Pods.debug.xcconfig */,
+				C7A0347DB6C9F51FCD74CB16 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDD0F7161C91082000F81EBF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A9512BF1C9054CD002658FB /* Main.storyboard */,
+				4A9512F01C905BD1002658FB /* Home.storyboard */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		DDD0F7591C91503C00F81EBF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DDD0F75A1C91505300F81EBF /* ColorUtil */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		DDD0F75A1C91505300F81EBF /* ColorUtil */ = {
+			isa = PBXGroup;
+			children = (
+				DDD0F75E1C9150BE00F81EBF /* ORColorUtil.h */,
+				DDD0F75F1C9150BE00F81EBF /* ORColorUtil.m */,
+			);
+			name = ColorUtil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A9512E01C9054CD002658FB /* Build configuration list for PBXNativeTarget "scholars" */;
 			buildPhases = (
+				EE46EF7A17E639238D178801 /* Check Pods Manifest.lock */,
 				4A9512AF1C9054CD002658FB /* Sources */,
 				4A9512B01C9054CD002658FB /* Frameworks */,
 				4A9512B11C9054CD002658FB /* Resources */,
+				1545B0B41D7FF3E4B3DA0184 /* Embed Pods Frameworks */,
+				C2DCFCE85BF452B7E1EAC0AF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,17 +385,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1545B0B41D7FF3E4B3DA0184 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2DCFCE85BF452B7E1EAC0AF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE46EF7A17E639238D178801 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A9512AF1C9054CD002658FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */,
-				4A9513041C9065A8002658FB /* SCHomeCollectionViewCell.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
+				DDD0F7581C912A7600F81EBF /* SCHotViewController.m in Sources */,
 				4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */,
 				4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */,
 				4A9512B81C9054CD002658FB /* main.m in Sources */,
+				DDD0F7601C9150BE00F81EBF /* ORColorUtil.m in Sources */,
 				4A9513011C90659B002658FB /* SCHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,9 +582,11 @@
 		};
 		4A9512E11C9054CD002658FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCEED669B0F500150937771F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = scholars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Xiong.scholars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,9 +595,11 @@
 		};
 		4A9512E21C9054CD002658FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A0347DB6C9F51FCD74CB16 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = scholars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Xiong.scholars;
 				PRODUCT_NAME = "$(TARGET_NAME)";

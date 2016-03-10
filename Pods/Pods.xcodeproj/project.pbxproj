@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061F5E02E312E7629E207CAFAD77C6F7 /* WMMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF3BF2508A49299F0A9C218AAC17345 /* WMMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		097B1C45750FF9C9DB9838DF12AFAC84 /* WMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B066FA50CA63BA0927A4CF487F6105E /* WMProgressView.m */; };
+		123C91F142D11EABD45A1A1FD75AD381 /* WMScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF2FEE6F540F01D0F3FD18EBAB3343 /* WMScrollView.m */; };
+		2985AACF6C7B77D1A6EA1F1A3C715C85 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F38EAA71461F304497FA287DD2C9B /* EAIntroView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3041164C7D5E468C3A3B8912430E46CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		30E222C590BF0EA0D3D91CC282894989 /* EAIntroPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F99A5FD1BA1FE274A9EDD15DDB6A59 /* EAIntroPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B4FA0AAB413F0057839B74235AA49E2 /* WMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4206BA4F6E2B5BD6AEEAD135B33BAC09 /* WMMenuItem.m */; };
+		519F8F08FF3979DF26ADC12899CCE6EA /* WMMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = F766747F1E691C59E66D16AAB4F21A44 /* WMMenuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52DBD91A357660C2B59808E59E77C6AE /* WMPageController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7815A7DB3271E46AC59F2B9237097584 /* WMPageController-dummy.m */; };
+		67D5155E7C878A5EBDE2DFD4A1A13884 /* WMPageController.h in Headers */ = {isa = PBXBuildFile; fileRef = 115CF8D75F0C69210D98FEC15058181C /* WMPageController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72166AAF795F5FEA815A0D1F4377CF72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */; };
+		73CE9595507163608FF12C2CCB0A60D0 /* WMScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7BC6D205126956D7D4FD13FCBD93A2 /* WMScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86506AF3CC7F4E3FEF1837C597D2606D /* WMProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D78528908B28B4C2BC65E95EAFBC97 /* WMProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D9903DD7A00F4A9339EB642C17CBCA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		A024016F331C640F44967B98F049806D /* EAIntroView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EBD551B472175DD589CBC3C13B2959B /* EAIntroView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA83932E0CD2626E44B335D71DD08EE8 /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20D145B86FA3BD565132CE19B5DEE8 /* WMPageController.m */; };
+		AEB4D01C8F881795F20AAACC4879A7F6 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		CDC651BA75D3FE9B7DE52AD4D5251105 /* WMPageConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 44434B63F3CF2FC8B365A4104C18E203 /* WMPageConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5E5F48BBC9528F26B600BE258D24947 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */; };
+		D8190EB79672646583FD129317961A23 /* WMFooldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D57F3EC5F82FE0F3C3C28FFBFE1DE02 /* WMFooldView.m */; };
+		D8C175910CC0F75CE6F35B0BE45D46EF /* WMMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDD7CD5EABA1431A1D70460C1FDB65D /* WMMenuView.m */; };
+		DEF90E2DD08E7B9CF6F174CCC37AF767 /* WMFooldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AD1DD4766A70C3E7906F44CDFF1B2E /* WMFooldView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0D5C0908DCFF602599E01BB3A2E4FA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		E20E5950A87B15CFCCA99226546A11C9 /* EAIntroView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CEE0ADE44FFDED35BA1D2EC1257B6C /* EAIntroView-dummy.m */; };
+		E3C9053900D0080C5EF383332B540B78 /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E90C34B863D718285957F6A4CA0CD9A1 /* EAIntroPage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BDECB690F17D64418AB8C62222BDEE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7EF8AEA0FBF77340A6A1A8E6B8F8D06;
+			remoteInfo = WMPageController;
+		};
+		C26F14A70DB2E4FD9CCC52AFED562A65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AE1389E0C6D743966465D23A68CCC44;
+			remoteInfo = EAIntroView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0854C872CA50709B733940633F3C8A90 /* EAIntroView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EAIntroView.xcconfig; sourceTree = "<group>"; };
+		0D57F3EC5F82FE0F3C3C28FFBFE1DE02 /* WMFooldView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WMFooldView.m; path = WMPageController/WMMenuView/WMFooldView.m; sourceTree = "<group>"; };
+		0FC653BAB2B0C426A84B9D120325411B /* WMPageController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WMPageController-prefix.pch"; sourceTree = "<group>"; };
+		0FEEC3470A2CA0520CB52F5E2EC43B75 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		115CF8D75F0C69210D98FEC15058181C /* WMPageController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WMPageController.h; path = WMPageController/WMPageController.h; sourceTree = "<group>"; };
+		13D837259B70916F102B843DB74097D0 /* EAIntroView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EAIntroView-prefix.pch"; sourceTree = "<group>"; };
+		23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		29FF2FEE6F540F01D0F3FD18EBAB3343 /* WMScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WMScrollView.m; path = WMPageController/WMMenuView/WMScrollView.m; sourceTree = "<group>"; };
+		32F99A5FD1BA1FE274A9EDD15DDB6A59 /* EAIntroPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EAIntroPage.h; path = EAIntroView/EAIntroPage.h; sourceTree = "<group>"; };
+		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3EDD7CD5EABA1431A1D70460C1FDB65D /* WMMenuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WMMenuView.m; path = WMPageController/WMMenuView/WMMenuView.m; sourceTree = "<group>"; };
+		4206BA4F6E2B5BD6AEEAD135B33BAC09 /* WMMenuItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WMMenuItem.m; path = WMPageController/WMMenuView/WMMenuItem.m; sourceTree = "<group>"; };
+		44434B63F3CF2FC8B365A4104C18E203 /* WMPageConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WMPageConst.h; path = WMPageController/WMPageConst.h; sourceTree = "<group>"; };
+		49D78528908B28B4C2BC65E95EAFBC97 /* WMProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WMProgressView.h; path = WMPageController/WMMenuView/WMProgressView.h; sourceTree = "<group>"; };
+		4CF3BF2508A49299F0A9C218AAC17345 /* WMMenuItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WMMenuItem.h; path = WMPageController/WMMenuView/WMMenuItem.h; sourceTree = "<group>"; };
+		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		5D7BC6D205126956D7D4FD13FCBD93A2 /* WMScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WMScrollView.h; path = WMPageController/WMMenuView/WMScrollView.h; sourceTree = "<group>"; };
+		5E5F38EAA71461F304497FA287DD2C9B /* EAIntroView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EAIntroView.m; path = EAIntroView/EAIntroView.m; sourceTree = "<group>"; };
+		5EBD551B472175DD589CBC3C13B2959B /* EAIntroView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EAIntroView.h; path = EAIntroView/EAIntroView.h; sourceTree = "<group>"; };
+		67AD1DD4766A70C3E7906F44CDFF1B2E /* WMFooldView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WMFooldView.h; path = WMPageController/WMMenuView/WMFooldView.h; sourceTree = "<group>"; };
+		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		7815A7DB3271E46AC59F2B9237097584 /* WMPageController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WMPageController-dummy.m"; sourceTree = "<group>"; };
+		7B066FA50CA63BA0927A4CF487F6105E /* WMProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WMProgressView.m; path = WMPageController/WMMenuView/WMProgressView.m; sourceTree = "<group>"; };
+		7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		99ACEA3B0845B6E16AF28430F7E8F76D /* libEAIntroView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEAIntroView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C0801CE8E30BE94784179B73367EB52B /* WMPageController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WMPageController.xcconfig; sourceTree = "<group>"; };
+		C2CEE0ADE44FFDED35BA1D2EC1257B6C /* EAIntroView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EAIntroView-dummy.m"; sourceTree = "<group>"; };
+		CB94C2B4DACF51A3C02228237DA15F37 /* libWMPageController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWMPageController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90C34B863D718285957F6A4CA0CD9A1 /* EAIntroPage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EAIntroPage.m; path = EAIntroView/EAIntroPage.m; sourceTree = "<group>"; };
+		ED20D145B86FA3BD565132CE19B5DEE8 /* WMPageController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WMPageController.m; path = WMPageController/WMPageController.m; sourceTree = "<group>"; };
+		F766747F1E691C59E66D16AAB4F21A44 /* WMMenuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WMMenuView.h; path = WMPageController/WMMenuView/WMMenuView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A2812A2D7474B8EFD2C36F9F8E543BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9903DD7A00F4A9339EB642C17CBCA6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2F0B61FC50A824FD475CD35F776E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3041164C7D5E468C3A3B8912430E46CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE361B8E76A2025EF1E693B1F2851458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E5F48BBC9528F26B600BE258D24947 /* CoreGraphics.framework in Frameworks */,
+				E0D5C0908DCFF602599E01BB3A2E4FA1 /* Foundation.framework in Frameworks */,
+				72166AAF795F5FEA815A0D1F4377CF72 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E35B3E289DB984DA75A774080D293670 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12E10A52890E337A5407B5A87A01B1C2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0801CE8E30BE94784179B73367EB52B /* WMPageController.xcconfig */,
+				7815A7DB3271E46AC59F2B9237097584 /* WMPageController-dummy.m */,
+				0FC653BAB2B0C426A84B9D120325411B /* WMPageController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WMPageController";
+			sourceTree = "<group>";
+		};
+		1DD7BD93F11B7DA09CA457466640EE5C /* WMPageController */ = {
+			isa = PBXGroup;
+			children = (
+				67AD1DD4766A70C3E7906F44CDFF1B2E /* WMFooldView.h */,
+				0D57F3EC5F82FE0F3C3C28FFBFE1DE02 /* WMFooldView.m */,
+				4CF3BF2508A49299F0A9C218AAC17345 /* WMMenuItem.h */,
+				4206BA4F6E2B5BD6AEEAD135B33BAC09 /* WMMenuItem.m */,
+				F766747F1E691C59E66D16AAB4F21A44 /* WMMenuView.h */,
+				3EDD7CD5EABA1431A1D70460C1FDB65D /* WMMenuView.m */,
+				44434B63F3CF2FC8B365A4104C18E203 /* WMPageConst.h */,
+				115CF8D75F0C69210D98FEC15058181C /* WMPageController.h */,
+				ED20D145B86FA3BD565132CE19B5DEE8 /* WMPageController.m */,
+				49D78528908B28B4C2BC65E95EAFBC97 /* WMProgressView.h */,
+				7B066FA50CA63BA0927A4CF487F6105E /* WMProgressView.m */,
+				5D7BC6D205126956D7D4FD13FCBD93A2 /* WMScrollView.h */,
+				29FF2FEE6F540F01D0F3FD18EBAB3343 /* WMScrollView.m */,
+				12E10A52890E337A5407B5A87A01B1C2 /* Support Files */,
+			);
+			path = WMPageController;
+			sourceTree = "<group>";
+		};
+		5685BD97039CDA7F3589354A8B841EF1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0854C872CA50709B733940633F3C8A90 /* EAIntroView.xcconfig */,
+				C2CEE0ADE44FFDED35BA1D2EC1257B6C /* EAIntroView-dummy.m */,
+				13D837259B70916F102B843DB74097D0 /* EAIntroView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EAIntroView";
+			sourceTree = "<group>";
+		};
+		70FBC542B4746E514B73D79FFA7034D6 /* EAIntroView */ = {
+			isa = PBXGroup;
+			children = (
+				32F99A5FD1BA1FE274A9EDD15DDB6A59 /* EAIntroPage.h */,
+				E90C34B863D718285957F6A4CA0CD9A1 /* EAIntroPage.m */,
+				5EBD551B472175DD589CBC3C13B2959B /* EAIntroView.h */,
+				5E5F38EAA71461F304497FA287DD2C9B /* EAIntroView.m */,
+				5685BD97039CDA7F3589354A8B841EF1 /* Support Files */,
+			);
+			path = EAIntroView;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				982C41BBD7574AF238E5137DAF309622 /* Pods */,
+				AE7EE0BA2FB97FE153FFEFDE69EDB0C3 /* Products */,
+				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		982C41BBD7574AF238E5137DAF309622 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70FBC542B4746E514B73D79FFA7034D6 /* EAIntroView */,
+				1DD7BD93F11B7DA09CA457466640EE5C /* WMPageController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE7EE0BA2FB97FE153FFEFDE69EDB0C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99ACEA3B0845B6E16AF28430F7E8F76D /* libEAIntroView.a */,
+				0FEEC3470A2CA0520CB52F5E2EC43B75 /* libPods.a */,
+				CB94C2B4DACF51A3C02228237DA15F37 /* libWMPageController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
+				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
+				272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */,
+				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
+				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
+				4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */,
+				98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		E35B3E289DB984DA75A774080D293670 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */,
+				95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */,
+				7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5EAA6361ED52E26065FD929FC726854E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF90E2DD08E7B9CF6F174CCC37AF767 /* WMFooldView.h in Headers */,
+				061F5E02E312E7629E207CAFAD77C6F7 /* WMMenuItem.h in Headers */,
+				519F8F08FF3979DF26ADC12899CCE6EA /* WMMenuView.h in Headers */,
+				CDC651BA75D3FE9B7DE52AD4D5251105 /* WMPageConst.h in Headers */,
+				67D5155E7C878A5EBDE2DFD4A1A13884 /* WMPageController.h in Headers */,
+				86506AF3CC7F4E3FEF1837C597D2606D /* WMProgressView.h in Headers */,
+				73CE9595507163608FF12C2CCB0A60D0 /* WMScrollView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F643B46EE0281AC0733D89FB565FD7D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E222C590BF0EA0D3D91CC282894989 /* EAIntroPage.h in Headers */,
+				A024016F331C640F44967B98F049806D /* EAIntroView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7AE1389E0C6D743966465D23A68CCC44 /* EAIntroView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BB43E3FC74041CC6970DF16AC4BC209 /* Build configuration list for PBXNativeTarget "EAIntroView" */;
+			buildPhases = (
+				5C2B9BFCD01B2861EFBA320F812B79ED /* Sources */,
+				3A2812A2D7474B8EFD2C36F9F8E543BC /* Frameworks */,
+				F643B46EE0281AC0733D89FB565FD7D7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EAIntroView;
+			productName = EAIntroView;
+			productReference = 99ACEA3B0845B6E16AF28430F7E8F76D /* libEAIntroView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C7EF8AEA0FBF77340A6A1A8E6B8F8D06 /* WMPageController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE8E11EB68DE39902AD77970173792E /* Build configuration list for PBXNativeTarget "WMPageController" */;
+			buildPhases = (
+				FC83D9F166B7274F6D88D419E0E006F0 /* Sources */,
+				DE361B8E76A2025EF1E693B1F2851458 /* Frameworks */,
+				5EAA6361ED52E26065FD929FC726854E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WMPageController;
+			productName = WMPageController;
+			productReference = CB94C2B4DACF51A3C02228237DA15F37 /* libWMPageController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D182E37AA6684463D50A99DA2DD27608 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172BA51ECA9F8E320631BD988A7C4605 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				F2FF850BF378E2A377DE5240425DF3B6 /* Sources */,
+				BF2F0B61FC50A824FD475CD35F776E13 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A39684DBFC77DABA55277763CDC75966 /* PBXTargetDependency */,
+				58C7B371524080389C7E56B8E2A00514 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 0FEEC3470A2CA0520CB52F5E2EC43B75 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AE7EE0BA2FB97FE153FFEFDE69EDB0C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AE1389E0C6D743966465D23A68CCC44 /* EAIntroView */,
+				D182E37AA6684463D50A99DA2DD27608 /* Pods */,
+				C7EF8AEA0FBF77340A6A1A8E6B8F8D06 /* WMPageController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C2B9BFCD01B2861EFBA320F812B79ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C9053900D0080C5EF383332B540B78 /* EAIntroPage.m in Sources */,
+				E20E5950A87B15CFCCA99226546A11C9 /* EAIntroView-dummy.m in Sources */,
+				2985AACF6C7B77D1A6EA1F1A3C715C85 /* EAIntroView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2FF850BF378E2A377DE5240425DF3B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB4D01C8F881795F20AAACC4879A7F6 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC83D9F166B7274F6D88D419E0E006F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8190EB79672646583FD129317961A23 /* WMFooldView.m in Sources */,
+				4B4FA0AAB413F0057839B74235AA49E2 /* WMMenuItem.m in Sources */,
+				D8C175910CC0F75CE6F35B0BE45D46EF /* WMMenuView.m in Sources */,
+				52DBD91A357660C2B59808E59E77C6AE /* WMPageController-dummy.m in Sources */,
+				AA83932E0CD2626E44B335D71DD08EE8 /* WMPageController.m in Sources */,
+				097B1C45750FF9C9DB9838DF12AFAC84 /* WMProgressView.m in Sources */,
+				123C91F142D11EABD45A1A1FD75AD381 /* WMScrollView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58C7B371524080389C7E56B8E2A00514 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WMPageController;
+			target = C7EF8AEA0FBF77340A6A1A8E6B8F8D06 /* WMPageController */;
+			targetProxy = 8BDECB690F17D64418AB8C62222BDEE6 /* PBXContainerItemProxy */;
+		};
+		A39684DBFC77DABA55277763CDC75966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EAIntroView;
+			target = 7AE1389E0C6D743966465D23A68CCC44 /* EAIntroView */;
+			targetProxy = C26F14A70DB2E4FD9CCC52AFED562A65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		138D1A27D404B5E46ADFB5E3E819B8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0854C872CA50709B733940633F3C8A90 /* EAIntroView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EAIntroView/EAIntroView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5742AB3847926F3509575F991B429CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0801CE8E30BE94784179B73367EB52B /* WMPageController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WMPageController/WMPageController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		57A6C1B9CA3042152FAC046996DA740B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0801CE8E30BE94784179B73367EB52B /* WMPageController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WMPageController/WMPageController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		94D39180FD226EF7E7A79599DC2E6EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E664485D933C6000F0440DB071363EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FB1E39E178C813F5716920F0DD2A83ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0854C872CA50709B733940633F3C8A90 /* EAIntroView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EAIntroView/EAIntroView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		172BA51ECA9F8E320631BD988A7C4605 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D39180FD226EF7E7A79599DC2E6EC2 /* Debug */,
+				E664485D933C6000F0440DB071363EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BB43E3FC74041CC6970DF16AC4BC209 /* Build configuration list for PBXNativeTarget "EAIntroView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB1E39E178C813F5716920F0DD2A83ED /* Debug */,
+				138D1A27D404B5E46ADFB5E3E819B8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE8E11EB68DE39902AD77970173792E /* Build configuration list for PBXNativeTarget "WMPageController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57A6C1B9CA3042152FAC046996DA740B /* Debug */,
+				5742AB3847926F3509575F991B429CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

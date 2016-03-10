@@ -7,8 +7,10 @@
 //
 
 #import "SCRootBarViewController.h"
+#import <EAIntroView/EAIntroView.h>
+#import "ORColorUtil.h"
 
-@interface SCRootBarViewController ()
+@interface SCRootBarViewController ()<EAIntroDelegate>
 
 @end
 
@@ -39,14 +41,44 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - 内部函数
+- (void)showIntroduceView
+{
+    NSMutableArray *pages = [[NSMutableArray alloc] init];
+    for (int i = 0; i<3; i++) {
+        NSString *imgName = [NSString stringWithFormat:@"wizard_%d.jpg", i+1];
+        UIImageView *imgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+        imgView.image = [UIImage imageNamed:imgName];
+        EAIntroPage *page = [EAIntroPage pageWithCustomView:imgView];
+        [pages addObject:page];
+    }
+    
+    EAIntroView *intro = [[EAIntroView alloc] initWithFrame:self.navigationController.view.bounds andPages:pages];
+    intro.pageControl.pageIndicatorTintColor = ORColor(@"a2a2a2");
+    intro.pageControl.currentPageIndicatorTintColor = ORColor(@"595959");
+    intro.delegate = self;
+    [intro.skipButton setTitleColor:ORColor(@"a2a2a2") forState:UIControlStateNormal];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    [intro showInView:self.navigationController.view animateDuration:0];
 }
-*/
+
+#pragma mark - EAIntroViewDelegate
+
+- (void)intro:(EAIntroView *)introView pageAppeared:(EAIntroPage *)page withIndex:(NSInteger)pageIndex
+{
+    
+}
+
+- (void)intro:(EAIntroView *)introView pageStartScrolling:(EAIntroPage *)page withIndex:(NSInteger)pageIndex
+{
+    
+}
+
+- (void)intro:(EAIntroView *)introView pageEndScrolling:(EAIntroPage *)page withIndex:(NSInteger)pageIndex
+{
+    
+}
+
 
 @end

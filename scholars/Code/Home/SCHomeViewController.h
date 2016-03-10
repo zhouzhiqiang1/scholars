@@ -6,8 +6,9 @@
 //  Copyright © 2016年 Mac Xiong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
-@interface SCHomeViewController : UIViewController
+#import "WMPageController.h"
+
+@interface SCHomeViewController : WMPageController
 
 @end
