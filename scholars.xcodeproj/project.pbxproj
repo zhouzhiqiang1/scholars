@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A72871C1C91A7A5005581F3 /* YDHotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72871B1C91A7A5005581F3 /* YDHotTableViewCell.m */; };
+		4A72871F1C91A82D005581F3 /* SCNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72871E1C91A82D005581F3 /* SCNewsTableViewController.m */; };
+		4A7287221C91A9A6005581F3 /* WMLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7287211C91A9A6005581F3 /* WMLoopView.m */; };
 		4A9512B81C9054CD002658FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512B71C9054CD002658FB /* main.m */; };
 		4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512BA1C9054CD002658FB /* AppDelegate.m */; };
 		4A9512BE1C9054CD002658FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512BD1C9054CD002658FB /* ViewController.m */; };
@@ -42,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A72871A1C91A7A5005581F3 /* YDHotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDHotTableViewCell.h; path = View/Home/YDHotTableViewCell.h; sourceTree = "<group>"; };
+		4A72871B1C91A7A5005581F3 /* YDHotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YDHotTableViewCell.m; path = View/Home/YDHotTableViewCell.m; sourceTree = "<group>"; };
+		4A72871D1C91A82D005581F3 /* SCNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNewsTableViewController.h; path = Code/Home/SCNewsTableViewController.h; sourceTree = "<group>"; };
+		4A72871E1C91A82D005581F3 /* SCNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNewsTableViewController.m; path = Code/Home/SCNewsTableViewController.m; sourceTree = "<group>"; };
+		4A7287201C91A9A6005581F3 /* WMLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLoopView.h; sourceTree = "<group>"; };
+		4A7287211C91A9A6005581F3 /* WMLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLoopView.m; sourceTree = "<group>"; };
 		4A9512B31C9054CD002658FB /* scholars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scholars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9512B71C9054CD002658FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A9512B91C9054CD002658FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +115,13 @@
 				DC905B201A04C14CA6E63179 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A7287231C91AB0D005581F3 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Banner;
 			sourceTree = "<group>";
 		};
 		4A9512AA1C9054CD002658FB = {
@@ -194,6 +210,8 @@
 				4A9513001C90659B002658FB /* SCHomeViewController.m */,
 				DDD0F7561C912A7600F81EBF /* SCHotViewController.h */,
 				DDD0F7571C912A7600F81EBF /* SCHotViewController.m */,
+				4A72871D1C91A82D005581F3 /* SCNewsTableViewController.h */,
+				4A72871E1C91A82D005581F3 /* SCNewsTableViewController.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -217,6 +235,11 @@
 		4A9512FE1C9064D5002658FB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4A7287231C91AB0D005581F3 /* Banner */,
+				4A72871A1C91A7A5005581F3 /* YDHotTableViewCell.h */,
+				4A72871B1C91A7A5005581F3 /* YDHotTableViewCell.m */,
+				4A7287201C91A9A6005581F3 /* WMLoopView.h */,
+				4A7287211C91A9A6005581F3 /* WMLoopView.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -440,12 +463,15 @@
 			files = (
 				4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
+				4A7287221C91A9A6005581F3 /* WMLoopView.m in Sources */,
 				DDD0F7581C912A7600F81EBF /* SCHotViewController.m in Sources */,
 				4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */,
+				4A72871C1C91A7A5005581F3 /* YDHotTableViewCell.m in Sources */,
 				4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */,
 				4A9512B81C9054CD002658FB /* main.m in Sources */,
 				DDD0F7601C9150BE00F81EBF /* ORColorUtil.m in Sources */,
 				4A9513011C90659B002658FB /* SCHomeViewController.m in Sources */,
+				4A72871F1C91A82D005581F3 /* SCNewsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

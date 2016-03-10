@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self showIntroduceView];
     /**
      试图控制器中添加  storyboard 视图
      */
@@ -79,6 +80,5 @@
 {
     
 }
-
 
 @end

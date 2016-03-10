@@ -8,6 +8,7 @@
 
 #import "SCHomeViewController.h"
 #import "SCHotViewController.h"
+#import "SCNewsTableViewController.h"
 
 @interface SCHomeViewController ()
 
@@ -40,16 +41,27 @@
 
 
 - (UIViewController *)pageController:(WMPageController *)pageController viewControllerAtIndex:(NSInteger)index {
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
-    SCHotViewController *hotView = [sb instantiateViewControllerWithIdentifier:@"SCHotViewController"];
-//    pageController.title = @"Line";
-//    pageController.menuViewStyle = WMMenuViewStyleLine;
-//    pageController.titleSizeSelected = 15;
+    
+    //    pageController.title = @"Line";
+    //    pageController.menuViewStyle = WMMenuViewStyleLine;
+    //    pageController.titleSizeSelected = 15;
     pageController.menuViewStyle = WMMenuViewStyleLine;
     pageController.titleColorNormal = [UIColor brownColor];
     pageController.titleColorSelected = [UIColor purpleColor];
+    
+    
+    UIViewController *viewContorller = nil;
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
+    if (index == 0) {
+        
+        SCHotViewController *hotView = [sb instantiateViewControllerWithIdentifier:@"SCHotViewController"];
+        viewContorller = hotView;
+    } else {
+        SCNewsTableViewController *hotView = [sb instantiateViewControllerWithIdentifier:@"SCNewsTableViewController"];
+        viewContorller = hotView;
+    }
 
-    return hotView;
+    return viewContorller;
 }
 
 

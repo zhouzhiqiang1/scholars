@@ -7,9 +7,13 @@
 //
 
 #import "SCHotViewController.h"
+#import "YDHotTableViewCell.h"
+#import "WMLoopView.h"
+#import "WMPageConst.h"
 
-@interface SCHotViewController ()
-
+@interface SCHotViewController ()<WMLoopViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, copy) NSNumber *age;
 @end
 
 @implementation SCHotViewController
@@ -17,6 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.tableView.showsVerticalScrollIndicator = NO;
+    
+    NSArray *images = @[@"zoro.jpg",@"three.jpg",@"onepiece.jpg"];
+    WMLoopView *loopView = [[WMLoopView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width/1.8) images:images autoPlay:YES delay:2.0];
+    loopView.delegate = self;
+    self.tableView.tableHeaderView = loopView;
+    self.tableView.rowHeight = 80;
+    NSLog(@"%@", self.age);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +45,27 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 5;
+}
+
+
+ - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+// UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+ 
+ // Configure the cell...
+     NSString *cell = @"YDHotTableViewCell";
+     YDHotTableViewCell *hotTableView = [tableView dequeueReusableCellWithIdentifier:cell forIndexPath:indexPath];
+ 
+ return hotTableView;
+ }
+
 
 @end
