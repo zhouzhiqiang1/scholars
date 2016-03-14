@@ -33,6 +33,10 @@
     UINavigationController *homeNavController = [homeStoryboard instantiateInitialViewController];
     [viewControlles replaceObjectAtIndex:0 withObject:homeNavController];
     
+    UIStoryboard *pictureStoryboard = [UIStoryboard storyboardWithName:@"Picture" bundle:nil];
+    UINavigationController *pictureNavController = [pictureStoryboard instantiateInitialViewController];
+    [viewControlles replaceObjectAtIndex:1 withObject:pictureNavController];
+
     
     [self setViewControllers:viewControlles];
 }

@@ -25,6 +25,7 @@
 		DDF0D4EE1C96A569000D40E5 /* SCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4E91C96A569000D40E5 /* SCHomeViewController.m */; };
 		DDF0D4EF1C96A569000D40E5 /* SCHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4EB1C96A569000D40E5 /* SCHotViewController.m */; };
 		DDF0D4F01C96A569000D40E5 /* SCNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4ED1C96A569000D40E5 /* SCNewsTableViewController.m */; };
+		DDF0D4F41C96A6B5000D40E5 /* Picture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF0D4F31C96A6B5000D40E5 /* Picture.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		DDF0D4EB1C96A569000D40E5 /* SCHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHotViewController.m; path = Controller/Home/SCHotViewController.m; sourceTree = "<group>"; };
 		DDF0D4EC1C96A569000D40E5 /* SCNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNewsTableViewController.h; path = Controller/Home/SCNewsTableViewController.h; sourceTree = "<group>"; };
 		DDF0D4ED1C96A569000D40E5 /* SCNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNewsTableViewController.m; path = Controller/Home/SCNewsTableViewController.m; sourceTree = "<group>"; };
+		DDF0D4F31C96A6B5000D40E5 /* Picture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Picture.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 			children = (
 				4A9512BF1C9054CD002658FB /* Main.storyboard */,
 				4A9512F01C905BD1002658FB /* Home.storyboard */,
+				DDF0D4F31C96A6B5000D40E5 /* Picture.storyboard */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF0D4F41C96A6B5000D40E5 /* Picture.storyboard in Resources */,
 				4A9512C61C9054CD002658FB /* LaunchScreen.storyboard in Resources */,
 				4A9512C31C9054CD002658FB /* Assets.xcassets in Resources */,
 				4A9512C11C9054CD002658FB /* Main.storyboard in Resources */,
