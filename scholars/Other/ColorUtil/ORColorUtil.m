@@ -21,7 +21,7 @@
     }
     
     if (aColorString.length == 6) {
-        int len = aColorString.length/3;
+        int len = (int)aColorString.length/3;
         unsigned int a[3];
         for (int i=0; i<3; i++) {
             NSRange range;

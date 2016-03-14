@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Mac Xiong. All rights reserved.
 //
 
-
+#import "ORBaseViewController.h"
 #import "WMPageController.h"
 
 @interface SCHomeViewController : WMPageController

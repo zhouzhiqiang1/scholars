@@ -27,7 +27,7 @@
                                      };
     [[UINavigationBar appearance] setTitleTextAttributes:textAttributes];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setBarTintColor:ORColor(kORColorRed_E300E6)];
+    [[UINavigationBar appearance] setBarTintColor:ORColor(kORColorOrange_D55403)];
     return YES;
 }
 

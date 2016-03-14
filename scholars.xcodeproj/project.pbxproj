@@ -26,6 +26,16 @@
 		DDF0D4EF1C96A569000D40E5 /* SCHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4EB1C96A569000D40E5 /* SCHotViewController.m */; };
 		DDF0D4F01C96A569000D40E5 /* SCNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4ED1C96A569000D40E5 /* SCNewsTableViewController.m */; };
 		DDF0D4F41C96A6B5000D40E5 /* Picture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF0D4F31C96A6B5000D40E5 /* Picture.storyboard */; };
+		DDF0D4FA1C96ADB4000D40E5 /* ORBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4F71C96ADB4000D40E5 /* ORBaseTableViewController.m */; };
+		DDF0D4FB1C96ADB4000D40E5 /* ORBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4F91C96ADB4000D40E5 /* ORBaseViewController.m */; };
+		DDF0D5031C96AE04000D40E5 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4FE1C96AE04000D40E5 /* BaseModel.m */; };
+		DDF0D5041C96AE04000D40E5 /* ORBaseListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5001C96AE04000D40E5 /* ORBaseListModel.m */; };
+		DDF0D5051C96AE04000D40E5 /* ORBasePageListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5021C96AE04000D40E5 /* ORBasePageListModel.m */; };
+		DDF0D50D1C96B496000D40E5 /* ORIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5081C96B496000D40E5 /* ORIndicatorView.m */; };
+		DDF0D50E1C96B496000D40E5 /* ORLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D50A1C96B496000D40E5 /* ORLoadingIndicator.m */; };
+		DDF0D50F1C96B496000D40E5 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D50C1C96B496000D40E5 /* ViewUtil.m */; };
+		DDF0D5131C96B4A4000D40E5 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5121C96B4A4000D40E5 /* Observer.m */; };
+		DDF0D5171C96B63A000D40E5 /* ORAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5161C96B63A000D40E5 /* ORAppUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +93,26 @@
 		DDF0D4EC1C96A569000D40E5 /* SCNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNewsTableViewController.h; path = Controller/Home/SCNewsTableViewController.h; sourceTree = "<group>"; };
 		DDF0D4ED1C96A569000D40E5 /* SCNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNewsTableViewController.m; path = Controller/Home/SCNewsTableViewController.m; sourceTree = "<group>"; };
 		DDF0D4F31C96A6B5000D40E5 /* Picture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Picture.storyboard; sourceTree = "<group>"; };
+		DDF0D4F61C96ADB4000D40E5 /* ORBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBaseTableViewController.h; sourceTree = "<group>"; };
+		DDF0D4F71C96ADB4000D40E5 /* ORBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBaseTableViewController.m; sourceTree = "<group>"; };
+		DDF0D4F81C96ADB4000D40E5 /* ORBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBaseViewController.h; sourceTree = "<group>"; };
+		DDF0D4F91C96ADB4000D40E5 /* ORBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBaseViewController.m; sourceTree = "<group>"; };
+		DDF0D4FD1C96AE04000D40E5 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		DDF0D4FE1C96AE04000D40E5 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		DDF0D4FF1C96AE04000D40E5 /* ORBaseListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBaseListModel.h; sourceTree = "<group>"; };
+		DDF0D5001C96AE04000D40E5 /* ORBaseListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBaseListModel.m; sourceTree = "<group>"; };
+		DDF0D5011C96AE04000D40E5 /* ORBasePageListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBasePageListModel.h; sourceTree = "<group>"; };
+		DDF0D5021C96AE04000D40E5 /* ORBasePageListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBasePageListModel.m; sourceTree = "<group>"; };
+		DDF0D5071C96B496000D40E5 /* ORIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORIndicatorView.h; sourceTree = "<group>"; };
+		DDF0D5081C96B496000D40E5 /* ORIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORIndicatorView.m; sourceTree = "<group>"; };
+		DDF0D5091C96B496000D40E5 /* ORLoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLoadingIndicator.h; sourceTree = "<group>"; };
+		DDF0D50A1C96B496000D40E5 /* ORLoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLoadingIndicator.m; sourceTree = "<group>"; };
+		DDF0D50B1C96B496000D40E5 /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtil.h; sourceTree = "<group>"; };
+		DDF0D50C1C96B496000D40E5 /* ViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtil.m; sourceTree = "<group>"; };
+		DDF0D5111C96B4A4000D40E5 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		DDF0D5121C96B4A4000D40E5 /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
+		DDF0D5151C96B63A000D40E5 /* ORAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORAppUtil.h; sourceTree = "<group>"; };
+		DDF0D5161C96B63A000D40E5 /* ORAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORAppUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +300,10 @@
 		DDD0F7591C91503C00F81EBF /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DDF0D5141C96B632000D40E5 /* ORAppUtil */,
+				DDF0D5061C96B488000D40E5 /* ORIndicatorView */,
+				DDF0D4F51C96AD80000D40E5 /* UINavigation */,
+				DDF0D4FC1C96ADF5000D40E5 /* ORListModel */,
 				DDD0F75A1C91505300F81EBF /* ColorUtil */,
 			);
 			name = Other;
@@ -296,6 +330,62 @@
 			children = (
 			);
 			name = Picture;
+			sourceTree = "<group>";
+		};
+		DDF0D4F51C96AD80000D40E5 /* UINavigation */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0D4F61C96ADB4000D40E5 /* ORBaseTableViewController.h */,
+				DDF0D4F71C96ADB4000D40E5 /* ORBaseTableViewController.m */,
+				DDF0D4F81C96ADB4000D40E5 /* ORBaseViewController.h */,
+				DDF0D4F91C96ADB4000D40E5 /* ORBaseViewController.m */,
+			);
+			name = UINavigation;
+			sourceTree = "<group>";
+		};
+		DDF0D4FC1C96ADF5000D40E5 /* ORListModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0D4FD1C96AE04000D40E5 /* BaseModel.h */,
+				DDF0D4FE1C96AE04000D40E5 /* BaseModel.m */,
+				DDF0D4FF1C96AE04000D40E5 /* ORBaseListModel.h */,
+				DDF0D5001C96AE04000D40E5 /* ORBaseListModel.m */,
+				DDF0D5011C96AE04000D40E5 /* ORBasePageListModel.h */,
+				DDF0D5021C96AE04000D40E5 /* ORBasePageListModel.m */,
+			);
+			name = ORListModel;
+			sourceTree = "<group>";
+		};
+		DDF0D5061C96B488000D40E5 /* ORIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0D5101C96B49B000D40E5 /* Util */,
+				DDF0D5071C96B496000D40E5 /* ORIndicatorView.h */,
+				DDF0D5081C96B496000D40E5 /* ORIndicatorView.m */,
+				DDF0D5091C96B496000D40E5 /* ORLoadingIndicator.h */,
+				DDF0D50A1C96B496000D40E5 /* ORLoadingIndicator.m */,
+				DDF0D50B1C96B496000D40E5 /* ViewUtil.h */,
+				DDF0D50C1C96B496000D40E5 /* ViewUtil.m */,
+			);
+			name = ORIndicatorView;
+			sourceTree = "<group>";
+		};
+		DDF0D5101C96B49B000D40E5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0D5111C96B4A4000D40E5 /* Observer.h */,
+				DDF0D5121C96B4A4000D40E5 /* Observer.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		DDF0D5141C96B632000D40E5 /* ORAppUtil */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0D5151C96B63A000D40E5 /* ORAppUtil.h */,
+				DDF0D5161C96B63A000D40E5 /* ORAppUtil.m */,
+			);
+			name = ORAppUtil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,14 +572,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */,
+				DDF0D4FA1C96ADB4000D40E5 /* ORBaseTableViewController.m in Sources */,
+				DDF0D5171C96B63A000D40E5 /* ORAppUtil.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
 				DDF0D4EF1C96A569000D40E5 /* SCHotViewController.m in Sources */,
 				4A7287221C91A9A6005581F3 /* WMLoopView.m in Sources */,
+				DDF0D5041C96AE04000D40E5 /* ORBaseListModel.m in Sources */,
+				DDF0D5051C96AE04000D40E5 /* ORBasePageListModel.m in Sources */,
 				DDF0D4F01C96A569000D40E5 /* SCNewsTableViewController.m in Sources */,
 				4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */,
 				4A72871C1C91A7A5005581F3 /* YDHotTableViewCell.m in Sources */,
+				DDF0D4FB1C96ADB4000D40E5 /* ORBaseViewController.m in Sources */,
+				DDF0D50D1C96B496000D40E5 /* ORIndicatorView.m in Sources */,
 				DDF0D4EE1C96A569000D40E5 /* SCHomeViewController.m in Sources */,
+				DDF0D50E1C96B496000D40E5 /* ORLoadingIndicator.m in Sources */,
+				DDF0D50F1C96B496000D40E5 /* ViewUtil.m in Sources */,
+				DDF0D5031C96AE04000D40E5 /* BaseModel.m in Sources */,
 				4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */,
+				DDF0D5131C96B4A4000D40E5 /* Observer.m in Sources */,
 				4A9512B81C9054CD002658FB /* main.m in Sources */,
 				DDD0F7601C9150BE00F81EBF /* ORColorUtil.m in Sources */,
 			);
