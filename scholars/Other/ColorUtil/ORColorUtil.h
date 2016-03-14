@@ -14,18 +14,7 @@
 /**
  *  color def
  */
-#define kORColorGreen_00B757 @"00B757"
-#define kORColorBlue_00B9ED @"00b9ed"
-#define kORColorRed_FE3F7B @"fe3f7b"
-#define kORColorGreen_51D6DB @"51D6DB"
-#define kORColorGray_ABABAB @"ABABAB"
-#define kORColorGray_99A1A7 @"99A1A7"
-#define kORColorGreen_81DBDB @"81DBDB"
-#define kORColorRed_EE7385 @"EE7385"
-#define kORColorPurple_AC91E0 @"AC91E0"
-#define kORColorYellow_EEDD8F @"EEDD8F"
-#define kORColorBlue_6DC0EB @"6DC0EB"
-#define kORColorOrange_D55403 @"D55403"
+#define kORColorRed_E300E6 @"E300E6"
 
 
 @interface UIColor(Custom)
