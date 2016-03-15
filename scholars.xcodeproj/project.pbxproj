@@ -122,6 +122,7 @@
 		DDF0D5211C97E38C000D40E5 /* SCPictureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureTableViewCell.m; path = View/Picture/SCPictureTableViewCell.m; sourceTree = "<group>"; };
 		DDF0D5241C97F50C000D40E5 /* GSUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSUserSetting.h; sourceTree = "<group>"; };
 		DDF0D5251C97F50C000D40E5 /* GSUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSUserSetting.m; sourceTree = "<group>"; };
+		DDF0D5271C9813BA000D40E5 /* scholars.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scholars.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				4A9512B71C9054CD002658FB /* main.m */,
+				DDF0D5271C9813BA000D40E5 /* scholars.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -757,8 +759,9 @@
 			baseConfigurationReference = CCEED669B0F500150937771F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/scholars/scholars.pch";
 				INFOPLIST_FILE = scholars/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Xiong.scholars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -770,8 +773,9 @@
 			baseConfigurationReference = C7A0347DB6C9F51FCD74CB16 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/scholars/scholars.pch";
 				INFOPLIST_FILE = scholars/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Xiong.scholars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
