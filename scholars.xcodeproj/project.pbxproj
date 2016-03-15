@@ -36,6 +36,9 @@
 		DDF0D50F1C96B496000D40E5 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D50C1C96B496000D40E5 /* ViewUtil.m */; };
 		DDF0D5131C96B4A4000D40E5 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5121C96B4A4000D40E5 /* Observer.m */; };
 		DDF0D5171C96B63A000D40E5 /* ORAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5161C96B63A000D40E5 /* ORAppUtil.m */; };
+		DDF0D51F1C97E34B000D40E5 /* SCPictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D51E1C97E34B000D40E5 /* SCPictureTableViewController.m */; };
+		DDF0D5221C97E38C000D40E5 /* SCPictureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5211C97E38C000D40E5 /* SCPictureTableViewCell.m */; };
+		DDF0D5261C97F50C000D40E5 /* GSUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5251C97F50C000D40E5 /* GSUserSetting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,12 @@
 		DDF0D5121C96B4A4000D40E5 /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
 		DDF0D5151C96B63A000D40E5 /* ORAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORAppUtil.h; sourceTree = "<group>"; };
 		DDF0D5161C96B63A000D40E5 /* ORAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORAppUtil.m; sourceTree = "<group>"; };
+		DDF0D51D1C97E34B000D40E5 /* SCPictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPictureTableViewController.h; path = Controller/Picture/SCPictureTableViewController.h; sourceTree = "<group>"; };
+		DDF0D51E1C97E34B000D40E5 /* SCPictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureTableViewController.m; path = Controller/Picture/SCPictureTableViewController.m; sourceTree = "<group>"; };
+		DDF0D5201C97E38C000D40E5 /* SCPictureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPictureTableViewCell.h; path = View/Picture/SCPictureTableViewCell.h; sourceTree = "<group>"; };
+		DDF0D5211C97E38C000D40E5 /* SCPictureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureTableViewCell.m; path = View/Picture/SCPictureTableViewCell.m; sourceTree = "<group>"; };
+		DDF0D5241C97F50C000D40E5 /* GSUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSUserSetting.h; sourceTree = "<group>"; };
+		DDF0D5251C97F50C000D40E5 /* GSUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSUserSetting.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +309,7 @@
 		DDD0F7591C91503C00F81EBF /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DDF0D5231C97F4F7000D40E5 /* DataEngine */,
 				DDF0D5141C96B632000D40E5 /* ORAppUtil */,
 				DDF0D5061C96B488000D40E5 /* ORIndicatorView */,
 				DDF0D4F51C96AD80000D40E5 /* UINavigation */,
@@ -321,6 +331,8 @@
 		DDF0D4F11C96A5E9000D40E5 /* Picture */ = {
 			isa = PBXGroup;
 			children = (
+				DDF0D51D1C97E34B000D40E5 /* SCPictureTableViewController.h */,
+				DDF0D51E1C97E34B000D40E5 /* SCPictureTableViewController.m */,
 			);
 			name = Picture;
 			sourceTree = "<group>";
@@ -328,6 +340,8 @@
 		DDF0D4F21C96A603000D40E5 /* Picture */ = {
 			isa = PBXGroup;
 			children = (
+				DDF0D5201C97E38C000D40E5 /* SCPictureTableViewCell.h */,
+				DDF0D5211C97E38C000D40E5 /* SCPictureTableViewCell.m */,
 			);
 			name = Picture;
 			sourceTree = "<group>";
@@ -386,6 +400,15 @@
 				DDF0D5161C96B63A000D40E5 /* ORAppUtil.m */,
 			);
 			name = ORAppUtil;
+			sourceTree = "<group>";
+		};
+		DDF0D5231C97F4F7000D40E5 /* DataEngine */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0D5241C97F50C000D40E5 /* GSUserSetting.h */,
+				DDF0D5251C97F50C000D40E5 /* GSUserSetting.m */,
+			);
+			name = DataEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -580,9 +603,12 @@
 				DDF0D5041C96AE04000D40E5 /* ORBaseListModel.m in Sources */,
 				DDF0D5051C96AE04000D40E5 /* ORBasePageListModel.m in Sources */,
 				DDF0D4F01C96A569000D40E5 /* SCNewsTableViewController.m in Sources */,
+				DDF0D5261C97F50C000D40E5 /* GSUserSetting.m in Sources */,
 				4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */,
 				4A72871C1C91A7A5005581F3 /* YDHotTableViewCell.m in Sources */,
 				DDF0D4FB1C96ADB4000D40E5 /* ORBaseViewController.m in Sources */,
+				DDF0D5221C97E38C000D40E5 /* SCPictureTableViewCell.m in Sources */,
+				DDF0D51F1C97E34B000D40E5 /* SCPictureTableViewController.m in Sources */,
 				DDF0D50D1C96B496000D40E5 /* ORIndicatorView.m in Sources */,
 				DDF0D4EE1C96A569000D40E5 /* SCHomeViewController.m in Sources */,
 				DDF0D50E1C96B496000D40E5 /* ORLoadingIndicator.m in Sources */,

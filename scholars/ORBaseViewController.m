@@ -109,11 +109,11 @@ void dismissAllPresentedController()
     if ([ORAppUtil systemVersion].floatValue < 7.0f)
     {
         [self.navigationController.navigationBar setTranslucent:NO];
-        [self.navigationController.navigationBar setTintColor:ORColor(kORColorGreen_51D6DB)];
+        [self.navigationController.navigationBar setTintColor:ORColor(kORColorOrange_D55403)];
         [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
     }else{
         [self.navigationController.navigationBar setTranslucent:NO];
-        [self.navigationController.navigationBar setBarTintColor:ORColor(kORColorGreen_51D6DB)];
+        [self.navigationController.navigationBar setBarTintColor:ORColor(kORColorOrange_D55403)];
     }
     
     NSDictionary * dict = @{NSForegroundColorAttributeName:[UIColor whiteColor],
@@ -183,10 +183,10 @@ void dismissAllPresentedController()
  *
  *  @return 页面名称
  */
-- (NSString *)pageNameForMobClick
-{
-    return self.title;
-}
+//- (NSString *)pageNameForMobClick
+//{
+//    return self.title;
+//}
 
 #pragma mark - 按钮事件
 - (IBAction)onBackButtonPressed:(id)sender

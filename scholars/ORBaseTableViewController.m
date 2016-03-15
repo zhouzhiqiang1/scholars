@@ -96,11 +96,11 @@
     if ([ORAppUtil systemVersion].floatValue < 7.0f)
     {
         [self.navigationController.navigationBar setTranslucent:NO];
-        [self.navigationController.navigationBar setTintColor:ORColor(kORColorBlue_00B9ED)];
+        [self.navigationController.navigationBar setTintColor:ORColor(kORColorOrange_D55403)];
         [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
     }else{
         [self.navigationController.navigationBar setTranslucent:NO];
-        [self.navigationController.navigationBar setBarTintColor:ORColor(kORColorBlue_00B9ED)];
+        [self.navigationController.navigationBar setBarTintColor:ORColor(kORColorOrange_D55403)];
     }
     
     //导航栏上字体颜色

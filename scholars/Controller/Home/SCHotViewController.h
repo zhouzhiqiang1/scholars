@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Mac Xiong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ORBaseViewController.h"
 
-@interface SCHotViewController : UIViewController
+@interface SCHotViewController : ORBaseViewController
 
 @end
