@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class SCPictureTableViewCell;
+
+@interface SCPictureTableViewCellDelegate <NSObject>
+- (void)cell:(SCPictureTableViewCell *)aCell;
+@end
+
+
+
 @interface SCPictureTableViewCell : UITableViewCell
 
 @end

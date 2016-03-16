@@ -107,7 +107,6 @@
     
     SCPictureTableViewCell *pictureTableViewCell = [tableView dequeueReusableCellWithIdentifier:cell forIndexPath:indexPath];
     
-    
     // Configure the cell...
     
     return pictureTableViewCell;

@@ -8,10 +8,18 @@
 
 #import "SCPictureTableViewCell.h"
 
+@interface SCPictureTableViewCell ()
+@property (weak, nonatomic) IBOutlet UIView *view;
+@property (weak, nonatomic) IBOutlet UIImageView *imageview;
+
+@end
+
 @implementation SCPictureTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
+    self.view.layer.cornerRadius = 15;
+    self.view.layer.masksToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -20,4 +28,12 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)onLoveButtonAction:(id)sender {
+}
+
+- (IBAction)onMessageButtonAction:(id)sender {
+}
+
+- (IBAction)onCollectButtonAction:(id)sender {
+}
 @end
