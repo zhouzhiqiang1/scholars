@@ -7,38 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A72871C1C91A7A5005581F3 /* YDHotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72871B1C91A7A5005581F3 /* YDHotTableViewCell.m */; };
-		4A7287221C91A9A6005581F3 /* WMLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7287211C91A9A6005581F3 /* WMLoopView.m */; };
 		4A9512B81C9054CD002658FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512B71C9054CD002658FB /* main.m */; };
 		4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512BA1C9054CD002658FB /* AppDelegate.m */; };
 		4A9512BE1C9054CD002658FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512BD1C9054CD002658FB /* ViewController.m */; };
-		4A9512C11C9054CD002658FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9512BF1C9054CD002658FB /* Main.storyboard */; };
 		4A9512C31C9054CD002658FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A9512C21C9054CD002658FB /* Assets.xcassets */; };
 		4A9512C61C9054CD002658FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9512C41C9054CD002658FB /* LaunchScreen.storyboard */; };
 		4A9512D11C9054CD002658FB /* scholarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512D01C9054CD002658FB /* scholarsTests.m */; };
 		4A9512DC1C9054CD002658FB /* scholarsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512DB1C9054CD002658FB /* scholarsUITests.m */; };
 		4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */; };
 		4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512ED1C905969002658FB /* SCRootBarViewController.m */; };
-		4A9512F11C905BD1002658FB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9512F01C905BD1002658FB /* Home.storyboard */; };
 		5170B32AD66868A92D1EE638 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC905B201A04C14CA6E63179 /* libPods.a */; };
-		DDD0F7601C9150BE00F81EBF /* ORColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0F75F1C9150BE00F81EBF /* ORColorUtil.m */; };
-		DDF0D4EE1C96A569000D40E5 /* SCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4E91C96A569000D40E5 /* SCHomeViewController.m */; };
-		DDF0D4EF1C96A569000D40E5 /* SCHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4EB1C96A569000D40E5 /* SCHotViewController.m */; };
-		DDF0D4F01C96A569000D40E5 /* SCNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4ED1C96A569000D40E5 /* SCNewsTableViewController.m */; };
-		DDF0D4F41C96A6B5000D40E5 /* Picture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF0D4F31C96A6B5000D40E5 /* Picture.storyboard */; };
-		DDF0D4FA1C96ADB4000D40E5 /* ORBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4F71C96ADB4000D40E5 /* ORBaseTableViewController.m */; };
-		DDF0D4FB1C96ADB4000D40E5 /* ORBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4F91C96ADB4000D40E5 /* ORBaseViewController.m */; };
-		DDF0D5031C96AE04000D40E5 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D4FE1C96AE04000D40E5 /* BaseModel.m */; };
-		DDF0D5041C96AE04000D40E5 /* ORBaseListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5001C96AE04000D40E5 /* ORBaseListModel.m */; };
-		DDF0D5051C96AE04000D40E5 /* ORBasePageListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5021C96AE04000D40E5 /* ORBasePageListModel.m */; };
-		DDF0D50D1C96B496000D40E5 /* ORIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5081C96B496000D40E5 /* ORIndicatorView.m */; };
-		DDF0D50E1C96B496000D40E5 /* ORLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D50A1C96B496000D40E5 /* ORLoadingIndicator.m */; };
-		DDF0D50F1C96B496000D40E5 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D50C1C96B496000D40E5 /* ViewUtil.m */; };
-		DDF0D5131C96B4A4000D40E5 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5121C96B4A4000D40E5 /* Observer.m */; };
-		DDF0D5171C96B63A000D40E5 /* ORAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5161C96B63A000D40E5 /* ORAppUtil.m */; };
-		DDF0D51F1C97E34B000D40E5 /* SCPictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D51E1C97E34B000D40E5 /* SCPictureTableViewController.m */; };
-		DDF0D5221C97E38C000D40E5 /* SCPictureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5211C97E38C000D40E5 /* SCPictureTableViewCell.m */; };
-		DDF0D5261C97F50C000D40E5 /* GSUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0D5251C97F50C000D40E5 /* GSUserSetting.m */; };
+		DDC075001C98FBDD008DC9A3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */; };
+		DDC075011C98FBDD008DC9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC074FE1C98FBDD008DC9A3 /* Main.storyboard */; };
+		DDC075021C98FBDD008DC9A3 /* Picture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC074FF1C98FBDD008DC9A3 /* Picture.storyboard */; };
+		DDC075091C98FC04008DC9A3 /* SCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075031C98FC04008DC9A3 /* SCHomeViewController.m */; };
+		DDC0750A1C98FC04008DC9A3 /* SCHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075051C98FC04008DC9A3 /* SCHotViewController.m */; };
+		DDC0750B1C98FC04008DC9A3 /* SCNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075061C98FC04008DC9A3 /* SCNewsTableViewController.m */; };
+		DDC0750E1C98FC18008DC9A3 /* SCPictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0750D1C98FC18008DC9A3 /* SCPictureTableViewController.m */; };
+		DDC075111C98FC32008DC9A3 /* YDHotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075101C98FC32008DC9A3 /* YDHotTableViewCell.m */; };
+		DDC075141C98FC8E008DC9A3 /* WMLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075131C98FC8E008DC9A3 /* WMLoopView.m */; };
+		DDC0751B1C98FD10008DC9A3 /* custom_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075151C98FD10008DC9A3 /* custom_1.png */; };
+		DDC0751C1C98FD10008DC9A3 /* custom_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075161C98FD10008DC9A3 /* custom_2.png */; };
+		DDC0751D1C98FD10008DC9A3 /* custom_3.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075171C98FD10008DC9A3 /* custom_3.png */; };
+		DDC0751E1C98FD10008DC9A3 /* custom_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075181C98FD10008DC9A3 /* custom_4.png */; };
+		DDC0751F1C98FD10008DC9A3 /* custom_5.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075191C98FD10008DC9A3 /* custom_5.png */; };
+		DDC075201C98FD10008DC9A3 /* custom_center.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC0751A1C98FD10008DC9A3 /* custom_center.png */; };
+		DDC075261C98FD2A008DC9A3 /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075211C98FD2A008DC9A3 /* DCPathButton.m */; };
+		DDC075271C98FD2A008DC9A3 /* DCSubButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075251C98FD2A008DC9A3 /* DCSubButton.m */; };
+		DDC0752A1C98FD5B008DC9A3 /* SCPictureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075291C98FD5B008DC9A3 /* SCPictureTableViewCell.m */; };
+		DDC0752D1C98FDB8008DC9A3 /* GSUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0752C1C98FDB8008DC9A3 /* GSUserSetting.m */; };
+		DDC075301C9903B3008DC9A3 /* ORAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0752E1C9903B3008DC9A3 /* ORAppUtil.m */; };
+		DDC075331C990416008DC9A3 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075321C990416008DC9A3 /* Observer.m */; };
+		DDC0753A1C990426008DC9A3 /* ORIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075341C990426008DC9A3 /* ORIndicatorView.m */; };
+		DDC0753B1C990426008DC9A3 /* ORLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075371C990426008DC9A3 /* ORLoadingIndicator.m */; };
+		DDC0753C1C990426008DC9A3 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075391C990426008DC9A3 /* ViewUtil.m */; };
+		DDC075411C990477008DC9A3 /* ORBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0753D1C990477008DC9A3 /* ORBaseTableViewController.m */; };
+		DDC075421C990477008DC9A3 /* ORBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0753E1C990477008DC9A3 /* ORBaseViewController.m */; };
+		DDC075491C9904B3008DC9A3 /* ORBaseListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075431C9904B3008DC9A3 /* ORBaseListModel.m */; };
+		DDC0754A1C9904B3008DC9A3 /* ORBasePageListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075441C9904B3008DC9A3 /* ORBasePageListModel.m */; };
+		DDC0754B1C9904B3008DC9A3 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075461C9904B3008DC9A3 /* BaseModel.m */; };
+		DDC0754E1C9904C3008DC9A3 /* ORColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0754D1C9904C3008DC9A3 /* ORColorUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,17 +67,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A72871A1C91A7A5005581F3 /* YDHotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDHotTableViewCell.h; path = View/Home/YDHotTableViewCell.h; sourceTree = "<group>"; };
-		4A72871B1C91A7A5005581F3 /* YDHotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YDHotTableViewCell.m; path = View/Home/YDHotTableViewCell.m; sourceTree = "<group>"; };
-		4A7287201C91A9A6005581F3 /* WMLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLoopView.h; sourceTree = "<group>"; };
-		4A7287211C91A9A6005581F3 /* WMLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLoopView.m; sourceTree = "<group>"; };
 		4A9512B31C9054CD002658FB /* scholars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scholars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9512B71C9054CD002658FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A9512B91C9054CD002658FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4A9512BA1C9054CD002658FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4A9512BC1C9054CD002658FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4A9512BD1C9054CD002658FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4A9512C01C9054CD002658FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A9512C21C9054CD002658FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A9512C51C9054CD002658FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A9512C71C9054CD002658FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,45 +86,61 @@
 		4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootNavigationViewController.m; sourceTree = "<group>"; };
 		4A9512EC1C905969002658FB /* SCRootBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRootBarViewController.h; sourceTree = "<group>"; };
 		4A9512ED1C905969002658FB /* SCRootBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootBarViewController.m; sourceTree = "<group>"; };
-		4A9512F01C905BD1002658FB /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C7A0347DB6C9F51FCD74CB16 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CCEED669B0F500150937771F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DC905B201A04C14CA6E63179 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDD0F75E1C9150BE00F81EBF /* ORColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORColorUtil.h; path = Other/ColorUtil/ORColorUtil.h; sourceTree = "<group>"; };
-		DDD0F75F1C9150BE00F81EBF /* ORColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORColorUtil.m; path = Other/ColorUtil/ORColorUtil.m; sourceTree = "<group>"; };
-		DDF0D4E81C96A569000D40E5 /* SCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHomeViewController.h; path = Controller/Home/SCHomeViewController.h; sourceTree = "<group>"; };
-		DDF0D4E91C96A569000D40E5 /* SCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHomeViewController.m; path = Controller/Home/SCHomeViewController.m; sourceTree = "<group>"; };
-		DDF0D4EA1C96A569000D40E5 /* SCHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHotViewController.h; path = Controller/Home/SCHotViewController.h; sourceTree = "<group>"; };
-		DDF0D4EB1C96A569000D40E5 /* SCHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHotViewController.m; path = Controller/Home/SCHotViewController.m; sourceTree = "<group>"; };
-		DDF0D4EC1C96A569000D40E5 /* SCNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNewsTableViewController.h; path = Controller/Home/SCNewsTableViewController.h; sourceTree = "<group>"; };
-		DDF0D4ED1C96A569000D40E5 /* SCNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNewsTableViewController.m; path = Controller/Home/SCNewsTableViewController.m; sourceTree = "<group>"; };
-		DDF0D4F31C96A6B5000D40E5 /* Picture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Picture.storyboard; sourceTree = "<group>"; };
-		DDF0D4F61C96ADB4000D40E5 /* ORBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBaseTableViewController.h; sourceTree = "<group>"; };
-		DDF0D4F71C96ADB4000D40E5 /* ORBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBaseTableViewController.m; sourceTree = "<group>"; };
-		DDF0D4F81C96ADB4000D40E5 /* ORBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBaseViewController.h; sourceTree = "<group>"; };
-		DDF0D4F91C96ADB4000D40E5 /* ORBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBaseViewController.m; sourceTree = "<group>"; };
-		DDF0D4FD1C96AE04000D40E5 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
-		DDF0D4FE1C96AE04000D40E5 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
-		DDF0D4FF1C96AE04000D40E5 /* ORBaseListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBaseListModel.h; sourceTree = "<group>"; };
-		DDF0D5001C96AE04000D40E5 /* ORBaseListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBaseListModel.m; sourceTree = "<group>"; };
-		DDF0D5011C96AE04000D40E5 /* ORBasePageListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBasePageListModel.h; sourceTree = "<group>"; };
-		DDF0D5021C96AE04000D40E5 /* ORBasePageListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBasePageListModel.m; sourceTree = "<group>"; };
-		DDF0D5071C96B496000D40E5 /* ORIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORIndicatorView.h; sourceTree = "<group>"; };
-		DDF0D5081C96B496000D40E5 /* ORIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORIndicatorView.m; sourceTree = "<group>"; };
-		DDF0D5091C96B496000D40E5 /* ORLoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLoadingIndicator.h; sourceTree = "<group>"; };
-		DDF0D50A1C96B496000D40E5 /* ORLoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLoadingIndicator.m; sourceTree = "<group>"; };
-		DDF0D50B1C96B496000D40E5 /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtil.h; sourceTree = "<group>"; };
-		DDF0D50C1C96B496000D40E5 /* ViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtil.m; sourceTree = "<group>"; };
-		DDF0D5111C96B4A4000D40E5 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
-		DDF0D5121C96B4A4000D40E5 /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
-		DDF0D5151C96B63A000D40E5 /* ORAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORAppUtil.h; sourceTree = "<group>"; };
-		DDF0D5161C96B63A000D40E5 /* ORAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORAppUtil.m; sourceTree = "<group>"; };
-		DDF0D51D1C97E34B000D40E5 /* SCPictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPictureTableViewController.h; path = Controller/Picture/SCPictureTableViewController.h; sourceTree = "<group>"; };
-		DDF0D51E1C97E34B000D40E5 /* SCPictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureTableViewController.m; path = Controller/Picture/SCPictureTableViewController.m; sourceTree = "<group>"; };
-		DDF0D5201C97E38C000D40E5 /* SCPictureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPictureTableViewCell.h; path = View/Picture/SCPictureTableViewCell.h; sourceTree = "<group>"; };
-		DDF0D5211C97E38C000D40E5 /* SCPictureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureTableViewCell.m; path = View/Picture/SCPictureTableViewCell.m; sourceTree = "<group>"; };
-		DDF0D5241C97F50C000D40E5 /* GSUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSUserSetting.h; sourceTree = "<group>"; };
-		DDF0D5251C97F50C000D40E5 /* GSUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSUserSetting.m; sourceTree = "<group>"; };
+		DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = UI/Home.storyboard; sourceTree = "<group>"; };
+		DDC074FE1C98FBDD008DC9A3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UI/Main.storyboard; sourceTree = "<group>"; };
+		DDC074FF1C98FBDD008DC9A3 /* Picture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Picture.storyboard; path = UI/Picture.storyboard; sourceTree = "<group>"; };
+		DDC075031C98FC04008DC9A3 /* SCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHomeViewController.m; path = UI/Controller/Home/SCHomeViewController.m; sourceTree = "<group>"; };
+		DDC075041C98FC04008DC9A3 /* SCHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHotViewController.h; path = UI/Controller/Home/SCHotViewController.h; sourceTree = "<group>"; };
+		DDC075051C98FC04008DC9A3 /* SCHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHotViewController.m; path = UI/Controller/Home/SCHotViewController.m; sourceTree = "<group>"; };
+		DDC075061C98FC04008DC9A3 /* SCNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNewsTableViewController.m; path = UI/Controller/Home/SCNewsTableViewController.m; sourceTree = "<group>"; };
+		DDC075071C98FC04008DC9A3 /* SCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHomeViewController.h; path = UI/Controller/Home/SCHomeViewController.h; sourceTree = "<group>"; };
+		DDC075081C98FC04008DC9A3 /* SCNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNewsTableViewController.h; path = UI/Controller/Home/SCNewsTableViewController.h; sourceTree = "<group>"; };
+		DDC0750C1C98FC18008DC9A3 /* SCPictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPictureTableViewController.h; path = UI/Controller/Picture/SCPictureTableViewController.h; sourceTree = "<group>"; };
+		DDC0750D1C98FC18008DC9A3 /* SCPictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureTableViewController.m; path = UI/Controller/Picture/SCPictureTableViewController.m; sourceTree = "<group>"; };
+		DDC0750F1C98FC32008DC9A3 /* YDHotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDHotTableViewCell.h; path = UI/View/Home/YDHotTableViewCell.h; sourceTree = "<group>"; };
+		DDC075101C98FC32008DC9A3 /* YDHotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YDHotTableViewCell.m; path = UI/View/Home/YDHotTableViewCell.m; sourceTree = "<group>"; };
+		DDC075121C98FC8E008DC9A3 /* WMLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMLoopView.h; path = UI/View/Home/Banner/WMLoopView.h; sourceTree = "<group>"; };
+		DDC075131C98FC8E008DC9A3 /* WMLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMLoopView.m; path = UI/View/Home/Banner/WMLoopView.m; sourceTree = "<group>"; };
+		DDC075151C98FD10008DC9A3 /* custom_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_1.png; path = UI/Other/SCPathButton/Images/custom_1.png; sourceTree = "<group>"; };
+		DDC075161C98FD10008DC9A3 /* custom_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_2.png; path = UI/Other/SCPathButton/Images/custom_2.png; sourceTree = "<group>"; };
+		DDC075171C98FD10008DC9A3 /* custom_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_3.png; path = UI/Other/SCPathButton/Images/custom_3.png; sourceTree = "<group>"; };
+		DDC075181C98FD10008DC9A3 /* custom_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_4.png; path = UI/Other/SCPathButton/Images/custom_4.png; sourceTree = "<group>"; };
+		DDC075191C98FD10008DC9A3 /* custom_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_5.png; path = UI/Other/SCPathButton/Images/custom_5.png; sourceTree = "<group>"; };
+		DDC0751A1C98FD10008DC9A3 /* custom_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_center.png; path = UI/Other/SCPathButton/Images/custom_center.png; sourceTree = "<group>"; };
+		DDC075211C98FD2A008DC9A3 /* DCPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPathButton.m; path = UI/Other/SCPathButton/DCPathButton.m; sourceTree = "<group>"; };
+		DDC075221C98FD2A008DC9A3 /* DCPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPathButton.h; path = UI/Other/SCPathButton/DCPathButton.h; sourceTree = "<group>"; };
+		DDC075231C98FD2A008DC9A3 /* DCPathButtonConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPathButtonConstant.h; path = UI/Other/SCPathButton/DCPathButtonConstant.h; sourceTree = "<group>"; };
+		DDC075241C98FD2A008DC9A3 /* DCSubButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCSubButton.h; path = UI/Other/SCPathButton/DCSubButton.h; sourceTree = "<group>"; };
+		DDC075251C98FD2A008DC9A3 /* DCSubButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCSubButton.m; path = UI/Other/SCPathButton/DCSubButton.m; sourceTree = "<group>"; };
+		DDC075281C98FD5B008DC9A3 /* SCPictureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPictureTableViewCell.h; path = UI/View/Picture/SCPictureTableViewCell.h; sourceTree = "<group>"; };
+		DDC075291C98FD5B008DC9A3 /* SCPictureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureTableViewCell.m; path = UI/View/Picture/SCPictureTableViewCell.m; sourceTree = "<group>"; };
+		DDC0752B1C98FDB8008DC9A3 /* GSUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSUserSetting.h; path = UI/Other/DataEngine/GSUserSetting.h; sourceTree = "<group>"; };
+		DDC0752C1C98FDB8008DC9A3 /* GSUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSUserSetting.m; path = UI/Other/DataEngine/GSUserSetting.m; sourceTree = "<group>"; };
+		DDC0752E1C9903B3008DC9A3 /* ORAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAppUtil.m; path = UI/Other/ORAppUtil/ORAppUtil.m; sourceTree = "<group>"; };
+		DDC0752F1C9903B3008DC9A3 /* ORAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAppUtil.h; path = UI/Other/ORAppUtil/ORAppUtil.h; sourceTree = "<group>"; };
+		DDC075311C990416008DC9A3 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Observer.h; path = UI/Other/ORIndicatorView/Util/Observer.h; sourceTree = "<group>"; };
+		DDC075321C990416008DC9A3 /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Observer.m; path = UI/Other/ORIndicatorView/Util/Observer.m; sourceTree = "<group>"; };
+		DDC075341C990426008DC9A3 /* ORIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORIndicatorView.m; path = UI/Other/ORIndicatorView/ORIndicatorView.m; sourceTree = "<group>"; };
+		DDC075351C990426008DC9A3 /* ORIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORIndicatorView.h; path = UI/Other/ORIndicatorView/ORIndicatorView.h; sourceTree = "<group>"; };
+		DDC075361C990426008DC9A3 /* ORLoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORLoadingIndicator.h; path = UI/Other/ORIndicatorView/ORLoadingIndicator.h; sourceTree = "<group>"; };
+		DDC075371C990426008DC9A3 /* ORLoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORLoadingIndicator.m; path = UI/Other/ORIndicatorView/ORLoadingIndicator.m; sourceTree = "<group>"; };
+		DDC075381C990426008DC9A3 /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewUtil.h; path = UI/Other/ORIndicatorView/ViewUtil.h; sourceTree = "<group>"; };
+		DDC075391C990426008DC9A3 /* ViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewUtil.m; path = UI/Other/ORIndicatorView/ViewUtil.m; sourceTree = "<group>"; };
+		DDC0753D1C990477008DC9A3 /* ORBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBaseTableViewController.m; path = UI/Other/UINavigation/ORBaseTableViewController.m; sourceTree = "<group>"; };
+		DDC0753E1C990477008DC9A3 /* ORBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBaseViewController.m; path = UI/Other/UINavigation/ORBaseViewController.m; sourceTree = "<group>"; };
+		DDC0753F1C990477008DC9A3 /* ORBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBaseTableViewController.h; path = UI/Other/UINavigation/ORBaseTableViewController.h; sourceTree = "<group>"; };
+		DDC075401C990477008DC9A3 /* ORBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBaseViewController.h; path = UI/Other/UINavigation/ORBaseViewController.h; sourceTree = "<group>"; };
+		DDC075431C9904B3008DC9A3 /* ORBaseListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBaseListModel.m; path = UI/Other/ORListModel/ORBaseListModel.m; sourceTree = "<group>"; };
+		DDC075441C9904B3008DC9A3 /* ORBasePageListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBasePageListModel.m; path = UI/Other/ORListModel/ORBasePageListModel.m; sourceTree = "<group>"; };
+		DDC075451C9904B3008DC9A3 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseModel.h; path = UI/Other/ORListModel/BaseModel.h; sourceTree = "<group>"; };
+		DDC075461C9904B3008DC9A3 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseModel.m; path = UI/Other/ORListModel/BaseModel.m; sourceTree = "<group>"; };
+		DDC075471C9904B3008DC9A3 /* ORBaseListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBaseListModel.h; path = UI/Other/ORListModel/ORBaseListModel.h; sourceTree = "<group>"; };
+		DDC075481C9904B3008DC9A3 /* ORBasePageListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBasePageListModel.h; path = UI/Other/ORListModel/ORBasePageListModel.h; sourceTree = "<group>"; };
+		DDC0754C1C9904C3008DC9A3 /* ORColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORColorUtil.h; path = UI/Other/ColorUtil/ORColorUtil.h; sourceTree = "<group>"; };
+		DDC0754D1C9904C3008DC9A3 /* ORColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORColorUtil.m; path = UI/Other/ColorUtil/ORColorUtil.m; sourceTree = "<group>"; };
 		DDF0D5271C9813BA000D40E5 /* scholars.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scholars.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,8 +181,8 @@
 		4A7287231C91AB0D005581F3 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
-				4A7287201C91A9A6005581F3 /* WMLoopView.h */,
-				4A7287211C91A9A6005581F3 /* WMLoopView.m */,
+				DDC075121C98FC8E008DC9A3 /* WMLoopView.h */,
+				DDC075131C98FC8E008DC9A3 /* WMLoopView.m */,
 			);
 			name = Banner;
 			sourceTree = "<group>";
@@ -193,9 +212,7 @@
 		4A9512B51C9054CD002658FB /* scholars */ = {
 			isa = PBXGroup;
 			children = (
-				4A9512EF1C905B98002658FB /* Storyboard */,
-				4A9512F31C906172002658FB /* Controller */,
-				4A9512FA1C9063E2002658FB /* View */,
+				DDC074FC1C98FB8A008DC9A3 /* UI */,
 				4A9512B91C9054CD002658FB /* AppDelegate.h */,
 				4A9512BA1C9054CD002658FB /* AppDelegate.m */,
 				4A9512BC1C9054CD002658FB /* ViewController.h */,
@@ -203,7 +220,6 @@
 				4A9512C21C9054CD002658FB /* Assets.xcassets */,
 				4A9512C41C9054CD002658FB /* LaunchScreen.storyboard */,
 				4A9512C71C9054CD002658FB /* Info.plist */,
-				DDD0F7591C91503C00F81EBF /* Other */,
 				4A9512B61C9054CD002658FB /* Supporting Files */,
 				4A9512E91C90591D002658FB /* SCRootNavigationViewController.h */,
 				4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */,
@@ -243,7 +259,9 @@
 		4A9512EF1C905B98002658FB /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				DDD0F7161C91082000F81EBF /* Home */,
+				DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */,
+				DDC074FE1C98FBDD008DC9A3 /* Main.storyboard */,
+				DDC074FF1C98FBDD008DC9A3 /* Picture.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -251,12 +269,12 @@
 		4A9512F21C906147002658FB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DDF0D4E81C96A569000D40E5 /* SCHomeViewController.h */,
-				DDF0D4E91C96A569000D40E5 /* SCHomeViewController.m */,
-				DDF0D4EA1C96A569000D40E5 /* SCHotViewController.h */,
-				DDF0D4EB1C96A569000D40E5 /* SCHotViewController.m */,
-				DDF0D4EC1C96A569000D40E5 /* SCNewsTableViewController.h */,
-				DDF0D4ED1C96A569000D40E5 /* SCNewsTableViewController.m */,
+				DDC075031C98FC04008DC9A3 /* SCHomeViewController.m */,
+				DDC075041C98FC04008DC9A3 /* SCHotViewController.h */,
+				DDC075051C98FC04008DC9A3 /* SCHotViewController.m */,
+				DDC075061C98FC04008DC9A3 /* SCNewsTableViewController.m */,
+				DDC075071C98FC04008DC9A3 /* SCHomeViewController.h */,
+				DDC075081C98FC04008DC9A3 /* SCNewsTableViewController.h */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -283,8 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				4A7287231C91AB0D005581F3 /* Banner */,
-				4A72871A1C91A7A5005581F3 /* YDHotTableViewCell.h */,
-				4A72871B1C91A7A5005581F3 /* YDHotTableViewCell.m */,
+				DDC0750F1C98FC32008DC9A3 /* YDHotTableViewCell.h */,
+				DDC075101C98FC32008DC9A3 /* YDHotTableViewCell.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -298,19 +316,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DDD0F7161C91082000F81EBF /* Home */ = {
+		DDC074E71C98F9BF008DC9A3 /* SCPathButton */ = {
 			isa = PBXGroup;
 			children = (
-				4A9512BF1C9054CD002658FB /* Main.storyboard */,
-				4A9512F01C905BD1002658FB /* Home.storyboard */,
-				DDF0D4F31C96A6B5000D40E5 /* Picture.storyboard */,
+				DDC074E81C98F9E6008DC9A3 /* Images */,
+				DDC075211C98FD2A008DC9A3 /* DCPathButton.m */,
+				DDC075221C98FD2A008DC9A3 /* DCPathButton.h */,
+				DDC075231C98FD2A008DC9A3 /* DCPathButtonConstant.h */,
+				DDC075241C98FD2A008DC9A3 /* DCSubButton.h */,
+				DDC075251C98FD2A008DC9A3 /* DCSubButton.m */,
 			);
-			name = Home;
+			name = SCPathButton;
+			sourceTree = "<group>";
+		};
+		DDC074E81C98F9E6008DC9A3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DDC075151C98FD10008DC9A3 /* custom_1.png */,
+				DDC075161C98FD10008DC9A3 /* custom_2.png */,
+				DDC075171C98FD10008DC9A3 /* custom_3.png */,
+				DDC075181C98FD10008DC9A3 /* custom_4.png */,
+				DDC075191C98FD10008DC9A3 /* custom_5.png */,
+				DDC0751A1C98FD10008DC9A3 /* custom_center.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		DDC074FC1C98FB8A008DC9A3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4A9512EF1C905B98002658FB /* Storyboard */,
+				4A9512F31C906172002658FB /* Controller */,
+				4A9512FA1C9063E2002658FB /* View */,
+				DDD0F7591C91503C00F81EBF /* Other */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		DDD0F7591C91503C00F81EBF /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DDC074E71C98F9BF008DC9A3 /* SCPathButton */,
 				DDF0D5231C97F4F7000D40E5 /* DataEngine */,
 				DDF0D5141C96B632000D40E5 /* ORAppUtil */,
 				DDF0D5061C96B488000D40E5 /* ORIndicatorView */,
@@ -324,8 +370,8 @@
 		DDD0F75A1C91505300F81EBF /* ColorUtil */ = {
 			isa = PBXGroup;
 			children = (
-				DDD0F75E1C9150BE00F81EBF /* ORColorUtil.h */,
-				DDD0F75F1C9150BE00F81EBF /* ORColorUtil.m */,
+				DDC0754C1C9904C3008DC9A3 /* ORColorUtil.h */,
+				DDC0754D1C9904C3008DC9A3 /* ORColorUtil.m */,
 			);
 			name = ColorUtil;
 			sourceTree = "<group>";
@@ -333,8 +379,8 @@
 		DDF0D4F11C96A5E9000D40E5 /* Picture */ = {
 			isa = PBXGroup;
 			children = (
-				DDF0D51D1C97E34B000D40E5 /* SCPictureTableViewController.h */,
-				DDF0D51E1C97E34B000D40E5 /* SCPictureTableViewController.m */,
+				DDC0750C1C98FC18008DC9A3 /* SCPictureTableViewController.h */,
+				DDC0750D1C98FC18008DC9A3 /* SCPictureTableViewController.m */,
 			);
 			name = Picture;
 			sourceTree = "<group>";
@@ -342,8 +388,8 @@
 		DDF0D4F21C96A603000D40E5 /* Picture */ = {
 			isa = PBXGroup;
 			children = (
-				DDF0D5201C97E38C000D40E5 /* SCPictureTableViewCell.h */,
-				DDF0D5211C97E38C000D40E5 /* SCPictureTableViewCell.m */,
+				DDC075281C98FD5B008DC9A3 /* SCPictureTableViewCell.h */,
+				DDC075291C98FD5B008DC9A3 /* SCPictureTableViewCell.m */,
 			);
 			name = Picture;
 			sourceTree = "<group>";
@@ -351,10 +397,10 @@
 		DDF0D4F51C96AD80000D40E5 /* UINavigation */ = {
 			isa = PBXGroup;
 			children = (
-				DDF0D4F61C96ADB4000D40E5 /* ORBaseTableViewController.h */,
-				DDF0D4F71C96ADB4000D40E5 /* ORBaseTableViewController.m */,
-				DDF0D4F81C96ADB4000D40E5 /* ORBaseViewController.h */,
-				DDF0D4F91C96ADB4000D40E5 /* ORBaseViewController.m */,
+				DDC0753D1C990477008DC9A3 /* ORBaseTableViewController.m */,
+				DDC0753E1C990477008DC9A3 /* ORBaseViewController.m */,
+				DDC0753F1C990477008DC9A3 /* ORBaseTableViewController.h */,
+				DDC075401C990477008DC9A3 /* ORBaseViewController.h */,
 			);
 			name = UINavigation;
 			sourceTree = "<group>";
@@ -362,12 +408,12 @@
 		DDF0D4FC1C96ADF5000D40E5 /* ORListModel */ = {
 			isa = PBXGroup;
 			children = (
-				DDF0D4FD1C96AE04000D40E5 /* BaseModel.h */,
-				DDF0D4FE1C96AE04000D40E5 /* BaseModel.m */,
-				DDF0D4FF1C96AE04000D40E5 /* ORBaseListModel.h */,
-				DDF0D5001C96AE04000D40E5 /* ORBaseListModel.m */,
-				DDF0D5011C96AE04000D40E5 /* ORBasePageListModel.h */,
-				DDF0D5021C96AE04000D40E5 /* ORBasePageListModel.m */,
+				DDC075471C9904B3008DC9A3 /* ORBaseListModel.h */,
+				DDC075431C9904B3008DC9A3 /* ORBaseListModel.m */,
+				DDC075481C9904B3008DC9A3 /* ORBasePageListModel.h */,
+				DDC075441C9904B3008DC9A3 /* ORBasePageListModel.m */,
+				DDC075451C9904B3008DC9A3 /* BaseModel.h */,
+				DDC075461C9904B3008DC9A3 /* BaseModel.m */,
 			);
 			name = ORListModel;
 			sourceTree = "<group>";
@@ -376,12 +422,12 @@
 			isa = PBXGroup;
 			children = (
 				DDF0D5101C96B49B000D40E5 /* Util */,
-				DDF0D5071C96B496000D40E5 /* ORIndicatorView.h */,
-				DDF0D5081C96B496000D40E5 /* ORIndicatorView.m */,
-				DDF0D5091C96B496000D40E5 /* ORLoadingIndicator.h */,
-				DDF0D50A1C96B496000D40E5 /* ORLoadingIndicator.m */,
-				DDF0D50B1C96B496000D40E5 /* ViewUtil.h */,
-				DDF0D50C1C96B496000D40E5 /* ViewUtil.m */,
+				DDC075341C990426008DC9A3 /* ORIndicatorView.m */,
+				DDC075351C990426008DC9A3 /* ORIndicatorView.h */,
+				DDC075361C990426008DC9A3 /* ORLoadingIndicator.h */,
+				DDC075371C990426008DC9A3 /* ORLoadingIndicator.m */,
+				DDC075381C990426008DC9A3 /* ViewUtil.h */,
+				DDC075391C990426008DC9A3 /* ViewUtil.m */,
 			);
 			name = ORIndicatorView;
 			sourceTree = "<group>";
@@ -389,8 +435,8 @@
 		DDF0D5101C96B49B000D40E5 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				DDF0D5111C96B4A4000D40E5 /* Observer.h */,
-				DDF0D5121C96B4A4000D40E5 /* Observer.m */,
+				DDC075311C990416008DC9A3 /* Observer.h */,
+				DDC075321C990416008DC9A3 /* Observer.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -398,8 +444,8 @@
 		DDF0D5141C96B632000D40E5 /* ORAppUtil */ = {
 			isa = PBXGroup;
 			children = (
-				DDF0D5151C96B63A000D40E5 /* ORAppUtil.h */,
-				DDF0D5161C96B63A000D40E5 /* ORAppUtil.m */,
+				DDC0752E1C9903B3008DC9A3 /* ORAppUtil.m */,
+				DDC0752F1C9903B3008DC9A3 /* ORAppUtil.h */,
 			);
 			name = ORAppUtil;
 			sourceTree = "<group>";
@@ -407,8 +453,8 @@
 		DDF0D5231C97F4F7000D40E5 /* DataEngine */ = {
 			isa = PBXGroup;
 			children = (
-				DDF0D5241C97F50C000D40E5 /* GSUserSetting.h */,
-				DDF0D5251C97F50C000D40E5 /* GSUserSetting.m */,
+				DDC0752B1C98FDB8008DC9A3 /* GSUserSetting.h */,
+				DDC0752C1C98FDB8008DC9A3 /* GSUserSetting.m */,
 			);
 			name = DataEngine;
 			sourceTree = "<group>";
@@ -519,11 +565,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDF0D4F41C96A6B5000D40E5 /* Picture.storyboard in Resources */,
+				DDC075011C98FBDD008DC9A3 /* Main.storyboard in Resources */,
+				DDC0751E1C98FD10008DC9A3 /* custom_4.png in Resources */,
 				4A9512C61C9054CD002658FB /* LaunchScreen.storyboard in Resources */,
+				DDC075201C98FD10008DC9A3 /* custom_center.png in Resources */,
+				DDC075001C98FBDD008DC9A3 /* Home.storyboard in Resources */,
+				DDC0751F1C98FD10008DC9A3 /* custom_5.png in Resources */,
 				4A9512C31C9054CD002658FB /* Assets.xcassets in Resources */,
-				4A9512C11C9054CD002658FB /* Main.storyboard in Resources */,
-				4A9512F11C905BD1002658FB /* Home.storyboard in Resources */,
+				DDC0751D1C98FD10008DC9A3 /* custom_3.png in Resources */,
+				DDC0751B1C98FD10008DC9A3 /* custom_1.png in Resources */,
+				DDC075021C98FBDD008DC9A3 /* Picture.storyboard in Resources */,
+				DDC0751C1C98FD10008DC9A3 /* custom_2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,29 +649,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */,
-				DDF0D4FA1C96ADB4000D40E5 /* ORBaseTableViewController.m in Sources */,
-				DDF0D5171C96B63A000D40E5 /* ORAppUtil.m in Sources */,
+				DDC0754A1C9904B3008DC9A3 /* ORBasePageListModel.m in Sources */,
+				DDC0750B1C98FC04008DC9A3 /* SCNewsTableViewController.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
-				DDF0D4EF1C96A569000D40E5 /* SCHotViewController.m in Sources */,
-				4A7287221C91A9A6005581F3 /* WMLoopView.m in Sources */,
-				DDF0D5041C96AE04000D40E5 /* ORBaseListModel.m in Sources */,
-				DDF0D5051C96AE04000D40E5 /* ORBasePageListModel.m in Sources */,
-				DDF0D4F01C96A569000D40E5 /* SCNewsTableViewController.m in Sources */,
-				DDF0D5261C97F50C000D40E5 /* GSUserSetting.m in Sources */,
+				DDC075111C98FC32008DC9A3 /* YDHotTableViewCell.m in Sources */,
+				DDC0750E1C98FC18008DC9A3 /* SCPictureTableViewController.m in Sources */,
+				DDC075491C9904B3008DC9A3 /* ORBaseListModel.m in Sources */,
+				DDC0753C1C990426008DC9A3 /* ViewUtil.m in Sources */,
+				DDC075421C990477008DC9A3 /* ORBaseViewController.m in Sources */,
+				DDC0750A1C98FC04008DC9A3 /* SCHotViewController.m in Sources */,
 				4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */,
-				4A72871C1C91A7A5005581F3 /* YDHotTableViewCell.m in Sources */,
-				DDF0D4FB1C96ADB4000D40E5 /* ORBaseViewController.m in Sources */,
-				DDF0D5221C97E38C000D40E5 /* SCPictureTableViewCell.m in Sources */,
-				DDF0D51F1C97E34B000D40E5 /* SCPictureTableViewController.m in Sources */,
-				DDF0D50D1C96B496000D40E5 /* ORIndicatorView.m in Sources */,
-				DDF0D4EE1C96A569000D40E5 /* SCHomeViewController.m in Sources */,
-				DDF0D50E1C96B496000D40E5 /* ORLoadingIndicator.m in Sources */,
-				DDF0D50F1C96B496000D40E5 /* ViewUtil.m in Sources */,
-				DDF0D5031C96AE04000D40E5 /* BaseModel.m in Sources */,
+				DDC0753B1C990426008DC9A3 /* ORLoadingIndicator.m in Sources */,
+				DDC0752A1C98FD5B008DC9A3 /* SCPictureTableViewCell.m in Sources */,
+				DDC075141C98FC8E008DC9A3 /* WMLoopView.m in Sources */,
+				DDC075271C98FD2A008DC9A3 /* DCSubButton.m in Sources */,
+				DDC075411C990477008DC9A3 /* ORBaseTableViewController.m in Sources */,
+				DDC075331C990416008DC9A3 /* Observer.m in Sources */,
 				4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */,
-				DDF0D5131C96B4A4000D40E5 /* Observer.m in Sources */,
 				4A9512B81C9054CD002658FB /* main.m in Sources */,
-				DDD0F7601C9150BE00F81EBF /* ORColorUtil.m in Sources */,
+				DDC0754B1C9904B3008DC9A3 /* BaseModel.m in Sources */,
+				DDC075301C9903B3008DC9A3 /* ORAppUtil.m in Sources */,
+				DDC075261C98FD2A008DC9A3 /* DCPathButton.m in Sources */,
+				DDC0754E1C9904C3008DC9A3 /* ORColorUtil.m in Sources */,
+				DDC0753A1C990426008DC9A3 /* ORIndicatorView.m in Sources */,
+				DDC075091C98FC04008DC9A3 /* SCHomeViewController.m in Sources */,
+				DDC0752D1C98FDB8008DC9A3 /* GSUserSetting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,14 +709,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4A9512BF1C9054CD002658FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A9512C01C9054CD002658FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4A9512C41C9054CD002658FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
