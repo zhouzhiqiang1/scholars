@@ -8,9 +8,11 @@
 
 #import "SCPictureTableViewController.h"
 #import "SCPictureTableViewCell.h"
+#import <MJRefresh.h>
+#import "ORIndicatorView.h"
 
 @interface SCPictureTableViewController ()
-
+@property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
 @end
 
 @implementation SCPictureTableViewController
@@ -19,16 +21,72 @@
     [super viewDidLoad];
     
     self.title = @"趣味";
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //监听
+    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
+    self.tableView.mj_header = header;
+    self.refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
+//    [header beginRefreshing];
+    [self startRefresh];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - Model
+-(void)commonInit
+{
+    [super commonInit];
+    [self loadModel];
+}
+
+- (void)loadModel
+{
+    [self unloadModel];
+//    self.listModel = [[YDInviteFriendsModel alloc] init];
+//    
+//    [self.listModel addObserver:self forKeyPath:kKeyPathDataSource options:NSKeyValueObservingOptionNew context:nil];
+//    [self.listModel addObserver:self forKeyPath:kKeyPathDataFetchResult options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)unloadModel
+{
+    @try {
+//        [self.listModel removeObserver:self forKeyPath:kKeyPathDataSource];
+//        [self.listModel removeObserver:self forKeyPath:kKeyPathDataFetchResult];
+//        [self setModel:nil];
+    }
+    @catch (NSException *exception) {
+    }
+}
+
+-(void)startRefresh
+{
+//    [self.listModel fetchList];
+    [ORIndicatorView showLoading];
+    NSLog(@"下拉刷新");
+    [self stopLoadingWithSuccess:YES];
+}
+
+- (void)startLoadMore
+{
+    [ORIndicatorView showLoading];
+    NSLog(@"上拉刷新");
+//    [self.listModel fetchMore];
+     [self stopLoadingWithSuccess:YES];
+}
+
+- (void)stopLoadingWithSuccess:(BOOL)aSuccess
+{
+    [super stopLoadingWithSuccess:aSuccess];
+    [ORIndicatorView hideLoading];
+    self.tableView.mj_footer = [self.listModel hasMore]?self.refreshFooter:nil;
+    [self.tableView.mj_header endRefreshing];
+    [self.tableView.mj_footer endRefreshing];
 }
 
 #pragma mark - Table view data source
@@ -38,7 +96,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return 50;
 }
 
 
@@ -56,6 +114,21 @@
 }
 
 
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (self.isViewLoaded == NO)
+    {
+        return;
+    }
+    
+    if ([keyPath isEqualToString:kKeyPathDataSource]) {
+        [self.tableView reloadData];
+    } else if ([keyPath isEqualToString:kKeyPathDataFetchResult]) {
+        [self stopLoadingWithSuccess:YES];
+        
+    }
+}
 
 
 @end

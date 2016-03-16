@@ -8,7 +8,6 @@
         <!--Root View Controller-->
         <scene sceneID="Zyg-Yf-9CE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mtY-SA-qBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="SCPictureTableViewController" id="GhL-Mg-XGP" customClass="SCPictureTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SCPictureTableViewController" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" id="13T-yd-Not">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -56,6 +55,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="xdb-ze-l8f"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtY-SA-qBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="522" y="526"/>
         </scene>

@@ -26,27 +26,28 @@
 		DDC0750E1C98FC18008DC9A3 /* SCPictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0750D1C98FC18008DC9A3 /* SCPictureTableViewController.m */; };
 		DDC075111C98FC32008DC9A3 /* YDHotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075101C98FC32008DC9A3 /* YDHotTableViewCell.m */; };
 		DDC075141C98FC8E008DC9A3 /* WMLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075131C98FC8E008DC9A3 /* WMLoopView.m */; };
-		DDC0751B1C98FD10008DC9A3 /* custom_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075151C98FD10008DC9A3 /* custom_1.png */; };
-		DDC0751C1C98FD10008DC9A3 /* custom_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075161C98FD10008DC9A3 /* custom_2.png */; };
-		DDC0751D1C98FD10008DC9A3 /* custom_3.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075171C98FD10008DC9A3 /* custom_3.png */; };
-		DDC0751E1C98FD10008DC9A3 /* custom_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075181C98FD10008DC9A3 /* custom_4.png */; };
-		DDC0751F1C98FD10008DC9A3 /* custom_5.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075191C98FD10008DC9A3 /* custom_5.png */; };
-		DDC075201C98FD10008DC9A3 /* custom_center.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC0751A1C98FD10008DC9A3 /* custom_center.png */; };
-		DDC075261C98FD2A008DC9A3 /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075211C98FD2A008DC9A3 /* DCPathButton.m */; };
-		DDC075271C98FD2A008DC9A3 /* DCSubButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075251C98FD2A008DC9A3 /* DCSubButton.m */; };
 		DDC0752A1C98FD5B008DC9A3 /* SCPictureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075291C98FD5B008DC9A3 /* SCPictureTableViewCell.m */; };
-		DDC0752D1C98FDB8008DC9A3 /* GSUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0752C1C98FDB8008DC9A3 /* GSUserSetting.m */; };
-		DDC075301C9903B3008DC9A3 /* ORAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0752E1C9903B3008DC9A3 /* ORAppUtil.m */; };
-		DDC075331C990416008DC9A3 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075321C990416008DC9A3 /* Observer.m */; };
-		DDC0753A1C990426008DC9A3 /* ORIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075341C990426008DC9A3 /* ORIndicatorView.m */; };
-		DDC0753B1C990426008DC9A3 /* ORLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075371C990426008DC9A3 /* ORLoadingIndicator.m */; };
-		DDC0753C1C990426008DC9A3 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075391C990426008DC9A3 /* ViewUtil.m */; };
-		DDC075411C990477008DC9A3 /* ORBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0753D1C990477008DC9A3 /* ORBaseTableViewController.m */; };
-		DDC075421C990477008DC9A3 /* ORBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0753E1C990477008DC9A3 /* ORBaseViewController.m */; };
-		DDC075491C9904B3008DC9A3 /* ORBaseListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075431C9904B3008DC9A3 /* ORBaseListModel.m */; };
-		DDC0754A1C9904B3008DC9A3 /* ORBasePageListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075441C9904B3008DC9A3 /* ORBasePageListModel.m */; };
-		DDC0754B1C9904B3008DC9A3 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075461C9904B3008DC9A3 /* BaseModel.m */; };
-		DDC0754E1C9904C3008DC9A3 /* ORColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0754D1C9904C3008DC9A3 /* ORColorUtil.m */; };
+		DDC075551C9907A5008DC9A3 /* custom_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC0754F1C9907A5008DC9A3 /* custom_1.png */; };
+		DDC075561C9907A5008DC9A3 /* custom_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075501C9907A5008DC9A3 /* custom_2.png */; };
+		DDC075571C9907A5008DC9A3 /* custom_3.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075511C9907A5008DC9A3 /* custom_3.png */; };
+		DDC075581C9907A5008DC9A3 /* custom_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075521C9907A5008DC9A3 /* custom_4.png */; };
+		DDC075591C9907A5008DC9A3 /* custom_5.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075531C9907A5008DC9A3 /* custom_5.png */; };
+		DDC0755A1C9907A5008DC9A3 /* custom_center.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC075541C9907A5008DC9A3 /* custom_center.png */; };
+		DDC075601C9907B1008DC9A3 /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0755B1C9907B1008DC9A3 /* DCPathButton.m */; };
+		DDC075611C9907B1008DC9A3 /* DCSubButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0755F1C9907B1008DC9A3 /* DCSubButton.m */; };
+		DDC075641C9907C5008DC9A3 /* GSUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075631C9907C5008DC9A3 /* GSUserSetting.m */; };
+		DDC075671C9907D3008DC9A3 /* ORAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075651C9907D3008DC9A3 /* ORAppUtil.m */; };
+		DDC0756A1C9907FA008DC9A3 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075691C9907FA008DC9A3 /* Observer.m */; };
+		DDC075711C990802008DC9A3 /* ORIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0756B1C990802008DC9A3 /* ORIndicatorView.m */; };
+		DDC075721C990802008DC9A3 /* ORLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0756E1C990802008DC9A3 /* ORLoadingIndicator.m */; };
+		DDC075731C990802008DC9A3 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075701C990802008DC9A3 /* ViewUtil.m */; };
+		DDC075781C990813008DC9A3 /* ORBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075741C990813008DC9A3 /* ORBaseTableViewController.m */; };
+		DDC075791C990813008DC9A3 /* ORBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075751C990813008DC9A3 /* ORBaseViewController.m */; };
+		DDC075801C990820008DC9A3 /* ORBaseListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0757A1C990820008DC9A3 /* ORBaseListModel.m */; };
+		DDC075811C990820008DC9A3 /* ORBasePageListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0757B1C990820008DC9A3 /* ORBasePageListModel.m */; };
+		DDC075821C990820008DC9A3 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0757D1C990820008DC9A3 /* BaseModel.m */; };
+		DDC075851C99082F008DC9A3 /* ORColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075841C99082F008DC9A3 /* ORColorUtil.m */; };
+		DDC0758A1C990938008DC9A3 /* Photo.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC075891C990938008DC9A3 /* Photo.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,43 +105,44 @@
 		DDC075101C98FC32008DC9A3 /* YDHotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YDHotTableViewCell.m; path = UI/View/Home/YDHotTableViewCell.m; sourceTree = "<group>"; };
 		DDC075121C98FC8E008DC9A3 /* WMLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMLoopView.h; path = UI/View/Home/Banner/WMLoopView.h; sourceTree = "<group>"; };
 		DDC075131C98FC8E008DC9A3 /* WMLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMLoopView.m; path = UI/View/Home/Banner/WMLoopView.m; sourceTree = "<group>"; };
-		DDC075151C98FD10008DC9A3 /* custom_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_1.png; path = UI/Other/SCPathButton/Images/custom_1.png; sourceTree = "<group>"; };
-		DDC075161C98FD10008DC9A3 /* custom_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_2.png; path = UI/Other/SCPathButton/Images/custom_2.png; sourceTree = "<group>"; };
-		DDC075171C98FD10008DC9A3 /* custom_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_3.png; path = UI/Other/SCPathButton/Images/custom_3.png; sourceTree = "<group>"; };
-		DDC075181C98FD10008DC9A3 /* custom_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_4.png; path = UI/Other/SCPathButton/Images/custom_4.png; sourceTree = "<group>"; };
-		DDC075191C98FD10008DC9A3 /* custom_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_5.png; path = UI/Other/SCPathButton/Images/custom_5.png; sourceTree = "<group>"; };
-		DDC0751A1C98FD10008DC9A3 /* custom_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_center.png; path = UI/Other/SCPathButton/Images/custom_center.png; sourceTree = "<group>"; };
-		DDC075211C98FD2A008DC9A3 /* DCPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPathButton.m; path = UI/Other/SCPathButton/DCPathButton.m; sourceTree = "<group>"; };
-		DDC075221C98FD2A008DC9A3 /* DCPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPathButton.h; path = UI/Other/SCPathButton/DCPathButton.h; sourceTree = "<group>"; };
-		DDC075231C98FD2A008DC9A3 /* DCPathButtonConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPathButtonConstant.h; path = UI/Other/SCPathButton/DCPathButtonConstant.h; sourceTree = "<group>"; };
-		DDC075241C98FD2A008DC9A3 /* DCSubButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCSubButton.h; path = UI/Other/SCPathButton/DCSubButton.h; sourceTree = "<group>"; };
-		DDC075251C98FD2A008DC9A3 /* DCSubButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCSubButton.m; path = UI/Other/SCPathButton/DCSubButton.m; sourceTree = "<group>"; };
 		DDC075281C98FD5B008DC9A3 /* SCPictureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPictureTableViewCell.h; path = UI/View/Picture/SCPictureTableViewCell.h; sourceTree = "<group>"; };
 		DDC075291C98FD5B008DC9A3 /* SCPictureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureTableViewCell.m; path = UI/View/Picture/SCPictureTableViewCell.m; sourceTree = "<group>"; };
-		DDC0752B1C98FDB8008DC9A3 /* GSUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSUserSetting.h; path = UI/Other/DataEngine/GSUserSetting.h; sourceTree = "<group>"; };
-		DDC0752C1C98FDB8008DC9A3 /* GSUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSUserSetting.m; path = UI/Other/DataEngine/GSUserSetting.m; sourceTree = "<group>"; };
-		DDC0752E1C9903B3008DC9A3 /* ORAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAppUtil.m; path = UI/Other/ORAppUtil/ORAppUtil.m; sourceTree = "<group>"; };
-		DDC0752F1C9903B3008DC9A3 /* ORAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAppUtil.h; path = UI/Other/ORAppUtil/ORAppUtil.h; sourceTree = "<group>"; };
-		DDC075311C990416008DC9A3 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Observer.h; path = UI/Other/ORIndicatorView/Util/Observer.h; sourceTree = "<group>"; };
-		DDC075321C990416008DC9A3 /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Observer.m; path = UI/Other/ORIndicatorView/Util/Observer.m; sourceTree = "<group>"; };
-		DDC075341C990426008DC9A3 /* ORIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORIndicatorView.m; path = UI/Other/ORIndicatorView/ORIndicatorView.m; sourceTree = "<group>"; };
-		DDC075351C990426008DC9A3 /* ORIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORIndicatorView.h; path = UI/Other/ORIndicatorView/ORIndicatorView.h; sourceTree = "<group>"; };
-		DDC075361C990426008DC9A3 /* ORLoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORLoadingIndicator.h; path = UI/Other/ORIndicatorView/ORLoadingIndicator.h; sourceTree = "<group>"; };
-		DDC075371C990426008DC9A3 /* ORLoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORLoadingIndicator.m; path = UI/Other/ORIndicatorView/ORLoadingIndicator.m; sourceTree = "<group>"; };
-		DDC075381C990426008DC9A3 /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewUtil.h; path = UI/Other/ORIndicatorView/ViewUtil.h; sourceTree = "<group>"; };
-		DDC075391C990426008DC9A3 /* ViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewUtil.m; path = UI/Other/ORIndicatorView/ViewUtil.m; sourceTree = "<group>"; };
-		DDC0753D1C990477008DC9A3 /* ORBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBaseTableViewController.m; path = UI/Other/UINavigation/ORBaseTableViewController.m; sourceTree = "<group>"; };
-		DDC0753E1C990477008DC9A3 /* ORBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBaseViewController.m; path = UI/Other/UINavigation/ORBaseViewController.m; sourceTree = "<group>"; };
-		DDC0753F1C990477008DC9A3 /* ORBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBaseTableViewController.h; path = UI/Other/UINavigation/ORBaseTableViewController.h; sourceTree = "<group>"; };
-		DDC075401C990477008DC9A3 /* ORBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBaseViewController.h; path = UI/Other/UINavigation/ORBaseViewController.h; sourceTree = "<group>"; };
-		DDC075431C9904B3008DC9A3 /* ORBaseListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBaseListModel.m; path = UI/Other/ORListModel/ORBaseListModel.m; sourceTree = "<group>"; };
-		DDC075441C9904B3008DC9A3 /* ORBasePageListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBasePageListModel.m; path = UI/Other/ORListModel/ORBasePageListModel.m; sourceTree = "<group>"; };
-		DDC075451C9904B3008DC9A3 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseModel.h; path = UI/Other/ORListModel/BaseModel.h; sourceTree = "<group>"; };
-		DDC075461C9904B3008DC9A3 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseModel.m; path = UI/Other/ORListModel/BaseModel.m; sourceTree = "<group>"; };
-		DDC075471C9904B3008DC9A3 /* ORBaseListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBaseListModel.h; path = UI/Other/ORListModel/ORBaseListModel.h; sourceTree = "<group>"; };
-		DDC075481C9904B3008DC9A3 /* ORBasePageListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBasePageListModel.h; path = UI/Other/ORListModel/ORBasePageListModel.h; sourceTree = "<group>"; };
-		DDC0754C1C9904C3008DC9A3 /* ORColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORColorUtil.h; path = UI/Other/ColorUtil/ORColorUtil.h; sourceTree = "<group>"; };
-		DDC0754D1C9904C3008DC9A3 /* ORColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORColorUtil.m; path = UI/Other/ColorUtil/ORColorUtil.m; sourceTree = "<group>"; };
+		DDC0754F1C9907A5008DC9A3 /* custom_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_1.png; path = Other/SCPathButton/Images/custom_1.png; sourceTree = "<group>"; };
+		DDC075501C9907A5008DC9A3 /* custom_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_2.png; path = Other/SCPathButton/Images/custom_2.png; sourceTree = "<group>"; };
+		DDC075511C9907A5008DC9A3 /* custom_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_3.png; path = Other/SCPathButton/Images/custom_3.png; sourceTree = "<group>"; };
+		DDC075521C9907A5008DC9A3 /* custom_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_4.png; path = Other/SCPathButton/Images/custom_4.png; sourceTree = "<group>"; };
+		DDC075531C9907A5008DC9A3 /* custom_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_5.png; path = Other/SCPathButton/Images/custom_5.png; sourceTree = "<group>"; };
+		DDC075541C9907A5008DC9A3 /* custom_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_center.png; path = Other/SCPathButton/Images/custom_center.png; sourceTree = "<group>"; };
+		DDC0755B1C9907B1008DC9A3 /* DCPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPathButton.m; path = Other/SCPathButton/DCPathButton.m; sourceTree = "<group>"; };
+		DDC0755C1C9907B1008DC9A3 /* DCPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPathButton.h; path = Other/SCPathButton/DCPathButton.h; sourceTree = "<group>"; };
+		DDC0755D1C9907B1008DC9A3 /* DCPathButtonConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPathButtonConstant.h; path = Other/SCPathButton/DCPathButtonConstant.h; sourceTree = "<group>"; };
+		DDC0755E1C9907B1008DC9A3 /* DCSubButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCSubButton.h; path = Other/SCPathButton/DCSubButton.h; sourceTree = "<group>"; };
+		DDC0755F1C9907B1008DC9A3 /* DCSubButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCSubButton.m; path = Other/SCPathButton/DCSubButton.m; sourceTree = "<group>"; };
+		DDC075621C9907C5008DC9A3 /* GSUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSUserSetting.h; path = Other/DataEngine/GSUserSetting.h; sourceTree = "<group>"; };
+		DDC075631C9907C5008DC9A3 /* GSUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSUserSetting.m; path = Other/DataEngine/GSUserSetting.m; sourceTree = "<group>"; };
+		DDC075651C9907D3008DC9A3 /* ORAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAppUtil.m; path = Other/ORAppUtil/ORAppUtil.m; sourceTree = "<group>"; };
+		DDC075661C9907D3008DC9A3 /* ORAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAppUtil.h; path = Other/ORAppUtil/ORAppUtil.h; sourceTree = "<group>"; };
+		DDC075681C9907FA008DC9A3 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Observer.h; path = Other/ORIndicatorView/Util/Observer.h; sourceTree = "<group>"; };
+		DDC075691C9907FA008DC9A3 /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Observer.m; path = Other/ORIndicatorView/Util/Observer.m; sourceTree = "<group>"; };
+		DDC0756B1C990802008DC9A3 /* ORIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORIndicatorView.m; path = Other/ORIndicatorView/ORIndicatorView.m; sourceTree = "<group>"; };
+		DDC0756C1C990802008DC9A3 /* ORIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORIndicatorView.h; path = Other/ORIndicatorView/ORIndicatorView.h; sourceTree = "<group>"; };
+		DDC0756D1C990802008DC9A3 /* ORLoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORLoadingIndicator.h; path = Other/ORIndicatorView/ORLoadingIndicator.h; sourceTree = "<group>"; };
+		DDC0756E1C990802008DC9A3 /* ORLoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORLoadingIndicator.m; path = Other/ORIndicatorView/ORLoadingIndicator.m; sourceTree = "<group>"; };
+		DDC0756F1C990802008DC9A3 /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewUtil.h; path = Other/ORIndicatorView/ViewUtil.h; sourceTree = "<group>"; };
+		DDC075701C990802008DC9A3 /* ViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewUtil.m; path = Other/ORIndicatorView/ViewUtil.m; sourceTree = "<group>"; };
+		DDC075741C990813008DC9A3 /* ORBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBaseTableViewController.m; path = Other/UINavigation/ORBaseTableViewController.m; sourceTree = "<group>"; };
+		DDC075751C990813008DC9A3 /* ORBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBaseViewController.m; path = Other/UINavigation/ORBaseViewController.m; sourceTree = "<group>"; };
+		DDC075761C990813008DC9A3 /* ORBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBaseTableViewController.h; path = Other/UINavigation/ORBaseTableViewController.h; sourceTree = "<group>"; };
+		DDC075771C990813008DC9A3 /* ORBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBaseViewController.h; path = Other/UINavigation/ORBaseViewController.h; sourceTree = "<group>"; };
+		DDC0757A1C990820008DC9A3 /* ORBaseListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBaseListModel.m; path = Other/ORListModel/ORBaseListModel.m; sourceTree = "<group>"; };
+		DDC0757B1C990820008DC9A3 /* ORBasePageListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBasePageListModel.m; path = Other/ORListModel/ORBasePageListModel.m; sourceTree = "<group>"; };
+		DDC0757C1C990820008DC9A3 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseModel.h; path = Other/ORListModel/BaseModel.h; sourceTree = "<group>"; };
+		DDC0757D1C990820008DC9A3 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseModel.m; path = Other/ORListModel/BaseModel.m; sourceTree = "<group>"; };
+		DDC0757E1C990820008DC9A3 /* ORBaseListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBaseListModel.h; path = Other/ORListModel/ORBaseListModel.h; sourceTree = "<group>"; };
+		DDC0757F1C990820008DC9A3 /* ORBasePageListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBasePageListModel.h; path = Other/ORListModel/ORBasePageListModel.h; sourceTree = "<group>"; };
+		DDC075831C99082F008DC9A3 /* ORColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORColorUtil.h; path = Other/ColorUtil/ORColorUtil.h; sourceTree = "<group>"; };
+		DDC075841C99082F008DC9A3 /* ORColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORColorUtil.m; path = Other/ColorUtil/ORColorUtil.m; sourceTree = "<group>"; };
+		DDC075891C990938008DC9A3 /* Photo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Photo.json; path = Resource/Photo.json; sourceTree = "<group>"; };
 		DDF0D5271C9813BA000D40E5 /* scholars.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scholars.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				DDC074FC1C98FB8A008DC9A3 /* UI */,
+				DDD0F7591C91503C00F81EBF /* Other */,
 				4A9512B91C9054CD002658FB /* AppDelegate.h */,
 				4A9512BA1C9054CD002658FB /* AppDelegate.m */,
 				4A9512BC1C9054CD002658FB /* ViewController.h */,
@@ -221,6 +224,7 @@
 				4A9512C41C9054CD002658FB /* LaunchScreen.storyboard */,
 				4A9512C71C9054CD002658FB /* Info.plist */,
 				4A9512B61C9054CD002658FB /* Supporting Files */,
+				DDC075861C9908EE008DC9A3 /* Resource */,
 				4A9512E91C90591D002658FB /* SCRootNavigationViewController.h */,
 				4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */,
 				4A9512EC1C905969002658FB /* SCRootBarViewController.h */,
@@ -320,11 +324,11 @@
 			isa = PBXGroup;
 			children = (
 				DDC074E81C98F9E6008DC9A3 /* Images */,
-				DDC075211C98FD2A008DC9A3 /* DCPathButton.m */,
-				DDC075221C98FD2A008DC9A3 /* DCPathButton.h */,
-				DDC075231C98FD2A008DC9A3 /* DCPathButtonConstant.h */,
-				DDC075241C98FD2A008DC9A3 /* DCSubButton.h */,
-				DDC075251C98FD2A008DC9A3 /* DCSubButton.m */,
+				DDC0755B1C9907B1008DC9A3 /* DCPathButton.m */,
+				DDC0755C1C9907B1008DC9A3 /* DCPathButton.h */,
+				DDC0755D1C9907B1008DC9A3 /* DCPathButtonConstant.h */,
+				DDC0755E1C9907B1008DC9A3 /* DCSubButton.h */,
+				DDC0755F1C9907B1008DC9A3 /* DCSubButton.m */,
 			);
 			name = SCPathButton;
 			sourceTree = "<group>";
@@ -332,12 +336,12 @@
 		DDC074E81C98F9E6008DC9A3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				DDC075151C98FD10008DC9A3 /* custom_1.png */,
-				DDC075161C98FD10008DC9A3 /* custom_2.png */,
-				DDC075171C98FD10008DC9A3 /* custom_3.png */,
-				DDC075181C98FD10008DC9A3 /* custom_4.png */,
-				DDC075191C98FD10008DC9A3 /* custom_5.png */,
-				DDC0751A1C98FD10008DC9A3 /* custom_center.png */,
+				DDC0754F1C9907A5008DC9A3 /* custom_1.png */,
+				DDC075501C9907A5008DC9A3 /* custom_2.png */,
+				DDC075511C9907A5008DC9A3 /* custom_3.png */,
+				DDC075521C9907A5008DC9A3 /* custom_4.png */,
+				DDC075531C9907A5008DC9A3 /* custom_5.png */,
+				DDC075541C9907A5008DC9A3 /* custom_center.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -348,9 +352,16 @@
 				4A9512EF1C905B98002658FB /* Storyboard */,
 				4A9512F31C906172002658FB /* Controller */,
 				4A9512FA1C9063E2002658FB /* View */,
-				DDD0F7591C91503C00F81EBF /* Other */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		DDC075861C9908EE008DC9A3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DDC075891C990938008DC9A3 /* Photo.json */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 		DDD0F7591C91503C00F81EBF /* Other */ = {
@@ -370,8 +381,8 @@
 		DDD0F75A1C91505300F81EBF /* ColorUtil */ = {
 			isa = PBXGroup;
 			children = (
-				DDC0754C1C9904C3008DC9A3 /* ORColorUtil.h */,
-				DDC0754D1C9904C3008DC9A3 /* ORColorUtil.m */,
+				DDC075831C99082F008DC9A3 /* ORColorUtil.h */,
+				DDC075841C99082F008DC9A3 /* ORColorUtil.m */,
 			);
 			name = ColorUtil;
 			sourceTree = "<group>";
@@ -397,10 +408,10 @@
 		DDF0D4F51C96AD80000D40E5 /* UINavigation */ = {
 			isa = PBXGroup;
 			children = (
-				DDC0753D1C990477008DC9A3 /* ORBaseTableViewController.m */,
-				DDC0753E1C990477008DC9A3 /* ORBaseViewController.m */,
-				DDC0753F1C990477008DC9A3 /* ORBaseTableViewController.h */,
-				DDC075401C990477008DC9A3 /* ORBaseViewController.h */,
+				DDC075741C990813008DC9A3 /* ORBaseTableViewController.m */,
+				DDC075751C990813008DC9A3 /* ORBaseViewController.m */,
+				DDC075761C990813008DC9A3 /* ORBaseTableViewController.h */,
+				DDC075771C990813008DC9A3 /* ORBaseViewController.h */,
 			);
 			name = UINavigation;
 			sourceTree = "<group>";
@@ -408,12 +419,12 @@
 		DDF0D4FC1C96ADF5000D40E5 /* ORListModel */ = {
 			isa = PBXGroup;
 			children = (
-				DDC075471C9904B3008DC9A3 /* ORBaseListModel.h */,
-				DDC075431C9904B3008DC9A3 /* ORBaseListModel.m */,
-				DDC075481C9904B3008DC9A3 /* ORBasePageListModel.h */,
-				DDC075441C9904B3008DC9A3 /* ORBasePageListModel.m */,
-				DDC075451C9904B3008DC9A3 /* BaseModel.h */,
-				DDC075461C9904B3008DC9A3 /* BaseModel.m */,
+				DDC0757A1C990820008DC9A3 /* ORBaseListModel.m */,
+				DDC0757B1C990820008DC9A3 /* ORBasePageListModel.m */,
+				DDC0757C1C990820008DC9A3 /* BaseModel.h */,
+				DDC0757D1C990820008DC9A3 /* BaseModel.m */,
+				DDC0757E1C990820008DC9A3 /* ORBaseListModel.h */,
+				DDC0757F1C990820008DC9A3 /* ORBasePageListModel.h */,
 			);
 			name = ORListModel;
 			sourceTree = "<group>";
@@ -422,12 +433,12 @@
 			isa = PBXGroup;
 			children = (
 				DDF0D5101C96B49B000D40E5 /* Util */,
-				DDC075341C990426008DC9A3 /* ORIndicatorView.m */,
-				DDC075351C990426008DC9A3 /* ORIndicatorView.h */,
-				DDC075361C990426008DC9A3 /* ORLoadingIndicator.h */,
-				DDC075371C990426008DC9A3 /* ORLoadingIndicator.m */,
-				DDC075381C990426008DC9A3 /* ViewUtil.h */,
-				DDC075391C990426008DC9A3 /* ViewUtil.m */,
+				DDC0756B1C990802008DC9A3 /* ORIndicatorView.m */,
+				DDC0756C1C990802008DC9A3 /* ORIndicatorView.h */,
+				DDC0756D1C990802008DC9A3 /* ORLoadingIndicator.h */,
+				DDC0756E1C990802008DC9A3 /* ORLoadingIndicator.m */,
+				DDC0756F1C990802008DC9A3 /* ViewUtil.h */,
+				DDC075701C990802008DC9A3 /* ViewUtil.m */,
 			);
 			name = ORIndicatorView;
 			sourceTree = "<group>";
@@ -435,8 +446,8 @@
 		DDF0D5101C96B49B000D40E5 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				DDC075311C990416008DC9A3 /* Observer.h */,
-				DDC075321C990416008DC9A3 /* Observer.m */,
+				DDC075681C9907FA008DC9A3 /* Observer.h */,
+				DDC075691C9907FA008DC9A3 /* Observer.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -444,8 +455,8 @@
 		DDF0D5141C96B632000D40E5 /* ORAppUtil */ = {
 			isa = PBXGroup;
 			children = (
-				DDC0752E1C9903B3008DC9A3 /* ORAppUtil.m */,
-				DDC0752F1C9903B3008DC9A3 /* ORAppUtil.h */,
+				DDC075651C9907D3008DC9A3 /* ORAppUtil.m */,
+				DDC075661C9907D3008DC9A3 /* ORAppUtil.h */,
 			);
 			name = ORAppUtil;
 			sourceTree = "<group>";
@@ -453,8 +464,8 @@
 		DDF0D5231C97F4F7000D40E5 /* DataEngine */ = {
 			isa = PBXGroup;
 			children = (
-				DDC0752B1C98FDB8008DC9A3 /* GSUserSetting.h */,
-				DDC0752C1C98FDB8008DC9A3 /* GSUserSetting.m */,
+				DDC075621C9907C5008DC9A3 /* GSUserSetting.h */,
+				DDC075631C9907C5008DC9A3 /* GSUserSetting.m */,
 			);
 			name = DataEngine;
 			sourceTree = "<group>";
@@ -566,16 +577,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDC075011C98FBDD008DC9A3 /* Main.storyboard in Resources */,
-				DDC0751E1C98FD10008DC9A3 /* custom_4.png in Resources */,
+				DDC075581C9907A5008DC9A3 /* custom_4.png in Resources */,
 				4A9512C61C9054CD002658FB /* LaunchScreen.storyboard in Resources */,
-				DDC075201C98FD10008DC9A3 /* custom_center.png in Resources */,
+				DDC0755A1C9907A5008DC9A3 /* custom_center.png in Resources */,
+				DDC0758A1C990938008DC9A3 /* Photo.json in Resources */,
 				DDC075001C98FBDD008DC9A3 /* Home.storyboard in Resources */,
-				DDC0751F1C98FD10008DC9A3 /* custom_5.png in Resources */,
+				DDC075591C9907A5008DC9A3 /* custom_5.png in Resources */,
 				4A9512C31C9054CD002658FB /* Assets.xcassets in Resources */,
-				DDC0751D1C98FD10008DC9A3 /* custom_3.png in Resources */,
-				DDC0751B1C98FD10008DC9A3 /* custom_1.png in Resources */,
+				DDC075571C9907A5008DC9A3 /* custom_3.png in Resources */,
+				DDC075551C9907A5008DC9A3 /* custom_1.png in Resources */,
 				DDC075021C98FBDD008DC9A3 /* Picture.storyboard in Resources */,
-				DDC0751C1C98FD10008DC9A3 /* custom_2.png in Resources */,
+				DDC075561C9907A5008DC9A3 /* custom_2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,31 +661,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */,
-				DDC0754A1C9904B3008DC9A3 /* ORBasePageListModel.m in Sources */,
+				DDC075811C990820008DC9A3 /* ORBasePageListModel.m in Sources */,
 				DDC0750B1C98FC04008DC9A3 /* SCNewsTableViewController.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
 				DDC075111C98FC32008DC9A3 /* YDHotTableViewCell.m in Sources */,
 				DDC0750E1C98FC18008DC9A3 /* SCPictureTableViewController.m in Sources */,
-				DDC075491C9904B3008DC9A3 /* ORBaseListModel.m in Sources */,
-				DDC0753C1C990426008DC9A3 /* ViewUtil.m in Sources */,
-				DDC075421C990477008DC9A3 /* ORBaseViewController.m in Sources */,
+				DDC075801C990820008DC9A3 /* ORBaseListModel.m in Sources */,
+				DDC075731C990802008DC9A3 /* ViewUtil.m in Sources */,
+				DDC075791C990813008DC9A3 /* ORBaseViewController.m in Sources */,
+				DDC0756A1C9907FA008DC9A3 /* Observer.m in Sources */,
 				DDC0750A1C98FC04008DC9A3 /* SCHotViewController.m in Sources */,
+				DDC075721C990802008DC9A3 /* ORLoadingIndicator.m in Sources */,
 				4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */,
-				DDC0753B1C990426008DC9A3 /* ORLoadingIndicator.m in Sources */,
 				DDC0752A1C98FD5B008DC9A3 /* SCPictureTableViewCell.m in Sources */,
 				DDC075141C98FC8E008DC9A3 /* WMLoopView.m in Sources */,
-				DDC075271C98FD2A008DC9A3 /* DCSubButton.m in Sources */,
-				DDC075411C990477008DC9A3 /* ORBaseTableViewController.m in Sources */,
-				DDC075331C990416008DC9A3 /* Observer.m in Sources */,
+				DDC075781C990813008DC9A3 /* ORBaseTableViewController.m in Sources */,
 				4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */,
+				DDC075611C9907B1008DC9A3 /* DCSubButton.m in Sources */,
 				4A9512B81C9054CD002658FB /* main.m in Sources */,
-				DDC0754B1C9904B3008DC9A3 /* BaseModel.m in Sources */,
-				DDC075301C9903B3008DC9A3 /* ORAppUtil.m in Sources */,
-				DDC075261C98FD2A008DC9A3 /* DCPathButton.m in Sources */,
-				DDC0754E1C9904C3008DC9A3 /* ORColorUtil.m in Sources */,
-				DDC0753A1C990426008DC9A3 /* ORIndicatorView.m in Sources */,
+				DDC075821C990820008DC9A3 /* BaseModel.m in Sources */,
+				DDC075671C9907D3008DC9A3 /* ORAppUtil.m in Sources */,
 				DDC075091C98FC04008DC9A3 /* SCHomeViewController.m in Sources */,
-				DDC0752D1C98FDB8008DC9A3 /* GSUserSetting.m in Sources */,
+				DDC075851C99082F008DC9A3 /* ORColorUtil.m in Sources */,
+				DDC075711C990802008DC9A3 /* ORIndicatorView.m in Sources */,
+				DDC075601C9907B1008DC9A3 /* DCPathButton.m in Sources */,
+				DDC075641C9907C5008DC9A3 /* GSUserSetting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
