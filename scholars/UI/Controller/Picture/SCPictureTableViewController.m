@@ -11,7 +11,7 @@
 #import <MJRefresh.h>
 #import "ORIndicatorView.h"
 
-@interface SCPictureTableViewController ()
+@interface SCPictureTableViewController ()<SCPictureTableViewCellDelegate>
 @property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
 @end
 
@@ -22,12 +22,14 @@
     
     self.title = @"趣味";
     
+    
     //监听
     MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
     self.tableView.mj_header = header;
     self.refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
 //    [header beginRefreshing];
     [self startRefresh];
+    
 
 }
 
@@ -96,7 +98,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 50;
+    return 10;
 }
 
 
@@ -106,11 +108,41 @@
     NSString *cell = @"SCPictureTableViewCell";
     
     SCPictureTableViewCell *pictureTableViewCell = [tableView dequeueReusableCellWithIdentifier:cell forIndexPath:indexPath];
-    
+    pictureTableViewCell.delegate = self;
     // Configure the cell...
+    [pictureTableViewCell upData:@"onepiece"];
     
     return pictureTableViewCell;
 }
+
+#pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 300;
+}
+
+#pragma mark -- SCPictureTableViewCellDelegate
+- (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onLoveButtonAction:(UIButton *)sender;
+{
+    sender.selected =! sender.selected;
+    
+}
+
+- (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onMessageButtonAction:(id)sender
+{
+    
+}
+
+- (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onShareButtonAction:(id)sender
+{
+
+}
+
+- (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onCollectButtonAction:(id)sender
+{
+    
+}
+
 
 
 #pragma mark - KVO

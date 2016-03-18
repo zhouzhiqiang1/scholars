@@ -1,3 +1,6 @@
+pod 'AFNetworking'
+platform :ios, '6.0'
+
 # Data
 pod 'iAppInfos', '~> 0.0.6'
 

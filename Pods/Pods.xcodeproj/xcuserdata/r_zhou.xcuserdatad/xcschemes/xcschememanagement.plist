@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>EAIntroView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +42,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6C5DA3702D64DF0DD1E1649C911C791C</key>
+		<key>08803F2F8D347632FE4112D2D177BF21</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7A36649C0C77A51375076B35119F7F29</key>
+		<key>2602F3D0DAC534568B6AD7EEA0DD1959</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>8F74D9EA91F4C43190670066BAC37D44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DAC9381CF6A65F5E797D02B0A2ACBECD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

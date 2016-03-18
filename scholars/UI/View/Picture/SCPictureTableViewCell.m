@@ -11,6 +11,8 @@
 @interface SCPictureTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIView *view;
 @property (weak, nonatomic) IBOutlet UIImageView *imageview;
+@property (weak, nonatomic) IBOutlet UIButton *loveButton;
+@property (weak, nonatomic) IBOutlet UIButton *messageButton;
 
 @end
 
@@ -28,12 +30,39 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)onLoveButtonAction:(id)sender {
+- (IBAction)onLoveButtonAction:(UIButton *)sender {
+    if ([self.delegate respondsToSelector:@selector(pictureTableViewCell:onLoveButtonAction:)]) {
+        [self.delegate pictureTableViewCell:self onLoveButtonAction:sender];
+    }
 }
+
+
 
 - (IBAction)onMessageButtonAction:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(pictureTableViewCell:onMessageButtonAction:)]) {
+        [self.delegate pictureTableViewCell:self onMessageButtonAction:sender];
+    }
 }
 
-- (IBAction)onCollectButtonAction:(id)sender {
+
+- (IBAction)onShareButtonAction:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(pictureTableViewCell:onShareButtonAction:)]) {
+        [self.delegate pictureTableViewCell:self onShareButtonAction:sender];
+    }
 }
+
+
+- (IBAction)onCollectButtonAction:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(pictureTableViewCell:onCollectButtonAction:)]) {
+        [self.delegate pictureTableViewCell:self onCollectButtonAction:sender];
+    }
+}
+
+
+- (void)upData:(NSString *)image
+{
+    [self.imageview setImage:[UIImage imageNamed:@"imageOne.png"]];
+}
+
+
 @end

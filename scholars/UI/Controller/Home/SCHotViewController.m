@@ -23,7 +23,7 @@
     // Do any additional setup after loading the view.
     self.tableView.showsVerticalScrollIndicator = NO;
     
-    NSArray *images = @[@"zoro.jpg",@"three.jpg",@"onepiece.jpg"];
+    NSArray *images = @[@"imageOne.png",@"imageTwo.png",@"imageThree.png"];
     WMLoopView *loopView = [[WMLoopView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width/1.8) images:images autoPlay:YES delay:2.0];
     loopView.delegate = self;
     self.tableView.tableHeaderView = loopView;

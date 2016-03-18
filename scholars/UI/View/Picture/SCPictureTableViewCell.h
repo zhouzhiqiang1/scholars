@@ -10,12 +10,17 @@
 
 @class SCPictureTableViewCell;
 
-@interface SCPictureTableViewCellDelegate <NSObject>
-- (void)cell:(SCPictureTableViewCell *)aCell;
+@protocol SCPictureTableViewCellDelegate <NSObject>
+- (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onLoveButtonAction:(UIButton *)sender;
+- (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onMessageButtonAction:(id)sender;
+- (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onShareButtonAction:(id)sender;
+- (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onCollectButtonAction:(id)sender;
 @end
 
 
 
 @interface SCPictureTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) id<SCPictureTableViewCellDelegate> delegate;
+- (void)upData:(NSString *)image;
 @end

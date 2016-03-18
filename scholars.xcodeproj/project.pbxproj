@@ -273,12 +273,12 @@
 		4A9512F21C906147002658FB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DDC075071C98FC04008DC9A3 /* SCHomeViewController.h */,
 				DDC075031C98FC04008DC9A3 /* SCHomeViewController.m */,
 				DDC075041C98FC04008DC9A3 /* SCHotViewController.h */,
 				DDC075051C98FC04008DC9A3 /* SCHotViewController.m */,
-				DDC075061C98FC04008DC9A3 /* SCNewsTableViewController.m */,
-				DDC075071C98FC04008DC9A3 /* SCHomeViewController.h */,
 				DDC075081C98FC04008DC9A3 /* SCNewsTableViewController.h */,
+				DDC075061C98FC04008DC9A3 /* SCNewsTableViewController.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -408,10 +408,10 @@
 		DDF0D4F51C96AD80000D40E5 /* UINavigation */ = {
 			isa = PBXGroup;
 			children = (
-				DDC075741C990813008DC9A3 /* ORBaseTableViewController.m */,
-				DDC075751C990813008DC9A3 /* ORBaseViewController.m */,
 				DDC075761C990813008DC9A3 /* ORBaseTableViewController.h */,
+				DDC075741C990813008DC9A3 /* ORBaseTableViewController.m */,
 				DDC075771C990813008DC9A3 /* ORBaseViewController.h */,
+				DDC075751C990813008DC9A3 /* ORBaseViewController.m */,
 			);
 			name = UINavigation;
 			sourceTree = "<group>";
