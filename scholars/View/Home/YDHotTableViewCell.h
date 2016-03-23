@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface YDHotTableViewCell : UITableViewCell
-
+- (void)loadTheData:(NSString *)imgeView title:(NSString *)title content:(NSString *)content;
 @end

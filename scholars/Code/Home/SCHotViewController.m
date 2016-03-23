@@ -63,6 +63,7 @@
  // Configure the cell...
      NSString *cell = @"YDHotTableViewCell";
      YDHotTableViewCell *hotTableView = [tableView dequeueReusableCellWithIdentifier:cell forIndexPath:indexPath];
+     [hotTableView loadTheData:@"zoro.jpg" title:@"一个人" content:@"有一个人回家果断发坑爹噶疯狂"];
  
  return hotTableView;
  }
