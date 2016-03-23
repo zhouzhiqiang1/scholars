@@ -9,6 +9,9 @@
 #import "SCRootBarViewController.h"
 #import <EAIntroView/EAIntroView.h>
 #import "ORColorUtil.h"
+#import "ORBaseViewController.h"
+#import "ORBaseTableViewController.h"
+#import "GSUserSetting.h"
 
 @interface SCRootBarViewController ()<EAIntroDelegate>
 
@@ -19,8 +22,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    //第一次登陆
+    BOOL isFirstLaunch = ![GSUserSetting boolOfKey:ORSettingsBoolEverLaunched];
     
-    [self showIntroduceView];
+    if (isFirstLaunch) {
+        [self showIntroduceView];
+        
+        [GSUserSetting setBool:YES forKey:ORSettingsBoolEverLaunched];
+        [GSUserSetting synchronize];
+    }
+
+    
     /**
      试图控制器中添加  storyboard 视图
      */
@@ -33,6 +46,10 @@
     UINavigationController *homeNavController = [homeStoryboard instantiateInitialViewController];
     [viewControlles replaceObjectAtIndex:0 withObject:homeNavController];
     
+    UIStoryboard *pictureStoryboard = [UIStoryboard storyboardWithName:@"Picture" bundle:nil];
+    UINavigationController *pictureNavController = [pictureStoryboard instantiateInitialViewController];
+    [viewControlles replaceObjectAtIndex:1 withObject:pictureNavController];
+
     
     [self setViewControllers:viewControlles];
 }
@@ -42,7 +59,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - 内部函数
+
+
+
+
+#pragma mark - 启动页 内部函数
 - (void)showIntroduceView
 {
     NSMutableArray *pages = [[NSMutableArray alloc] init];
@@ -82,3 +103,10 @@
 }
 
 @end
+
+#pragma mark - Global
+SCRootBarViewController* rootTabBarController()
+{
+    UINavigationController *nav = rootViewController();
+    return [nav.viewControllers objectAtIndex:0];
+}

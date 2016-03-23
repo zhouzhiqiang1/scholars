@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationBarHidden = YES;//隐藏系统导航栏
 }
 
 - (void)didReceiveMemoryWarning {

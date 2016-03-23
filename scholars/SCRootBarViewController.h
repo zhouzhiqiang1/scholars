@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface SCRootBarViewController : UITabBarController
 
 @end
+
+SCRootBarViewController* rootTabBarController();
