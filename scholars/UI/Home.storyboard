@@ -65,7 +65,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sKW-0R-IbK">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sKW-0R-IbK">
                                                     <rect key="frame" x="10" y="10" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="4ER-fh-Jku"/>
@@ -192,6 +192,11 @@
                                         <constraint firstItem="cUb-vk-gAv" firstAttribute="leading" secondItem="EXP-8H-RP9" secondAttribute="trailing" constant="14" id="yBg-pL-ZvH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contentLabel" destination="DCc-4r-kUA" id="RGl-sX-pJS"/>
+                                    <outlet property="headImageView" destination="EXP-8H-RP9" id="8yY-CJ-hyN"/>
+                                    <outlet property="titleLabel" destination="cUb-vk-gAv" id="LhK-9I-d6e"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -199,11 +204,6 @@
                             <outlet property="delegate" destination="tCm-Ye-fcz" id="woV-8U-PRt"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="contentLabel" destination="DCc-4r-kUA" id="Zp7-5o-CtJ"/>
-                        <outlet property="headImageView" destination="EXP-8H-RP9" id="i6t-id-YZ0"/>
-                        <outlet property="titleLabel" destination="cUb-vk-gAv" id="1nH-ej-qPf"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1W-nV-KsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

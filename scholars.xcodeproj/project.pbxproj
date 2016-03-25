@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A5D94801CA557F1007F0660 /* SCNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D947F1CA557F1007F0660 /* SCNewsTableViewCell.m */; };
 		4A9512B81C9054CD002658FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512B71C9054CD002658FB /* main.m */; };
 		4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512BA1C9054CD002658FB /* AppDelegate.m */; };
 		4A9512BE1C9054CD002658FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512BD1C9054CD002658FB /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		4A9512DC1C9054CD002658FB /* scholarsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512DB1C9054CD002658FB /* scholarsUITests.m */; };
 		4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */; };
 		4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512ED1C905969002658FB /* SCRootBarViewController.m */; };
-		4AA536A31C9542B6007D5AB8 /* SCNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA536A21C9542B6007D5AB8 /* SCNewsTableViewCell.m */; };
 		5170B32AD66868A92D1EE638 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC905B201A04C14CA6E63179 /* libPods.a */; };
 		DDC075001C98FBDD008DC9A3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */; };
 		DDC075011C98FBDD008DC9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC074FE1C98FBDD008DC9A3 /* Main.storyboard */; };
@@ -71,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A5D947E1CA557F1007F0660 /* SCNewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNewsTableViewCell.h; path = UI/View/Home/SCNewsTableViewCell.h; sourceTree = "<group>"; };
+		4A5D947F1CA557F1007F0660 /* SCNewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNewsTableViewCell.m; path = UI/View/Home/SCNewsTableViewCell.m; sourceTree = "<group>"; };
 		4A9512B31C9054CD002658FB /* scholars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scholars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9512B71C9054CD002658FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A9512B91C9054CD002658FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,8 +92,6 @@
 		4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootNavigationViewController.m; sourceTree = "<group>"; };
 		4A9512EC1C905969002658FB /* SCRootBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRootBarViewController.h; sourceTree = "<group>"; };
 		4A9512ED1C905969002658FB /* SCRootBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootBarViewController.m; sourceTree = "<group>"; };
-		4AA536A11C9542B6007D5AB8 /* SCNewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNewsTableViewCell.h; path = View/Home/SCNewsTableViewCell.h; sourceTree = "<group>"; };
-		4AA536A21C9542B6007D5AB8 /* SCNewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNewsTableViewCell.m; path = View/Home/SCNewsTableViewCell.m; sourceTree = "<group>"; };
 		C7A0347DB6C9F51FCD74CB16 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CCEED669B0F500150937771F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DC905B201A04C14CA6E63179 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -314,10 +314,10 @@
 			isa = PBXGroup;
 			children = (
 				4A7287231C91AB0D005581F3 /* Banner */,
+				4A5D947E1CA557F1007F0660 /* SCNewsTableViewCell.h */,
+				4A5D947F1CA557F1007F0660 /* SCNewsTableViewCell.m */,
 				DDC0750F1C98FC32008DC9A3 /* YDHotTableViewCell.h */,
 				DDC075101C98FC32008DC9A3 /* YDHotTableViewCell.m */,
-				4AA536A11C9542B6007D5AB8 /* SCNewsTableViewCell.h */,
-				4AA536A21C9542B6007D5AB8 /* SCNewsTableViewCell.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -686,7 +686,6 @@
 				DDC075811C990820008DC9A3 /* ORBasePageListModel.m in Sources */,
 				DDC0750B1C98FC04008DC9A3 /* SCNewsTableViewController.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
-				4AA536A31C9542B6007D5AB8 /* SCNewsTableViewCell.m in Sources */,
 				DDC075111C98FC32008DC9A3 /* YDHotTableViewCell.m in Sources */,
 				DDC0750E1C98FC18008DC9A3 /* SCPictureTableViewController.m in Sources */,
 				DDC075801C990820008DC9A3 /* ORBaseListModel.m in Sources */,
@@ -701,6 +700,7 @@
 				DDC075781C990813008DC9A3 /* ORBaseTableViewController.m in Sources */,
 				4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */,
 				DDC075611C9907B1008DC9A3 /* DCSubButton.m in Sources */,
+				4A5D94801CA557F1007F0660 /* SCNewsTableViewCell.m in Sources */,
 				4A9512B81C9054CD002658FB /* main.m in Sources */,
 				DDC075821C990820008DC9A3 /* BaseModel.m in Sources */,
 				DDC075671C9907D3008DC9A3 /* ORAppUtil.m in Sources */,
