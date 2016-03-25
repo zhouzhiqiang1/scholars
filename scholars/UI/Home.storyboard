@@ -85,7 +85,7 @@
                                                         <constraint firstAttribute="height" constant="20" id="oKL-gP-1nd"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2co-BA-RIo">
@@ -94,7 +94,7 @@
                                                         <constraint firstAttribute="height" constant="30" id="KK6-dm-fhO"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -169,7 +169,7 @@
                                                 <constraint firstAttribute="height" constant="20" id="Hrm-pc-aPO"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿花飞机卡双方很快就好" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCc-4r-kUA">
@@ -178,7 +178,7 @@
                                                 <constraint firstAttribute="height" constant="30" id="cna-SK-aaR"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -199,6 +199,11 @@
                             <outlet property="delegate" destination="tCm-Ye-fcz" id="woV-8U-PRt"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="contentLabel" destination="DCc-4r-kUA" id="Zp7-5o-CtJ"/>
+                        <outlet property="headImageView" destination="EXP-8H-RP9" id="i6t-id-YZ0"/>
+                        <outlet property="titleLabel" destination="cUb-vk-gAv" id="1nH-ej-qPf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1W-nV-KsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

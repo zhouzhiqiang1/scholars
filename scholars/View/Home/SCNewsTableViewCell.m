@@ -8,6 +8,10 @@
 
 #import "SCNewsTableViewCell.h"
 
+@interface SCNewsTableViewCell ()
+
+@end
+
 @implementation SCNewsTableViewCell
 
 - (void)awakeFromNib {

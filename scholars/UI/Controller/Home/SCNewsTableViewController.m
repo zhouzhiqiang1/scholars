@@ -10,6 +10,9 @@
 #import "SCNewsTableViewCell.h"
 
 @interface SCNewsTableViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *headImageView;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *contentLabel;
 
 @end
 
