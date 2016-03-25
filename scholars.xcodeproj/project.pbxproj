@@ -16,8 +16,6 @@
 		4A9512DC1C9054CD002658FB /* scholarsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512DB1C9054CD002658FB /* scholarsUITests.m */; };
 		4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */; };
 		4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512ED1C905969002658FB /* SCRootBarViewController.m */; };
-		4A9512F11C905BD1002658FB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9512F01C905BD1002658FB /* Home.storyboard */; };
-		4A9513011C90659B002658FB /* SCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9513001C90659B002658FB /* SCHomeViewController.m */; };
 		4AA536A31C9542B6007D5AB8 /* SCNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA536A21C9542B6007D5AB8 /* SCNewsTableViewCell.m */; };
 		5170B32AD66868A92D1EE638 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC905B201A04C14CA6E63179 /* libPods.a */; };
 		DDC075001C98FBDD008DC9A3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */; };
@@ -51,6 +49,8 @@
 		DDC075821C990820008DC9A3 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC0757D1C990820008DC9A3 /* BaseModel.m */; };
 		DDC075851C99082F008DC9A3 /* ORColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC075841C99082F008DC9A3 /* ORColorUtil.m */; };
 		DDC0758A1C990938008DC9A3 /* Photo.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC075891C990938008DC9A3 /* Photo.json */; };
+		DDD16BD91CA5281D001D533E /* SCMenuLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD16BD81CA5281D001D533E /* SCMenuLeftViewController.m */; };
+		DDD16BDB1CA5283E001D533E /* AboutMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD16BDA1CA5283E001D533E /* AboutMenu.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,9 +90,6 @@
 		4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootNavigationViewController.m; sourceTree = "<group>"; };
 		4A9512EC1C905969002658FB /* SCRootBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRootBarViewController.h; sourceTree = "<group>"; };
 		4A9512ED1C905969002658FB /* SCRootBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootBarViewController.m; sourceTree = "<group>"; };
-		4A9512F01C905BD1002658FB /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		4A9512FF1C90659B002658FB /* SCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHomeViewController.h; path = Code/Home/SCHomeViewController.h; sourceTree = "<group>"; };
-		4A9513001C90659B002658FB /* SCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHomeViewController.m; path = Code/Home/SCHomeViewController.m; sourceTree = "<group>"; };
 		4AA536A11C9542B6007D5AB8 /* SCNewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNewsTableViewCell.h; path = View/Home/SCNewsTableViewCell.h; sourceTree = "<group>"; };
 		4AA536A21C9542B6007D5AB8 /* SCNewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNewsTableViewCell.m; path = View/Home/SCNewsTableViewCell.m; sourceTree = "<group>"; };
 		C7A0347DB6C9F51FCD74CB16 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +148,9 @@
 		DDC075831C99082F008DC9A3 /* ORColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORColorUtil.h; path = Other/ColorUtil/ORColorUtil.h; sourceTree = "<group>"; };
 		DDC075841C99082F008DC9A3 /* ORColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORColorUtil.m; path = Other/ColorUtil/ORColorUtil.m; sourceTree = "<group>"; };
 		DDC075891C990938008DC9A3 /* Photo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Photo.json; path = Resource/Photo.json; sourceTree = "<group>"; };
+		DDD16BD71CA5281D001D533E /* SCMenuLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMenuLeftViewController.h; path = UI/AboutMenu/SCMenuLeftViewController.h; sourceTree = "<group>"; };
+		DDD16BD81CA5281D001D533E /* SCMenuLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCMenuLeftViewController.m; path = UI/AboutMenu/SCMenuLeftViewController.m; sourceTree = "<group>"; };
+		DDD16BDA1CA5283E001D533E /* AboutMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AboutMenu.storyboard; path = UI/AboutMenu.storyboard; sourceTree = "<group>"; };
 		DDF0D5271C9813BA000D40E5 /* scholars.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scholars.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,8 +191,6 @@
 		4A7287231C91AB0D005581F3 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
-				4A7287201C91A9A6005581F3 /* WMLoopView.h */,
-				4A7287211C91A9A6005581F3 /* WMLoopView.m */,
 				DDC075121C98FC8E008DC9A3 /* WMLoopView.h */,
 				DDC075131C98FC8E008DC9A3 /* WMLoopView.m */,
 			);
@@ -273,6 +271,7 @@
 		4A9512EF1C905B98002658FB /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				DDD16BDA1CA5283E001D533E /* AboutMenu.storyboard */,
 				DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */,
 				DDC074FE1C98FBDD008DC9A3 /* Main.storyboard */,
 				DDC074FF1C98FBDD008DC9A3 /* Picture.storyboard */,
@@ -315,8 +314,6 @@
 			isa = PBXGroup;
 			children = (
 				4A7287231C91AB0D005581F3 /* Banner */,
-				4A72871A1C91A7A5005581F3 /* YDHotTableViewCell.h */,
-				4A72871B1C91A7A5005581F3 /* YDHotTableViewCell.m */,
 				4AA536A11C9542B6007D5AB8 /* SCNewsTableViewCell.h */,
 				4AA536A21C9542B6007D5AB8 /* SCNewsTableViewCell.m */,
 				DDC0750F1C98FC32008DC9A3 /* YDHotTableViewCell.h */,
@@ -363,6 +360,7 @@
 		DDC074FC1C98FB8A008DC9A3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DDD16BD11CA527BA001D533E /* Aboutmenu */,
 				4A9512EF1C905B98002658FB /* Storyboard */,
 				4A9512F31C906172002658FB /* Controller */,
 				4A9512FA1C9063E2002658FB /* View */,
@@ -399,6 +397,15 @@
 				DDC075841C99082F008DC9A3 /* ORColorUtil.m */,
 			);
 			name = ColorUtil;
+			sourceTree = "<group>";
+		};
+		DDD16BD11CA527BA001D533E /* Aboutmenu */ = {
+			isa = PBXGroup;
+			children = (
+				DDD16BD71CA5281D001D533E /* SCMenuLeftViewController.h */,
+				DDD16BD81CA5281D001D533E /* SCMenuLeftViewController.m */,
+			);
+			name = Aboutmenu;
 			sourceTree = "<group>";
 		};
 		DDF0D4F11C96A5E9000D40E5 /* Picture */ = {
@@ -598,6 +605,7 @@
 				DDC075001C98FBDD008DC9A3 /* Home.storyboard in Resources */,
 				DDC075591C9907A5008DC9A3 /* custom_5.png in Resources */,
 				4A9512C31C9054CD002658FB /* Assets.xcassets in Resources */,
+				DDD16BDB1CA5283E001D533E /* AboutMenu.storyboard in Resources */,
 				DDC075571C9907A5008DC9A3 /* custom_3.png in Resources */,
 				DDC075551C9907A5008DC9A3 /* custom_1.png in Resources */,
 				DDC075021C98FBDD008DC9A3 /* Picture.storyboard in Resources */,
@@ -679,8 +687,6 @@
 				DDC0750B1C98FC04008DC9A3 /* SCNewsTableViewController.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
 				4AA536A31C9542B6007D5AB8 /* SCNewsTableViewCell.m in Sources */,
-				4A7287221C91A9A6005581F3 /* WMLoopView.m in Sources */,
-				DDD0F7581C912A7600F81EBF /* SCHotViewController.m in Sources */,
 				DDC075111C98FC32008DC9A3 /* YDHotTableViewCell.m in Sources */,
 				DDC0750E1C98FC18008DC9A3 /* SCPictureTableViewController.m in Sources */,
 				DDC075801C990820008DC9A3 /* ORBaseListModel.m in Sources */,
@@ -701,6 +707,7 @@
 				DDC075091C98FC04008DC9A3 /* SCHomeViewController.m in Sources */,
 				DDC075851C99082F008DC9A3 /* ORColorUtil.m in Sources */,
 				DDC075711C990802008DC9A3 /* ORIndicatorView.m in Sources */,
+				DDD16BD91CA5281D001D533E /* SCMenuLeftViewController.m in Sources */,
 				DDC075601C9907B1008DC9A3 /* DCPathButton.m in Sources */,
 				DDC075641C9907C5008DC9A3 /* GSUserSetting.m in Sources */,
 			);
@@ -838,7 +845,7 @@
 				INFOPLIST_FILE = scholars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Xiong.scholars;
+				PRODUCT_BUNDLE_IDENTIFIER = scholars.scholars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -852,7 +859,7 @@
 				INFOPLIST_FILE = scholars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Xiong.scholars;
+				PRODUCT_BUNDLE_IDENTIFIER = scholars.scholars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
