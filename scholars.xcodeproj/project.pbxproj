@@ -10,20 +10,21 @@
 		4A5D94801CA557F1007F0660 /* SCNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D947F1CA557F1007F0660 /* SCNewsTableViewCell.m */; };
 		4A5D94991CA63E1A007F0660 /* Jastor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94961CA63E1A007F0660 /* Jastor.m */; };
 		4A5D949A1CA63E1A007F0660 /* JastorRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94981CA63E1A007F0660 /* JastorRuntimeHelper.m */; };
-		4A5D94A21CA63E2D007F0660 /* GSDataDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D949C1CA63E2D007F0660 /* GSDataDef.m */; };
-		4A5D94A31CA63E2D007F0660 /* GSDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D949E1CA63E2D007F0660 /* GSDataEngine.m */; };
-		4A5D94DB1CA640B8007F0660 /* AppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94D81CA640B8007F0660 /* AppUtil.m */; };
-		4A5D94DC1CA640B8007F0660 /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94DA1CA640B8007F0660 /* DataUtil.m */; };
-		4A5D94DF1CA640CC007F0660 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94DE1CA640CC007F0660 /* SecurityUtil.m */; };
-		4A5D94F21CA65964007F0660 /* GSErrorDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94E11CA65964007F0660 /* GSErrorDef.m */; };
-		4A5D94F31CA65964007F0660 /* GSHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94E31CA65964007F0660 /* GSHTTPRequestOperationManager.m */; };
-		4A5D94F41CA65964007F0660 /* GSHTTPTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94E51CA65964007F0660 /* GSHTTPTask.m */; };
-		4A5D94F51CA65964007F0660 /* GSHTTPURLRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94E71CA65964007F0660 /* GSHTTPURLRequestSerializer.m */; };
-		4A5D94F61CA65964007F0660 /* GSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94E91CA65964007F0660 /* GSTask.m */; };
-		4A5D94F71CA65964007F0660 /* GSTaskEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94EB1CA65964007F0660 /* GSTaskEngine.m */; };
-		4A5D94F81CA65964007F0660 /* GSTaskResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94ED1CA65964007F0660 /* GSTaskResponse.m */; };
-		4A5D94F91CA65964007F0660 /* GSUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94EF1CA65964007F0660 /* GSUserSetting.m */; };
-		4A5D94FA1CA65964007F0660 /* ORBaseHttpTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D94F11CA65964007F0660 /* ORBaseHttpTask.m */; };
+		4A5D94FE1CA65B10007F0660 /* NSArryData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A5D94FD1CA65B10007F0660 /* NSArryData.json */; };
+		4A5D95071CA65C14007F0660 /* GSDataDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95011CA65C13007F0660 /* GSDataDef.m */; };
+		4A5D95081CA65C14007F0660 /* GSDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95031CA65C14007F0660 /* GSDataEngine.m */; };
+		4A5D95091CA65C14007F0660 /* GSUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95061CA65C14007F0660 /* GSUserSetting.m */; };
+		4A5D951A1CA65C41007F0660 /* GSErrorDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D950B1CA65C41007F0660 /* GSErrorDef.m */; };
+		4A5D951B1CA65C41007F0660 /* GSHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D950D1CA65C41007F0660 /* GSHTTPRequestOperationManager.m */; };
+		4A5D951C1CA65C41007F0660 /* GSHTTPTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D950F1CA65C41007F0660 /* GSHTTPTask.m */; };
+		4A5D951D1CA65C41007F0660 /* GSHTTPURLRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95111CA65C41007F0660 /* GSHTTPURLRequestSerializer.m */; };
+		4A5D951E1CA65C41007F0660 /* GSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95131CA65C41007F0660 /* GSTask.m */; };
+		4A5D951F1CA65C41007F0660 /* GSTaskEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95151CA65C41007F0660 /* GSTaskEngine.m */; };
+		4A5D95201CA65C41007F0660 /* GSTaskResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95171CA65C41007F0660 /* GSTaskResponse.m */; };
+		4A5D95211CA65C41007F0660 /* ORBaseHttpTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95191CA65C41007F0660 /* ORBaseHttpTask.m */; };
+		4A5D95281CA65CAD007F0660 /* AppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95231CA65CAD007F0660 /* AppUtil.m */; };
+		4A5D95291CA65CAD007F0660 /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95251CA65CAD007F0660 /* DataUtil.m */; };
+		4A5D952A1CA65CAD007F0660 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95271CA65CAD007F0660 /* SecurityUtil.m */; };
 		4A9512B81C9054CD002658FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512B71C9054CD002658FB /* main.m */; };
 		4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512BA1C9054CD002658FB /* AppDelegate.m */; };
 		4A9512BE1C9054CD002658FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512BD1C9054CD002658FB /* ViewController.m */; };
@@ -92,35 +93,36 @@
 		4A5D94961CA63E1A007F0660 /* Jastor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jastor.m; path = Other/Jastor/Jastor.m; sourceTree = "<group>"; };
 		4A5D94971CA63E1A007F0660 /* JastorRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JastorRuntimeHelper.h; path = Other/Jastor/JastorRuntimeHelper.h; sourceTree = "<group>"; };
 		4A5D94981CA63E1A007F0660 /* JastorRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JastorRuntimeHelper.m; path = Other/Jastor/JastorRuntimeHelper.m; sourceTree = "<group>"; };
-		4A5D949B1CA63E2D007F0660 /* GSDataDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSDataDef.h; path = UI/DataEngine/GSDataDef.h; sourceTree = "<group>"; };
-		4A5D949C1CA63E2D007F0660 /* GSDataDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSDataDef.m; path = UI/DataEngine/GSDataDef.m; sourceTree = "<group>"; };
-		4A5D949D1CA63E2D007F0660 /* GSDataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSDataEngine.h; path = UI/DataEngine/GSDataEngine.h; sourceTree = "<group>"; };
-		4A5D949E1CA63E2D007F0660 /* GSDataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSDataEngine.m; path = UI/DataEngine/GSDataEngine.m; sourceTree = "<group>"; };
-		4A5D949F1CA63E2D007F0660 /* GSUrlDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSUrlDef.h; path = UI/DataEngine/GSUrlDef.h; sourceTree = "<group>"; };
-		4A5D94D71CA640B8007F0660 /* AppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtil.h; sourceTree = "<group>"; };
-		4A5D94D81CA640B8007F0660 /* AppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtil.m; sourceTree = "<group>"; };
-		4A5D94D91CA640B8007F0660 /* DataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
-		4A5D94DA1CA640B8007F0660 /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
-		4A5D94DD1CA640CC007F0660 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
-		4A5D94DE1CA640CC007F0660 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
-		4A5D94E01CA65964007F0660 /* GSErrorDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSErrorDef.h; path = UI/DataEngine/GSErrorDef.h; sourceTree = "<group>"; };
-		4A5D94E11CA65964007F0660 /* GSErrorDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSErrorDef.m; path = UI/DataEngine/GSErrorDef.m; sourceTree = "<group>"; };
-		4A5D94E21CA65964007F0660 /* GSHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSHTTPRequestOperationManager.h; path = UI/DataEngine/GSHTTPRequestOperationManager.h; sourceTree = "<group>"; };
-		4A5D94E31CA65964007F0660 /* GSHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSHTTPRequestOperationManager.m; path = UI/DataEngine/GSHTTPRequestOperationManager.m; sourceTree = "<group>"; };
-		4A5D94E41CA65964007F0660 /* GSHTTPTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSHTTPTask.h; path = UI/DataEngine/GSHTTPTask.h; sourceTree = "<group>"; };
-		4A5D94E51CA65964007F0660 /* GSHTTPTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSHTTPTask.m; path = UI/DataEngine/GSHTTPTask.m; sourceTree = "<group>"; };
-		4A5D94E61CA65964007F0660 /* GSHTTPURLRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSHTTPURLRequestSerializer.h; path = UI/DataEngine/GSHTTPURLRequestSerializer.h; sourceTree = "<group>"; };
-		4A5D94E71CA65964007F0660 /* GSHTTPURLRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSHTTPURLRequestSerializer.m; path = UI/DataEngine/GSHTTPURLRequestSerializer.m; sourceTree = "<group>"; };
-		4A5D94E81CA65964007F0660 /* GSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTask.h; path = UI/DataEngine/GSTask.h; sourceTree = "<group>"; };
-		4A5D94E91CA65964007F0660 /* GSTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTask.m; path = UI/DataEngine/GSTask.m; sourceTree = "<group>"; };
-		4A5D94EA1CA65964007F0660 /* GSTaskEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTaskEngine.h; path = UI/DataEngine/GSTaskEngine.h; sourceTree = "<group>"; };
-		4A5D94EB1CA65964007F0660 /* GSTaskEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTaskEngine.m; path = UI/DataEngine/GSTaskEngine.m; sourceTree = "<group>"; };
-		4A5D94EC1CA65964007F0660 /* GSTaskResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTaskResponse.h; path = UI/DataEngine/GSTaskResponse.h; sourceTree = "<group>"; };
-		4A5D94ED1CA65964007F0660 /* GSTaskResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTaskResponse.m; path = UI/DataEngine/GSTaskResponse.m; sourceTree = "<group>"; };
-		4A5D94EE1CA65964007F0660 /* GSUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSUserSetting.h; path = UI/DataEngine/GSUserSetting.h; sourceTree = "<group>"; };
-		4A5D94EF1CA65964007F0660 /* GSUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSUserSetting.m; path = UI/DataEngine/GSUserSetting.m; sourceTree = "<group>"; };
-		4A5D94F01CA65964007F0660 /* ORBaseHttpTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBaseHttpTask.h; path = UI/DataEngine/ORBaseHttpTask.h; sourceTree = "<group>"; };
-		4A5D94F11CA65964007F0660 /* ORBaseHttpTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBaseHttpTask.m; path = UI/DataEngine/ORBaseHttpTask.m; sourceTree = "<group>"; };
+		4A5D94FD1CA65B10007F0660 /* NSArryData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = NSArryData.json; path = Resource/NSArryData.json; sourceTree = "<group>"; };
+		4A5D95001CA65C13007F0660 /* GSDataDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSDataDef.h; path = Other/DataEngine/GSDataDef.h; sourceTree = "<group>"; };
+		4A5D95011CA65C13007F0660 /* GSDataDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSDataDef.m; path = Other/DataEngine/GSDataDef.m; sourceTree = "<group>"; };
+		4A5D95021CA65C14007F0660 /* GSDataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSDataEngine.h; path = Other/DataEngine/GSDataEngine.h; sourceTree = "<group>"; };
+		4A5D95031CA65C14007F0660 /* GSDataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSDataEngine.m; path = Other/DataEngine/GSDataEngine.m; sourceTree = "<group>"; };
+		4A5D95041CA65C14007F0660 /* GSUrlDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSUrlDef.h; path = Other/DataEngine/GSUrlDef.h; sourceTree = "<group>"; };
+		4A5D95051CA65C14007F0660 /* GSUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSUserSetting.h; path = Other/DataEngine/GSUserSetting.h; sourceTree = "<group>"; };
+		4A5D95061CA65C14007F0660 /* GSUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSUserSetting.m; path = Other/DataEngine/GSUserSetting.m; sourceTree = "<group>"; };
+		4A5D950A1CA65C28007F0660 /* GSErrorDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSErrorDef.h; path = Other/DataEngine/GSErrorDef.h; sourceTree = "<group>"; };
+		4A5D950B1CA65C41007F0660 /* GSErrorDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSErrorDef.m; path = Other/DataEngine/GSErrorDef.m; sourceTree = "<group>"; };
+		4A5D950C1CA65C41007F0660 /* GSHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSHTTPRequestOperationManager.h; path = Other/DataEngine/GSHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		4A5D950D1CA65C41007F0660 /* GSHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSHTTPRequestOperationManager.m; path = Other/DataEngine/GSHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		4A5D950E1CA65C41007F0660 /* GSHTTPTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSHTTPTask.h; path = Other/DataEngine/GSHTTPTask.h; sourceTree = "<group>"; };
+		4A5D950F1CA65C41007F0660 /* GSHTTPTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSHTTPTask.m; path = Other/DataEngine/GSHTTPTask.m; sourceTree = "<group>"; };
+		4A5D95101CA65C41007F0660 /* GSHTTPURLRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSHTTPURLRequestSerializer.h; path = Other/DataEngine/GSHTTPURLRequestSerializer.h; sourceTree = "<group>"; };
+		4A5D95111CA65C41007F0660 /* GSHTTPURLRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSHTTPURLRequestSerializer.m; path = Other/DataEngine/GSHTTPURLRequestSerializer.m; sourceTree = "<group>"; };
+		4A5D95121CA65C41007F0660 /* GSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTask.h; path = Other/DataEngine/GSTask.h; sourceTree = "<group>"; };
+		4A5D95131CA65C41007F0660 /* GSTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTask.m; path = Other/DataEngine/GSTask.m; sourceTree = "<group>"; };
+		4A5D95141CA65C41007F0660 /* GSTaskEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTaskEngine.h; path = Other/DataEngine/GSTaskEngine.h; sourceTree = "<group>"; };
+		4A5D95151CA65C41007F0660 /* GSTaskEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTaskEngine.m; path = Other/DataEngine/GSTaskEngine.m; sourceTree = "<group>"; };
+		4A5D95161CA65C41007F0660 /* GSTaskResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSTaskResponse.h; path = Other/DataEngine/GSTaskResponse.h; sourceTree = "<group>"; };
+		4A5D95171CA65C41007F0660 /* GSTaskResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSTaskResponse.m; path = Other/DataEngine/GSTaskResponse.m; sourceTree = "<group>"; };
+		4A5D95181CA65C41007F0660 /* ORBaseHttpTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORBaseHttpTask.h; path = Other/DataEngine/ORBaseHttpTask.h; sourceTree = "<group>"; };
+		4A5D95191CA65C41007F0660 /* ORBaseHttpTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORBaseHttpTask.m; path = Other/DataEngine/ORBaseHttpTask.m; sourceTree = "<group>"; };
+		4A5D95221CA65CAD007F0660 /* AppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppUtil.h; path = Other/DataEngine/AppUtil.h; sourceTree = "<group>"; };
+		4A5D95231CA65CAD007F0660 /* AppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppUtil.m; path = Other/DataEngine/AppUtil.m; sourceTree = "<group>"; };
+		4A5D95241CA65CAD007F0660 /* DataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataUtil.h; path = Other/DataEngine/DataUtil.h; sourceTree = "<group>"; };
+		4A5D95251CA65CAD007F0660 /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataUtil.m; path = Other/DataEngine/DataUtil.m; sourceTree = "<group>"; };
+		4A5D95261CA65CAD007F0660 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityUtil.h; path = Other/DataEngine/SecurityUtil.h; sourceTree = "<group>"; };
+		4A5D95271CA65CAD007F0660 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityUtil.m; path = Other/DataEngine/SecurityUtil.m; sourceTree = "<group>"; };
 		4A9512B31C9054CD002658FB /* scholars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scholars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9512B71C9054CD002658FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A9512B91C9054CD002658FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -237,13 +239,13 @@
 		4A5D94811CA63BAD007F0660 /* DataEngine */ = {
 			isa = PBXGroup;
 			children = (
-				4A5D949B1CA63E2D007F0660 /* GSDataDef.h */,
-				4A5D949C1CA63E2D007F0660 /* GSDataDef.m */,
-				4A5D949D1CA63E2D007F0660 /* GSDataEngine.h */,
-				4A5D949E1CA63E2D007F0660 /* GSDataEngine.m */,
-				4A5D949F1CA63E2D007F0660 /* GSUrlDef.h */,
-				4A5D94EE1CA65964007F0660 /* GSUserSetting.h */,
-				4A5D94EF1CA65964007F0660 /* GSUserSetting.m */,
+				4A5D95001CA65C13007F0660 /* GSDataDef.h */,
+				4A5D95011CA65C13007F0660 /* GSDataDef.m */,
+				4A5D95021CA65C14007F0660 /* GSDataEngine.h */,
+				4A5D95031CA65C14007F0660 /* GSDataEngine.m */,
+				4A5D95041CA65C14007F0660 /* GSUrlDef.h */,
+				4A5D95051CA65C14007F0660 /* GSUserSetting.h */,
+				4A5D95061CA65C14007F0660 /* GSUserSetting.m */,
 				4A5D94D61CA64065007F0660 /* Util */,
 				4A5D94A51CA63E79007F0660 /* HttpEngine */,
 			);
@@ -264,22 +266,22 @@
 		4A5D94A51CA63E79007F0660 /* HttpEngine */ = {
 			isa = PBXGroup;
 			children = (
-				4A5D94E01CA65964007F0660 /* GSErrorDef.h */,
-				4A5D94E11CA65964007F0660 /* GSErrorDef.m */,
-				4A5D94E21CA65964007F0660 /* GSHTTPRequestOperationManager.h */,
-				4A5D94E31CA65964007F0660 /* GSHTTPRequestOperationManager.m */,
-				4A5D94E41CA65964007F0660 /* GSHTTPTask.h */,
-				4A5D94E51CA65964007F0660 /* GSHTTPTask.m */,
-				4A5D94E61CA65964007F0660 /* GSHTTPURLRequestSerializer.h */,
-				4A5D94E71CA65964007F0660 /* GSHTTPURLRequestSerializer.m */,
-				4A5D94E81CA65964007F0660 /* GSTask.h */,
-				4A5D94E91CA65964007F0660 /* GSTask.m */,
-				4A5D94EA1CA65964007F0660 /* GSTaskEngine.h */,
-				4A5D94EB1CA65964007F0660 /* GSTaskEngine.m */,
-				4A5D94EC1CA65964007F0660 /* GSTaskResponse.h */,
-				4A5D94ED1CA65964007F0660 /* GSTaskResponse.m */,
-				4A5D94F01CA65964007F0660 /* ORBaseHttpTask.h */,
-				4A5D94F11CA65964007F0660 /* ORBaseHttpTask.m */,
+				4A5D950A1CA65C28007F0660 /* GSErrorDef.h */,
+				4A5D950B1CA65C41007F0660 /* GSErrorDef.m */,
+				4A5D950C1CA65C41007F0660 /* GSHTTPRequestOperationManager.h */,
+				4A5D950D1CA65C41007F0660 /* GSHTTPRequestOperationManager.m */,
+				4A5D950E1CA65C41007F0660 /* GSHTTPTask.h */,
+				4A5D950F1CA65C41007F0660 /* GSHTTPTask.m */,
+				4A5D95101CA65C41007F0660 /* GSHTTPURLRequestSerializer.h */,
+				4A5D95111CA65C41007F0660 /* GSHTTPURLRequestSerializer.m */,
+				4A5D95121CA65C41007F0660 /* GSTask.h */,
+				4A5D95131CA65C41007F0660 /* GSTask.m */,
+				4A5D95141CA65C41007F0660 /* GSTaskEngine.h */,
+				4A5D95151CA65C41007F0660 /* GSTaskEngine.m */,
+				4A5D95161CA65C41007F0660 /* GSTaskResponse.h */,
+				4A5D95171CA65C41007F0660 /* GSTaskResponse.m */,
+				4A5D95181CA65C41007F0660 /* ORBaseHttpTask.h */,
+				4A5D95191CA65C41007F0660 /* ORBaseHttpTask.m */,
 			);
 			name = HttpEngine;
 			sourceTree = "<group>";
@@ -287,14 +289,21 @@
 		4A5D94D61CA64065007F0660 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				4A5D94D71CA640B8007F0660 /* AppUtil.h */,
-				4A5D94D81CA640B8007F0660 /* AppUtil.m */,
-				4A5D94D91CA640B8007F0660 /* DataUtil.h */,
-				4A5D94DA1CA640B8007F0660 /* DataUtil.m */,
-				4A5D94DD1CA640CC007F0660 /* SecurityUtil.h */,
-				4A5D94DE1CA640CC007F0660 /* SecurityUtil.m */,
+				4A5D95221CA65CAD007F0660 /* AppUtil.h */,
+				4A5D95231CA65CAD007F0660 /* AppUtil.m */,
+				4A5D95241CA65CAD007F0660 /* DataUtil.h */,
+				4A5D95251CA65CAD007F0660 /* DataUtil.m */,
+				4A5D95261CA65CAD007F0660 /* SecurityUtil.h */,
+				4A5D95271CA65CAD007F0660 /* SecurityUtil.m */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		4A5D94FF1CA65B57007F0660 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		4A7287231C91AB0D005581F3 /* Banner */ = {
@@ -469,11 +478,11 @@
 		DDC074FC1C98FB8A008DC9A3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				DDD16BD11CA527BA001D533E /* Aboutmenu */,
 				4A9512EF1C905B98002658FB /* Storyboard */,
+				DDD16BD11CA527BA001D533E /* Aboutmenu */,
 				4A9512F31C906172002658FB /* Controller */,
 				4A9512FA1C9063E2002658FB /* View */,
-				4A5D94811CA63BAD007F0660 /* DataEngine */,
+				4A5D94FF1CA65B57007F0660 /* Model */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -481,6 +490,7 @@
 		DDC075861C9908EE008DC9A3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4A5D94FD1CA65B10007F0660 /* NSArryData.json */,
 				DDC075891C990938008DC9A3 /* Photo.json */,
 			);
 			name = Resource;
@@ -489,6 +499,7 @@
 		DDD0F7591C91503C00F81EBF /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				4A5D94811CA63BAD007F0660 /* DataEngine */,
 				4A5D948E1CA63D63007F0660 /* Jastor */,
 				DDC074E71C98F9BF008DC9A3 /* SCPathButton */,
 				DDF0D5141C96B632000D40E5 /* ORAppUtil */,
@@ -703,6 +714,7 @@
 				DDC0755A1C9907A5008DC9A3 /* custom_center.png in Resources */,
 				DDC0758A1C990938008DC9A3 /* Photo.json in Resources */,
 				DDC075001C98FBDD008DC9A3 /* Home.storyboard in Resources */,
+				4A5D94FE1CA65B10007F0660 /* NSArryData.json in Resources */,
 				DDC075591C9907A5008DC9A3 /* custom_5.png in Resources */,
 				4A9512C31C9054CD002658FB /* Assets.xcassets in Resources */,
 				DDD16BDB1CA5283E001D533E /* AboutMenu.storyboard in Resources */,
@@ -769,47 +781,47 @@
 			files = (
 				4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */,
 				DDC075811C990820008DC9A3 /* ORBasePageListModel.m in Sources */,
-				4A5D94F41CA65964007F0660 /* GSHTTPTask.m in Sources */,
 				DDC0750B1C98FC04008DC9A3 /* SCNewsTableViewController.m in Sources */,
-				4A5D94F81CA65964007F0660 /* GSTaskResponse.m in Sources */,
-				4A5D94FA1CA65964007F0660 /* ORBaseHttpTask.m in Sources */,
-				4A5D94F71CA65964007F0660 /* GSTaskEngine.m in Sources */,
-				4A5D94DC1CA640B8007F0660 /* DataUtil.m in Sources */,
+				4A5D951C1CA65C41007F0660 /* GSHTTPTask.m in Sources */,
+				4A5D95211CA65C41007F0660 /* ORBaseHttpTask.m in Sources */,
+				4A5D952A1CA65CAD007F0660 /* SecurityUtil.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
 				4A5D94991CA63E1A007F0660 /* Jastor.m in Sources */,
+				4A5D951F1CA65C41007F0660 /* GSTaskEngine.m in Sources */,
 				DDC075111C98FC32008DC9A3 /* YDHotTableViewCell.m in Sources */,
 				DDC0750E1C98FC18008DC9A3 /* SCPictureTableViewController.m in Sources */,
-				4A5D94DB1CA640B8007F0660 /* AppUtil.m in Sources */,
-				4A5D94F31CA65964007F0660 /* GSHTTPRequestOperationManager.m in Sources */,
-				4A5D94DF1CA640CC007F0660 /* SecurityUtil.m in Sources */,
 				DDC075801C990820008DC9A3 /* ORBaseListModel.m in Sources */,
 				DDC075731C990802008DC9A3 /* ViewUtil.m in Sources */,
-				4A5D94F21CA65964007F0660 /* GSErrorDef.m in Sources */,
 				4A5D949A1CA63E1A007F0660 /* JastorRuntimeHelper.m in Sources */,
 				DDC075791C990813008DC9A3 /* ORBaseViewController.m in Sources */,
+				4A5D95281CA65CAD007F0660 /* AppUtil.m in Sources */,
+				4A5D95291CA65CAD007F0660 /* DataUtil.m in Sources */,
 				DDC0756A1C9907FA008DC9A3 /* Observer.m in Sources */,
 				DDC0750A1C98FC04008DC9A3 /* SCHotViewController.m in Sources */,
 				DDC075721C990802008DC9A3 /* ORLoadingIndicator.m in Sources */,
 				4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */,
+				4A5D951A1CA65C41007F0660 /* GSErrorDef.m in Sources */,
 				DDC0752A1C98FD5B008DC9A3 /* SCPictureTableViewCell.m in Sources */,
-				4A5D94F61CA65964007F0660 /* GSTask.m in Sources */,
+				4A5D95071CA65C14007F0660 /* GSDataDef.m in Sources */,
 				DDC075141C98FC8E008DC9A3 /* WMLoopView.m in Sources */,
 				DDC075781C990813008DC9A3 /* ORBaseTableViewController.m in Sources */,
 				4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */,
-				4A5D94A31CA63E2D007F0660 /* GSDataEngine.m in Sources */,
 				DDC075611C9907B1008DC9A3 /* DCSubButton.m in Sources */,
 				4A5D94801CA557F1007F0660 /* SCNewsTableViewCell.m in Sources */,
+				4A5D951B1CA65C41007F0660 /* GSHTTPRequestOperationManager.m in Sources */,
+				4A5D95201CA65C41007F0660 /* GSTaskResponse.m in Sources */,
 				4A9512B81C9054CD002658FB /* main.m in Sources */,
-				4A5D94F51CA65964007F0660 /* GSHTTPURLRequestSerializer.m in Sources */,
-				4A5D94F91CA65964007F0660 /* GSUserSetting.m in Sources */,
+				4A5D951D1CA65C41007F0660 /* GSHTTPURLRequestSerializer.m in Sources */,
+				4A5D95081CA65C14007F0660 /* GSDataEngine.m in Sources */,
 				DDC075821C990820008DC9A3 /* BaseModel.m in Sources */,
+				4A5D951E1CA65C41007F0660 /* GSTask.m in Sources */,
 				DDC075671C9907D3008DC9A3 /* ORAppUtil.m in Sources */,
 				DDC075091C98FC04008DC9A3 /* SCHomeViewController.m in Sources */,
 				DDC075851C99082F008DC9A3 /* ORColorUtil.m in Sources */,
 				DDC075711C990802008DC9A3 /* ORIndicatorView.m in Sources */,
 				DDD16BD91CA5281D001D533E /* SCMenuLeftViewController.m in Sources */,
 				DDC075601C9907B1008DC9A3 /* DCPathButton.m in Sources */,
-				4A5D94A21CA63E2D007F0660 /* GSDataDef.m in Sources */,
+				4A5D95091CA65C14007F0660 /* GSUserSetting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

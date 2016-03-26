@@ -30,23 +30,13 @@
     return _sharedEngine;
 }
 
-- (id)init {
-    self = [super init];
-    if (self) {
-#if !(TARGET_IPHONE_SIMULATOR)
-        _mapManager = [[BMKMapManager alloc] init];
-#endif
-    }
-    return self;
+
+- (BOOL)isReachable
+{
+    return [AFNetworkReachabilityManager sharedManager].networkReachabilityStatus != AFNetworkReachabilityStatusNotReachable;
 }
 
-- (void)dealloc
-{
-#if !(TARGET_IPHONE_SIMULATOR)
-    [_mapManager stop];
-    _mapManager = nil;
-#endif
-}
+
 #pragma mark -- 本地数据(网络数据简单获取)
 -(GSHTTPTask *)addGetLocalDataActionTaskWithResponse:(GSTaskBlock())aResponseBlock userid:(long long)userid
 {
