@@ -19,6 +19,12 @@
 #define GSHttpServer @"https://api.readyidu.com/"
 #endif
 
+
+//从缓存读取URL 假数据
+static NSString * const GSUrlFalseDataInfo = @"";
+
+
+
 //从缓存读取URL请求头Id
 static NSString * const kURLRequestHeaderIdReadFromCache = @"CustomHeaderReadFromCache";
 

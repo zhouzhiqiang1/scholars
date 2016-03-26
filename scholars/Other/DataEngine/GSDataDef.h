@@ -8,36 +8,53 @@
 
 #import <Foundation/Foundation.h>
 #import "Jastor.h"
+#import "JSONModel.h"
 
 typedef NS_OPTIONS(NSInteger, YDHttpType) {
     YDHttpTypeGet = 0,
     YDHttpTypePost
 };
 
-@interface YDDataUserInfo : Jastor
 
-@property (assign, nonatomic) int uid;
-@property (strong, nonatomic) NSString *nickname;
-@property (assign, nonatomic) int sex;
-@property (strong, nonatomic) NSString *phone;
-@property (strong, nonatomic) NSString *photo;
+@interface SCBaseJsonModel : JSONModel
+
 @end
 
-
-@interface YDNetworkDataUserInfo : Jastor
-
-@property (strong, nonatomic) NSString *title;
-@property (strong, nonatomic) NSString *btype;
-@property (strong, nonatomic) NSString *url;
-
-@property (strong, nonatomic) NSString *photo;
-@property (strong, nonatomic) NSString *catalog;
-@end
-
-@interface YDUserinfo :Jastor
+/**
+ *  获取列表返回结果基本类型
+ */
+@interface SCBasePageListResult : SCBaseJsonModel
+/** 当前页码 */
+@property (assign, nonatomic) int pageNo;
+/** 每页记录数 */
+@property (assign, nonatomic) int pageSize;
+/** 总记录数 */
 @property (assign, nonatomic) int count;
-@property (assign, nonatomic) int pagesize;
-@property (strong, nonatomic) NSArray *rows;
+@end
 
+
+
+// 分页 例子
+@protocol SCPictureInfo
+
+@end
+
+@interface SCPictureInfo : SCBaseJsonModel
+
+@property (copy, nonatomic) NSString *userid;
+@property (copy, nonatomic) NSString *nickname;
+@property (copy, nonatomic) NSString *content;
+@property (copy, nonatomic) NSString *photos;
+/*  分享链接  */
+@property (copy, nonatomic) NSString *shareurl;
+/*  分享缩略图  */
+@property (copy, nonatomic) NSString *sharethumbnail;
+/*  赞数  */
+@property (assign, nonatomic) NSInteger lovecount;
+
+@end
+
+@interface SCPictureList :SCBasePageListResult
+@property (strong, nonatomic) NSArray<SCPictureInfo> *rows;
 @end
 

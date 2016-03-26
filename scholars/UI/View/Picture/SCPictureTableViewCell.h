@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GSDataDef.h"
 
 @class SCPictureTableViewCell;
 
@@ -22,5 +23,5 @@
 @interface SCPictureTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) id<SCPictureTableViewCellDelegate> delegate;
-- (void)upData:(NSString *)image;
+- (void)dataLoad:(SCPictureInfo *)pictureInfo;
 @end

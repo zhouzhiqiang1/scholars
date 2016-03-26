@@ -29,6 +29,13 @@ static NSString * const kKeyHttpHeaderToken = @"token";
 - (BOOL)isReachable;
 
 
+/**
+ *   趣味图片
+ *  @param aResponseBlock 回调block
+ *  @return task
+ **/
+-(GSHTTPTask *)addGetPictureFunActionTaskWithResponse:(GSTaskBlock())aResponseBlock;
+
 
 /**
  *  本地 NSString 信息获取

@@ -10,9 +10,12 @@
 #import "SCPictureTableViewCell.h"
 #import <MJRefresh.h>
 #import "ORIndicatorView.h"
+#import "SCPictureViewModel.h"
+#import "GSDataEngine.h"
 
 @interface SCPictureTableViewController ()<SCPictureTableViewCellDelegate>
 @property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
+@property (strong, nonatomic) SCPictureViewModel *pictureViewModel;
 @end
 
 @implementation SCPictureTableViewController
@@ -49,18 +52,18 @@
 - (void)loadModel
 {
     [self unloadModel];
-//    self.listModel = [[YDInviteFriendsModel alloc] init];
-//    
-//    [self.listModel addObserver:self forKeyPath:kKeyPathDataSource options:NSKeyValueObservingOptionNew context:nil];
-//    [self.listModel addObserver:self forKeyPath:kKeyPathDataFetchResult options:NSKeyValueObservingOptionNew context:nil];
+    self.pictureViewModel = [[SCPictureViewModel alloc] init];
+    
+    [self.pictureViewModel addObserver:self forKeyPath:kKeyPathDataSource options:NSKeyValueObservingOptionNew context:nil];
+    [self.pictureViewModel addObserver:self forKeyPath:kKeyPathDataFetchResult options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)unloadModel
 {
     @try {
-//        [self.listModel removeObserver:self forKeyPath:kKeyPathDataSource];
-//        [self.listModel removeObserver:self forKeyPath:kKeyPathDataFetchResult];
-//        [self setModel:nil];
+        [self.pictureViewModel removeObserver:self forKeyPath:kKeyPathDataSource];
+        [self.pictureViewModel removeObserver:self forKeyPath:kKeyPathDataFetchResult];
+        [self setPictureViewModel:nil];
     }
     @catch (NSException *exception) {
     }
@@ -68,25 +71,23 @@
 
 -(void)startRefresh
 {
-//    [self.listModel fetchList];
-    [ORIndicatorView showLoading];
     NSLog(@"下拉刷新");
-    [self stopLoadingWithSuccess:YES];
+    [ORIndicatorView showLoading];
+    [self.pictureViewModel fetchList];
 }
 
 - (void)startLoadMore
 {
-    [ORIndicatorView showLoading];
     NSLog(@"上拉刷新");
-//    [self.listModel fetchMore];
-     [self stopLoadingWithSuccess:YES];
+    [ORIndicatorView showLoading];
+    [self.pictureViewModel fetchMore];
 }
 
 - (void)stopLoadingWithSuccess:(BOOL)aSuccess
 {
     [super stopLoadingWithSuccess:aSuccess];
     [ORIndicatorView hideLoading];
-    self.tableView.mj_footer = [self.listModel hasMore]?self.refreshFooter:nil;
+    self.tableView.mj_footer = [self.pictureViewModel hasMore]?self.refreshFooter:nil;
     [self.tableView.mj_header endRefreshing];
     [self.tableView.mj_footer endRefreshing];
 }
@@ -98,19 +99,22 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.pictureViewModel.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
+    NSInteger row = indexPath.row;
     NSString *cell = @"SCPictureTableViewCell";
     
     SCPictureTableViewCell *pictureTableViewCell = [tableView dequeueReusableCellWithIdentifier:cell forIndexPath:indexPath];
     pictureTableViewCell.delegate = self;
-    // Configure the cell...
-    [pictureTableViewCell upData:@"onepiece"];
+    
+    SCPictureInfo *pictureInfo = [self.pictureViewModel objectAtIndex:row];
+    
+    [pictureTableViewCell dataLoad:pictureInfo];
     
     return pictureTableViewCell;
 }

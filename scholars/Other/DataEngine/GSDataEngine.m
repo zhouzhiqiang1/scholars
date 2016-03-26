@@ -37,6 +37,21 @@
 }
 
 
+-(GSHTTPTask *)addGetPictureFunActionTaskWithResponse:(GSTaskBlock())aResponseBlock
+{
+    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlFalseDataInfo
+                                                      httpType:YDHttpTypePost
+                                                        params:nil];
+    task.useFakeData = YES;
+    task.fakeJsonName = @"Photo";
+    [task setResponseBlock:aResponseBlock];
+    [task run];
+    return task;
+}
+
+
+
+
 #pragma mark -- 本地数据(网络数据简单获取)
 -(GSHTTPTask *)addGetLocalDataActionTaskWithResponse:(GSTaskBlock())aResponseBlock userid:(long long)userid
 {

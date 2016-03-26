@@ -9,6 +9,7 @@
 #import "ViewUtil.h"
 //#import "DeviceInfo.h"
 //#import "CustomSettingDef.h"
+#import <QuartzCore/QuartzCore.h>
 
 CATransform3D CATransform3DMakePerspective(CGFloat z){
     CATransform3D t = CATransform3DIdentity;
@@ -137,7 +138,7 @@ static BrightnessWindow *gBrightnessWindow = nil;
         CGRect rect = CGRectMake((aView.bounds.size.width - aLogoImage.size.width)/2.0,size.height - 70.0f, aLogoImage.size.width,aLogoImage.size.height);
         [aLogoImage drawInRect:rect];
 #else
-            // draw logo
+        // draw logo
         CGRect rect = CGRectMake(13.0f, size.height - 37.0f, aLogoImage.size.width, aLogoImage.size.height);
         [aLogoImage drawInRect:rect];
         
@@ -160,14 +161,14 @@ static BrightnessWindow *gBrightnessWindow = nil;
 + (NSString *)compatibleImageName:(NSString *)aImageName
 {
     return nil;
-//    if (kIsRetina4Inch)
-//    {
-//        return [NSString stringWithFormat:@"%@-568h",aImageName];
-//    }
-//    else
-//    {
-//        return aImageName;
-//    }
+    //    if (kIsRetina4Inch)
+    //    {
+    //        return [NSString stringWithFormat:@"%@-568h",aImageName];
+    //    }
+    //    else
+    //    {
+    //        return aImageName;
+    //    }
 }
 
 + (UIImage *)noScaleImageFromView:(UIView *)aView
@@ -208,43 +209,82 @@ static BrightnessWindow *gBrightnessWindow = nil;
 
 + (UIImage *)CovertToPng:(UIImage *)im withLocalpath:(NSString *)localPath
 {
-	NSData* data = [NSData dataWithContentsOfFile:localPath];
-	NSUInteger len = [data length];
-	if (data == nil || len < 2)
-	{
-		return im;
-	}
-	
-	Byte *byteData = (Byte*)malloc(len);
-	memcpy(byteData, [data bytes], len);
-	Byte b0 = byteData[0];
-	Byte b1 = byteData[1];
-	
-	UIImage *ret = im;
-	if(b0 == 66 && b1 == 77)
-	{
-		//fileType =@"BMP";
-	}
-	else if(b0 ==255 && b1 == 216)
-	{
-		//fileType =@"JPG";
-	}
-	else if(b0 ==137 && b1 == 80)
-	{
-		//fileType =@"PNG";
-	}
-	else if(b0==71 && b1 == 73)
-	{
-		//fileType=@"GIF";
-		UIImage *myImage = [UIImage imageWithCGImage:im.CGImage];
-		NSData *pngData = UIImagePNGRepresentation(myImage);
-		//NSData *jpgData = UIImageJPEGRepresentation(myImage);
-		UIImage *pngIm = [UIImage imageWithData:pngData];
-		ret =  pngIm;
-	}
-	
-	free(byteData);
-	return ret;
+    NSData* data = [NSData dataWithContentsOfFile:localPath];
+    NSUInteger len = [data length];
+    if (data == nil || len < 2)
+    {
+        return im;
+    }
+    
+    Byte *byteData = (Byte*)malloc(len);
+    memcpy(byteData, [data bytes], len);
+    Byte b0 = byteData[0];
+    Byte b1 = byteData[1];
+    
+    UIImage *ret = im;
+    if(b0 == 66 && b1 == 77)
+    {
+        //fileType =@"BMP";
+    }
+    else if(b0 ==255 && b1 == 216)
+    {
+        //fileType =@"JPG";
+    }
+    else if(b0 ==137 && b1 == 80)
+    {
+        //fileType =@"PNG";
+    }
+    else if(b0==71 && b1 == 73)
+    {
+        //fileType=@"GIF";
+        UIImage *myImage = [UIImage imageWithCGImage:im.CGImage];
+        NSData *pngData = UIImagePNGRepresentation(myImage);
+        //NSData *jpgData = UIImageJPEGRepresentation(myImage);
+        UIImage *pngIm = [UIImage imageWithData:pngData];
+        ret =  pngIm;
+    }
+    
+    free(byteData);
+    return ret;
+}
+
++ (NSURL *)scaledUrlFromOriginalUrl:(NSString *)oUrl size:(CGSize)aSize
+{
+    NSString *scaledUrlString = [NSString stringWithFormat:@"%@?imageMogr2/thumbnail/%.0fx%.0f/format/jpg", oUrl, aSize.width*2, aSize.height*2];
+    
+    //    if ([oUrl hasSuffix:@"gif"]) {
+    //        scaledUrlString = [NSString stringWithFormat:@"%@/format/jpg", scaledUrlString];
+    //    }
+    
+    NSURL *url = [NSURL URLWithString:scaledUrlString];
+    return url;
+}
+
++ (NSString *)scaledUrlStringFromOriginalUrl:(NSString *)oUrl size:(CGSize)aSize
+{
+    NSString *scaledUrlString = [NSString stringWithFormat:@"%@?imageMogr2/thumbnail/%.0fx%.0f/format/jpg", oUrl, aSize.width*2, aSize.height*2];
+    return scaledUrlString;
+}
+
++ (NSString *)scaledUserPhotoUrlStringFromOriginalUrl:(NSString *)oUrl
+{
+    return [ViewUtil scaledUrlStringFromOriginalUrl:oUrl size:CGSizeMake(64*2, 64*2)];
+}
+
++ (NSString *)scaledUrlStringFromOriginalUrl:(NSString *)oUrl size:(CGSize)aSize  withBlur:(BOOL)blur
+{
+    NSString *scaledUrlString = [NSString stringWithFormat:@"%@?imageMogr2/thumbnail/%.0fx%.0f/format/jpg/blur/30x20", oUrl, aSize.width*2, aSize.height*2];
+    return scaledUrlString;
+}
+
++ (NSString *)originalUrlStringFromUrl:(NSString *)anUrl
+{
+    NSString *originalUrl = anUrl;
+    NSRange range = [anUrl rangeOfString:@"?imageMogr2"];
+    if(range.location != NSNotFound) {
+        originalUrl = [anUrl substringToIndex:range.location];
+    }
+    return originalUrl;
 }
 
 + (UIImage *)rotateImage:(UIImage *)aImage
@@ -383,43 +423,43 @@ static BrightnessWindow *gBrightnessWindow = nil;
 
 + (void)updateFontOfView:(UIView *)aView
 {
-//    UIFont *font = [UIFont fontWithName:[[NRFontManager sharedManager] currentFontDesc] size:17.0f];
-//    if (font == nil)
-//    {
-//        return;
-//    }
-//
-//    if ([aView isKindOfClass:[UILabel class]])
-//    {
-//        UILabel *label = (UILabel *)aView;
-//        [label setFont:[font fontWithSize:label.font.pointSize]];
-//    }
-//    else if ([aView isKindOfClass:[UIButton class]])
-//    {
-//        UILabel *label = [(UIButton *)aView titleLabel];
-//        [label setFont:[font fontWithSize:label.font.pointSize]];
-//    }
-//    else if ([aView isKindOfClass:[UITextView class]])
-//    {
-//        UITextView *textView = (UITextView *)aView;
-//        [textView setFont:[font fontWithSize:textView.font.pointSize]];
-//    }
-//    else if ([aView isKindOfClass:[UITextField class]])
-//    {
-//        UITextField *textField = (UITextField *)aView;
-//        [textField setFont:[font fontWithSize:textField.font.pointSize]];
-//    }
-//    else if ([aView isKindOfClass:[UITableView class]])
-//    {
-//        return;
-//    }
-//    else
-//    {
-//        for (UIView *subView in aView.subviews)
-//        {
-//            [ViewUtil updateFontOfView:subView];
-//        }
-//    }
+    //    UIFont *font = [UIFont fontWithName:[[NRFontManager sharedManager] currentFontDesc] size:17.0f];
+    //    if (font == nil)
+    //    {
+    //        return;
+    //    }
+    //
+    //    if ([aView isKindOfClass:[UILabel class]])
+    //    {
+    //        UILabel *label = (UILabel *)aView;
+    //        [label setFont:[font fontWithSize:label.font.pointSize]];
+    //    }
+    //    else if ([aView isKindOfClass:[UIButton class]])
+    //    {
+    //        UILabel *label = [(UIButton *)aView titleLabel];
+    //        [label setFont:[font fontWithSize:label.font.pointSize]];
+    //    }
+    //    else if ([aView isKindOfClass:[UITextView class]])
+    //    {
+    //        UITextView *textView = (UITextView *)aView;
+    //        [textView setFont:[font fontWithSize:textView.font.pointSize]];
+    //    }
+    //    else if ([aView isKindOfClass:[UITextField class]])
+    //    {
+    //        UITextField *textField = (UITextField *)aView;
+    //        [textField setFont:[font fontWithSize:textField.font.pointSize]];
+    //    }
+    //    else if ([aView isKindOfClass:[UITableView class]])
+    //    {
+    //        return;
+    //    }
+    //    else
+    //    {
+    //        for (UIView *subView in aView.subviews)
+    //        {
+    //            [ViewUtil updateFontOfView:subView];
+    //        }
+    //    }
 }
 
 #pragma mark - load view from nib file
@@ -480,11 +520,11 @@ static BrightnessWindow *gBrightnessWindow = nil;
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 5.0) {
         return aWebView.scrollView;
     }
-	for(UIView *view in [aWebView subviews]) {
-		if([view isKindOfClass:[UIScrollView class]]) {
-			return (UIScrollView *)view;
-		}
-	}
+    for(UIView *view in [aWebView subviews]) {
+        if([view isKindOfClass:[UIScrollView class]]) {
+            return (UIScrollView *)view;
+        }
+    }
     return nil;
 }
 
@@ -492,10 +532,10 @@ static BrightnessWindow *gBrightnessWindow = nil;
 {
     // clear shadow view under scroll view
     for(UIView *view in [[[aWebView subviews] objectAtIndex:0] subviews]) {
-		if([view isKindOfClass:[UIImageView class]]) {
+        if([view isKindOfClass:[UIImageView class]]) {
             view.hidden = YES;
-		}
-	}
+        }
+    }
     aWebView.opaque = NO;
     aWebView.backgroundColor = [UIColor clearColor];
     
@@ -575,9 +615,9 @@ static BrightnessWindow *gBrightnessWindow = nil;
     }];
     
     [aToViewController setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-//    [aFromViewController presentModalViewController:aToViewController animated:YES];
+    //    [aFromViewController presentModalViewController:aToViewController animated:YES];
     [aFromViewController presentViewController:aToViewController animated:YES completion:nil];
-
+    
 }
 
 + (void)customDissmissModalViewAnimationFromViewController:(UIViewController *)aFromViewController
@@ -622,7 +662,7 @@ static BrightnessWindow *gBrightnessWindow = nil;
     UIView *maskView = [ViewUtil addViewInView:aToViewController.view withTag:0];
     [maskView setBackgroundColor:[UIColor blackColor]];
     [maskView setAlpha:0.9f];
-
+    
     // 动画
     [aToViewController.view.window setBackgroundColor:[UIColor blackColor]];
     [aToViewController.parentViewController.view setBackgroundColor:[UIColor blackColor]];
@@ -636,7 +676,7 @@ static BrightnessWindow *gBrightnessWindow = nil;
         [aToViewController.view.window setBackgroundColor:[UIColor clearColor]];
         [aToViewController.parentViewController.view setBackgroundColor:[UIColor clearColor]];
     }];
-
+    
 }
 
 + (void)addPushAnimationToView:(UIView *)aView aIsRight:(BOOL)aIsRight
@@ -659,6 +699,16 @@ static BrightnessWindow *gBrightnessWindow = nil;
 {
     return sqrt(pow(p2.x-p1.x,2)+pow(p2.y-p2.y,2));
 }
+
+#pragma mark - UIScrollView
++ (NSInteger)horizontalPageNumber:(UIScrollView *)scrollView {
+    CGPoint contentOffset = scrollView.contentOffset;
+    CGSize viewSize = scrollView.bounds.size;
+    
+    NSInteger horizontalPage = MAX(0.0, contentOffset.x / viewSize.width);
+    return horizontalPage;
+}
+
 @end
 
 #pragma mark - 调节亮度的window
@@ -676,14 +726,14 @@ static BrightnessWindow *gBrightnessWindow = nil;
         [gBrightnessWindow setBackgroundColor:[UIColor blackColor]];
         [gBrightnessWindow setAlpha:0.0f];
         
-//        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-//        NSNumber *number = [ud objectForKey:SettingUserBrightness];
-//        if (number) {
-//            [ViewUtil setScreenBrightness:[number floatValue]];
-//        }
-//        else {
-//            [ViewUtil setScreenBrightness:1.0];
-//        }
+        //        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+        //        NSNumber *number = [ud objectForKey:SettingUserBrightness];
+        //        if (number) {
+        //            [ViewUtil setScreenBrightness:[number floatValue]];
+        //        }
+        //        else {
+        //            [ViewUtil setScreenBrightness:1.0];
+        //        }
         
         [[NSNotificationCenter defaultCenter] addObserver:gBrightnessWindow selector:@selector(keyWindowChangedNotification:) name:UIWindowDidBecomeKeyNotification object:nil];
     }
@@ -702,5 +752,4 @@ static BrightnessWindow *gBrightnessWindow = nil;
         [self.customKeyWindow makeKeyAndVisible];
     }
 }
-
 @end

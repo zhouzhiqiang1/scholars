@@ -7,6 +7,8 @@
 //
 
 #import "SCPictureTableViewCell.h"
+#import <UIImageView+WebCache.h>
+#import "ViewUtil.h"
 
 @interface SCPictureTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIView *view;
@@ -59,9 +61,9 @@
 }
 
 
-- (void)upData:(NSString *)image
+- (void)dataLoad:(SCPictureInfo *)pictureInfo;
 {
-    [self.imageview setImage:[UIImage imageNamed:@"imageOne.png"]];
+    [self.imageview sd_setImageWithURL:[ViewUtil scaledUrlFromOriginalUrl:pictureInfo.photos size:self.imageview.frame.size] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
 }
 
 

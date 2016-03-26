@@ -8,15 +8,21 @@
 
 #import "GSDataDef.h"
 
-@implementation YDDataUserInfo
-
-@end
-
-@implementation YDNetworkDataUserInfo
-
-@end
-@implementation YDUserinfo
-+ (Class)rows_class {
-    return [YDNetworkDataUserInfo class];
+@implementation SCBaseJsonModel
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
 }
+@end
+
+@implementation SCBasePageListResult
+
+@end
+
+@implementation SCPictureInfo
+
+@end
+
+@implementation SCPictureList
+
 @end

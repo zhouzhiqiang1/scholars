@@ -25,6 +25,7 @@
 		4A5D95281CA65CAD007F0660 /* AppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95231CA65CAD007F0660 /* AppUtil.m */; };
 		4A5D95291CA65CAD007F0660 /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95251CA65CAD007F0660 /* DataUtil.m */; };
 		4A5D952A1CA65CAD007F0660 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D95271CA65CAD007F0660 /* SecurityUtil.m */; };
+		4A5D952F1CA664AC007F0660 /* SCPictureViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D952E1CA664AC007F0660 /* SCPictureViewModel.m */; };
 		4A9512B81C9054CD002658FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512B71C9054CD002658FB /* main.m */; };
 		4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512BA1C9054CD002658FB /* AppDelegate.m */; };
 		4A9512BE1C9054CD002658FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512BD1C9054CD002658FB /* ViewController.m */; };
@@ -123,6 +124,8 @@
 		4A5D95251CA65CAD007F0660 /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataUtil.m; path = Other/DataEngine/DataUtil.m; sourceTree = "<group>"; };
 		4A5D95261CA65CAD007F0660 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityUtil.h; path = Other/DataEngine/SecurityUtil.h; sourceTree = "<group>"; };
 		4A5D95271CA65CAD007F0660 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityUtil.m; path = Other/DataEngine/SecurityUtil.m; sourceTree = "<group>"; };
+		4A5D952D1CA664AC007F0660 /* SCPictureViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPictureViewModel.h; path = UI/Model/Picture/SCPictureViewModel.h; sourceTree = "<group>"; };
+		4A5D952E1CA664AC007F0660 /* SCPictureViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureViewModel.m; path = UI/Model/Picture/SCPictureViewModel.m; sourceTree = "<group>"; };
 		4A9512B31C9054CD002658FB /* scholars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scholars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9512B71C9054CD002658FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A9512B91C9054CD002658FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -302,8 +305,26 @@
 		4A5D94FF1CA65B57007F0660 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4A5D952B1CA6643A007F0660 /* Home */,
+				4A5D952C1CA66441007F0660 /* Picture */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		4A5D952B1CA6643A007F0660 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		4A5D952C1CA66441007F0660 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				4A5D952D1CA664AC007F0660 /* SCPictureViewModel.h */,
+				4A5D952E1CA664AC007F0660 /* SCPictureViewModel.m */,
+			);
+			name = Picture;
 			sourceTree = "<group>";
 		};
 		4A7287231C91AB0D005581F3 /* Banner */ = {
@@ -784,6 +805,7 @@
 				DDC0750B1C98FC04008DC9A3 /* SCNewsTableViewController.m in Sources */,
 				4A5D951C1CA65C41007F0660 /* GSHTTPTask.m in Sources */,
 				4A5D95211CA65C41007F0660 /* ORBaseHttpTask.m in Sources */,
+				4A5D952F1CA664AC007F0660 /* SCPictureViewModel.m in Sources */,
 				4A5D952A1CA65CAD007F0660 /* SecurityUtil.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
 				4A5D94991CA63E1A007F0660 /* Jastor.m in Sources */,

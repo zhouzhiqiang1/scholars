@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <QuartzCore/QuartzCore.h>
-#import <UIKit/UIKit.h>
 
 #define ORLoadNib(aNibName) [[[NSBundle mainBundle] loadNibNamed:aNibName owner:nil options:nil] objectAtIndex:0]
 CATransform3D CATransform3DMakePerspective(CGFloat z);
@@ -42,7 +40,16 @@ CATransform3D CATransform3DMakePerspective(CGFloat z);
 
 #pragma mark - 图片操作
 + (UIImage *)CovertToPng:(UIImage *)im withLocalpath:(NSString *)localPath;
+/* 字符串 转 NSURL */
++ (NSURL *)scaledUrlFromOriginalUrl:(NSString *)oUrl size:(CGSize)aSize;
 
++ (NSString *)scaledUrlStringFromOriginalUrl:(NSString *)oUrl size:(CGSize)aSize;
+
++ (NSString *)scaledUserPhotoUrlStringFromOriginalUrl:(NSString *)oUrl;
+
++ (NSString *)scaledUrlStringFromOriginalUrl:(NSString *)oUrl size:(CGSize)aSize  withBlur:(BOOL)blur;
+
++ (NSString *)originalUrlStringFromUrl:(NSString *)anUrl;
 // view截图，如果view是可滚动的，需先将view的contentOffset设置成（0,0）
 + (UIImage *)imageFromView:(UIView *)aView;
 + (UIImage *)imageFromView:(UIView *)theView inRect:(CGRect)aRect;
@@ -118,6 +125,17 @@ CATransform3D CATransform3DMakePerspective(CGFloat z);
 + (void)addPushAnimationToView:(UIView *)aView aIsRight:(BOOL)aIsRight;
 + (float) distanceBetween : (CGPoint) p1 and: (CGPoint)p2;
 
+#pragma mark - UIScrollView
+/**
+ *  获取横向ScrollView当前页码
+ *
+ *  @param scrollView scrollview
+ *
+ *  @return 页码
+ */
++ (NSInteger)horizontalPageNumber:(UIScrollView *)scrollView;
+
 @end
+
 
 
