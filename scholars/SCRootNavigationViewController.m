@@ -45,7 +45,7 @@ static CGFloat speedF = 0.5;
     
     //Tap 点击手势
     UITapGestureRecognizer *Tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(gestureClickEvent:)];
-//    [panRecognizer setCancelsTouchesInView:NO]; tapGesture.cancelsTouchesInView = NO;
+    Tap.numberOfTapsRequired = 1;
     Tap.cancelsTouchesInView = NO;
     [self.rootBarView.view addGestureRecognizer:Tap];
     
@@ -82,6 +82,8 @@ static CGFloat speedF = 0.5;
         //显示对应的菜单
         self.leftView.view.hidden = NO;
         
+    } else if (pan.view.frame.origin.x <= 0) {
+        scaleF = 0;
     }
 //    else {
 //        //显示右面菜单
@@ -118,8 +120,7 @@ static CGFloat speedF = 0.5;
         } else {
             //显示主菜单
             [self showRootBarVC];
-            //当我们手指离开屏幕的时候还原偏移量
-            scaleF = 0;
+
         }
     }
 }
@@ -150,6 +151,9 @@ static CGFloat speedF = 0.5;
     
     //执行动画
     [UIView commitAnimations];
+    
+    //当我们手指离开屏幕的时候还原偏移量
+    scaleF = 0;
 }
 
 

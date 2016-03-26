@@ -7,7 +7,7 @@
 //
 
 #import "WMLoopView.h"
-#define kIdentifier @"WMLoopViewCellIdentifier"
+//#define kIdentifier @"WMLoopViewCellIdentifier"
 #define kPageH 20
 @interface WMLoopView() <UIScrollViewDelegate>
 @property (nonatomic, strong) NSMutableArray *currentImages;

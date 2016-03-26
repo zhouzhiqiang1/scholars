@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 
+static NSString * const ORSettingsStrDeviceId = @"ORSettingsStrDeviceID";   // urs id
+static NSString * const ORSettingsStrUserCipher = @"ORSettingsStrUserCipher";  // LDSettingsStrUrsAESKey加密过的token
 static NSString * const ORSettingsBoolEverLaunched = @"ORSettingsBoolEverLaunched";    // 以前是否启动过，即“是否非首次登录”
 
 @interface GSUserSetting : NSObject
