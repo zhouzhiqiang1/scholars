@@ -35,6 +35,11 @@
 		4A9512DC1C9054CD002658FB /* scholarsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512DB1C9054CD002658FB /* scholarsUITests.m */; };
 		4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */; };
 		4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512ED1C905969002658FB /* SCRootBarViewController.m */; };
+		4ABAAC2A1CA68348002D8A0F /* UserCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABAAC291CA68348002D8A0F /* UserCenter.storyboard */; };
+		4ABAAC2E1CA68416002D8A0F /* SCUserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABAAC2D1CA68416002D8A0F /* SCUserCenterViewController.m */; };
+		4ABAAC361CA68537002D8A0F /* YDUserCenterHeaderUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABAAC311CA68537002D8A0F /* YDUserCenterHeaderUITableViewCell.m */; };
+		4ABAAC371CA68537002D8A0F /* YDUserCenterNotLoggedInTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABAAC331CA68537002D8A0F /* YDUserCenterNotLoggedInTableViewCell.m */; };
+		4ABAAC381CA68537002D8A0F /* YDUserCenterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABAAC351CA68537002D8A0F /* YDUserCenterTableViewCell.m */; };
 		5170B32AD66868A92D1EE638 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC905B201A04C14CA6E63179 /* libPods.a */; };
 		DDC075001C98FBDD008DC9A3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */; };
 		DDC075011C98FBDD008DC9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC074FE1C98FBDD008DC9A3 /* Main.storyboard */; };
@@ -145,6 +150,15 @@
 		4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootNavigationViewController.m; sourceTree = "<group>"; };
 		4A9512EC1C905969002658FB /* SCRootBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRootBarViewController.h; sourceTree = "<group>"; };
 		4A9512ED1C905969002658FB /* SCRootBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootBarViewController.m; sourceTree = "<group>"; };
+		4ABAAC291CA68348002D8A0F /* UserCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UserCenter.storyboard; path = UI/UserCenter.storyboard; sourceTree = "<group>"; };
+		4ABAAC2C1CA68416002D8A0F /* SCUserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCUserCenterViewController.h; path = UI/Controller/UserCenter/SCUserCenterViewController.h; sourceTree = "<group>"; };
+		4ABAAC2D1CA68416002D8A0F /* SCUserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCUserCenterViewController.m; path = UI/Controller/UserCenter/SCUserCenterViewController.m; sourceTree = "<group>"; };
+		4ABAAC301CA68537002D8A0F /* YDUserCenterHeaderUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUserCenterHeaderUITableViewCell.h; sourceTree = "<group>"; };
+		4ABAAC311CA68537002D8A0F /* YDUserCenterHeaderUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDUserCenterHeaderUITableViewCell.m; sourceTree = "<group>"; };
+		4ABAAC321CA68537002D8A0F /* YDUserCenterNotLoggedInTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUserCenterNotLoggedInTableViewCell.h; sourceTree = "<group>"; };
+		4ABAAC331CA68537002D8A0F /* YDUserCenterNotLoggedInTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDUserCenterNotLoggedInTableViewCell.m; sourceTree = "<group>"; };
+		4ABAAC341CA68537002D8A0F /* YDUserCenterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUserCenterTableViewCell.h; sourceTree = "<group>"; };
+		4ABAAC351CA68537002D8A0F /* YDUserCenterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDUserCenterTableViewCell.m; sourceTree = "<group>"; };
 		C7A0347DB6C9F51FCD74CB16 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CCEED669B0F500150937771F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DC905B201A04C14CA6E63179 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -411,9 +425,10 @@
 			isa = PBXGroup;
 			children = (
 				DDD16BDA1CA5283E001D533E /* AboutMenu.storyboard */,
-				DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */,
 				DDC074FE1C98FBDD008DC9A3 /* Main.storyboard */,
+				DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */,
 				DDC074FF1C98FBDD008DC9A3 /* Picture.storyboard */,
+				4ABAAC291CA68348002D8A0F /* UserCenter.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -436,6 +451,7 @@
 			children = (
 				4A9512F21C906147002658FB /* Home */,
 				DDF0D4F11C96A5E9000D40E5 /* Picture */,
+				4ABAAC2B1CA683C9002D8A0F /* UserCenter */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -445,6 +461,7 @@
 			children = (
 				4A9512FE1C9064D5002658FB /* Home */,
 				DDF0D4F21C96A603000D40E5 /* Picture */,
+				4ABAAC2F1CA6851D002D8A0F /* UserCenter */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -459,6 +476,28 @@
 				DDC075101C98FC32008DC9A3 /* YDHotTableViewCell.m */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		4ABAAC2B1CA683C9002D8A0F /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				4ABAAC2C1CA68416002D8A0F /* SCUserCenterViewController.h */,
+				4ABAAC2D1CA68416002D8A0F /* SCUserCenterViewController.m */,
+			);
+			name = UserCenter;
+			sourceTree = "<group>";
+		};
+		4ABAAC2F1CA6851D002D8A0F /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				4ABAAC301CA68537002D8A0F /* YDUserCenterHeaderUITableViewCell.h */,
+				4ABAAC311CA68537002D8A0F /* YDUserCenterHeaderUITableViewCell.m */,
+				4ABAAC321CA68537002D8A0F /* YDUserCenterNotLoggedInTableViewCell.h */,
+				4ABAAC331CA68537002D8A0F /* YDUserCenterNotLoggedInTableViewCell.m */,
+				4ABAAC341CA68537002D8A0F /* YDUserCenterTableViewCell.h */,
+				4ABAAC351CA68537002D8A0F /* YDUserCenterTableViewCell.m */,
+			);
+			name = UserCenter;
 			sourceTree = "<group>";
 		};
 		6153F8FF4EAD98C151FA234E /* Pods */ = {
@@ -743,6 +782,7 @@
 				DDC075551C9907A5008DC9A3 /* custom_1.png in Resources */,
 				DDC075021C98FBDD008DC9A3 /* Picture.storyboard in Resources */,
 				DDC075561C9907A5008DC9A3 /* custom_2.png in Resources */,
+				4ABAAC2A1CA68348002D8A0F /* UserCenter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,19 +865,23 @@
 				4A5D951A1CA65C41007F0660 /* GSErrorDef.m in Sources */,
 				DDC0752A1C98FD5B008DC9A3 /* SCPictureTableViewCell.m in Sources */,
 				4A5D95071CA65C14007F0660 /* GSDataDef.m in Sources */,
+				4ABAAC2E1CA68416002D8A0F /* SCUserCenterViewController.m in Sources */,
 				DDC075141C98FC8E008DC9A3 /* WMLoopView.m in Sources */,
 				DDC075781C990813008DC9A3 /* ORBaseTableViewController.m in Sources */,
 				4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */,
 				DDC075611C9907B1008DC9A3 /* DCSubButton.m in Sources */,
 				4A5D94801CA557F1007F0660 /* SCNewsTableViewCell.m in Sources */,
 				4A5D951B1CA65C41007F0660 /* GSHTTPRequestOperationManager.m in Sources */,
+				4ABAAC371CA68537002D8A0F /* YDUserCenterNotLoggedInTableViewCell.m in Sources */,
 				4A5D95201CA65C41007F0660 /* GSTaskResponse.m in Sources */,
 				4A9512B81C9054CD002658FB /* main.m in Sources */,
 				4A5D951D1CA65C41007F0660 /* GSHTTPURLRequestSerializer.m in Sources */,
 				4A5D95081CA65C14007F0660 /* GSDataEngine.m in Sources */,
 				DDC075821C990820008DC9A3 /* BaseModel.m in Sources */,
+				4ABAAC381CA68537002D8A0F /* YDUserCenterTableViewCell.m in Sources */,
 				4A5D951E1CA65C41007F0660 /* GSTask.m in Sources */,
 				DDC075671C9907D3008DC9A3 /* ORAppUtil.m in Sources */,
+				4ABAAC361CA68537002D8A0F /* YDUserCenterHeaderUITableViewCell.m in Sources */,
 				DDC075091C98FC04008DC9A3 /* SCHomeViewController.m in Sources */,
 				DDC075851C99082F008DC9A3 /* ORColorUtil.m in Sources */,
 				DDC075711C990802008DC9A3 /* ORIndicatorView.m in Sources */,

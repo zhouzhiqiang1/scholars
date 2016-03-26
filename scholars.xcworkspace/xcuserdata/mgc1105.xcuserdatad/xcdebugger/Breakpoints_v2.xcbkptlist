@@ -106,7 +106,7 @@
                   moduleName = "scholars"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mgc1105/Documents/scholars/scholars/UI/Model/Picture/SCPictureViewModel.m"
-                  timestampString = "480670936.049295"
+                  timestampString = "480675528.894286"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -121,7 +121,7 @@
                   moduleName = "scholars"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mgc1105/Documents/scholars/scholars/UI/Model/Picture/SCPictureViewModel.m"
-                  timestampString = "480670936.04958"
+                  timestampString = "480675528.894596"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -154,7 +154,7 @@
                   moduleName = "scholars"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mgc1105/Documents/scholars/scholars/Other/DataEngine/ORBaseHttpTask.m"
-                  timestampString = "480670936.051458"
+                  timestampString = "480675528.895786"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -169,7 +169,7 @@
                   moduleName = "scholars"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mgc1105/Documents/scholars/scholars/Other/DataEngine/ORBaseHttpTask.m"
-                  timestampString = "480670936.051941"
+                  timestampString = "480675528.895975"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -192,6 +192,22 @@
             startingLineNumber = "65"
             endingLineNumber = "65"
             landmarkName = "-dataLoad:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "scholars/SCRootBarViewController.m"
+            timestampString = "480675450.077546"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

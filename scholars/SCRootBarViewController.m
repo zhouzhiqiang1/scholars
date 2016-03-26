@@ -51,6 +51,11 @@
     [viewControlles replaceObjectAtIndex:1 withObject:pictureNavController];
 
     
+    UIStoryboard *userCenterStoryboard = [UIStoryboard storyboardWithName:@"UserCenter" bundle:nil];
+    UINavigationController *userCenterNavController = [userCenterStoryboard instantiateInitialViewController];
+    
+    [viewControlles replaceObjectAtIndex:3 withObject:userCenterNavController];
+    
     [self setViewControllers:viewControlles];
 }
 
