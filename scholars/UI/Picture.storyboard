@@ -85,7 +85,7 @@
                                                         <action selector="onShareButtonAction:" destination="YVM-ye-ReS" eventType="touchUpInside" id="APL-vm-HYI"/>
                                                     </connections>
                                                 </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TXU-w4-gV3">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TXU-w4-gV3">
                                                     <rect key="frame" x="10" y="10" width="394" height="125"/>
                                                 </imageView>
                                             </subviews>
