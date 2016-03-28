@@ -12,7 +12,8 @@
 
 @interface SCPictureTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIView *view;
-@property (weak, nonatomic) IBOutlet UIImageView *imageview;
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
+
 @property (weak, nonatomic) IBOutlet UIButton *loveButton;
 @property (weak, nonatomic) IBOutlet UIButton *messageButton;
 
@@ -63,7 +64,9 @@
 
 - (void)dataLoad:(SCPictureInfo *)pictureInfo;
 {
-    [self.imageview sd_setImageWithURL:[ViewUtil scaledUrlFromOriginalUrl:pictureInfo.photos size:self.imageview.frame.size] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
+//    [self.imageview sd_setImageWithURL:[ViewUtil scaledUrlFromOriginalUrl:pictureInfo.photos size:self.imageview.frame.size] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
+    
+    [self.headImageView sd_setImageWithURL:[NSURL URLWithString:pictureInfo.photos] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
 }
 
 
