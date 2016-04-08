@@ -12,6 +12,8 @@
 #import "ORIndicatorView.h"
 #import "SCPictureViewModel.h"
 #import "GSDataEngine.h"
+#import "SCEncapsulation.h"
+#import "GSImageCollectionViewController.h"
 
 @interface SCPictureTableViewController ()<SCPictureTableViewCellDelegate>
 @property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
@@ -25,12 +27,23 @@
     
     self.title = @"趣味";
     
-    
-    //监听
-    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
-    self.tableView.mj_header = header;
+    //设置回调
+    MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
+
     self.refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
 //    [header beginRefreshing];
+    // 隐藏时间
+    header.lastUpdatedTimeLabel.hidden = YES;
+    // 隐藏状态
+    header.stateLabel.hidden = YES;
+    // 设置普通状态的动画图片
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStateIdle];
+    // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStatePulling];
+    // 设置正在刷新状态的动画图片
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStateRefreshing];
+    // 设置header
+    self.tableView.mj_header = header;
     [self startRefresh];
     
 
@@ -117,6 +130,18 @@
     [pictureTableViewCell dataLoad:pictureInfo];
     
     return pictureTableViewCell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SCPictureInfo *pictureInfo = [self.pictureViewModel objectAtIndex:indexPath.row];
+    NSArray *images = @[@"imageOne.png",@"imageTwo.png",@"imageThree.png"];
+    GSImageCollectionViewController *imageVC = [GSImageCollectionViewController viewControllerWithDataSource:images];
+    imageVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:imageVC animated:YES];
+    imageVC.defaultPageIndex = indexPath.row;
+
 }
 
 #pragma mark - UITableViewDelegate
