@@ -56,6 +56,7 @@
 
 - (void)commonInit
 {
+    DDLogDebug(@"init - %@",[self class]);
     [self loadModel];
 }
 
@@ -70,27 +71,30 @@
         [self.tableView setDelegate:nil];
         [self.tableView setDataSource:nil];
     }
-    
+    DDLogInfo(@"dealloc - %@",[self class]);
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //    self.hidesBottomBarWhenPushed = YES;
     self.clearsSelectionOnViewWillAppear = NO;
     if (self.needPullRefesh) {
-//        self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
+        self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
+        //        [self.tableView addLegendHeaderWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
+        //        [self.tableView.header setUpdatedTimeHidden:YES];
     }
-//    if (self.needLoadMore) {
-//        self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
-//        [self.tableView.footer setHidden:YES];
-//    }
-//    if ([ORAppUtil systemVersion].floatValue < 7.0f)
-//    {
-//        if ([self respondsToSelector:@selector(tableView)])
-//        {
-//            [[(id)self tableView] setContentInset:UIEdgeInsetsMake(44.0f, 0.0f, 0.0f, 0.0f)];
-//        }
-//    }
+    if (self.needLoadMore) {
+        self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
+        [self.tableView.mj_footer setHidden:YES];
+    }
+    if ([ORAppUtil systemVersion].floatValue < 7.0f)
+    {
+        if ([self respondsToSelector:@selector(tableView)])
+        {
+            [[(id)self tableView] setContentInset:UIEdgeInsetsMake(44.0f, 0.0f, 0.0f, 0.0f)];
+        }
+    }
     
     //修改导航栏颜色
     if ([ORAppUtil systemVersion].floatValue < 7.0f)

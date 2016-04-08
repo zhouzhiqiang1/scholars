@@ -51,7 +51,7 @@ void dismissAllPresentedController()
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
-    NSLog(@"dealloc - %@",[self class]);
+    DDLogDebug(@"dealloc - %@",[self class]);
 }
 
 - (void)baseViewControllerInit
@@ -70,7 +70,7 @@ void dismissAllPresentedController()
 - (void)commonInit
 {
     [self loadModel];
-    NSLog(@"init - %@",[self class]);
+    DDLogDebug(@"init - %@",[self class]);
 }
 
 - (id)initWithCoder:(NSCoder *)decoder

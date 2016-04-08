@@ -20,6 +20,14 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
   - CocoaSecurity (1.2.4)
   - EAIntroView (2.6.4)
   - iAppInfos (0.0.7)
@@ -33,6 +41,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - CocoaLumberjack
   - CocoaSecurity
   - EAIntroView (~> 2.6.4)
   - iAppInfos (~> 0.0.6)
@@ -44,6 +53,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
   EAIntroView: df7dc18da73e1831d06878b9c0e13da78e6bb3ce
   iAppInfos: 7c6aabf78324d4c82fc1bb0c6ae354ea807b187b
@@ -53,4 +63,4 @@ SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   WMPageController: 3b6d2aa2ddcd53f2cbc2319f2473f27b4ea4fe89
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

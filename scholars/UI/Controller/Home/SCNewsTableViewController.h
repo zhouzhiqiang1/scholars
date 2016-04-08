@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Mac Xiong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ORBaseTableViewController.h"
 
-@interface SCNewsTableViewController : UITableViewController
+@interface SCNewsTableViewController : ORBaseTableViewController
 
 @end

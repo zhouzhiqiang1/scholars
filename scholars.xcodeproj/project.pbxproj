@@ -675,6 +675,7 @@
 				4A9512B01C9054CD002658FB /* Frameworks */,
 				4A9512B11C9054CD002658FB /* Resources */,
 				C2DCFCE85BF452B7E1EAC0AF /* Copy Pods Resources */,
+				56DE2B6C9143C16DA7FB0B15 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -728,7 +729,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Mac Xiong";
+				ORGANIZATIONNAME = r_ZhouZhiqiang;
 				TargetAttributes = {
 					4A9512B21C9054CD002658FB = {
 						CreatedOnToolsVersion = 7.2;
@@ -803,6 +804,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		56DE2B6C9143C16DA7FB0B15 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C2DCFCE85BF452B7E1EAC0AF /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -4,6 +4,7 @@ platform :ios, ‘7.0’
 pod 'AFNetworking'
 pod 'iAppInfos', '~> 0.0.6'
 pod 'JSONModel' # JSONModel 解析
+pod 'CocoaLumberjack' # DDLog
 
 # UI
 pod 'WMPageController' # 类似网易新闻首页效果的实现(OC) 

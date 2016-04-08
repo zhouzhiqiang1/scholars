@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ORColorUtil.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>//DDLog
+
 
 @interface AppDelegate ()
 
@@ -28,6 +30,12 @@
     [[UINavigationBar appearance] setTitleTextAttributes:textAttributes];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:ORColor(kORColorOrange_D55403)];
+    
+    
+    // 初始化DDLog
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
     return YES;
 }
 

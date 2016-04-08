@@ -9,8 +9,17 @@
 #ifndef scholars_pch
 #define scholars_pch
 
-#import <UIKit/UIKit.h>
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <CocoaLumberjack/CocoaLumberjack.h>
+
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelDebug;
+#define ENABLE_RECORD_MODE
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
 
 #endif /* scholars_pch */
+#endif

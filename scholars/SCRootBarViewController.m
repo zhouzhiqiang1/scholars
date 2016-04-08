@@ -109,7 +109,7 @@
 
 @end
 
-#pragma mark - Global
+#pragma mark - 全局
 SCRootBarViewController* rootTabBarController()
 {
     UINavigationController *nav = rootViewController();
