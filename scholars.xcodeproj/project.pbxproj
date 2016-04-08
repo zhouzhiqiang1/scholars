@@ -93,8 +93,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A5D947E1CA557F1007F0660 /* SCNewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNewsTableViewCell.h; path = UI/View/Home/SCNewsTableViewCell.h; sourceTree = "<group>"; };
-		4A5D947F1CA557F1007F0660 /* SCNewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNewsTableViewCell.m; path = UI/View/Home/SCNewsTableViewCell.m; sourceTree = "<group>"; };
+		4A5D947E1CA557F1007F0660 /* SCNewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SCNewsTableViewCell.h; path = UI/View/Home/SCNewsTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4A5D947F1CA557F1007F0660 /* SCNewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SCNewsTableViewCell.m; path = UI/View/Home/SCNewsTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4A5D94951CA63E1A007F0660 /* Jastor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jastor.h; path = Other/Jastor/Jastor.h; sourceTree = "<group>"; };
 		4A5D94961CA63E1A007F0660 /* Jastor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jastor.m; path = Other/Jastor/Jastor.m; sourceTree = "<group>"; };
 		4A5D94971CA63E1A007F0660 /* JastorRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JastorRuntimeHelper.h; path = Other/Jastor/JastorRuntimeHelper.h; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		4A5D95011CA65C13007F0660 /* GSDataDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSDataDef.m; path = Other/DataEngine/GSDataDef.m; sourceTree = "<group>"; };
 		4A5D95021CA65C14007F0660 /* GSDataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSDataEngine.h; path = Other/DataEngine/GSDataEngine.h; sourceTree = "<group>"; };
 		4A5D95031CA65C14007F0660 /* GSDataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSDataEngine.m; path = Other/DataEngine/GSDataEngine.m; sourceTree = "<group>"; };
-		4A5D95041CA65C14007F0660 /* GSUrlDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSUrlDef.h; path = Other/DataEngine/GSUrlDef.h; sourceTree = "<group>"; };
+		4A5D95041CA65C14007F0660 /* GSUrlDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = GSUrlDef.h; path = Other/DataEngine/GSUrlDef.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		4A5D95051CA65C14007F0660 /* GSUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSUserSetting.h; path = Other/DataEngine/GSUserSetting.h; sourceTree = "<group>"; };
 		4A5D95061CA65C14007F0660 /* GSUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSUserSetting.m; path = Other/DataEngine/GSUserSetting.m; sourceTree = "<group>"; };
 		4A5D950A1CA65C28007F0660 /* GSErrorDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSErrorDef.h; path = Other/DataEngine/GSErrorDef.h; sourceTree = "<group>"; };
@@ -129,30 +129,30 @@
 		4A5D95251CA65CAD007F0660 /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataUtil.m; path = Other/DataEngine/DataUtil.m; sourceTree = "<group>"; };
 		4A5D95261CA65CAD007F0660 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityUtil.h; path = Other/DataEngine/SecurityUtil.h; sourceTree = "<group>"; };
 		4A5D95271CA65CAD007F0660 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityUtil.m; path = Other/DataEngine/SecurityUtil.m; sourceTree = "<group>"; };
-		4A5D952D1CA664AC007F0660 /* SCPictureViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPictureViewModel.h; path = UI/Model/Picture/SCPictureViewModel.h; sourceTree = "<group>"; };
-		4A5D952E1CA664AC007F0660 /* SCPictureViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureViewModel.m; path = UI/Model/Picture/SCPictureViewModel.m; sourceTree = "<group>"; };
+		4A5D952D1CA664AC007F0660 /* SCPictureViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SCPictureViewModel.h; path = UI/Model/Picture/SCPictureViewModel.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4A5D952E1CA664AC007F0660 /* SCPictureViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SCPictureViewModel.m; path = UI/Model/Picture/SCPictureViewModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4A9512B31C9054CD002658FB /* scholars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scholars.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A9512B71C9054CD002658FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4A9512B91C9054CD002658FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4A9512BA1C9054CD002658FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4A9512BC1C9054CD002658FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4A9512BD1C9054CD002658FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4A9512B71C9054CD002658FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4A9512B91C9054CD002658FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4A9512BA1C9054CD002658FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4A9512BC1C9054CD002658FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4A9512BD1C9054CD002658FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4A9512C21C9054CD002658FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A9512C51C9054CD002658FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A9512C71C9054CD002658FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A9512CC1C9054CD002658FB /* scholarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scholarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A9512D01C9054CD002658FB /* scholarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scholarsTests.m; sourceTree = "<group>"; };
+		4A9512D01C9054CD002658FB /* scholarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = scholarsTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4A9512D21C9054CD002658FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A9512D71C9054CD002658FB /* scholarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scholarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A9512DB1C9054CD002658FB /* scholarsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scholarsUITests.m; sourceTree = "<group>"; };
+		4A9512DB1C9054CD002658FB /* scholarsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = scholarsUITests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4A9512DD1C9054CD002658FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A9512E91C90591D002658FB /* SCRootNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRootNavigationViewController.h; sourceTree = "<group>"; };
-		4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootNavigationViewController.m; sourceTree = "<group>"; };
-		4A9512EC1C905969002658FB /* SCRootBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRootBarViewController.h; sourceTree = "<group>"; };
-		4A9512ED1C905969002658FB /* SCRootBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootBarViewController.m; sourceTree = "<group>"; };
+		4A9512E91C90591D002658FB /* SCRootNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCRootNavigationViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCRootNavigationViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4A9512EC1C905969002658FB /* SCRootBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCRootBarViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4A9512ED1C905969002658FB /* SCRootBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCRootBarViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4ABAAC291CA68348002D8A0F /* UserCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UserCenter.storyboard; path = UI/UserCenter.storyboard; sourceTree = "<group>"; };
 		4ABAAC2C1CA68416002D8A0F /* SCUserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCUserCenterViewController.h; path = UI/Controller/UserCenter/SCUserCenterViewController.h; sourceTree = "<group>"; };
-		4ABAAC2D1CA68416002D8A0F /* SCUserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCUserCenterViewController.m; path = UI/Controller/UserCenter/SCUserCenterViewController.m; sourceTree = "<group>"; };
+		4ABAAC2D1CA68416002D8A0F /* SCUserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SCUserCenterViewController.m; path = UI/Controller/UserCenter/SCUserCenterViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4ABAAC301CA68537002D8A0F /* YDUserCenterHeaderUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUserCenterHeaderUITableViewCell.h; sourceTree = "<group>"; };
 		4ABAAC311CA68537002D8A0F /* YDUserCenterHeaderUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDUserCenterHeaderUITableViewCell.m; sourceTree = "<group>"; };
 		4ABAAC321CA68537002D8A0F /* YDUserCenterNotLoggedInTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUserCenterNotLoggedInTableViewCell.h; sourceTree = "<group>"; };
@@ -165,20 +165,20 @@
 		DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = UI/Home.storyboard; sourceTree = "<group>"; };
 		DDC074FE1C98FBDD008DC9A3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UI/Main.storyboard; sourceTree = "<group>"; };
 		DDC074FF1C98FBDD008DC9A3 /* Picture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Picture.storyboard; path = UI/Picture.storyboard; sourceTree = "<group>"; };
-		DDC075031C98FC04008DC9A3 /* SCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHomeViewController.m; path = UI/Controller/Home/SCHomeViewController.m; sourceTree = "<group>"; };
+		DDC075031C98FC04008DC9A3 /* SCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SCHomeViewController.m; path = UI/Controller/Home/SCHomeViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		DDC075041C98FC04008DC9A3 /* SCHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHotViewController.h; path = UI/Controller/Home/SCHotViewController.h; sourceTree = "<group>"; };
 		DDC075051C98FC04008DC9A3 /* SCHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHotViewController.m; path = UI/Controller/Home/SCHotViewController.m; sourceTree = "<group>"; };
-		DDC075061C98FC04008DC9A3 /* SCNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNewsTableViewController.m; path = UI/Controller/Home/SCNewsTableViewController.m; sourceTree = "<group>"; };
-		DDC075071C98FC04008DC9A3 /* SCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHomeViewController.h; path = UI/Controller/Home/SCHomeViewController.h; sourceTree = "<group>"; };
-		DDC075081C98FC04008DC9A3 /* SCNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNewsTableViewController.h; path = UI/Controller/Home/SCNewsTableViewController.h; sourceTree = "<group>"; };
-		DDC0750C1C98FC18008DC9A3 /* SCPictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPictureTableViewController.h; path = UI/Controller/Picture/SCPictureTableViewController.h; sourceTree = "<group>"; };
-		DDC0750D1C98FC18008DC9A3 /* SCPictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureTableViewController.m; path = UI/Controller/Picture/SCPictureTableViewController.m; sourceTree = "<group>"; };
-		DDC0750F1C98FC32008DC9A3 /* YDHotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDHotTableViewCell.h; path = UI/View/Home/YDHotTableViewCell.h; sourceTree = "<group>"; };
+		DDC075061C98FC04008DC9A3 /* SCNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SCNewsTableViewController.m; path = UI/Controller/Home/SCNewsTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		DDC075071C98FC04008DC9A3 /* SCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SCHomeViewController.h; path = UI/Controller/Home/SCHomeViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DDC075081C98FC04008DC9A3 /* SCNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SCNewsTableViewController.h; path = UI/Controller/Home/SCNewsTableViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DDC0750C1C98FC18008DC9A3 /* SCPictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SCPictureTableViewController.h; path = UI/Controller/Picture/SCPictureTableViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DDC0750D1C98FC18008DC9A3 /* SCPictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SCPictureTableViewController.m; path = UI/Controller/Picture/SCPictureTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		DDC0750F1C98FC32008DC9A3 /* YDHotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = YDHotTableViewCell.h; path = UI/View/Home/YDHotTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		DDC075101C98FC32008DC9A3 /* YDHotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YDHotTableViewCell.m; path = UI/View/Home/YDHotTableViewCell.m; sourceTree = "<group>"; };
 		DDC075121C98FC8E008DC9A3 /* WMLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMLoopView.h; path = UI/View/Home/Banner/WMLoopView.h; sourceTree = "<group>"; };
 		DDC075131C98FC8E008DC9A3 /* WMLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMLoopView.m; path = UI/View/Home/Banner/WMLoopView.m; sourceTree = "<group>"; };
-		DDC075281C98FD5B008DC9A3 /* SCPictureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPictureTableViewCell.h; path = UI/View/Picture/SCPictureTableViewCell.h; sourceTree = "<group>"; };
-		DDC075291C98FD5B008DC9A3 /* SCPictureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPictureTableViewCell.m; path = UI/View/Picture/SCPictureTableViewCell.m; sourceTree = "<group>"; };
+		DDC075281C98FD5B008DC9A3 /* SCPictureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SCPictureTableViewCell.h; path = UI/View/Picture/SCPictureTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DDC075291C98FD5B008DC9A3 /* SCPictureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SCPictureTableViewCell.m; path = UI/View/Picture/SCPictureTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		DDC0754F1C9907A5008DC9A3 /* custom_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_1.png; path = Other/SCPathButton/Images/custom_1.png; sourceTree = "<group>"; };
 		DDC075501C9907A5008DC9A3 /* custom_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_2.png; path = Other/SCPathButton/Images/custom_2.png; sourceTree = "<group>"; };
 		DDC075511C9907A5008DC9A3 /* custom_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = custom_3.png; path = Other/SCPathButton/Images/custom_3.png; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 		DDD16BD71CA5281D001D533E /* SCMenuLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMenuLeftViewController.h; path = UI/AboutMenu/SCMenuLeftViewController.h; sourceTree = "<group>"; };
 		DDD16BD81CA5281D001D533E /* SCMenuLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCMenuLeftViewController.m; path = UI/AboutMenu/SCMenuLeftViewController.m; sourceTree = "<group>"; };
 		DDD16BDA1CA5283E001D533E /* AboutMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AboutMenu.storyboard; path = UI/AboutMenu.storyboard; sourceTree = "<group>"; };
-		DDF0D5271C9813BA000D40E5 /* scholars.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scholars.pch; sourceTree = "<group>"; };
+		DDF0D5271C9813BA000D40E5 /* scholars.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = scholars.pch; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -729,7 +729,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = r_ZhouZhiqiang;
+				ORGANIZATIONNAME = zhou;
 				TargetAttributes = {
 					4A9512B21C9054CD002658FB = {
 						CreatedOnToolsVersion = 7.2;
