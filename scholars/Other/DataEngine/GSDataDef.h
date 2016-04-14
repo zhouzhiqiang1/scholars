@@ -45,6 +45,8 @@ typedef NS_OPTIONS(NSInteger, YDHttpType) {
 @property (copy, nonatomic) NSString *nickname;
 @property (copy, nonatomic) NSString *content;
 @property (copy, nonatomic) NSString *photos;
+
+@property (strong, nonatomic) NSArray *photosArray;
 /*  分享链接  */
 @property (copy, nonatomic) NSString *shareurl;
 /*  分享缩略图  */

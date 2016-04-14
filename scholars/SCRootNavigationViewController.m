@@ -39,15 +39,15 @@ static CGFloat speedF = 0.5;
     
     
     //Pan 拖动手势
-    UIPanGestureRecognizer *Pan=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(dragGestureEvents:)];
-    [self.rootBarView.view addGestureRecognizer:Pan];
+    UIPanGestureRecognizer *pan=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(dragGestureEvents:)];
+    [self.rootBarView.view addGestureRecognizer:pan];
     
     
     //Tap 点击手势
-    UITapGestureRecognizer *Tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(gestureClickEvent:)];
-    Tap.numberOfTapsRequired = 1;
-    Tap.cancelsTouchesInView = NO;
-    [self.rootBarView.view addGestureRecognizer:Tap];
+    UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(gestureClickEvent:)];
+    tap.numberOfTapsRequired = 1;
+    tap.cancelsTouchesInView = NO;
+    [self.rootBarView.view addGestureRecognizer:tap];
     
     //设置隐藏和显示
     self.leftView.view.hidden = YES;

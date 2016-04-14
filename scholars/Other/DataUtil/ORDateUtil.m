@@ -101,11 +101,19 @@
 
 + (NSDate *)dateWithDate:(long long)aDate time:(NSString *)timeString
 {
-//    NSDate *date = [NSDate dateWithTimeIntervalSince1970:aDate];
-//    NSDateFormatter* formater = [[NSDateFormatter alloc] init];
-//    [formater setDateFormat:@"HH:mm"];
-//    NSDate *timeDate = [formater dateFromString:timeString];
-//    NSTimeInterval timeInterval = [timeDate timeIntervalSince1970]
+    
+    if (timeString.length > 0)  {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.dateFormat = @"yyyy-MM-dd";
+        formatter.timeZone = [NSTimeZone defaultTimeZone];
+        NSDate *date = [formatter dateFromString:timeString];
+        return date;
+    } else {
+        
+        NSDate *date = [NSDate dateWithTimeIntervalSince1970:aDate];
+        return date;
+    }
+    
     return nil;
 }
 
@@ -126,5 +134,42 @@
         return nil;
     }
 }
+
+
+//NSDate转NSString
++(NSString*)stringFromDate:(NSDate*)date
+{
+    //获取系统当前时间
+    NSDate*currentDate=[NSDate date];
+    //用于格式化NSDate对象
+    NSDateFormatter*dateFormatter=[[NSDateFormatter alloc]init];
+    //设置格式：zzz表示时区
+    [dateFormatter setDateFormat:@"yyyy-MM-ddHH:mm:sszzz"];
+    //NSDate转NSString
+    NSString*currentDateString=[dateFormatter stringFromDate:currentDate];
+    //输出currentDateString
+    NSLog(@"%@",currentDateString);
+    return currentDateString;
+}
+
+//NSString转NSDate
++(NSDate*)dateFromString:(NSString*)string
+{
+    //需要转换的字符串
+    NSString*dateString=@"2015-06-2608:08:08";
+    //设置转换格式
+    NSDateFormatter*formatter=[[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"yyyy-MM-ddHH:mm:ss"];
+    //NSString转NSDate
+    NSDate*date=[formatter dateFromString:dateString];
+    return date;
+}
+
+//获取的NSDate date时间与实际相差8个小时解决方案
+//NSDate *dates = [NSDate date];
+//NSTimeZone *zone = [NSTimeZone systemTimeZone];
+//NSInteger interval = [zone secondsFromGMTForDate: dates];
+//NSDate *localeDate = [dates  dateByAddingTimeInterval: interval];
+//NSLog(@"enddate=%@",localeDate);
 
 @end

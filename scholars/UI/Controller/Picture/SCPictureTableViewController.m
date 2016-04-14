@@ -135,12 +135,23 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+//    SCPictureInfo *pictureInfo = [self.pictureViewModel objectAtIndex:indexPath.row];
+//    NSArray *images = @[@"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114206-dc74f317",
+//                        @"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114207-78f389d4",
+//                        @"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114210-ed2c0a1c"];
+//
+//    NSArray *images = @[pictureInfo.photos];
+//    GSImageCollectionViewController *imageVC = [GSImageCollectionViewController viewControllerWithDataSource:images];
+//    imageVC.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:imageVC animated:YES];
+//    imageVC.defaultPageIndex = indexPath.row;
+    
     SCPictureInfo *pictureInfo = [self.pictureViewModel objectAtIndex:indexPath.row];
-    NSArray *images = @[@"imageOne.png",@"imageTwo.png",@"imageThree.png"];
-    GSImageCollectionViewController *imageVC = [GSImageCollectionViewController viewControllerWithDataSource:images];
+    GSImageCollectionViewController *imageVC = [GSImageCollectionViewController viewControllerWithDataSource:pictureInfo.photosArray];
     imageVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:imageVC animated:YES];
-    imageVC.defaultPageIndex = indexPath.row;
+//    imageVC.defaultPageIndex = indexPath.row;
+
 
 }
 

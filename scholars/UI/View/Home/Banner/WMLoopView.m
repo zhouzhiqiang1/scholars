@@ -7,6 +7,7 @@
 //
 
 #import "WMLoopView.h"
+#import <UIImageView+WebCache.h>
 //#define kIdentifier @"WMLoopViewCellIdentifier"
 #define kPageH 20
 @interface WMLoopView() <UIScrollViewDelegate>
@@ -79,7 +80,9 @@
     CGFloat height = self.frame.size.height;
     for (int i = 0; i < 3; i++) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * width, 0, width, height)];
-        imageView.image = [UIImage imageNamed:self.currentImages[i]];
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        //        imageView.image = [UIImage imageNamed:self.currentImages[i]];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:self.currentImages[i]] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
         [scrollView addSubview:imageView];
     }
     scrollView.scrollsToTop = NO;
@@ -98,9 +101,12 @@
 
 - (void)refreshImages {
     NSArray *subViews = self.scrollView.subviews;
+    
     for (int i = 0; i < subViews.count; i++) {
         UIImageView *imageView = (UIImageView *)subViews[i];
-        imageView.image = [UIImage imageNamed:self.currentImages[i]];
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+//        imageView.image = [UIImage imageNamed:self.currentImages[i]];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:self.currentImages[i]] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
     }
     
     [self.scrollView setContentOffset:CGPointMake(self.frame.size.width, 0)];

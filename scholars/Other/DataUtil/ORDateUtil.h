@@ -52,4 +52,10 @@
  *  @return 返回 NSDictionary
  */
 + (NSDictionary *)paramsFromUrl:(NSURL *)anUrl;
+
+//_______________.m  需要修改_______________
+//NSDate转NSString
++(NSString*)stringFromDate:(NSDate*)date;
+//NSString转NSDate
++(NSDate*)dateFromString:(NSString*)string;
 @end

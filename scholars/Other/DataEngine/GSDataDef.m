@@ -7,6 +7,7 @@
 //
 
 #import "GSDataDef.h"
+#import "Jastor.h"
 
 @implementation SCBaseJsonModel
 +(BOOL)propertyIsOptional:(NSString*)propertyName
@@ -20,6 +21,14 @@
 @end
 
 @implementation SCPictureInfo
+-(instancetype)initWithDictionary:(NSDictionary *)dict error:(NSError *__autoreleasing *)err
+{
+    self = [super initWithDictionary:dict error:err];
+    if (self) {
+        self.photosArray = [[self.photos componentsSeparatedByString:@"|"] mutableCopy];
+    }
+    return self;
+}
 
 @end
 

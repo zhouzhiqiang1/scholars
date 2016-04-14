@@ -10,10 +10,12 @@
 #import "YDHotTableViewCell.h"
 #import "WMLoopView.h"
 #import "WMPageConst.h"
+#import "GSImageCollectionViewController.h"
 
 @interface SCHotViewController ()<WMLoopViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, copy) NSNumber *age;
+@property (strong, nonatomic) NSArray *images;
 @end
 
 @implementation SCHotViewController
@@ -23,8 +25,11 @@
     // Do any additional setup after loading the view.
     self.tableView.showsVerticalScrollIndicator = NO;
     
-    NSArray *images = @[@"imageOne.png",@"imageTwo.png",@"imageThree.png"];
-    WMLoopView *loopView = [[WMLoopView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width/1.8) images:images autoPlay:YES delay:2.0];
+    self.images = @[@"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114206-dc74f317",
+                    @"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114207-78f389d4",
+                    @"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114210-ed2c0a1c"];
+    WMLoopView *loopView = [[WMLoopView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width/1.8) images:self.images autoPlay:YES delay:2.0];
+    loopView.timeInterval = 5;
     loopView.delegate = self;
     self.tableView.tableHeaderView = loopView;
     self.tableView.rowHeight = 80;
@@ -45,6 +50,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark -- (WMLoopViewDelegate)
+- (void)loopViewDidSelectedImage:(WMLoopView *)loopView index:(int)index
+{
+    GSImageCollectionViewController *imageVC = [GSImageCollectionViewController viewControllerWithDataSource:self.images];
+    imageVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:imageVC animated:YES];
+    imageVC.defaultPageIndex = index;
+
+}
 
 #pragma mark - Table view data source
 
