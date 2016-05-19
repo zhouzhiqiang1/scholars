@@ -46,7 +46,8 @@ static CGFloat speedF = 0.5;
     //Tap 点击手势
     UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(gestureClickEvent:)];
     tap.numberOfTapsRequired = 1;
-    tap.cancelsTouchesInView = NO;
+    
+    tap.cancelsTouchesInView = NO;/*YES 手势遮挡了 */
     [self.rootBarView.view addGestureRecognizer:tap];
     
     //设置隐藏和显示
