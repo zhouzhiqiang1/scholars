@@ -35,3 +35,12 @@
 @implementation SCPictureList
 
 @end
+
+
+@implementation SCNewsInfo
+
+@end
+
+@implementation SCNewsList
+
+@end

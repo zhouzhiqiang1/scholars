@@ -8,9 +8,14 @@
 
 #import "SCNewsTableViewController.h"
 #import "SCNewsTableViewCell.h"
+#import "SCNewsTableViewModel.h"
+#import <MJRefresh.h>
+#import "SCEncapsulation.h"
+#import "ORIndicatorView.h"
 
 @interface SCNewsTableViewController ()
-
+@property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
+@property (strong, nonatomic) SCNewsTableViewModel *newsTableViewModel;
 @end
 
 @implementation SCNewsTableViewController
@@ -20,14 +25,80 @@
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
+    //设置回调
+    MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
+    //    [header beginRefreshing];
+    // 隐藏时间
+    header.lastUpdatedTimeLabel.hidden = YES;
+    // 隐藏状态
+    header.stateLabel.hidden = YES;
+    // 设置普通状态的动画图片
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStateIdle];
+    // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStatePulling];
+    // 设置正在刷新状态的动画图片
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStateRefreshing];
+    // 设置header
+    self.tableView.mj_header = header;
+    [self startRefresh];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Model
+-(void)commonInit
+{
+    [super commonInit];
+    [self loadModel];
+}
+
+- (void)loadModel
+{
+    [self unloadModel];
+    self.newsTableViewModel = [[SCNewsTableViewModel alloc] init];
+    
+    [self.newsTableViewModel addObserver:self forKeyPath:kKeyPathDataSource options:NSKeyValueObservingOptionNew context:nil];
+    [self.newsTableViewModel addObserver:self forKeyPath:kKeyPathDataFetchResult options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)unloadModel
+{
+    @try {
+        [self.newsTableViewModel removeObserver:self forKeyPath:kKeyPathDataSource];
+        [self.newsTableViewModel removeObserver:self forKeyPath:kKeyPathDataFetchResult];
+        [self setNewsTableViewModel:nil];
+    }
+    @catch (NSException *exception) {
+    }
+}
+
+-(void)startRefresh
+{
+    NSLog(@"下拉刷新");
+    [ORIndicatorView showLoading];
+    [self.newsTableViewModel fetchList];
+}
+
+- (void)startLoadMore
+{
+    NSLog(@"上拉刷新");
+    [ORIndicatorView showLoading];
+    [self.newsTableViewModel fetchMore];
+}
+
+- (void)stopLoadingWithSuccess:(BOOL)aSuccess
+{
+    [super stopLoadingWithSuccess:aSuccess];
+    [ORIndicatorView hideLoading];
+    self.tableView.mj_footer = [self.newsTableViewModel hasMore]?self.refreshFooter:nil;
+    [self.tableView.mj_header endRefreshing];
+    [self.tableView.mj_footer endRefreshing];
 }
 
 #pragma mark - Table view data source
@@ -37,7 +108,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.newsTableViewModel.count;
 }
 
 
@@ -46,11 +117,8 @@
     NSString *cell = @"SCNewsTableViewCell";
     
     SCNewsTableViewCell *newsTableView = [tableView dequeueReusableCellWithIdentifier:cell forIndexPath:indexPath];
-    
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    SCNewsInfo *newsInfo = [self.newsTableViewModel objectAtIndex:indexPath.row];
+    [newsTableView newsData:newsInfo];
     return newsTableView;
 }
 
@@ -59,48 +127,20 @@
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (self.isViewLoaded == NO)
+    {
+        return;
+    }
+    
+    if ([keyPath isEqualToString:kKeyPathDataSource]) {
+        [self.tableView reloadData];
+    } else if ([keyPath isEqualToString:kKeyPathDataFetchResult]) {
+        [self stopLoadingWithSuccess:YES];
+        
+    }
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

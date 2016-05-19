@@ -13,7 +13,6 @@
 @interface SCPictureTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIView *view;
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
-
 @property (weak, nonatomic) IBOutlet UIButton *loveButton;
 @property (weak, nonatomic) IBOutlet UIButton *messageButton;
 

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GSDataEngine.h"
 
 @interface SCNewsTableViewCell : UITableViewCell
-
+- (void)newsData:(SCNewsInfo *)newsInfo;
 @end

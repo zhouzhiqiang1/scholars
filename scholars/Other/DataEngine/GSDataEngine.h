@@ -28,15 +28,6 @@ static NSString * const kKeyHttpHeaderToken = @"token";
  */
 - (BOOL)isReachable;
 
-
-/**
- *   趣味图片
- *  @param aResponseBlock 回调block
- *  @return task
- **/
--(GSHTTPTask *)addGetPictureFunActionTaskWithResponse:(GSTaskBlock())aResponseBlock;
-
-
 /**
  *  本地 NSString 信息获取
  */
@@ -46,4 +37,22 @@ static NSString * const kKeyHttpHeaderToken = @"token";
  *  网络 rews 信息获取
  */
 -(GSHTTPTask *)addGetNetworkDataActionTaskWithResponse:(GSTaskBlock())aResponseBlock userid:(long long)userid;
+
+
+
+/**
+ *   趣味图片
+ *  @param aResponseBlock 回调block
+ *  @return task
+ **/
+-(GSHTTPTask *)addGetPictureFunActionTaskWithResponse:(GSTaskBlock())aResponseBlock;
+
+/**
+ *   趣味图片
+ *  @param aResponseBlock 回调block
+ *  @return task
+ **/
+-(GSHTTPTask *)addGetNewsActionTaskWithResponse:(GSTaskBlock())aResponseBlock;
+
+
 @end

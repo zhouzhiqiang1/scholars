@@ -7,6 +7,7 @@
 //
 
 #import "SCNewsTableViewCell.h"
+#import <UIImageView+WebCache.h>
 
 @interface SCNewsTableViewCell ()
 
@@ -25,6 +26,13 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)newsData:(SCNewsInfo *)newsInfo
+{
+    [self.headImageView sd_setImageWithURL:[NSURL URLWithString:newsInfo.photos] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
+    self.titleLabel.text = newsInfo.title;
+    self.contentLabel.text = newsInfo.source;
 }
 
 @end

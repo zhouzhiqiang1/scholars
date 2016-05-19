@@ -4,7 +4,7 @@
 //
 //  Created by r_zhou on 15/11/27.
 //  Copyright © 2015年 r_zhou. All rights reserved.
-//[]
+//
 
 #import <Foundation/Foundation.h>
 #import "Jastor.h"
@@ -33,7 +33,6 @@ typedef NS_OPTIONS(NSInteger, YDHttpType) {
 @end
 
 
-
 // 分页 例子
 @protocol SCPictureInfo
 
@@ -58,5 +57,29 @@ typedef NS_OPTIONS(NSInteger, YDHttpType) {
 
 @interface SCPictureList :SCBasePageListResult
 @property (strong, nonatomic) NSArray<SCPictureInfo> *rows;
+@end
+
+
+
+
+/*  新闻  */
+@protocol SCNewsInfo
+
+@end
+
+@interface SCNewsInfo : SCBaseJsonModel
+
+@property (copy, nonatomic) NSString *objid;
+@property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *photos;
+@property (copy, nonatomic) NSString *publishTime;
+/*  数据来源  */
+@property (copy, nonatomic) NSString *source;
+/*  分享链接  */
+@property (copy, nonatomic) NSString *shareurl;
+@end
+
+@interface SCNewsList :SCBasePageListResult
+@property (strong, nonatomic) NSArray<SCNewsInfo> *rows;
 @end
 
