@@ -164,7 +164,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUb-vk-gAv">
-                                            <rect key="frame" x="74" y="10" width="34" height="20"/>
+                                            <rect key="frame" x="74" y="10" width="516" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="Hrm-pc-aPO"/>
                                             </constraints>
@@ -178,13 +178,14 @@
                                                 <constraint firstAttribute="height" constant="30" id="cna-SK-aaR"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.81960784313725488" green="0.23921568627450981" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="EXP-8H-RP9" firstAttribute="leading" secondItem="Mg5-va-asM" secondAttribute="leading" constant="10" id="8TN-Jp-p7N"/>
                                         <constraint firstAttribute="trailing" secondItem="DCc-4r-kUA" secondAttribute="trailing" constant="10" id="Et2-JN-oH0"/>
+                                        <constraint firstAttribute="trailing" secondItem="cUb-vk-gAv" secondAttribute="trailing" constant="10" id="P6O-Om-FcN"/>
                                         <constraint firstItem="EXP-8H-RP9" firstAttribute="top" secondItem="Mg5-va-asM" secondAttribute="top" constant="10" id="Q3r-xp-ij6"/>
                                         <constraint firstItem="DCc-4r-kUA" firstAttribute="top" secondItem="cUb-vk-gAv" secondAttribute="bottom" constant="2" id="U08-LN-YmK"/>
                                         <constraint firstItem="cUb-vk-gAv" firstAttribute="top" secondItem="EXP-8H-RP9" secondAttribute="top" id="bIx-eb-zly"/>

@@ -35,4 +35,10 @@ static NSString * const kURLRequestHeaderIdReadFromCache = @"CustomHeaderReadFro
  */
 #define GSUrlOtherUserInfo [NSString stringWithFormat:@"%@api/works/bannerinfo/selectbannerinfo", GSHttpServer]
 
+
+/**
+ *  新闻
+ */
+
+
 #endif

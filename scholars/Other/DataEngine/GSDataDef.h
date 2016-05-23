@@ -52,6 +52,10 @@ typedef NS_OPTIONS(NSInteger, YDHttpType) {
 @property (copy, nonatomic) NSString *sharethumbnail;
 /*  赞数  */
 @property (assign, nonatomic) NSInteger lovecount;
+/*  赞状态  */
+@property (assign, nonatomic) NSInteger lovestatus;
+/*  留言数  */
+@property (assign, nonatomic) NSInteger messagenumber;
 
 @end
 
