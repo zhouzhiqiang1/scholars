@@ -22,6 +22,8 @@
 
 @interface SCPictureTableViewCell : UITableViewCell
 
+@property (strong, nonatomic) SCPictureInfo *pictureInfo;
 @property (weak, nonatomic) id<SCPictureTableViewCellDelegate> delegate;
 - (void)dataLoad:(SCPictureInfo *)pictureInfo;
+- (void)updateLikeButton;
 @end

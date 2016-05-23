@@ -61,12 +61,26 @@
 }
 
 
-- (void)dataLoad:(SCPictureInfo *)pictureInfo;
+- (void)dataLoad:(SCPictureInfo *)pictureInfo
 {
 //    [self.imageview sd_setImageWithURL:[ViewUtil scaledUrlFromOriginalUrl:pictureInfo.photos size:self.imageview.frame.size] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
     
+    self.pictureInfo = pictureInfo;
+    
     [self.headImageView sd_setImageWithURL:[NSURL URLWithString:pictureInfo.photos] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
+
+    [self updateLikeButton];
 }
 
+
+- (void)updateLikeButton
+{
+    self.loveButton.selected = self.pictureInfo.lovestatus;
+    
+    [self.loveButton setTitle:[NSString stringWithFormat:@"%ld", self.pictureInfo.lovecount] forState:UIControlStateNormal];
+    
+    [self.messageButton setTitle:[NSString stringWithFormat:@"%ld", self.pictureInfo.messagenumber] forState:UIControlStateNormal];
+    
+}
 
 @end

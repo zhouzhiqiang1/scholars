@@ -17,7 +17,7 @@
 @implementation SCHomeViewController
 
 - (NSArray<NSString *> *)titles {
-    return @[@"热门", @"新闻", @"段子",@"你好", @"支持我", @"点赞"];
+    return @[@"热门", @"新闻", @"段子",@"你好", @"支持我", @"点赞", @"谢谢"];
 }
 
 - (void)viewDidLoad {

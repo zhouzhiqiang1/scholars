@@ -135,24 +135,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    SCPictureInfo *pictureInfo = [self.pictureViewModel objectAtIndex:indexPath.row];
-//    NSArray *images = @[@"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114206-dc74f317",
-//                        @"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114207-78f389d4",
-//                        @"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114210-ed2c0a1c"];
-//
-//    NSArray *images = @[pictureInfo.photos];
-//    GSImageCollectionViewController *imageVC = [GSImageCollectionViewController viewControllerWithDataSource:images];
-//    imageVC.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:imageVC animated:YES];
-//    imageVC.defaultPageIndex = indexPath.row;
-    
     SCPictureInfo *pictureInfo = [self.pictureViewModel objectAtIndex:indexPath.row];
     GSImageCollectionViewController *imageVC = [GSImageCollectionViewController viewControllerWithDataSource:pictureInfo.photosArray];
     imageVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:imageVC animated:YES];
-//    imageVC.defaultPageIndex = indexPath.row;
-
-
 }
 
 #pragma mark - UITableViewDelegate
@@ -164,8 +150,38 @@
 #pragma mark -- SCPictureTableViewCellDelegate
 - (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onLoveButtonAction:(UIButton *)sender;
 {
+    UIButton *btn = sender;
     sender.selected =! sender.selected;
     
+    aCell.pictureInfo.lovestatus = !aCell.pictureInfo.lovestatus;
+    aCell.pictureInfo.lovecount += aCell.pictureInfo.lovestatus?1:-1;
+    [aCell updateLikeButton];
+    
+    //点赞动画
+    btn.imageView.hidden = YES;
+    UIImageView *imageView = [[UIImageView alloc] init];
+    UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+    CGRect rect = [keyWindow convertRect:btn.imageView.frame fromView:btn.imageView.superview];
+    imageView.frame = rect;
+    imageView.image = [UIImage imageNamed:@"picture_like_highlight"];
+    [keyWindow addSubview:imageView];
+    CATransform3D transform = CATransform3DIdentity;
+    transform = CATransform3DScale(transform, 2.0, 2.0, 1.0f);
+    self.view.userInteractionEnabled = NO;
+    
+    [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        imageView.layer.transform = transform;
+        imageView.alpha = 0.4;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+            imageView.layer.transform = CATransform3DIdentity;
+            imageView.alpha = 1;
+        } completion:^(BOOL finished) {
+            [imageView removeFromSuperview];
+            btn.imageView.hidden = NO;
+            self.view.userInteractionEnabled = YES;
+        }];
+    }];
 }
 
 - (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onMessageButtonAction:(id)sender

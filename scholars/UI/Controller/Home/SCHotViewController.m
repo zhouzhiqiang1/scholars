@@ -11,11 +11,15 @@
 #import "WMLoopView.h"
 #import "WMPageConst.h"
 #import "GSImageCollectionViewController.h"
+#import <MJRefresh.h>
+#import "SCEncapsulation.h"
+#import "ORIndicatorView.h"
 
 @interface SCHotViewController ()<WMLoopViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, copy) NSNumber *age;
 @property (strong, nonatomic) NSArray *images;
+@property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
 @end
 
 @implementation SCHotViewController
@@ -24,6 +28,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.tableView.showsVerticalScrollIndicator = NO;
+    
+    //设置回调
+    MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
+    
+    self.refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
+    //    [header beginRefreshing];
+    // 隐藏时间
+    header.lastUpdatedTimeLabel.hidden = YES;
+    // 隐藏状态
+    header.stateLabel.hidden = YES;
+    // 设置普通状态的动画图片
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStateIdle];
+    // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStatePulling];
+    // 设置正在刷新状态的动画图片
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStateRefreshing];
+    // 设置header
+    self.tableView.mj_header = header;
+    [self startRefresh];
+
+    
     
     self.images = @[@"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114206-dc74f317",
                     @"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114207-78f389d4",
@@ -34,12 +59,68 @@
     self.tableView.tableHeaderView = loopView;
     self.tableView.rowHeight = 80;
     NSLog(@"%@", self.age);
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Model
+-(void)commonInit
+{
+    [super commonInit];
+    [self loadModel];
+}
+
+- (void)loadModel
+{
+    [self unloadModel];
+//    self.newsTableViewModel = [[SCNewsTableViewModel alloc] init];
+//    
+//    [self.newsTableViewModel addObserver:self forKeyPath:kKeyPathDataSource options:NSKeyValueObservingOptionNew context:nil];
+//    [self.newsTableViewModel addObserver:self forKeyPath:kKeyPathDataFetchResult options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)unloadModel
+{
+    @try {
+//        [self.newsTableViewModel removeObserver:self forKeyPath:kKeyPathDataSource];
+//        [self.newsTableViewModel removeObserver:self forKeyPath:kKeyPathDataFetchResult];
+//        [self setNewsTableViewModel:nil];
+    }
+    @catch (NSException *exception) {
+    }
+}
+
+-(void)startRefresh
+{
+    NSLog(@"下拉刷新");
+    [ORIndicatorView showLoading];
+    [self stopLoadingWithSuccess:YES];
+//    [self.newsTableViewModel fetchList];
+}
+
+- (void)startLoadMore
+{
+    NSLog(@"上拉刷新");
+    [ORIndicatorView showLoading];
+    [self stopLoadingWithSuccess:YES];
+//    [self.newsTableViewModel fetchMore];
+}
+
+- (void)stopLoadingWithSuccess:(BOOL)aSuccess
+{
+    [super stopLoadingWithSuccess:aSuccess];
+    [ORIndicatorView hideLoading];
+//    self.tableView.mj_footer = [self.newsTableViewModel hasMore]?self.refreshFooter:nil;
+    [self.tableView.mj_header endRefreshing];
+    [self.tableView.mj_footer endRefreshing];
+}
+
 
 /*
 #pragma mark - Navigation
@@ -77,9 +158,9 @@
  // Configure the cell...
      NSString *cell = @"YDHotTableViewCell";
      YDHotTableViewCell *hotTableView = [tableView dequeueReusableCellWithIdentifier:cell forIndexPath:indexPath];
-     [hotTableView loadTheData:@"zoro.jpg" title:@"一个人" content:@"有一个人回家果断发坑爹噶疯狂"];
+     [hotTableView loadTheData:@"imageThree.jpg" title:@"This is a project" content:@"Project data are local, welcome to watch"];
  
- return hotTableView;
+     return hotTableView;
  }
 
 
