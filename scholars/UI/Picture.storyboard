@@ -142,6 +142,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="xdb-ze-l8f"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tableView" destination="13T-yd-Not" id="thD-HD-Um6"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtY-SA-qBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

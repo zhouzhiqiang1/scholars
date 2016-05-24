@@ -16,6 +16,8 @@
 #import "GSImageCollectionViewController.h"
 
 @interface SCPictureTableViewController ()<SCPictureTableViewCellDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
 @property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
 @property (strong, nonatomic) SCPictureViewModel *pictureViewModel;
 @end
@@ -141,7 +143,6 @@
     [self.navigationController pushViewController:imageVC animated:YES];
 }
 
-//测试sourceTree分支合并
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -151,6 +152,7 @@
 #pragma mark -- SCPictureTableViewCellDelegate
 - (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onLoveButtonAction:(UIButton *)sender;
 {
+    DDLogDebug(@"点赞");
     UIButton *btn = sender;
     sender.selected =! sender.selected;
     
@@ -187,17 +189,21 @@
 
 - (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onMessageButtonAction:(id)sender
 {
-    
+     DDLogDebug(@"聊天");
 }
 
 - (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onShareButtonAction:(id)sender
 {
-
+    DDLogDebug(@"分享");
 }
 
 - (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onCollectButtonAction:(id)sender
 {
-    
+    DDLogDebug(@"屏蔽");
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:aCell ];
+    [ORIndicatorView showLoading];
+    [self.pictureViewModel removeObjectAtIndex:indexPath.row];
+    [ORIndicatorView hideLoading];
 }
 
 
@@ -209,12 +215,59 @@
     {
         return;
     }
-    
     if ([keyPath isEqualToString:kKeyPathDataSource]) {
+        NSIndexSet          *set = change[NSKeyValueChangeIndexesKey];
+        NSKeyValueChange    valueChange = [change[NSKeyValueChangeKindKey] unsignedIntegerValue];
+        switch (valueChange) {
+            case NSKeyValueChangeInsertion:
+            {
+                NSMutableArray *indexes = [NSMutableArray array];
+                [set enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
+                    [indexes addObject:[NSIndexPath indexPathForRow:idx inSection:0]];
+                }];
+                //                [self.tableView insertItemsAtIndexPaths:indexes];
+                [self.tableView insertRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationAutomatic];
+                
+            }
+                break;
+                
+            case NSKeyValueChangeRemoval:
+            {
+                NSMutableArray *indexes = [NSMutableArray array];
+                [set enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
+                    [indexes addObject:[NSIndexPath indexPathForRow:idx inSection:0]];
+                    
+                }];
+                //                [self.tableView deleteItemsAtIndexPaths:indexes];
+                [self.tableView deleteRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationAutomatic];
+            }
+                break;
+                
+            case NSKeyValueChangeReplacement:
+            {
+                NSMutableArray *indexes = [NSMutableArray array];
+                
+                [set enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
+                    [indexes addObject:[NSIndexPath indexPathForRow:idx inSection:0]];
+                    
+                }];
+                //                [self.tableView reloadItemsAtIndexPaths:indexes];
+                [self.tableView reloadRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationAutomatic];
+            }
+                break;
+                
+            case NSKeyValueChangeSetting:
+            {
+                [self.tableView reloadData];
+            }
+                break;
+            default:
+                break;
+        }
+    } else if ([keyPath isEqualToString:kKeyPathDataSource]) {
         [self.tableView reloadData];
     } else if ([keyPath isEqualToString:kKeyPathDataFetchResult]) {
         [self stopLoadingWithSuccess:YES];
-        
     }
 }
 
