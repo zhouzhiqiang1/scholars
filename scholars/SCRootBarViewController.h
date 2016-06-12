@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/**
+ *  tabbar第几项
+ */
+typedef NS_OPTIONS(NSInteger, YDTabType){
+    /** 集市 */
+    YDTabTypeMarket,
+    /** 首页 */
+    YDTabTypeHome,
+    YDTabTypeCenter,
+    /** 消息 */
+    YDTabTypeMessage,
+    /** 我 */
+    YDTabTypeMine,
+};
 
 @interface SCRootBarViewController : UITabBarController
 

@@ -107,6 +107,23 @@
     
 }
 
+
+#pragma mark - TabbarDelegate
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    if ([tabBar.items indexOfObject:item] == YDTabTypeMarket) {
+        
+        DDLogDebug(@"1点击 YDTabTypeMarket");
+    } else if ([tabBar.items indexOfObject:item] == YDTabTypeHome) {
+        DDLogDebug(@"2点击 YDTabTypeHome");
+    } else if ([tabBar.items indexOfObject:item] == YDTabTypeMessage) {
+        DDLogDebug(@"3点击 YDTabTypeMessage");
+    } else if ([tabBar.items indexOfObject:item] == YDTabTypeMine) {
+        DDLogDebug(@"4点击 YDTabTypeMine");
+    }
+}
+
+
 @end
 
 #pragma mark - 全局

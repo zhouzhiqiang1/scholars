@@ -583,12 +583,12 @@
 		DD44789B1CB7B958002EDB63 /* GSImagePreview */ = {
 			isa = PBXGroup;
 			children = (
+				DD4478A71CB7B9FF002EDB63 /* Resources */,
 				DD4478AE1CB7BABE002EDB63 /* GSImageCollectionViewController.xib */,
 				DD4478AF1CB7BABE002EDB63 /* GSImageCollectionViewController.m */,
 				DD4478B01CB7BABE002EDB63 /* GSImageCollectionViewController.h */,
 				DD4478B11CB7BABE002EDB63 /* GSImagePreviewCell.h */,
 				DD4478B21CB7BABE002EDB63 /* GSImagePreviewCell.m */,
-				DD4478A71CB7B9FF002EDB63 /* Resources */,
 				DD4478B31CB7BABE002EDB63 /* UIImage+Bundle.h */,
 				DD4478B41CB7BABE002EDB63 /* UIImage+Bundle.m */,
 			);
