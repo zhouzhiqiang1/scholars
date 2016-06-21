@@ -59,3 +59,14 @@
 //NSString转NSDate
 +(NSDate*)dateFromString:(NSString*)string;
 @end
+
+@interface NSDate(Custom)
+/**
+ *  是否同一天
+ *
+ *  @param aDate 要比对的日期
+ *
+ *  @return 布尔值
+ */
+- (BOOL)isSameDayWithDate:(NSDate*)aDate;
+@end

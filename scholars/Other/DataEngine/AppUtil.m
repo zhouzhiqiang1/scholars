@@ -15,6 +15,8 @@
 #import <AppInformationsManager.h>
 #include <ifaddrs.h>
 #include <arpa/inet.h>
+#import "YDNetworkStatusMonitor.h"
+
 @implementation AppUtil
 + (NSString *)platform
 {
@@ -24,7 +26,7 @@
 
 + (NSString *)productName
 {
-    return @"oread_client";
+    return @"yxtk";
 }
 
 + (NSString *)appVersion
@@ -35,7 +37,7 @@
         NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
         version = [infoDict objectForKey:@"CFBundleVersion"];
     });
-
+    
     return version;
 }
 
@@ -46,7 +48,7 @@
     dispatch_once(&onceToken, ^{
         version = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
     });
-
+    
     return version;
 }
 
@@ -106,20 +108,7 @@
 
 + (NSString *)networkInfo
 {
-//    NetworkStatus status = [PomeloReachability reachabilityForInternetConnection].currentReachabilityStatus;
-//    switch (status) {
-//        case ReachableViaWiFi:
-//            return @"wifi";
-//            break;
-//        case ReachableViaWWAN:
-//            return @"3G/2G";
-//            break;
-//        case NotReachable:
-//            break;
-//        default:
-//            break;
-//    }
-    return nil;
+    return [[YDNetworkStatusMonitor sharedInstance] currentNetworkStatus];
 }
 
 + (NSString *)deviceType

@@ -13,19 +13,20 @@
 
 @interface SCHomeViewController ()
 @property (strong, nonatomic) UIBarButtonItem *rightBarButtonItem;
+@property (assign, nonatomic) BOOL isVideoLayout;
 @end
 
 @implementation SCHomeViewController
 
 - (NSArray<NSString *> *)titles {
-    return @[@"热门", @"新闻", @"段子",@"视频",@"你好", @"支持我", @"点赞", @"谢谢"];
+    return @[@"热门", @"新闻",@"视频", @"段子",@"你好", @"支持我", @"点赞", @"谢谢"];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"首页";
-
+    self.isVideoLayout = NO;
 }
 
 - (void)configNavBar
@@ -42,9 +43,12 @@
 {
     if ([sender.image isEqual:[UIImage imageNamed:@"img_layout_horizontal"]]) {
         [self.rightBarButtonItem setImage:[UIImage imageNamed:@"img_layout_rules"]];
+        self.isVideoLayout = YES;
     } else {
         [self.rightBarButtonItem setImage:[UIImage imageNamed:@"img_layout_horizontal"]];
+        self.isVideoLayout = NO;
     }
+     [self reloadData];
     DDLogDebug(@"布局");
 }
 
@@ -82,6 +86,7 @@
         viewContorller = hotView;
     } else if ([self.titles[index] isEqualToString:@"视频"]) {
         SCWorkListViewController *workListView = [storyboard instantiateViewControllerWithIdentifier:@"SCWorkListViewController"];
+        workListView.isVideoLayout = self.isVideoLayout;
         viewContorller = workListView;
     } else {
         SCNewsTableViewController *hotView = [storyboard instantiateViewControllerWithIdentifier:@"SCNewsTableViewController"];

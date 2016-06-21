@@ -13,7 +13,7 @@
 #define kORAppChanelId @"appstore"
 
 @interface AppUtil : NSObject
-+ (NSString *)ORappVersion;
++ (NSString *)appVersion;
 + (NSString *)appBuildVersion;
 + (NSString *)appShortVersion;
 + (NSString *)systemName;

@@ -48,9 +48,9 @@ static CGFloat const kDCPathButtonAngel36C = 36.0f;
 static CGFloat const kDCPathButtonAngel45C = 45.0f;
 static CGFloat const kDCPathButtonAngel60C = 60.0f;
 static CGFloat const kDCPathButtonAngel72C = 72.0f;
-static CGFloat const kDCPathButtonDefaultCenterRadius = 15.0f;
-static CGFloat const kDCPathButtonDefaultSubRadius = 20.0f;
-static CGFloat const kDCPathButtonDefaultTotalRadius = 60.0f;
+//static CGFloat const kDCPathButtonDefaultCenterRadius = 15.0f;
+//static CGFloat const kDCPathButtonDefaultSubRadius = 20.0f;
+//static CGFloat const kDCPathButtonDefaultTotalRadius = 60.0f;
 static CGFloat const kDCPathButtonDefaultRotation = M_PI*2;
 static CGFloat const kDCPathButtonDefaultReverseRotation = -M_PI*2;
 

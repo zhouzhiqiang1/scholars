@@ -8,6 +8,7 @@
 
 #import "ORDateUtil.h"
 #import "SecurityUtil.h"
+#import "NSString+MD5Addition.h"
 
 @implementation ORDateUtil
 
@@ -78,6 +79,15 @@
     return formatedString;
 }
 
++(NSString *)uniqueStringFromDate
+{
+    NSDateFormatter* formater = [[NSDateFormatter alloc] init];
+    [formater setDateFormat:@"yyyy-MM-dd-HH:mm:ss"];
+    NSString *dateString = [formater stringFromDate:[NSDate date]];
+    NSString *resultString = [dateString stringFromMD5];
+    return resultString;
+}
+
 + (NSString *)formatedDateForBirthdayWithTimeInterval:(long long)aTimeInterval
 {
     NSDateFormatter* formater = [[NSDateFormatter alloc] init];
@@ -90,7 +100,7 @@
 {
     NSCalendar* calendar = [NSCalendar currentCalendar];
     
-    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit;
+    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay;
     NSDateComponents* comp1 = [calendar components:unitFlags fromDate:date1];
     NSDateComponents* comp2 = [calendar components:unitFlags fromDate:date2];
     
@@ -171,5 +181,18 @@
 //NSInteger interval = [zone secondsFromGMTForDate: dates];
 //NSDate *localeDate = [dates  dateByAddingTimeInterval: interval];
 //NSLog(@"enddate=%@",localeDate);
+
+@end
+
+@implementation NSDate(Custom)
+- (BOOL)isSameDayWithDate:(NSDate*)aDate {
+    NSCalendar* calendar = [NSCalendar currentCalendar];
+    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay;
+    NSDateComponents *comp1 = [calendar components:unitFlags fromDate:self];
+    NSDateComponents *comp2 = [calendar components:unitFlags fromDate:aDate];
+    return [comp1 day]   == [comp2 day] &&
+    [comp1 month] == [comp2 month] &&
+    [comp1 year]  == [comp2 year];
+}
 
 @end

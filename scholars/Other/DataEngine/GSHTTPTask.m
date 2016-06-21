@@ -101,7 +101,7 @@
         }
         
         // 错误描述
-        [self setMessage:GSErrorGetDescription(self.errorCode)];
+        [self setMessage:GSErrorGetDescription((GSErrorCode)(self.errorCode))];
         if (self.message == nil && [message isKindOfClass:[NSNull class]]==NO)
         {
             [self setMessage:message];
@@ -190,7 +190,7 @@
             {
                 [self setStatus:GSTaskStatusFailed];
                 
-                NSString *message = GSErrorGetDescription(errorNumber.integerValue);
+                NSString *message = GSErrorGetDescription((GSErrorCode)(errorNumber.integerValue));
                 if (message.length <= 0)
                 {
                     message = [aDictionaryObject objectForKey:@"error"];

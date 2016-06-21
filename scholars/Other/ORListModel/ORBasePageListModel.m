@@ -10,8 +10,8 @@
 
 @implementation ORBasePageListModel
 {
-    int _pageIndex;
-    int _curFetchIndex;
+    NSInteger _pageIndex;
+    NSInteger _curFetchIndex;
 }
 
 - (void)_reset

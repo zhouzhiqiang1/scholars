@@ -405,7 +405,10 @@ static BrightnessWindow *gBrightnessWindow = nil;
 {
     if (string!=nil) label.text = string;
     CGFloat width = label.frame.size.width;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     CGFloat height = [label.text sizeWithFont:label.font constrainedToSize:CGSizeMake(width, 1000) lineBreakMode:label.lineBreakMode].height;
+#pragma clang diagnostic pop
     label.frame = CGRectMake(label.frame.origin.x, label.frame.origin.y, width, height);
     return height;
 }
@@ -414,7 +417,10 @@ static BrightnessWindow *gBrightnessWindow = nil;
 {
     if (string!=nil) label.text = string;
     CGFloat width = size.width;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     CGFloat height = [label.text sizeWithFont:label.font constrainedToSize:size lineBreakMode:label.lineBreakMode].height;
+#pragma clang diagnostic pop
     label.frame = CGRectMake((int)label.frame.origin.x, (int)label.frame.origin.y, (int)width, (int)height);
     return height;
 }
@@ -551,7 +557,7 @@ static BrightnessWindow *gBrightnessWindow = nil;
     if ([aColorString hasPrefix:@"#"]) {
         start = 1;
     }
-    int len = aColorString.length/3;
+    int len = (int)aColorString.length/3;
     unsigned int a[3];
     for (int i=0; i<3; i++) {
         NSRange range;
@@ -650,11 +656,13 @@ static BrightnessWindow *gBrightnessWindow = nil;
     if ([aToViewController isKindOfClass:[UINavigationController class]]) {
         aToViewController = [(UINavigationController *)aToViewController topViewController];
     }
-    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     if (aToViewController.modalViewController != aFromViewController) {
         [aFromViewController dismissViewControllerAnimated:YES completion:nil];
         return;
     }
+#pragma clang diagnostic pop
     
     [aFromViewController dismissViewControllerAnimated:YES completion:nil];
     

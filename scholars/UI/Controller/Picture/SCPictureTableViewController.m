@@ -16,7 +16,7 @@
 #import "GSImageCollectionViewController.h"
 
 @interface SCPictureTableViewController ()<SCPictureTableViewCellDelegate>
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
+//@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
 @property (strong, nonatomic) SCPictureViewModel *pictureViewModel;

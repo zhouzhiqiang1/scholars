@@ -51,6 +51,10 @@
 		DD4478B81CB7BABE002EDB63 /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4478B41CB7BABE002EDB63 /* UIImage+Bundle.m */; };
 		DDAB6D0A1CF3F11300D48D83 /* ORQRCodeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAB6D091CF3F11300D48D83 /* ORQRCodeUtil.m */; };
 		DDAB6D0D1CF3F1B600D48D83 /* SCWorkListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAB6D0C1CF3F1B600D48D83 /* SCWorkListCollectionViewCell.m */; };
+		DDB285921D18DBC700ED60FB /* YDNetworkStatusMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB285911D18DBC700ED60FB /* YDNetworkStatusMonitor.m */; };
+		DDB2859A1D18E26200ED60FB /* Keychain.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB285951D18E26200ED60FB /* Keychain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DDB2859B1D18E26200ED60FB /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB285971D18E26200ED60FB /* NSString+MD5Addition.m */; };
+		DDB2859C1D18E26200ED60FB /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB285991D18E26200ED60FB /* UIDevice+IdentifierAddition.m */; };
 		DDC075001C98FBDD008DC9A3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */; };
 		DDC075011C98FBDD008DC9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC074FE1C98FBDD008DC9A3 /* Main.storyboard */; };
 		DDC075021C98FBDD008DC9A3 /* Picture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC074FF1C98FBDD008DC9A3 /* Picture.storyboard */; };
@@ -194,6 +198,14 @@
 		DDAB6D091CF3F11300D48D83 /* ORQRCodeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORQRCodeUtil.m; path = Other/QRCodeUtil/ORQRCodeUtil.m; sourceTree = "<group>"; };
 		DDAB6D0B1CF3F1B600D48D83 /* SCWorkListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCWorkListCollectionViewCell.h; path = UI/View/Home/SCWorkListCollectionViewCell.h; sourceTree = "<group>"; };
 		DDAB6D0C1CF3F1B600D48D83 /* SCWorkListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCWorkListCollectionViewCell.m; path = UI/View/Home/SCWorkListCollectionViewCell.m; sourceTree = "<group>"; };
+		DDB285901D18DBC700ED60FB /* YDNetworkStatusMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetworkStatusMonitor.h; sourceTree = "<group>"; };
+		DDB285911D18DBC700ED60FB /* YDNetworkStatusMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetworkStatusMonitor.m; sourceTree = "<group>"; };
+		DDB285941D18E26200ED60FB /* Keychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keychain.h; sourceTree = "<group>"; };
+		DDB285951D18E26200ED60FB /* Keychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keychain.m; sourceTree = "<group>"; };
+		DDB285961D18E26200ED60FB /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		DDB285971D18E26200ED60FB /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		DDB285981D18E26200ED60FB /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		DDB285991D18E26200ED60FB /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = UI/Home.storyboard; sourceTree = "<group>"; };
 		DDC074FE1C98FBDD008DC9A3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UI/Main.storyboard; sourceTree = "<group>"; };
 		DDC074FF1C98FBDD008DC9A3 /* Picture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Picture.storyboard; path = UI/Picture.storyboard; sourceTree = "<group>"; };
@@ -350,6 +362,8 @@
 				4A5D95251CA65CAD007F0660 /* DataUtil.m */,
 				4A5D95261CA65CAD007F0660 /* SecurityUtil.h */,
 				4A5D95271CA65CAD007F0660 /* SecurityUtil.m */,
+				DDB285901D18DBC700ED60FB /* YDNetworkStatusMonitor.h */,
+				DDB285911D18DBC700ED60FB /* YDNetworkStatusMonitor.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -604,6 +618,19 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		DDB285931D18E25400ED60FB /* uuid */ = {
+			isa = PBXGroup;
+			children = (
+				DDB285941D18E26200ED60FB /* Keychain.h */,
+				DDB285951D18E26200ED60FB /* Keychain.m */,
+				DDB285961D18E26200ED60FB /* NSString+MD5Addition.h */,
+				DDB285971D18E26200ED60FB /* NSString+MD5Addition.m */,
+				DDB285981D18E26200ED60FB /* UIDevice+IdentifierAddition.h */,
+				DDB285991D18E26200ED60FB /* UIDevice+IdentifierAddition.m */,
+			);
+			name = uuid;
+			sourceTree = "<group>";
+		};
 		DDC074E71C98F9BF008DC9A3 /* SCPathButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -656,6 +683,7 @@
 		DDD0F7591C91503C00F81EBF /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DDB285931D18E25400ED60FB /* uuid */,
 				DD44789B1CB7B958002EDB63 /* GSImagePreview */,
 				DD4478971CB75DF0002EDB63 /* QRCodeUtil */,
 				DD4478931CB75D07002EDB63 /* DataUtil */,
@@ -987,12 +1015,14 @@
 				4A5D95291CA65CAD007F0660 /* DataUtil.m in Sources */,
 				DDC0756A1C9907FA008DC9A3 /* Observer.m in Sources */,
 				DDC0750A1C98FC04008DC9A3 /* SCHotViewController.m in Sources */,
+				DDB2859A1D18E26200ED60FB /* Keychain.m in Sources */,
 				DD4478B81CB7BABE002EDB63 /* UIImage+Bundle.m in Sources */,
 				DDC075721C990802008DC9A3 /* ORLoadingIndicator.m in Sources */,
 				4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */,
 				4A5D951A1CA65C41007F0660 /* GSErrorDef.m in Sources */,
 				DDC0752A1C98FD5B008DC9A3 /* SCPictureTableViewCell.m in Sources */,
 				4A5D95071CA65C14007F0660 /* GSDataDef.m in Sources */,
+				DDB2859C1D18E26200ED60FB /* UIDevice+IdentifierAddition.m in Sources */,
 				4ABAAC2E1CA68416002D8A0F /* SCUserCenterViewController.m in Sources */,
 				DDC075141C98FC8E008DC9A3 /* WMLoopView.m in Sources */,
 				DD4478961CB75D55002EDB63 /* ORDateUtil.m in Sources */,
@@ -1007,11 +1037,13 @@
 				4A5D951D1CA65C41007F0660 /* GSHTTPURLRequestSerializer.m in Sources */,
 				4A5D95081CA65C14007F0660 /* GSDataEngine.m in Sources */,
 				DDC075821C990820008DC9A3 /* BaseModel.m in Sources */,
+				DDB2859B1D18E26200ED60FB /* NSString+MD5Addition.m in Sources */,
 				4ABAAC381CA68537002D8A0F /* YDUserCenterTableViewCell.m in Sources */,
 				4A5D951E1CA65C41007F0660 /* GSTask.m in Sources */,
 				DDC075671C9907D3008DC9A3 /* ORAppUtil.m in Sources */,
 				4ABAAC361CA68537002D8A0F /* YDUserCenterHeaderUITableViewCell.m in Sources */,
 				DDC075091C98FC04008DC9A3 /* SCHomeViewController.m in Sources */,
+				DDB285921D18DBC700ED60FB /* YDNetworkStatusMonitor.m in Sources */,
 				DDC075851C99082F008DC9A3 /* ORColorUtil.m in Sources */,
 				DDD7320D1CEDBD02002372B1 /* SCNewsTableViewModel.m in Sources */,
 				DDC075711C990802008DC9A3 /* ORIndicatorView.m in Sources */,
@@ -1162,7 +1194,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/scholars/scholars.pch";
 				INFOPLIST_FILE = scholars/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = scholars.scholars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1176,7 +1208,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/scholars/scholars.pch";
 				INFOPLIST_FILE = scholars/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = scholars.scholars;
 				PRODUCT_NAME = "$(TARGET_NAME)";

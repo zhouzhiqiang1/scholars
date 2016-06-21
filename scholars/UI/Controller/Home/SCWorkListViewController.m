@@ -10,7 +10,6 @@
 #import "SCWorkListCollectionViewCell.h"
 
 @interface SCWorkListViewController ()
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -39,7 +38,7 @@
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger row = indexPath.row;
+//    NSInteger row = indexPath.row;
     
     static NSString *tribalCellIdentifier = @"SCWorkListCollectionViewCell";
     
@@ -53,7 +52,11 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(self.view.frame.size.width, 400);
+    if (_isVideoLayout) {
+        return CGSizeMake(self.view.frame.size.width / 2 - 10, self.view.frame.size.width / 2);
+    } else {
+        return CGSizeMake(self.view.frame.size.width, 250);
+    }
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
@@ -63,18 +66,25 @@
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
-{
+{   if (_isVideoLayout) {
+    return UIEdgeInsetsMake(5, 5, 5, 5);
+    } else {
+        return UIEdgeInsetsZero;
+    }
     return UIEdgeInsetsZero;
 }
 
+
+//定义每个UICollectionView 纵向的间距
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    return 0;
+}
+//定义每个UICollectionView 横向的间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 0;
+    return 1;
 }
 
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
-    return 0;
-}
 
 
 

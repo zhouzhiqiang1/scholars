@@ -189,7 +189,7 @@
     
     static  NSString *cellID = @"YDUserCenterTableViewCell";
     static  NSString *cellHeader = @"YDUserCenterHeaderUITableViewCell";
-    static  NSString *cellNotLoggedIn = @"YDUserCenterNotLoggedInTableViewCell";
+//    static  NSString *cellNotLoggedIn = @"YDUserCenterNotLoggedInTableViewCell";
     
     if (section == 0) {
 //        if ([GSDataEngine shareEngine].isAnonymous) {

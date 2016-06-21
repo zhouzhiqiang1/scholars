@@ -11,4 +11,7 @@
 
 @interface SCWorkListViewController : ORBaseViewController
 
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (assign, nonatomic) BOOL isVideoLayout;//yes大 no小
 @end
