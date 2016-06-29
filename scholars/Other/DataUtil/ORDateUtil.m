@@ -16,7 +16,7 @@
 {
     NSString *dateString = nil;
     
-    time_t intervalInSecond = aTimeInterval;
+    time_t intervalInSecond = (long)aTimeInterval;
     time_t ltime;
     time(&ltime);
     

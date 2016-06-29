@@ -28,15 +28,15 @@
 																	  forKey:(id)kSecValueData];
 		
 		error = SecItemUpdate((CFDictionaryRef)query, (CFDictionaryRef)attributesToUpdate);
-		NSAssert1(error == errSecSuccess, @"SecItemUpdate failed: %d", error);
+		NSAssert1(error == errSecSuccess, @"SecItemUpdate failed: %ld", error);
 	} else if (error == errSecItemNotFound) {
 		// do add
 		[query setObject:[inputString dataUsingEncoding:NSUTF8StringEncoding] forKey:(id)kSecValueData];
 		
 		error = SecItemAdd((CFDictionaryRef)query, NULL);
-		NSAssert1(error == errSecSuccess, @"SecItemAdd failed: %d", error);
+		NSAssert1(error == errSecSuccess, @"SecItemAdd failed: %ld", error);
 	} else {
-		NSAssert1(NO, @"SecItemCopyMatching failed: %d", error);
+		NSAssert1(NO, @"SecItemCopyMatching failed: %ld", error);
 	}
 }
 

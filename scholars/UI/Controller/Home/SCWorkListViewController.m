@@ -55,7 +55,7 @@
     if (_isVideoLayout) {
         return CGSizeMake(self.view.frame.size.width / 2 - 10, self.view.frame.size.width / 2);
     } else {
-        return CGSizeMake(self.view.frame.size.width, 250);
+        return CGSizeMake(self.view.frame.size.width, 200);
     }
 }
 
@@ -82,7 +82,7 @@
 //定义每个UICollectionView 横向的间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 1;
+    return 5;
 }
 
 

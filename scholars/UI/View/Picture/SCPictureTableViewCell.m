@@ -77,9 +77,9 @@
 {
     self.loveButton.selected = self.pictureInfo.lovestatus;
     
-    [self.loveButton setTitle:[NSString stringWithFormat:@"%ld", self.pictureInfo.lovecount] forState:UIControlStateNormal];
+    [self.loveButton setTitle:[NSString stringWithFormat:@"%d", self.pictureInfo.lovecount] forState:UIControlStateNormal];
     
-    [self.messageButton setTitle:[NSString stringWithFormat:@"%ld", self.pictureInfo.messagenumber] forState:UIControlStateNormal];
+    [self.messageButton setTitle:[NSString stringWithFormat:@"%d", self.pictureInfo.messagenumber] forState:UIControlStateNormal];
     
 }
 
