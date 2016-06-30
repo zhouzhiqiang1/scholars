@@ -88,4 +88,16 @@
     [task run];
     return task;
 }
+
+-(GSHTTPTask *)addGetVideoDataTaskWithResponse:(GSTaskBlock())aResponseBlock
+{
+    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlFalseDataInfo
+                                                      httpType:YDHttpTypePost
+                                                        params:nil];
+    task.useFakeData = YES;
+    task.fakeJsonName = @"Video";
+    [task setResponseBlock:aResponseBlock];
+    [task run];
+    return task;
+}
 @end

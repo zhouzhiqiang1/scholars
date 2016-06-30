@@ -16,6 +16,16 @@
  *  @return loading框的实例
  */
 + (ORIndicatorView *)showLoading;
+
+/**
+ *  在view中显示loading框
+ *
+ *  @param aView 要显示的view
+ *
+ *  @return loading框的实例
+ */
++ (ORIndicatorView *)showLoadingInView:(UIView *)aView;
+
 /**
  *  在window中显示带文字的loading框
  *

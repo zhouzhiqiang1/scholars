@@ -3,6 +3,7 @@
     <dependencies>
         <deployment version="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--首页-->
@@ -169,7 +170,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="566" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_bgView" translatesAutoresizingMaskIntoConstraints="NO" id="lgQ-EQ-3Ch">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_bgView" translatesAutoresizingMaskIntoConstraints="NO" id="lgQ-EQ-3Ch">
                                                     <rect key="frame" x="0.0" y="0.0" width="566" height="169"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvJ-7p-p3F">
@@ -181,9 +182,11 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaS-Ah-4fR">
+                                                <button userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaS-Ah-4fR">
                                                     <rect key="frame" x="262" y="64" width="42" height="42"/>
-                                                    <state key="normal" image="video_list_cell_big_icon"/>
+                                                    <state key="normal" image="video_list_cell_big_icon">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -200,6 +203,11 @@
                                             <constraint firstItem="lgQ-EQ-3Ch" firstAttribute="leading" secondItem="9IJ-Wt-Z8N" secondAttribute="leading" id="Y4h-92-6R1"/>
                                             <constraint firstAttribute="trailing" secondItem="wvJ-7p-p3F" secondAttribute="trailing" id="p2p-J9-nJF"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="lgQ-EQ-3Ch" id="Ngz-tD-198"/>
+                                            <outlet property="playerBtn" destination="FaS-Ah-4fR" id="pCn-s6-mUj"/>
+                                            <outlet property="titleLabel" destination="wvJ-7p-p3F" id="Wqq-g4-fI6"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -293,6 +301,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1W-nV-KsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1628" y="343"/>
+        </scene>
+        <!--Movie Player View Controller-->
+        <scene sceneID="LYj-Ut-Hc3">
+            <objects>
+                <viewController storyboardIdentifier="MoviePlayerViewController" hidesBottomBarWhenPushed="YES" id="taP-Tv-i49" customClass="MoviePlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NXm-v2-rE2"/>
+                        <viewControllerLayoutGuide type="bottom" id="OLG-P4-gPS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ckd-59-sb1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Je-YM-lyb" customClass="ZFPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="338"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Je-YM-lyb" secondAttribute="height" multiplier="16:9" priority="750" id="zmK-fC-ZUF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Je-YM-lyb" secondAttribute="trailing" id="KBe-Ci-kWZ"/>
+                            <constraint firstItem="7Je-YM-lyb" firstAttribute="top" secondItem="ckd-59-sb1" secondAttribute="top" id="Mho-BA-ZOh">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="7Je-YM-lyb" firstAttribute="leading" secondItem="ckd-59-sb1" secondAttribute="leading" id="eOJ-i7-jku"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="playerView" destination="7Je-YM-lyb" id="FsG-y5-bMg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W6O-jW-nut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="1121"/>
         </scene>
     </scenes>
     <resources>

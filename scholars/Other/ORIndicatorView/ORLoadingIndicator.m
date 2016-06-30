@@ -30,7 +30,7 @@
     [self setHidden:YES];
     
     if (self.image == nil) {
-        [self setImage:[UIImage imageNamed:@"loading_24"]];
+        [self setImage:[UIImage imageNamed:@"img_public_loading"]];//进度样式 img_public_loading loading_24
     }
     
     [self setContentMode:UIViewContentModeCenter];

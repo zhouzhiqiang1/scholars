@@ -91,12 +91,13 @@
 		DDD16BDB1CA5283E001D533E /* AboutMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD16BDA1CA5283E001D533E /* AboutMenu.storyboard */; };
 		DDD732071CEDB511002372B1 /* News.json in Resources */ = {isa = PBXBuildFile; fileRef = DDD732061CEDB511002372B1 /* News.json */; };
 		DDD7320D1CEDBD02002372B1 /* SCNewsTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7320C1CEDBD02002372B1 /* SCNewsTableViewModel.m */; };
-		DDDD4B2C1D23CBBA00215959 /* ZFPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD4B251D23CBBA00215959 /* ZFPlayerView.m */; };
-		DDDD4B2D1D23CBBA00215959 /* ZFPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDD4B261D23CBBA00215959 /* ZFPlayerView.xib */; };
-		DDDD4B2E1D23CBBA00215959 /* ZFPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD4B281D23CBBA00215959 /* ZFPlayerControlView.m */; };
-		DDDD4B2F1D23CBBA00215959 /* ZFPlayerControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDD4B291D23CBBA00215959 /* ZFPlayerControlView.xib */; };
-		DDDD4B301D23CBBA00215959 /* ZFBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD4B2B1D23CBBA00215959 /* ZFBrightnessView.m */; };
-		DDDD4B341D23CC1300215959 /* MoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD4B331D23CC1300215959 /* MoviePlayerViewController.m */; };
+		DDDD4B3D1D24B60800215959 /* SCWorkListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD4B3C1D24B60800215959 /* SCWorkListViewModel.m */; };
+		DDDD4B461D24B65C00215959 /* ZFBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD4B3F1D24B65C00215959 /* ZFBrightnessView.m */; };
+		DDDD4B471D24B65C00215959 /* ZFPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD4B411D24B65C00215959 /* ZFPlayerControlView.m */; };
+		DDDD4B481D24B65C00215959 /* ZFPlayerControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDD4B421D24B65C00215959 /* ZFPlayerControlView.xib */; };
+		DDDD4B491D24B65C00215959 /* ZFPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD4B441D24B65C00215959 /* ZFPlayerView.m */; };
+		DDDD4B4A1D24B65C00215959 /* ZFPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDD4B451D24B65C00215959 /* ZFPlayerView.xib */; };
+		DDDD4B4D1D24B67D00215959 /* MoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD4B4C1D24B67D00215959 /* MoviePlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,16 +273,18 @@
 		DDD732061CEDB511002372B1 /* News.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = News.json; path = Resource/News.json; sourceTree = "<group>"; };
 		DDD7320B1CEDBD02002372B1 /* SCNewsTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNewsTableViewModel.h; path = UI/Model/Home/SCNewsTableViewModel.h; sourceTree = "<group>"; };
 		DDD7320C1CEDBD02002372B1 /* SCNewsTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNewsTableViewModel.m; path = UI/Model/Home/SCNewsTableViewModel.m; sourceTree = "<group>"; };
-		DDDD4B241D23CBBA00215959 /* ZFPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPlayerView.h; sourceTree = "<group>"; };
-		DDDD4B251D23CBBA00215959 /* ZFPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerView.m; sourceTree = "<group>"; };
-		DDDD4B261D23CBBA00215959 /* ZFPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZFPlayerView.xib; sourceTree = "<group>"; };
-		DDDD4B271D23CBBA00215959 /* ZFPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPlayerControlView.h; sourceTree = "<group>"; };
-		DDDD4B281D23CBBA00215959 /* ZFPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerControlView.m; sourceTree = "<group>"; };
-		DDDD4B291D23CBBA00215959 /* ZFPlayerControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZFPlayerControlView.xib; sourceTree = "<group>"; };
-		DDDD4B2A1D23CBBA00215959 /* ZFBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBrightnessView.h; sourceTree = "<group>"; };
-		DDDD4B2B1D23CBBA00215959 /* ZFBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBrightnessView.m; sourceTree = "<group>"; };
-		DDDD4B321D23CC1300215959 /* MoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerViewController.h; sourceTree = "<group>"; };
-		DDDD4B331D23CC1300215959 /* MoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerViewController.m; sourceTree = "<group>"; };
+		DDDD4B3B1D24B60800215959 /* SCWorkListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCWorkListViewModel.h; path = UI/Model/Home/SCWorkListViewModel.h; sourceTree = "<group>"; };
+		DDDD4B3C1D24B60800215959 /* SCWorkListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCWorkListViewModel.m; path = UI/Model/Home/SCWorkListViewModel.m; sourceTree = "<group>"; };
+		DDDD4B3E1D24B65C00215959 /* ZFBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFBrightnessView.h; path = Other/PlayerView/ZFBrightnessView.h; sourceTree = "<group>"; };
+		DDDD4B3F1D24B65C00215959 /* ZFBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZFBrightnessView.m; path = Other/PlayerView/ZFBrightnessView.m; sourceTree = "<group>"; };
+		DDDD4B401D24B65C00215959 /* ZFPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFPlayerControlView.h; path = Other/PlayerView/ZFPlayerControlView.h; sourceTree = "<group>"; };
+		DDDD4B411D24B65C00215959 /* ZFPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZFPlayerControlView.m; path = Other/PlayerView/ZFPlayerControlView.m; sourceTree = "<group>"; };
+		DDDD4B421D24B65C00215959 /* ZFPlayerControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZFPlayerControlView.xib; path = Other/PlayerView/ZFPlayerControlView.xib; sourceTree = "<group>"; };
+		DDDD4B431D24B65C00215959 /* ZFPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFPlayerView.h; path = Other/PlayerView/ZFPlayerView.h; sourceTree = "<group>"; };
+		DDDD4B441D24B65C00215959 /* ZFPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZFPlayerView.m; path = Other/PlayerView/ZFPlayerView.m; sourceTree = "<group>"; };
+		DDDD4B451D24B65C00215959 /* ZFPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZFPlayerView.xib; path = Other/PlayerView/ZFPlayerView.xib; sourceTree = "<group>"; };
+		DDDD4B4B1D24B67D00215959 /* MoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoviePlayerViewController.h; path = Other/PlayerViewController/MoviePlayerViewController.h; sourceTree = "<group>"; };
+		DDDD4B4C1D24B67D00215959 /* MoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoviePlayerViewController.m; path = Other/PlayerViewController/MoviePlayerViewController.m; sourceTree = "<group>"; };
 		DDF0D5271C9813BA000D40E5 /* scholars.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = scholars.pch; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
@@ -398,6 +401,8 @@
 			children = (
 				DDD7320B1CEDBD02002372B1 /* SCNewsTableViewModel.h */,
 				DDD7320C1CEDBD02002372B1 /* SCNewsTableViewModel.m */,
+				DDDD4B3B1D24B60800215959 /* SCWorkListViewModel.h */,
+				DDDD4B3C1D24B60800215959 /* SCWorkListViewModel.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -739,14 +744,14 @@
 		DDDD4B231D23CBA800215959 /* PlayerView */ = {
 			isa = PBXGroup;
 			children = (
-				DDDD4B241D23CBBA00215959 /* ZFPlayerView.h */,
-				DDDD4B251D23CBBA00215959 /* ZFPlayerView.m */,
-				DDDD4B261D23CBBA00215959 /* ZFPlayerView.xib */,
-				DDDD4B271D23CBBA00215959 /* ZFPlayerControlView.h */,
-				DDDD4B281D23CBBA00215959 /* ZFPlayerControlView.m */,
-				DDDD4B291D23CBBA00215959 /* ZFPlayerControlView.xib */,
-				DDDD4B2A1D23CBBA00215959 /* ZFBrightnessView.h */,
-				DDDD4B2B1D23CBBA00215959 /* ZFBrightnessView.m */,
+				DDDD4B3E1D24B65C00215959 /* ZFBrightnessView.h */,
+				DDDD4B3F1D24B65C00215959 /* ZFBrightnessView.m */,
+				DDDD4B401D24B65C00215959 /* ZFPlayerControlView.h */,
+				DDDD4B411D24B65C00215959 /* ZFPlayerControlView.m */,
+				DDDD4B421D24B65C00215959 /* ZFPlayerControlView.xib */,
+				DDDD4B431D24B65C00215959 /* ZFPlayerView.h */,
+				DDDD4B441D24B65C00215959 /* ZFPlayerView.m */,
+				DDDD4B451D24B65C00215959 /* ZFPlayerView.xib */,
 			);
 			name = PlayerView;
 			sourceTree = "<group>";
@@ -754,8 +759,8 @@
 		DDDD4B311D23CC0100215959 /* PlayerViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DDDD4B321D23CC1300215959 /* MoviePlayerViewController.h */,
-				DDDD4B331D23CC1300215959 /* MoviePlayerViewController.m */,
+				DDDD4B4B1D24B67D00215959 /* MoviePlayerViewController.h */,
+				DDDD4B4C1D24B67D00215959 /* MoviePlayerViewController.m */,
 			);
 			name = PlayerViewController;
 			sourceTree = "<group>";
@@ -941,7 +946,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDC075011C98FBDD008DC9A3 /* Main.storyboard in Resources */,
-				DDDD4B2F1D23CBBA00215959 /* ZFPlayerControlView.xib in Resources */,
+				DDDD4B481D24B65C00215959 /* ZFPlayerControlView.xib in Resources */,
 				DDC075581C9907A5008DC9A3 /* custom_4.png in Resources */,
 				DD4478AC1CB7BA0C002EDB63 /* GSImagePreview.strings in Resources */,
 				4A9512C61C9054CD002658FB /* LaunchScreen.storyboard in Resources */,
@@ -951,6 +956,7 @@
 				DDC075001C98FBDD008DC9A3 /* Home.storyboard in Resources */,
 				DDD732071CEDB511002372B1 /* News.json in Resources */,
 				4A5D94FE1CA65B10007F0660 /* NSArryData.json in Resources */,
+				DDDD4B4A1D24B65C00215959 /* ZFPlayerView.xib in Resources */,
 				DDC075591C9907A5008DC9A3 /* custom_5.png in Resources */,
 				DD4478B51CB7BABE002EDB63 /* GSImageCollectionViewController.xib in Resources */,
 				4A9512C31C9054CD002658FB /* Assets.xcassets in Resources */,
@@ -961,7 +967,6 @@
 				DDC8B3001CF3088C0082213C /* Video.json in Resources */,
 				DDC075561C9907A5008DC9A3 /* custom_2.png in Resources */,
 				4ABAAC2A1CA68348002D8A0F /* UserCenter.storyboard in Resources */,
-				DDDD4B2D1D23CBBA00215959 /* ZFPlayerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,14 +1040,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */,
-				DDDD4B301D23CBBA00215959 /* ZFBrightnessView.m in Sources */,
+				DDDD4B461D24B65C00215959 /* ZFBrightnessView.m in Sources */,
 				DDC075811C990820008DC9A3 /* ORBasePageListModel.m in Sources */,
 				DDC0750B1C98FC04008DC9A3 /* SCNewsTableViewController.m in Sources */,
 				4A5D951C1CA65C41007F0660 /* GSHTTPTask.m in Sources */,
 				4A5D95211CA65C41007F0660 /* ORBaseHttpTask.m in Sources */,
 				4A5D952F1CA664AC007F0660 /* SCPictureViewModel.m in Sources */,
 				4A5D952A1CA65CAD007F0660 /* SecurityUtil.m in Sources */,
-				DDDD4B2C1D23CBBA00215959 /* ZFPlayerView.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
 				DD4478B61CB7BABE002EDB63 /* GSImageCollectionViewController.m in Sources */,
 				4A5D94991CA63E1A007F0660 /* Jastor.m in Sources */,
@@ -1061,6 +1065,7 @@
 				4A5D95291CA65CAD007F0660 /* DataUtil.m in Sources */,
 				DDC0756A1C9907FA008DC9A3 /* Observer.m in Sources */,
 				DDC0750A1C98FC04008DC9A3 /* SCHotViewController.m in Sources */,
+				DDDD4B4D1D24B67D00215959 /* MoviePlayerViewController.m in Sources */,
 				DDB2859A1D18E26200ED60FB /* Keychain.m in Sources */,
 				DD4478B81CB7BABE002EDB63 /* UIImage+Bundle.m in Sources */,
 				DDC075721C990802008DC9A3 /* ORLoadingIndicator.m in Sources */,
@@ -1070,11 +1075,12 @@
 				4A5D95071CA65C14007F0660 /* GSDataDef.m in Sources */,
 				DDB2859C1D18E26200ED60FB /* UIDevice+IdentifierAddition.m in Sources */,
 				4ABAAC2E1CA68416002D8A0F /* SCUserCenterViewController.m in Sources */,
-				DDDD4B2E1D23CBBA00215959 /* ZFPlayerControlView.m in Sources */,
+				DDDD4B491D24B65C00215959 /* ZFPlayerView.m in Sources */,
 				DDC075141C98FC8E008DC9A3 /* WMLoopView.m in Sources */,
 				DD4478961CB75D55002EDB63 /* ORDateUtil.m in Sources */,
 				DDC075781C990813008DC9A3 /* ORBaseTableViewController.m in Sources */,
 				4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */,
+				DDDD4B3D1D24B60800215959 /* SCWorkListViewModel.m in Sources */,
 				DDC075611C9907B1008DC9A3 /* DCSubButton.m in Sources */,
 				4A5D94801CA557F1007F0660 /* SCNewsTableViewCell.m in Sources */,
 				4A5D951B1CA65C41007F0660 /* GSHTTPRequestOperationManager.m in Sources */,
@@ -1092,12 +1098,12 @@
 				DDC075091C98FC04008DC9A3 /* SCHomeViewController.m in Sources */,
 				DDB285921D18DBC700ED60FB /* YDNetworkStatusMonitor.m in Sources */,
 				DDC075851C99082F008DC9A3 /* ORColorUtil.m in Sources */,
+				DDDD4B471D24B65C00215959 /* ZFPlayerControlView.m in Sources */,
 				DDD7320D1CEDBD02002372B1 /* SCNewsTableViewModel.m in Sources */,
 				DDC075711C990802008DC9A3 /* ORIndicatorView.m in Sources */,
 				DDD16BD91CA5281D001D533E /* SCMenuLeftViewController.m in Sources */,
 				DDC075601C9907B1008DC9A3 /* DCPathButton.m in Sources */,
 				DDAB6D0A1CF3F11300D48D83 /* ORQRCodeUtil.m in Sources */,
-				DDDD4B341D23CC1300215959 /* MoviePlayerViewController.m in Sources */,
 				4A5D95091CA65C14007F0660 /* GSUserSetting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

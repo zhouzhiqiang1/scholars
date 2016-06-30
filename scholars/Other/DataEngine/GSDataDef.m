@@ -44,3 +44,11 @@
 @implementation SCNewsList
 
 @end
+
+@implementation SCVideoDataInfo
+
+@end
+
+@implementation SCVideoDataList
+
+@end

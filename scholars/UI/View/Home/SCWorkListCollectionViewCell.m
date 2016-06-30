@@ -7,7 +7,15 @@
 //
 
 #import "SCWorkListCollectionViewCell.h"
+#import "UIImageView+WebCache.h"
 
 @implementation SCWorkListCollectionViewCell
+
+- (void)upData:(SCVideoDataInfo *)videoDataInfo
+{
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:videoDataInfo.photos] placeholderImage:[UIImage imageNamed:@"loading_bgView"]];
+    self.titleLabel.text = videoDataInfo.title;
+    
+}
 
 @end

@@ -87,3 +87,24 @@ typedef NS_OPTIONS(NSInteger, YDHttpType) {
 @property (strong, nonatomic) NSArray<SCNewsInfo> *rows;
 @end
 
+
+/*  视频  */
+@protocol SCVideoDataInfo
+
+@end
+
+@interface SCVideoDataInfo : SCBaseJsonModel
+/*  objid  */
+@property (copy, nonatomic) NSString *objid;
+@property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *photos;
+/*  视频时长  */
+@property (copy, nonatomic) NSString *duration;
+/*  视频  */
+@property (copy, nonatomic) NSString *vediourl;
+@end
+
+@interface SCVideoDataList :SCBasePageListResult
+@property (strong, nonatomic) NSArray<SCVideoDataInfo> *rows;
+@end
+

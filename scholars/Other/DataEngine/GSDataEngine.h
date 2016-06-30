@@ -48,11 +48,19 @@ static NSString * const kKeyHttpHeaderToken = @"token";
 -(GSHTTPTask *)addGetPictureFunActionTaskWithResponse:(GSTaskBlock())aResponseBlock;
 
 /**
- *   趣味图片
+ *   新闻数据
  *  @param aResponseBlock 回调block
  *  @return task
  **/
 -(GSHTTPTask *)addGetNewsActionTaskWithResponse:(GSTaskBlock())aResponseBlock;
+
+
+/**
+ *   视频数据
+ *  @param aResponseBlock 回调block
+ *  @return task
+ **/
+-(GSHTTPTask *)addGetVideoDataTaskWithResponse:(GSTaskBlock())aResponseBlock;
 
 
 @end

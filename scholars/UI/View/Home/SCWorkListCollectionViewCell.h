@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GSDataDef.h"
 
 @interface SCWorkListCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIButton *playerBtn;
+
+- (void)upData:(SCVideoDataInfo *)videoDataInfo;
 @end
