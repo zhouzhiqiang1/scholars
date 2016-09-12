@@ -50,7 +50,7 @@
 
     
     
-    self.images = @[@"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114206-dc74f317",
+    self.images = @[@"http://7xk3oj.com2.z0.glb.qiniucdn.com/banner-20150908-002-1.png",
                     @"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114207-78f389d4",
                     @"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114210-ed2c0a1c"];
     WMLoopView *loopView = [[WMLoopView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width/1.8) images:self.images autoPlay:YES delay:2.0];

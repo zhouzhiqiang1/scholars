@@ -81,6 +81,7 @@
     for (int i = 0; i < 3; i++) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * width, 0, width, height)];
         imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.clipsToBounds = YES;
         //        imageView.image = [UIImage imageNamed:self.currentImages[i]];
         [imageView sd_setImageWithURL:[NSURL URLWithString:self.currentImages[i]] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
         [scrollView addSubview:imageView];

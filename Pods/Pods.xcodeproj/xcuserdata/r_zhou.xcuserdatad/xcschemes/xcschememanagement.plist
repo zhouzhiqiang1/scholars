@@ -44,7 +44,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-scholars.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,12 +72,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>09FA060F1A0492FB25232F489AC4E573</key>
+		<key>06287B1AE4567E8A6E9C4523B789F4EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>11AC60CFF308D3A29F9A2D98D9707061</key>
+		<key>09FA060F1A0492FB25232F489AC4E573</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>232C41647ABD4599BB07209DB2D8B956</key>
+		<key>24824545860918C82A2E9D9FF05A555F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,27 +107,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>70BC44266C6FFE30D2C57129458E070B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75C5CF504D0CA346B2C087143DE75CC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7AE1389E0C6D743966465D23A68CCC44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F74D9EA91F4C43190670066BAC37D44</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D0E6410EF7DC08511548EC46DA488CC3</key>
+		<key>CA8979CB9E7A18B0B0860546FCE02B0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DE1F7E57D44C3074C1E074F74649757A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FD2DB8726A6F8E881643C2E309B1D565</key>
 		<dict>
 			<key>primary</key>
 			<true/>
