@@ -1,8 +1,9 @@
 //
 //  SMPUserCenterHeaderUITableViewCell.h
-//  SmartMedicalPaient
+//  scholars
+//  github 下载地址  https://github.com/zhouzhiqiang1/scholars
 //
-//  Created by r_zhou on 15/12/9.
+//  Created by r_zhou on on 15/12/9.
 //  Copyright © 2015年 Aren. All rights reserved.
 //
 

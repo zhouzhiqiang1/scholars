@@ -1,6 +1,7 @@
 //
 //  YDMessageListViewController.m
 //  scholars
+//  github 下载地址  https://github.com/zhouzhiqiang1/scholars
 //
 //  Created by r_zhou on 16/9/12.
 //  Copyright © 2016年 zhou. All rights reserved.
@@ -211,6 +212,7 @@
     //    [self.navigationController pushViewController:conversationVC animated:YES];
     SCChatViewController *conversationVC = [[SCChatViewController alloc]initWithConversationType:model.conversationType targetId:model.targetId];
     conversationVC.title = model.conversationTitle;
+    conversationVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:conversationVC animated:YES];
 }
 
