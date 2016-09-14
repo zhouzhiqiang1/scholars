@@ -13,6 +13,9 @@ static NSString * const ORSettingsStrDeviceId = @"ORSettingsStrDeviceID";   // u
 static NSString * const ORSettingsStrUserCipher = @"ORSettingsStrUserCipher";  // LDSettingsStrUrsAESKey加密过的token
 static NSString * const ORSettingsBoolEverLaunched = @"ORSettingsBoolEverLaunched";    // 以前是否启动过，即“是否非首次登录”
 
+/** 融云token */
+static NSString * const ORSettingsStrRYToken = @"ORSettingsStrRYToken";
+
 @interface GSUserSetting : NSObject
 
 
@@ -45,4 +48,13 @@ static NSString * const ORSettingsBoolEverLaunched = @"ORSettingsBoolEverLaunche
 
 
 + (void)removeObjectForKey:(NSString *)aKey;
+
+/*
+ * 删除指定的aKey
+ */
++ (void)deleteData:(NSString *)aKey;
+/*
+ * 删除全部
+ */
++ (void)deleteData;
 @end

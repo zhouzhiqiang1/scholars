@@ -164,4 +164,21 @@
     [defaults removeObjectForKey:aKey];
 }
 
++ (void)deleteData:(NSString *)aKey
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults removeObjectForKey:aKey];
+    [defaults synchronize];
+}
+
++ (void)deleteData
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *dictionary = [defaults dictionaryRepresentation];
+    for(NSString* key in [dictionary allKeys]){
+        [defaults removeObjectForKey:key];
+        [defaults synchronize];
+    }
+}
+
 @end

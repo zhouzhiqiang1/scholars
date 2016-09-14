@@ -88,6 +88,24 @@
 		DDCB7F591D864FB0000B6C43 /* GSImagePreview.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDCB7F531D864FB0000B6C43 /* GSImagePreview.strings */; };
 		DDCB7F5A1D864FB0000B6C43 /* GSImagePreview.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDCB7F551D864FB0000B6C43 /* GSImagePreview.bundle */; };
 		DDCB7F5B1D864FB0000B6C43 /* GSImagePreview.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDCB7F571D864FB0000B6C43 /* GSImagePreview.strings */; };
+		DDCB7F5E1D865CFC000B6C43 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCB7F5D1D865CFC000B6C43 /* Message.storyboard */; };
+		DDCB7F5F1D865CFC000B6C43 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCB7F5D1D865CFC000B6C43 /* Message.storyboard */; };
+		DDCB7F601D865CFC000B6C43 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCB7F5D1D865CFC000B6C43 /* Message.storyboard */; };
+		DDCB7F681D8686EB000B6C43 /* SCMessageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F671D8686EB000B6C43 /* SCMessageListViewController.m */; };
+		DDCB7F691D8686EB000B6C43 /* SCMessageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F671D8686EB000B6C43 /* SCMessageListViewController.m */; };
+		DDCB7F6A1D8686EB000B6C43 /* SCMessageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F671D8686EB000B6C43 /* SCMessageListViewController.m */; };
+		DDCB7F6E1D86887B000B6C43 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F6D1D86887B000B6C43 /* KxMenu.m */; };
+		DDCB7F6F1D86887B000B6C43 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F6D1D86887B000B6C43 /* KxMenu.m */; };
+		DDCB7F701D86887B000B6C43 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F6D1D86887B000B6C43 /* KxMenu.m */; };
+		DDCB7F731D868A21000B6C43 /* SCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F721D868A21000B6C43 /* SCChatViewController.m */; };
+		DDCB7F741D868A21000B6C43 /* SCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F721D868A21000B6C43 /* SCChatViewController.m */; };
+		DDCB7F751D868A21000B6C43 /* SCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F721D868A21000B6C43 /* SCChatViewController.m */; };
+		DDCB7F781D869A47000B6C43 /* SCMessageLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F771D869A47000B6C43 /* SCMessageLoginViewController.m */; };
+		DDCB7F791D869A47000B6C43 /* SCMessageLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F771D869A47000B6C43 /* SCMessageLoginViewController.m */; };
+		DDCB7F7A1D869A47000B6C43 /* SCMessageLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F771D869A47000B6C43 /* SCMessageLoginViewController.m */; };
+		DDCB7F7E1D88EBE2000B6C43 /* RCAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F7D1D88EBE2000B6C43 /* RCAnimatedImagesView.m */; };
+		DDCB7F7F1D88EBE2000B6C43 /* RCAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F7D1D88EBE2000B6C43 /* RCAnimatedImagesView.m */; };
+		DDCB7F801D88EBE2000B6C43 /* RCAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB7F7D1D88EBE2000B6C43 /* RCAnimatedImagesView.m */; };
 		DDD16BD91CA5281D001D533E /* SCMenuLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD16BD81CA5281D001D533E /* SCMenuLeftViewController.m */; };
 		DDD16BDB1CA5283E001D533E /* AboutMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD16BDA1CA5283E001D533E /* AboutMenu.storyboard */; };
 		DDD732071CEDB511002372B1 /* News.json in Resources */ = {isa = PBXBuildFile; fileRef = DDD732061CEDB511002372B1 /* News.json */; };
@@ -268,6 +286,17 @@
 		DDCB7F541D864FB0000B6C43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = GSImagePreview.strings; sourceTree = "<group>"; };
 		DDCB7F551D864FB0000B6C43 /* GSImagePreview.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GSImagePreview.bundle; path = Other/GSImagePreview/Resources/GSImagePreview.bundle; sourceTree = "<group>"; };
 		DDCB7F581D864FB0000B6C43 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = GSImagePreview.strings; sourceTree = "<group>"; };
+		DDCB7F5D1D865CFC000B6C43 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = UI/Message.storyboard; sourceTree = "<group>"; };
+		DDCB7F661D8686EB000B6C43 /* SCMessageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMessageListViewController.h; path = UI/Controller/Message/SCMessageListViewController.h; sourceTree = "<group>"; };
+		DDCB7F671D8686EB000B6C43 /* SCMessageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCMessageListViewController.m; path = UI/Controller/Message/SCMessageListViewController.m; sourceTree = "<group>"; };
+		DDCB7F6C1D86887B000B6C43 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxMenu.h; path = Other/KxMenu/KxMenu.h; sourceTree = "<group>"; };
+		DDCB7F6D1D86887B000B6C43 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxMenu.m; path = Other/KxMenu/KxMenu.m; sourceTree = "<group>"; };
+		DDCB7F711D868A21000B6C43 /* SCChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCChatViewController.h; path = UI/Controller/Message/SCChatViewController.h; sourceTree = "<group>"; };
+		DDCB7F721D868A21000B6C43 /* SCChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCChatViewController.m; path = UI/Controller/Message/SCChatViewController.m; sourceTree = "<group>"; };
+		DDCB7F761D869A47000B6C43 /* SCMessageLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMessageLoginViewController.h; path = UI/Controller/Message/SCMessageLoginViewController.h; sourceTree = "<group>"; };
+		DDCB7F771D869A47000B6C43 /* SCMessageLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCMessageLoginViewController.m; path = UI/Controller/Message/SCMessageLoginViewController.m; sourceTree = "<group>"; };
+		DDCB7F7C1D88EBE2000B6C43 /* RCAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCAnimatedImagesView.h; path = Other/RCAnimatedImagesView/RCAnimatedImagesView.h; sourceTree = "<group>"; };
+		DDCB7F7D1D88EBE2000B6C43 /* RCAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCAnimatedImagesView.m; path = Other/RCAnimatedImagesView/RCAnimatedImagesView.m; sourceTree = "<group>"; };
 		DDD16BD71CA5281D001D533E /* SCMenuLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMenuLeftViewController.h; path = UI/AboutMenu/SCMenuLeftViewController.h; sourceTree = "<group>"; };
 		DDD16BD81CA5281D001D533E /* SCMenuLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCMenuLeftViewController.m; path = UI/AboutMenu/SCMenuLeftViewController.m; sourceTree = "<group>"; };
 		DDD16BDA1CA5283E001D533E /* AboutMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AboutMenu.storyboard; path = UI/AboutMenu.storyboard; sourceTree = "<group>"; };
@@ -496,6 +525,7 @@
 				DDC074FE1C98FBDD008DC9A3 /* Main.storyboard */,
 				DDC074FD1C98FBDD008DC9A3 /* Home.storyboard */,
 				DDC074FF1C98FBDD008DC9A3 /* Picture.storyboard */,
+				DDCB7F5D1D865CFC000B6C43 /* Message.storyboard */,
 				4ABAAC291CA68348002D8A0F /* UserCenter.storyboard */,
 			);
 			name = Storyboard;
@@ -521,6 +551,7 @@
 			children = (
 				4A9512F21C906147002658FB /* Home */,
 				DDF0D4F11C96A5E9000D40E5 /* Picture */,
+				DDCB7F5C1D865314000B6C43 /* Message */,
 				4ABAAC2B1CA683C9002D8A0F /* UserCenter */,
 			);
 			name = Controller;
@@ -721,9 +752,42 @@
 			path = "Other/GSImagePreview/Resources/zh-Hans.lproj";
 			sourceTree = "<group>";
 		};
+		DDCB7F5C1D865314000B6C43 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				DDCB7F761D869A47000B6C43 /* SCMessageLoginViewController.h */,
+				DDCB7F771D869A47000B6C43 /* SCMessageLoginViewController.m */,
+				DDCB7F661D8686EB000B6C43 /* SCMessageListViewController.h */,
+				DDCB7F671D8686EB000B6C43 /* SCMessageListViewController.m */,
+				DDCB7F711D868A21000B6C43 /* SCChatViewController.h */,
+				DDCB7F721D868A21000B6C43 /* SCChatViewController.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		DDCB7F6B1D868827000B6C43 /* KxMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DDCB7F6C1D86887B000B6C43 /* KxMenu.h */,
+				DDCB7F6D1D86887B000B6C43 /* KxMenu.m */,
+			);
+			name = KxMenu;
+			sourceTree = "<group>";
+		};
+		DDCB7F7B1D88EBCA000B6C43 /* RCAnimatedImagesView */ = {
+			isa = PBXGroup;
+			children = (
+				DDCB7F7C1D88EBE2000B6C43 /* RCAnimatedImagesView.h */,
+				DDCB7F7D1D88EBE2000B6C43 /* RCAnimatedImagesView.m */,
+			);
+			name = RCAnimatedImagesView;
+			sourceTree = "<group>";
+		};
 		DDD0F7591C91503C00F81EBF /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DDCB7F7B1D88EBCA000B6C43 /* RCAnimatedImagesView */,
+				DDCB7F6B1D868827000B6C43 /* KxMenu */,
 				DDDD4B311D23CC0100215959 /* PlayerViewController */,
 				DDDD4B231D23CBA800215959 /* PlayerView */,
 				DDB285931D18E25400ED60FB /* uuid */,
@@ -989,6 +1053,7 @@
 				DDC075021C98FBDD008DC9A3 /* Picture.storyboard in Resources */,
 				DDC8B3001CF3088C0082213C /* Video.json in Resources */,
 				DDC075561C9907A5008DC9A3 /* custom_2.png in Resources */,
+				DDCB7F5E1D865CFC000B6C43 /* Message.storyboard in Resources */,
 				4ABAAC2A1CA68348002D8A0F /* UserCenter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -997,6 +1062,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCB7F5F1D865CFC000B6C43 /* Message.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1004,6 +1070,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCB7F601D865CFC000B6C43 /* Message.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1080,6 +1147,7 @@
 				DD4478B71CB7BABE002EDB63 /* GSImagePreviewCell.m in Sources */,
 				DDC075731C990802008DC9A3 /* ViewUtil.m in Sources */,
 				4A5D949A1CA63E1A007F0660 /* JastorRuntimeHelper.m in Sources */,
+				DDCB7F781D869A47000B6C43 /* SCMessageLoginViewController.m in Sources */,
 				DDC8B2FE1CF305EF0082213C /* SCWorkListViewController.m in Sources */,
 				DD44788F1CB75B70002EDB63 /* SCEncapsulation.m in Sources */,
 				DDAB6D0D1CF3F1B600D48D83 /* SCWorkListCollectionViewCell.m in Sources */,
@@ -1087,11 +1155,13 @@
 				4A5D95281CA65CAD007F0660 /* AppUtil.m in Sources */,
 				4A5D95291CA65CAD007F0660 /* DataUtil.m in Sources */,
 				DDC0756A1C9907FA008DC9A3 /* Observer.m in Sources */,
+				DDCB7F681D8686EB000B6C43 /* SCMessageListViewController.m in Sources */,
 				DDC0750A1C98FC04008DC9A3 /* SCHotViewController.m in Sources */,
 				DDDD4B4D1D24B67D00215959 /* MoviePlayerViewController.m in Sources */,
 				DDB2859A1D18E26200ED60FB /* Keychain.m in Sources */,
 				DD4478B81CB7BABE002EDB63 /* UIImage+Bundle.m in Sources */,
 				DDC075721C990802008DC9A3 /* ORLoadingIndicator.m in Sources */,
+				DDCB7F6E1D86887B000B6C43 /* KxMenu.m in Sources */,
 				4A9512BB1C9054CD002658FB /* AppDelegate.m in Sources */,
 				4A5D951A1CA65C41007F0660 /* GSErrorDef.m in Sources */,
 				DDC0752A1C98FD5B008DC9A3 /* SCPictureTableViewCell.m in Sources */,
@@ -1099,6 +1169,7 @@
 				DDB2859C1D18E26200ED60FB /* UIDevice+IdentifierAddition.m in Sources */,
 				4ABAAC2E1CA68416002D8A0F /* SCUserCenterViewController.m in Sources */,
 				DDDD4B491D24B65C00215959 /* ZFPlayerView.m in Sources */,
+				DDCB7F731D868A21000B6C43 /* SCChatViewController.m in Sources */,
 				DDC075141C98FC8E008DC9A3 /* WMLoopView.m in Sources */,
 				DD4478961CB75D55002EDB63 /* ORDateUtil.m in Sources */,
 				DDC075781C990813008DC9A3 /* ORBaseTableViewController.m in Sources */,
@@ -1124,6 +1195,7 @@
 				DDDD4B471D24B65C00215959 /* ZFPlayerControlView.m in Sources */,
 				DDD7320D1CEDBD02002372B1 /* SCNewsTableViewModel.m in Sources */,
 				DDC075711C990802008DC9A3 /* ORIndicatorView.m in Sources */,
+				DDCB7F7E1D88EBE2000B6C43 /* RCAnimatedImagesView.m in Sources */,
 				DDD16BD91CA5281D001D533E /* SCMenuLeftViewController.m in Sources */,
 				DDC075601C9907B1008DC9A3 /* DCPathButton.m in Sources */,
 				DDAB6D0A1CF3F11300D48D83 /* ORQRCodeUtil.m in Sources */,
@@ -1136,6 +1208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9512D11C9054CD002658FB /* scholarsTests.m in Sources */,
+				DDCB7F6F1D86887B000B6C43 /* KxMenu.m in Sources */,
+				DDCB7F7F1D88EBE2000B6C43 /* RCAnimatedImagesView.m in Sources */,
+				DDCB7F741D868A21000B6C43 /* SCChatViewController.m in Sources */,
+				DDCB7F791D869A47000B6C43 /* SCMessageLoginViewController.m in Sources */,
+				DDCB7F691D8686EB000B6C43 /* SCMessageListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1144,6 +1221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9512DC1C9054CD002658FB /* scholarsUITests.m in Sources */,
+				DDCB7F701D86887B000B6C43 /* KxMenu.m in Sources */,
+				DDCB7F801D88EBE2000B6C43 /* RCAnimatedImagesView.m in Sources */,
+				DDCB7F751D868A21000B6C43 /* SCChatViewController.m in Sources */,
+				DDCB7F7A1D869A47000B6C43 /* SCMessageLoginViewController.m in Sources */,
+				DDCB7F6A1D8686EB000B6C43 /* SCMessageListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -49,6 +49,11 @@
     UIStoryboard *pictureStoryboard = [UIStoryboard storyboardWithName:@"Picture" bundle:nil];
     UINavigationController *pictureNavController = [pictureStoryboard instantiateInitialViewController];
     [viewControlles replaceObjectAtIndex:1 withObject:pictureNavController];
+    
+    
+    UIStoryboard *messageStoryboard = [UIStoryboard storyboardWithName:@"Message" bundle:nil];
+    UINavigationController *messageNavController = [messageStoryboard instantiateInitialViewController];
+    [viewControlles replaceObjectAtIndex:2 withObject:messageNavController];
 
     
     UIStoryboard *userCenterStoryboard = [UIStoryboard storyboardWithName:@"UserCenter" bundle:nil];
