@@ -16,5 +16,6 @@ pod 'MJRefresh' # 下拉刷新
 pod 'CocoaSecurity' # 用于AES加密
 pod 'SDWebImage'   #  图片处理
 pod 'XXNibBridge' #  视频悬浮
-pod 'RongCloudIMKit'
+pod 'RongCloudIMKit' #  融云
+pod 'JPFPSStatus', '~> 0.1' # JPFPSStatus是用来显示FPS状态在iOS状态栏 60表示最好
 end

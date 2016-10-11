@@ -9,6 +9,7 @@
 
 #import "AppDelegate.h"
 #import "ORColorUtil.h"
+#import "JPFPSStatus.h"
 #import <CocoaLumberjack/CocoaLumberjack.h>//DDLog
 //融云
 #import <RongIMKit/RongIMKit.h>
@@ -21,7 +22,6 @@ static NSString *RongYunKey = @"3argexb6rzkbe";
 @end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -64,6 +64,12 @@ static NSString *RongYunKey = @"3argexb6rzkbe";
         [application registerForRemoteNotificationTypes:myTypes];
 #pragma clang diagnostic pop
     }
+    
+    //FPS调试
+#if defined(DEBUG)||defined(_DEBUG)
+    [JPFPSStatus sharedInstance].fpsLabel.textColor = [UIColor blackColor];
+    [[JPFPSStatus sharedInstance] open];
+#endif
     
     
     //融云即时通讯

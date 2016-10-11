@@ -31,6 +31,7 @@ PODS:
   - CocoaSecurity (1.2.4)
   - EAIntroView (2.6.4)
   - iAppInfos (0.0.7)
+  - JPFPSStatus (0.1)
   - JSONModel (1.2.0)
   - Masonry (1.0.1)
   - MBProgressHUD (0.9.2)
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - CocoaSecurity
   - EAIntroView
   - iAppInfos (~> 0.0.6)
+  - JPFPSStatus (~> 0.1)
   - JSONModel
   - Masonry
   - MBProgressHUD
@@ -63,6 +65,7 @@ SPEC CHECKSUMS:
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
   EAIntroView: df7dc18da73e1831d06878b9c0e13da78e6bb3ce
   iAppInfos: 7c6aabf78324d4c82fc1bb0c6ae354ea807b187b
+  JPFPSStatus: 4467a17488382e4c1700bd9d18c92ae581fd6305
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
@@ -72,6 +75,6 @@ SPEC CHECKSUMS:
   WMPageController: 3b6d2aa2ddcd53f2cbc2319f2473f27b4ea4fe89
   XXNibBridge: addb780e6db076eb2c61716aa60b176a6799b80f
 
-PODFILE CHECKSUM: 2dc64091bb49fe48add097feec8c1791291d10ea
+PODFILE CHECKSUM: 1ed82a3ae50fefc5f45e3ceea0d4fb3e2d69d385
 
-COCOAPODS: 1.1.0.beta.1
+COCOAPODS: 1.0.1
