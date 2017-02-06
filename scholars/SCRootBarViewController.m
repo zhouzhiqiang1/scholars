@@ -13,12 +13,44 @@
 #import "ORBaseViewController.h"
 #import "ORBaseTableViewController.h"
 #import "GSUserSetting.h"
+#import "GSDataEngine.h"
+#import "SCPictureTableViewController.h"
+#import "SCMessageLoginViewController.h"
 
 @interface SCRootBarViewController ()<EAIntroDelegate>
 
 @end
 
 @implementation SCRootBarViewController
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void)commonInit
+{
+    [[GSDataEngine shareEngine] addObserver:self forKeyPath:kKeyPathActionInfo options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)dealloc
+{
+//    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[GSDataEngine shareEngine] removeObserver:self forKeyPath:kKeyPathActionInfo];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -113,7 +145,6 @@
     
 }
 
-
 #pragma mark - TabbarDelegate
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
 {
@@ -129,7 +160,50 @@
     }
 }
 
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (self.isViewLoaded == NO)
+    {
+        return;
+    }
 
+    if ([keyPath isEqualToString:kKeyPathActionInfo]) {
+        [self checkRedirectAction];
+    }
+}
+
+- (void)checkRedirectAction
+{
+    if ([GSDataEngine shareEngine].actionInfo) {
+        YDRedirectActionInfo *actionInfo = [GSDataEngine shareEngine].actionInfo;
+        //        if (actionInfo.actionType != PCRedirectActionTypeChat) {
+        [GSDataEngine shareEngine].actionInfo = nil;
+        [self jumpToActionType:actionInfo.actionType extraData:actionInfo.extraInfo];
+        //        }
+    }
+}
+
+- (void)jumpToActionType:(YDRedirectActionType)aType extraData:(id)aData
+{
+     dismissAllPresentedController();
+    
+    if (aType == YDRedirectActionTypePicture) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Picture" bundle:nil];
+        SCPictureTableViewController *pictureVC = [storyboard instantiateViewControllerWithIdentifier:@"SCPictureTableViewController"];
+        pictureVC.needCloseButtonWhenPresent = YES;
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:pictureVC];
+        UIViewController *rootVC = lastPresentedController();
+        [rootVC presentViewController:navController animated:YES completion:^{}];
+    } else if (aType == YDRedirectActionTypeMessage) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Message" bundle:nil];
+        SCMessageLoginViewController *messageVC = [storyboard instantiateViewControllerWithIdentifier:@"SCMessageLoginViewController"];
+//        messageVC.hidesBottomBarWhenPushed = YES;
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:messageVC];
+        UIViewController *rootVC = lastPresentedController();
+        [rootVC presentViewController:navController animated:YES completion:^{}];
+    }
+}
 @end
 
 #pragma mark - 全局

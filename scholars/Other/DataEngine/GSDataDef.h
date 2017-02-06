@@ -15,6 +15,19 @@ typedef NS_OPTIONS(NSInteger, YDHttpType) {
     YDHttpTypePost
 };
 
+/**
+ *  系统消息跳转类型
+ */
+typedef NS_OPTIONS(NSInteger, YDRedirectActionType){
+    /**
+     *  跳到趣味  */
+    YDRedirectActionTypePicture = 0,
+    /**
+     *  跳到聊天页面
+     */
+    YDRedirectActionTypeMessage
+};
+
 
 @interface SCBaseJsonModel : JSONModel
 
@@ -108,3 +121,7 @@ typedef NS_OPTIONS(NSInteger, YDHttpType) {
 @property (strong, nonatomic) NSArray<SCVideoDataInfo> *rows;
 @end
 
+@interface YDRedirectActionInfo : NSObject
+@property (assign, nonatomic) YDRedirectActionType actionType;
+@property (strong, nonatomic) id extraInfo;
+@end

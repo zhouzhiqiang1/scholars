@@ -13,6 +13,8 @@
 #import <CocoaLumberjack/CocoaLumberjack.h>//DDLog
 //融云
 #import <RongIMKit/RongIMKit.h>
+#import "GSDataDef.h"
+#import "GSDataEngine.h"
 
 //融云 key
 static NSString *RongYunKey = @"3argexb6rzkbe";
@@ -79,6 +81,10 @@ static NSString *RongYunKey = @"3argexb6rzkbe";
      name:RCKitDispatchMessageNotification
      object:nil];
     [[RCIM sharedRCIM] setConnectionStatusDelegate:self];
+    //3D Touch
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
+        [self creatShortcutItem];
+    }
     return YES;
 }
 
@@ -142,6 +148,32 @@ static NSString *RongYunKey = @"3argexb6rzkbe";
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+//创建应用图标上的3D touch快捷选项
+- (void)creatShortcutItem {
+    //创建自定义图标的icon
+    UIApplicationShortcutIcon *icon1 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"item1@3x.png"];
+    UIApplicationShortcutIcon *icon2 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"item1@3x.png"];
+    //创建快捷选项
+    UIApplicationShortcutItem *item1 = [[UIApplicationShortcutItem alloc] initWithType:@"Call" localizedTitle:@"趣味" localizedSubtitle:nil icon:icon1 userInfo:@{@"type":@(YDRedirectActionTypePicture)}];
+    UIApplicationShortcutItem *item2 = [[UIApplicationShortcutItem alloc] initWithType:@"IWant" localizedTitle:@"聊天" localizedSubtitle:nil icon:icon2 userInfo:@{@"type":@(YDRedirectActionTypeMessage)}];
+    //添加到快捷选项数组
+    [UIApplication sharedApplication].shortcutItems = @[item1, item2];
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    
+    NSDictionary *dict = shortcutItem.userInfo;
+    YDRedirectActionType type = [[dict objectForKey:@"type"] integerValue];
+    //判断先前我们设置的快捷选项标签唯一标识，根据不同标识执行不同操作
+    YDRedirectActionInfo *actionInfo = [[YDRedirectActionInfo alloc] init];
+    actionInfo.actionType = type;
+    actionInfo.extraInfo = nil;
+    [GSDataEngine shareEngine].actionInfo = actionInfo;
+    if (completionHandler) {
+        completionHandler(YES);
+    }
 }
 
 @end

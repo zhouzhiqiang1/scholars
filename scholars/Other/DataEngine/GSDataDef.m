@@ -52,3 +52,7 @@
 @implementation SCVideoDataList
 
 @end
+
+@implementation YDRedirectActionInfo
+
+@end

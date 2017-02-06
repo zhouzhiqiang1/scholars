@@ -16,8 +16,12 @@ static NSString * const kKeyHttpHeaderAppversion = @"appversion";
 static NSString * const kKeyHttpHeaderDeviceId = @"deviceid";
 static NSString * const kKeyHttpHeaderToken = @"token";
 
+// 3D Touch
+static NSString * const kKeyPathActionInfo = @"actionInfo";
 
 @interface GSDataEngine : NSObject
+
+@property (strong, nonatomic) YDRedirectActionInfo *actionInfo;
 
 + (instancetype)shareEngine;
 
