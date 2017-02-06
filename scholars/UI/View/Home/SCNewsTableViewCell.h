@@ -9,7 +9,8 @@
 
 #import <UIKit/UIKit.h>
 #import "GSDataEngine.h"
+#import <MGSwipeTableCell.h>
 
-@interface SCNewsTableViewCell : UITableViewCell
+@interface SCNewsTableViewCell : MGSwipeTableCell
 - (void)newsData:(SCNewsInfo *)newsInfo;
 @end

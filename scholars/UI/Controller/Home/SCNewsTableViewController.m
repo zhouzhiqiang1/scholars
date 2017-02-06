@@ -13,8 +13,9 @@
 #import <MJRefresh.h>
 #import "SCEncapsulation.h"
 #import "ORIndicatorView.h"
+#import "ORColorUtil.h"
 
-@interface SCNewsTableViewController ()
+@interface SCNewsTableViewController ()<MGSwipeTableCellDelegate>
 @property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
 @property (strong, nonatomic) SCNewsTableViewModel *newsTableViewModel;
 @end
@@ -117,16 +118,32 @@
     
     NSString *cell = @"SCNewsTableViewCell";
     
-    SCNewsTableViewCell *newsTableView = [tableView dequeueReusableCellWithIdentifier:cell forIndexPath:indexPath];
+    SCNewsTableViewCell *newsTableViewCell = [tableView dequeueReusableCellWithIdentifier:cell forIndexPath:indexPath];
     SCNewsInfo *newsInfo = [self.newsTableViewModel objectAtIndex:indexPath.row];
-    [newsTableView newsData:newsInfo];
-    return newsTableView;
+    [newsTableViewCell newsData:newsInfo];
+    
+    newsTableViewCell.delegate = self;
+    newsTableViewCell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"" icon:[UIImage imageNamed:@"img_collection_delete.png"] backgroundColor:ORColor(@"f5f5f9")]];
+    newsTableViewCell.rightSwipeSettings.transition = MGSwipeTransition3D;
+    
+    return newsTableViewCell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 70;
 }
 
+#pragma mark -- MGSwipeTableCellDelegate
+-(BOOL) swipeTableCell:(MGSwipeTableCell*) cell tappedButtonAtIndex:(NSInteger) index direction:(MGSwipeDirection)direction fromExpansion:(BOOL) fromExpansion
+{
+    DDLogDebug(@"Delegate: button tapped, %@ position, index %d, from Expansion: %@",
+               direction == MGSwipeDirectionLeftToRight ? @"left" : @"right", (int)index, fromExpansion ? @"YES" : @"NO");
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    if (direction == MGSwipeDirectionRightToLeft && index == 0) {
+        DDLogDebug(@"删除");
+    }
+    return YES;
+}
 
 #pragma mark - KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context

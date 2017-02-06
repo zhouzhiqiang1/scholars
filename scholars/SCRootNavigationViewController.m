@@ -27,33 +27,33 @@ static CGFloat speedF = 0.5;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationBarHidden = YES;//隐藏系统导航栏
-    
-    //绑定具体的菜单
-    UIStoryboard *storyboardLeftView = [UIStoryboard storyboardWithName:@"AboutMenu" bundle:nil];
-    self.leftView = [storyboardLeftView instantiateViewControllerWithIdentifier:@"SCMenuLeftViewController"];
-    [self.view addSubview:self.leftView.view];
-    
-    
-    UIStoryboard *storyboardRootBarView = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    self.rootBarView = [storyboardRootBarView instantiateViewControllerWithIdentifier:@"SCRootBarViewController"];
-    [self.view addSubview:self.rootBarView.view];
-    
-    
-    //Pan 拖动手势
-    UIPanGestureRecognizer *pan=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(dragGestureEvents:)];
-    [self.rootBarView.view addGestureRecognizer:pan];
-    
-    
-    //Tap 点击手势
-    UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(gestureClickEvent:)];
-    tap.numberOfTapsRequired = 1;
-    
-    tap.cancelsTouchesInView = NO;/*YES 手势遮挡了 */
-    [self.rootBarView.view addGestureRecognizer:tap];
-    
-    //设置隐藏和显示
-    self.leftView.view.hidden = YES;
-    self.rootBarView.view.hidden = NO;
+//
+//    //绑定具体的菜单
+//    UIStoryboard *storyboardLeftView = [UIStoryboard storyboardWithName:@"AboutMenu" bundle:nil];
+//    self.leftView = [storyboardLeftView instantiateViewControllerWithIdentifier:@"SCMenuLeftViewController"];
+//    [self.view addSubview:self.leftView.view];
+//    
+//    
+//    UIStoryboard *storyboardRootBarView = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    self.rootBarView = [storyboardRootBarView instantiateViewControllerWithIdentifier:@"SCRootBarViewController"];
+//    [self.view addSubview:self.rootBarView.view];
+//    
+//    
+//    //Pan 拖动手势
+//    UIPanGestureRecognizer *pan=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(dragGestureEvents:)];
+//    [self.rootBarView.view addGestureRecognizer:pan];
+//    
+//    
+//    //Tap 点击手势
+//    UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(gestureClickEvent:)];
+//    tap.numberOfTapsRequired = 1;
+//    
+//    tap.cancelsTouchesInView = NO;/*YES 手势遮挡了 */
+//    [self.rootBarView.view addGestureRecognizer:tap];
+//    
+//    //设置隐藏和显示
+//    self.leftView.view.hidden = YES;
+//    self.rootBarView.view.hidden = NO;
 }
 
 

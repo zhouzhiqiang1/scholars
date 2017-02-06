@@ -35,6 +35,7 @@ PODS:
   - JSONModel (1.2.0)
   - Masonry (1.0.1)
   - MBProgressHUD (0.9.2)
+  - MGSwipeTableCell (1.5.6)
   - MJRefresh (3.1.0)
   - RongCloudIMKit (2.6.5)
   - SDWebImage (3.7.5):
@@ -53,6 +54,7 @@ DEPENDENCIES:
   - JSONModel
   - Masonry
   - MBProgressHUD
+  - MGSwipeTableCell
   - MJRefresh
   - RongCloudIMKit
   - SDWebImage
@@ -69,12 +71,13 @@ SPEC CHECKSUMS:
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
-  RongCloudIMKit: f9a8dfea996b9eb301c2d3bbd0374b420bf6da21
+  RongCloudIMKit: 6c3f81aeeba3ff46b8ca7ee050eeb9c0be294e99
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   WMPageController: 3b6d2aa2ddcd53f2cbc2319f2473f27b4ea4fe89
   XXNibBridge: addb780e6db076eb2c61716aa60b176a6799b80f
 
-PODFILE CHECKSUM: 1ed82a3ae50fefc5f45e3ceea0d4fb3e2d69d385
+PODFILE CHECKSUM: 512b423dd82e80a4371caf42101a24ff70f3cf81
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1
