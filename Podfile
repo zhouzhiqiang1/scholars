@@ -18,5 +18,6 @@ pod 'SDWebImage'   #  图片处理
 pod 'XXNibBridge' #  视频悬浮
 pod 'RongCloudIMKit' #  融云
 pod 'JPFPSStatus', '~> 0.1' # JPFPSStatus是用来显示FPS状态在iOS状态栏 60表示最好
-pod 'MGSwipeTableCell'  # 侧滑展示更多按钮 使用说明 http://www.jianshu.com/p/25908a61f849
+pod 'MGSwipeTableCell'  # cell侧滑展示更多按钮 使用说明 http://www.jianshu.com/p/25908a61f849
+pod 'MMDrawerController' # 左右侧滑菜单
 end

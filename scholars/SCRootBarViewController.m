@@ -102,10 +102,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
-
-
 #pragma mark - 启动页 内部函数
 - (void)showIntroduceView
 {

@@ -20,7 +20,6 @@
 static NSString *RongYunKey = @"3argexb6rzkbe";
 
 @interface AppDelegate ()<RCIMConnectionStatusDelegate>
-
 @end
 
 @implementation AppDelegate

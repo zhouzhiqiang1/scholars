@@ -11,6 +11,11 @@
 #import "SCRootBarViewController.h"
 #import "SCMenuLeftViewController.h"
 
+#import "MMDrawerController.h"
+#import "MMDrawerVisualState.h"
+#import "SCRootBarViewController.h"
+#import "SCMenuLeftViewController.h"
+
 //缩放比例
 static CGFloat scaleF = 0;
 //手势滑动的速度系数
@@ -19,6 +24,7 @@ static CGFloat speedF = 0.5;
 @interface SCRootNavigationViewController ()
 @property (strong, nonatomic) SCRootBarViewController *rootBarView;
 @property (strong, nonatomic) SCMenuLeftViewController *leftView;
+@property (strong, nonatomic) MMDrawerController *drawerController;
 @end
 
 @implementation SCRootNavigationViewController
@@ -27,36 +33,64 @@ static CGFloat speedF = 0.5;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationBarHidden = YES;//隐藏系统导航栏
+
+    //初始化中心视图
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SCRootBarViewController *rootBarVC = [storyboard instantiateViewControllerWithIdentifier:@"SCRootBarViewController"];
+    
+    //初始化左视图
+    UIStoryboard *storyboards = [UIStoryboard storyboardWithName:@"AboutMenu" bundle:nil];
+    SCMenuLeftViewController * menuLeftVC = [storyboards instantiateViewControllerWithIdentifier:@"SCMenuLeftViewController"];
+    
+    UINavigationController * centerNvaVC = [[UINavigationController alloc] initWithRootViewController:rootBarVC];
+    UINavigationController * boutiqueNC = [[UINavigationController alloc] initWithRootViewController:menuLeftVC];
+    
+    centerNvaVC.navigationBarHidden = YES;
+    boutiqueNC.navigationBarHidden = YES;
+    
+    //初始化抽屉视图控制器
+    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:centerNvaVC leftDrawerViewController:boutiqueNC];
+    
+    [self.drawerController setShowsShadow:NO];
+    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
+    //设置抽屉的宽度
+    [self.drawerController setMaximumLeftDrawerWidth:[UIScreen mainScreen].bounds.size.width - 100];
+    //
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    [self setViewControllers:@[self.drawerController]];
+}
+
+
+//----------------------------------------------------用于参考-代码实现抽屉--------------------------------------------------------
 //
 //    //绑定具体的菜单
 //    UIStoryboard *storyboardLeftView = [UIStoryboard storyboardWithName:@"AboutMenu" bundle:nil];
 //    self.leftView = [storyboardLeftView instantiateViewControllerWithIdentifier:@"SCMenuLeftViewController"];
 //    [self.view addSubview:self.leftView.view];
-//    
-//    
+//
+//
 //    UIStoryboard *storyboardRootBarView = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 //    self.rootBarView = [storyboardRootBarView instantiateViewControllerWithIdentifier:@"SCRootBarViewController"];
 //    [self.view addSubview:self.rootBarView.view];
-//    
-//    
+//
+//
 //    //Pan 拖动手势
 //    UIPanGestureRecognizer *pan=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(dragGestureEvents:)];
 //    [self.rootBarView.view addGestureRecognizer:pan];
-//    
-//    
+//
+//
 //    //Tap 点击手势
 //    UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(gestureClickEvent:)];
 //    tap.numberOfTapsRequired = 1;
-//    
+//
 //    tap.cancelsTouchesInView = NO;/*YES 手势遮挡了 */
 //    [self.rootBarView.view addGestureRecognizer:tap];
-//    
+//
 //    //设置隐藏和显示
 //    self.leftView.view.hidden = YES;
 //    self.rootBarView.view.hidden = NO;
-}
-
-
 - (void)dragGestureEvents:(UIPanGestureRecognizer *)pan
 {
     //1.判断方向
