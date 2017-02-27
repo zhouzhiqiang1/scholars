@@ -1,0 +1,26 @@
+//
+//  scholars.pch
+//  scholars
+//  github 下载地址  https://github.com/zhouzhiqiang1/scholars
+//
+//  Created by r_zhou on 16/3/15.
+//  Copyright © 2016年 Mac Zhou. All rights reserved.
+//
+
+#ifndef scholars_pch
+#define scholars_pch
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <CocoaLumberjack/CocoaLumberjack.h>
+
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelDebug;
+#define ENABLE_RECORD_MODE
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
+
+#endif /* scholars_pch */
+#endif

@@ -1,0 +1,122 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - CocoaSecurity (1.2.4)
+  - EAIntroView (2.6.4)
+  - iAppInfos (0.0.7)
+  - JPFPSStatus (0.1)
+  - JSONModel (1.2.0)
+  - Masonry (1.0.1)
+  - MBProgressHUD (0.9.2)
+  - MGSwipeTableCell (1.5.6)
+  - MJRefresh (3.1.12)
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.6.0):
+    - MMDrawerController/Core
+  - React/Core (0.31.0):
+    - React/CSSLayout
+  - React/CSSLayout (0.31.0)
+  - React/RCTAnimation (0.31.0):
+    - React/Core
+  - React/RCTImage (0.31.0):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTNetwork (0.31.0):
+    - React/Core
+  - React/RCTText (0.31.0):
+    - React/Core
+  - React/RCTWebSocket (0.31.0):
+    - React/Core
+  - RongCloudIMKit (2.6.5)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - WMPageController (1.4.1)
+  - XXNibBridge (2.3.1)
+
+DEPENDENCIES:
+  - AFNetworking
+  - CocoaLumberjack
+  - CocoaSecurity
+  - EAIntroView
+  - iAppInfos (~> 0.0.6)
+  - JPFPSStatus (~> 0.1)
+  - JSONModel
+  - Masonry
+  - MBProgressHUD
+  - MGSwipeTableCell
+  - MJRefresh
+  - MMDrawerController
+  - React/Core (from `../node_modules/react-native`)
+  - React/RCTAnimation (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RongCloudIMKit
+  - SDWebImage
+  - WMPageController
+  - XXNibBridge
+
+EXTERNAL SOURCES:
+  React:
+    :path: ../node_modules/react-native
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
+  EAIntroView: df7dc18da73e1831d06878b9c0e13da78e6bb3ce
+  iAppInfos: 7c6aabf78324d4c82fc1bb0c6ae354ea807b187b
+  JPFPSStatus: 4467a17488382e4c1700bd9d18c92ae581fd6305
+  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  React: 2f91a7f6fa19461502109a1e6ad6e0626ce76920
+  RongCloudIMKit: 6c3f81aeeba3ff46b8ca7ee050eeb9c0be294e99
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  WMPageController: 3b6d2aa2ddcd53f2cbc2319f2473f27b4ea4fe89
+  XXNibBridge: addb780e6db076eb2c61716aa60b176a6799b80f
+
+PODFILE CHECKSUM: d63408c525ce6a3d5a2d59ce0c3620f17f8f3cc1
+
+COCOAPODS: 1.2.0

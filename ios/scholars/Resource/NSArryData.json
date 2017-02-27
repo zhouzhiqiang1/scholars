@@ -1,0 +1,11 @@
+{
+    "errorCode": "200",
+    "errorMessage": "获取用户信息成功",
+    "data": {
+            "uid": 122,
+            "nickname": "Aren",
+            "sex": 1,
+            "phone": "13877878872",
+            "photo": "http://tp2.sinaimg.cn/2968436965/180/40088742718/1"
+    }
+}
