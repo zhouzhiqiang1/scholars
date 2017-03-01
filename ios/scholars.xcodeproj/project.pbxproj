@@ -412,8 +412,11 @@
 		4A5D94FF1CA65B57007F0660 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DD10E49F1E66D74B0041608C /* Menu */,
 				4A5D952B1CA6643A007F0660 /* Home */,
 				4A5D952C1CA66441007F0660 /* Picture */,
+				DD10E4A01E66D7550041608C /* Message */,
+				DD10E4A11E66D75C0041608C /* UserCenter */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 		4A9512F31C906172002658FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DD10E49C1E66D7160041608C /* Menu */,
 				4A9512F21C906147002658FB /* Home */,
 				DDF0D4F11C96A5E9000D40E5 /* Picture */,
 				DDCB7F5C1D865314000B6C43 /* Message */,
@@ -560,8 +564,10 @@
 		4A9512FA1C9063E2002658FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD10E49D1E66D7280041608C /* Menu */,
 				4A9512FE1C9064D5002658FB /* Home */,
 				DDF0D4F21C96A603000D40E5 /* Picture */,
+				DD10E49E1E66D7340041608C /* Message */,
 				4ABAAC2F1CA6851D002D8A0F /* UserCenter */,
 			);
 			name = View;
@@ -618,6 +624,50 @@
 				C2E73FA1E4C07CB4C0229CC1 /* Pods-scholars.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD10E49C1E66D7160041608C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DDD16BD71CA5281D001D533E /* SCMenuLeftViewController.h */,
+				DDD16BD81CA5281D001D533E /* SCMenuLeftViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		DD10E49D1E66D7280041608C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		DD10E49E1E66D7340041608C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		DD10E49F1E66D74B0041608C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		DD10E4A01E66D7550041608C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		DD10E4A11E66D75C0041608C /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UserCenter;
 			sourceTree = "<group>";
 		};
 		DD44788C1CB75B33002EDB63 /* Encapsulation */ = {
@@ -715,7 +765,6 @@
 			isa = PBXGroup;
 			children = (
 				4A9512EF1C905B98002658FB /* Storyboard */,
-				DDD16BD11CA527BA001D533E /* Aboutmenu */,
 				4A9512F31C906172002658FB /* Controller */,
 				4A9512FA1C9063E2002658FB /* View */,
 				4A5D94FF1CA65B57007F0660 /* Model */,
@@ -814,15 +863,6 @@
 				DDC075841C99082F008DC9A3 /* ORColorUtil.m */,
 			);
 			name = ColorUtil;
-			sourceTree = "<group>";
-		};
-		DDD16BD11CA527BA001D533E /* Aboutmenu */ = {
-			isa = PBXGroup;
-			children = (
-				DDD16BD71CA5281D001D533E /* SCMenuLeftViewController.h */,
-				DDD16BD81CA5281D001D533E /* SCMenuLeftViewController.m */,
-			);
-			name = Aboutmenu;
 			sourceTree = "<group>";
 		};
 		DDDD4B231D23CBA800215959 /* PlayerView */ = {

@@ -33,9 +33,9 @@
                             @{@"icon":@"", @"title":@""}],
                         
                         @[
-                            @{@"icon":@"icon_usercenter_addpaient", @"title":@"常用就诊人"}],
+                            @{@"icon":@"icon_usercenter_addpaient", @"title":@"React-Native界面"}],
                         @[
-                            @{@"icon":@"icon_usercenter_appointment", @"title":@"我的预约"},
+                            @{@"icon":@"icon_usercenter_appointment", @"title":@"社区界面"},
                             @{@"icon":@"icon_notification_appointment", @"title":@"我的病厉"}],
                         @[
                             @{@"icon":@"icon_usercenter_mycomment", @"title":@"我的评价"},
@@ -265,97 +265,49 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    NSLog(@"High Score Button Pressed");
-    NSURL *jsCodeLocation = [NSURL
-                             URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios"];
-    RCTRootView *rootView =
-    [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
-                         moduleName        : @"scholars"
-                         initialProperties :
-     @{
-       @"scores" : @[
-               @{
-                   @"name" : @"Alex",
-                   @"value": @"42"
-                   },
-               @{
-                   @"name" : @"Joel",
-                   @"value": @"10"
-                   }
-               ]
-       }
-                          launchOptions    : nil];
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view = rootView;
-    [self presentViewController:vc animated:YES completion:nil];
-
-//    NSInteger section = indexPath.section;
-//    NSInteger row = indexPath.row;
-//    if (section == 0) {
-//        if ([GSDataEngine shareEngine].isAnonymous) {
-//            [YDLoginViewController showLoginViewController];
-//        } else {
-//            
-//        }
-//        
-//    }else if (section == 1) {
-//        if ([GSDataEngine shareEngine].isAnonymous) {
-//            [YDLoginViewController showLoginViewController];
-//        } else {
-//            YDCommonlyUsedPatientViewController *commonlyUsedPatientView = [self.storyboard instantiateViewControllerWithIdentifier:@"YDCommonlyUsedPatientViewController"];
-//            commonlyUsedPatientView.hidesBottomBarWhenPushed = YES;
-//            [self.navigationController pushViewController:commonlyUsedPatientView animated:YES];
-//        }
-//    } else if (section == 2) {
-//        if (row == 0) {
-//            if ([GSDataEngine shareEngine].isAnonymous) {
-//                [YDLoginViewController showLoginViewController];
-//            } else {
-//                YDMyReservationViewController *myReservationView = [self.storyboard instantiateViewControllerWithIdentifier:@"YDMyReservationViewController"];
-//                myReservationView.hidesBottomBarWhenPushed = YES;
-//                [self.navigationController pushViewController:myReservationView animated:YES];
-//                
-//            }
-//        } else if (row == 1) {
-//            if ([GSDataEngine shareEngine].isAnonymous) {
-//                [YDLoginViewController showLoginViewController];
-//            } else {
-//                YDMedicalViewController *medicalView = [self.storyboard instantiateViewControllerWithIdentifier:@"YDMedicalViewController"];
-//                medicalView.hidesBottomBarWhenPushed = YES;
-//                [self.navigationController pushViewController:medicalView animated:YES];
-//            }
-//        }
-//    } else if (section == 3) {
-//        if (row == 0) {
-//            if ([GSDataEngine shareEngine].isAnonymous) {
-//                [YDLoginViewController showLoginViewController];
-//            } else {
-//                YDMyEvaluationViewController *myEvaluationView = [self.storyboard instantiateViewControllerWithIdentifier:@"YDMyEvaluationViewController"];
-//                myEvaluationView.hidesBottomBarWhenPushed = YES;
-//                [self.navigationController pushViewController:myEvaluationView animated:YES];
-//            }
-//        } else if (row == 1) {
-//            if ([GSDataEngine shareEngine].isAnonymous) {
-//                [YDLoginViewController showLoginViewController];
-//            } else {
-//                YDMyInformViewController *myInformView = [self.storyboard instantiateViewControllerWithIdentifier:@"YDMyInformViewController"];
-//                myInformView.hidesBottomBarWhenPushed = YES;
-//                [self.navigationController pushViewController:myInformView animated:YES];
-//            }
-//            
-//            
-//        } else if (row == 2) {
-//            if ([GSDataEngine shareEngine].isAnonymous) {
-//                [YDLoginViewController showLoginViewController];
-//            } else {
-//                YDMyQrCodeViewController *myQrCodeView = [self.storyboard instantiateViewControllerWithIdentifier:@"YDMyQrCodeViewController"];
-//                myQrCodeView.hidesBottomBarWhenPushed = YES;
-//                [self.navigationController pushViewController:myQrCodeView animated:YES];
-//            }
-//        }
-//    }
-    
+    NSInteger section = indexPath.section;
+    NSInteger row = indexPath.row;
+    if (section == 0) {
+        NSLog(@"登陆");
+    }else if (section == 1) {
+        NSLog(@"React-native");
+        NSURL *jsCodeLocation = [NSURL
+                                 URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios"];
+        RCTRootView *rootView =
+        [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
+                             moduleName        : @"scholars"
+                             initialProperties :
+         @{
+           @"scores" : @[
+                   @{
+                       @"name" : @"Alex",
+                       @"value": @"42"
+                       },
+                   @{
+                       @"name" : @"Joel",
+                       @"value": @"10"
+                       }
+                   ]
+           }
+                              launchOptions    : nil];
+        UIViewController *vc = [[UIViewController alloc] init];
+        vc.view = rootView;
+        [self presentViewController:vc animated:YES completion:nil];
+    } else if (section == 2) {
+        if (row == 0) {
+           
+        } else if (row == 1) {
+          
+        }
+    } else if (section == 3) {
+        if (row == 0) {
+            
+        } else if (row == 1) {
+        
+        } else if (row == 2) {
+            
+        }
+    }
     
     NSLog(@"%ld %ld",(long)indexPath.section, (long)indexPath.row);
 }
