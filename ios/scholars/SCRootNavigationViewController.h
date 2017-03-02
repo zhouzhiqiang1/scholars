@@ -8,7 +8,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YDCustomNavigationController.h"
 
-@interface SCRootNavigationViewController : UINavigationController
+@interface SCRootNavigationViewController : YDCustomNavigationController
 
 @end

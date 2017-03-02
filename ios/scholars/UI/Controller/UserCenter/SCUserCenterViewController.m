@@ -13,6 +13,7 @@
 #import "YDUserCenterHeaderUITableViewCell.h"
 #import <MJRefresh/MJRefresh.h>
 #import "RCTRootView.h"
+#import "SCRootNavigationViewController.h"
 
 @interface SCUserCenterViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -292,7 +293,9 @@
                               launchOptions    : nil];
         UIViewController *vc = [[UIViewController alloc] init];
         vc.view = rootView;
-        [self presentViewController:vc animated:YES completion:nil];
+//        [self presentViewController:vc animated:YES completion:nil];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
     } else if (section == 2) {
         if (row == 0) {
            

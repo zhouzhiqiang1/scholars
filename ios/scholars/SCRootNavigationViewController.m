@@ -45,9 +45,6 @@ static CGFloat speedF = 0.5;
     UINavigationController * centerNvaVC = [[UINavigationController alloc] initWithRootViewController:rootBarVC];
     UINavigationController * boutiqueNC = [[UINavigationController alloc] initWithRootViewController:menuLeftVC];
     
-    centerNvaVC.navigationBarHidden = YES;
-    boutiqueNC.navigationBarHidden = YES;
-    
     //初始化抽屉视图控制器
     self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:centerNvaVC leftDrawerViewController:boutiqueNC];
     

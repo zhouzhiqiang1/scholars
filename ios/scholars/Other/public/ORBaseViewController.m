@@ -116,6 +116,8 @@ void dismissAllPresentedController()
         [self.navigationController.navigationBar setBarTintColor:ORColor(kORColorOrange_D55403)];
     }
     
+    self.view.backgroundColor = ORColor(@"F0F0F0");
+    
     NSDictionary * dict = @{NSForegroundColorAttributeName:[UIColor whiteColor],
                             NSFontAttributeName:[UIFont systemFontOfSize:18]};
     
@@ -148,7 +150,7 @@ void dismissAllPresentedController()
 {
     [super viewWillAppear:animated];
 //    [MobClick beginLogPageView:[self pageNameForMobClick]];
-    [self.navigationController setNavigationBarHidden:self.isNavBarHide animated:YES];
+//    [self.navigationController setNavigationBarHidden:self.isNavBarHide animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated

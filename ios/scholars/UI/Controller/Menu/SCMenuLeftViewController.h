@@ -8,7 +8,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ORBaseViewController.h"
 
-@interface SCMenuLeftViewController : UIViewController
+@interface SCMenuLeftViewController : ORBaseViewController
 
 @end
