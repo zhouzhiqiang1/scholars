@@ -83,11 +83,11 @@
     
     //拿到我们的LitterLCenterViewController，让它去push
     UINavigationController* nav = (UINavigationController*)self.mm_drawerController.centerViewController;
-    if ([viewVC isMemberOfClass:[UITabBarController class]]) {
+//    if ([viewVC isMemberOfClass:[UITabBarController class]]) {
         nav.navigationBar.hidden = YES;
-    } else {
-        nav.navigationBar.hidden = NO;
-    }
+//    } else {
+//        nav.navigationBar.hidden = NO;
+//    }
     [nav pushViewController:viewVC animated:NO];
     //当我们push成功之后，关闭我们的抽屉
     [self.mm_drawerController closeDrawerAnimated:YES completion:^(BOOL finished) {

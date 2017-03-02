@@ -16,6 +16,7 @@
 #import "GSDataEngine.h"
 #import "SCPictureTableViewController.h"
 #import "SCMessageLoginViewController.h"
+#import <UIViewController+MMDrawerController.h>
 
 @interface SCRootBarViewController ()<EAIntroDelegate>
 
@@ -66,7 +67,6 @@
         [GSUserSetting synchronize];
     }
 
-    
     /**
      试图控制器中添加  storyboard 视图
      */
@@ -95,6 +95,24 @@
     [viewControlles replaceObjectAtIndex:3 withObject:userCenterNavController];
     
     [self setViewControllers:viewControlles];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    [self.mm_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {
