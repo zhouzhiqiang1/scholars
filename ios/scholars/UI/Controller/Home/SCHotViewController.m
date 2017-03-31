@@ -164,5 +164,42 @@
      return hotTableView;
  }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return YES;
+}
+
+// 要有这个方法才行
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+}
+
+- (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSMutableArray  *btnArray = [NSMutableArray array];
+    // 添加一个删除按钮
+    UITableViewRowAction *deleteRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        NSLog(@"删除");
+        // 1. 移除一行
+//        [self.tableView removeObjectAtIndex:indexPath.row];
+        // 2. 更新UI
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }];
+    // 设置背景颜色
+    deleteRowAction.backgroundColor = [UIColor redColor];
+    
+    // 添加一个编辑按钮
+    UITableViewRowAction *editRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"编辑" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        NSLog(@"点击了编辑");
+        // 一个动画
+//        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationMiddle];
+    }];
+    // 设置背景颜色
+    editRowAction.backgroundColor = [UIColor blueColor];
+    
+    // 将按钮们加入数组
+    [btnArray addObject:deleteRowAction];
+    [btnArray addObject:editRowAction];
+    
+    return btnArray;
+}
 
 @end

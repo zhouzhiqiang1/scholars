@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.dataSource = @[@"社区",@"社区",@"社区",@"社区",@"社区",@"社区"];
+    self.dataSource = @[@"社区",@"二维码/扫一扫",@"社区",@"社区",@"社区",@"社区"];
 }
 
 - (void)didReceiveMemoryWarning {
