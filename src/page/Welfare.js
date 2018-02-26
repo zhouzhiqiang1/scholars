@@ -1,11 +1,11 @@
 
-import React from 'react';
+import React, { Component } from 'react';
 import {
-  Component ,
   Navigator ,
   View ,
   Text,
-  StyleSheet
+  StyleSheet,
+  TouchableOpacity
 } from 'react-native';
 
 export default class Welfare extends Component {
@@ -13,10 +13,16 @@ export default class Welfare extends Component {
     super(props);
   }
 
+  onPressButtonA() {
+    alert('按钮事件');
+  }
   render (){
     return (
       <View style={[styles.container]}>
-        <Text style={{fontSize:30,color:'#fff'}}>Hello React-native</Text>
+
+      <TouchableOpacity onPress={this.onPressButtonA.bind(this)}> 
+        <Text style={{fontSize:30,color:'#fff'}}>趣味福利哦</Text>
+      </TouchableOpacity>
       </View>
     )
   }

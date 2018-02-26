@@ -40,6 +40,10 @@
 #pragma mark -- 本地数据(网络数据简单获取)
 -(GSHTTPTask *)addGetLocalDataActionTaskWithResponse:(GSTaskBlock())aResponseBlock userid:(long long)userid
 {
+    
+    
+    NSString *string = GSHttpServer;
+    
     ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlOtherUserInfo
                                                       httpType:YDHttpTypePost
                                                         params:nil];

@@ -13,7 +13,8 @@ import {
   TabBarIOS
 } from 'react-native';
 
-import HomeViewController from '../page/HomeViewController';
+import HomeViewController from '../page/HomeViewController';//首页
+import RegularBasis from '../page/Welfare';//定期
 
 export default class mainViewController extends Component {
 
@@ -21,7 +22,7 @@ export default class mainViewController extends Component {
     super(props);
 
     this.state = {
-        selectedTab:'历史',
+        selectedTab:'首页',
         notifCount:0,
         presses:0,
     };
@@ -43,16 +44,18 @@ export default class mainViewController extends Component {
       <View style={{flex:1}}>
         <TabBarIOS
         style={{flex:1,alignItems:"flex-end"}}
-        tintColor="white"
-        barTintColor="darkslateblue">
+        tintColor='#d7a653'
+        barTintColor="white">
         <TabBarIOS.Item
+          //显示图片颜色
+          renderAsOriginal
           title="首页"
           icon = {require('../image/tab_home_icon_page.png')}
           selectedIcon = {require('../image/tab_home_selectedIcon_page.png')}
-          selected={this.state.selectedTab === '自定义'}
+          selected={this.state.selectedTab === '首页'}
           onPress={() => {
             this.setState({
-              selectedTab: '自定义',
+              selectedTab: '首页',
             });
           }}
           >
@@ -60,49 +63,55 @@ export default class mainViewController extends Component {
         </TabBarIOS.Item>
 
         <TabBarIOS.Item
-          title="趣味"
+          //显示图片颜色
+          renderAsOriginal
+          title="定期"
           icon = {require('../image/tab_home_icon_fun.png')}
           selectedIcon={require('../image/tab_home_selectedIcon_fun.png')}
-          selected={this.state.selectedTab === '试试'}
+          selected={this.state.selectedTab === '定期'}
           onPress={() => {
             this.setState({
-              selectedTab: '试试',
+              selectedTab: '定期',
               notifCount: this.state.notifCount + 1,
             });
           }}
           >
-          {this._renderContent('#783E33', '历史记录', this.state.notifCount)}
+          <RegularBasis/>
         </TabBarIOS.Item>
 
         <TabBarIOS.Item
+          //显示图片颜色
+          renderAsOriginal
           title="消息"
           icon = {require('../image/tab_home_icon_message.png')}
           selectedIcon = {require('../image/tab_home_selectedIcon_message.png')}
-          selected={this.state.selectedTab === '历史'}   
+          selected={this.state.selectedTab === '消息'}   
           badge={this.state.notifCount > 0 ? this.state.notifCount : undefined}
           onPress={() => {
             this.setState({
-              selectedTab: '历史',
+              selectedTab: '消息',
               notifCount: this.state.notifCount + 1,
             });
           }}
           >
-          {this._renderContent('#783E33', '历史记录', this.state.notifCount)}
+          {this._renderContent('#783E33', '消息', this.state.notifCount)}
         </TabBarIOS.Item>
 
         <TabBarIOS.Item
+          //显示图片颜色
+          renderAsOriginal
            title=" 我的"
            icon={require('../image/tab_home_icon_my.png')}
            selectedIcon = {require('../image/tab_home_selectedIcon_my.png')}
-           selected={this.state.selectedTab === '下载'}
+           selected={this.state.selectedTab === '我的'}
             onPress={() => {
             this.setState({
-              selectedTab: '下载',
+              selectedTab: '我的',
               presses: this.state.presses + 1
             });
           }}>
 
-          {this._renderContent('#414A8C', '自定义界面')}
+          {this._renderContent('#414A8C', '我的')}
         </TabBarIOS.Item>
       </TabBarIOS>
       </View>
@@ -123,7 +132,7 @@ const styles = StyleSheet.create({
   },
   tabText: {
     color: 'white',
-    margin: 50,
+    margin: 40
   },
 });
 

@@ -1,0 +1,32 @@
+  {
+    "resCode": "200",
+    "devMsg":"Success",
+    "data": {
+        "redeemList":[
+            {
+                "prodId":"1",
+                "prodName":"定期1",
+                "prodStatus":"已回款",
+                "remainAssetsAmount":"100000.00",
+                "dueProfit":"10520.00",
+                "prodPeriodDays":"6"
+            },
+            {
+                "prodId":"2",
+                "prodName":"定期2",
+                "prodStatus":"已流标",
+                "remainAssetsAmount":"100000.00",
+                "dueProfit":"10820.00",
+                "prodPeriodDays":"8个月"
+            },
+            {
+                "prodId":"3",
+                "prodName":"定期3",
+                "prodStatus":"已回款",
+                "remainAssetsAmount":"100000.00",
+                "dueProfit":"12520.00",
+                "prodPeriodDays":"12个月"
+            }
+        ]
+    }
+  }

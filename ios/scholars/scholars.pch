@@ -20,6 +20,16 @@
 #define NSLog(FORMAT, ...) nil
 #endif
 
+/**
+ *  测试环境
+ */
+#define TESTSERVER
+/**
+ *  开发环境
+ */
+//#define DEVSERVER
+
+
 #ifdef DEBUG
 static const DDLogLevel ddLogLevel = DDLogLevelDebug;
 #define ENABLE_RECORD_MODE

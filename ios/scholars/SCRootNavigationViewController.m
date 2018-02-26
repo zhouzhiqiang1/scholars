@@ -34,29 +34,29 @@ static CGFloat speedF = 0.5;
     // Do any additional setup after loading the view.
     self.navigationBarHidden = YES;//隐藏系统导航栏
 
-    //初始化中心视图
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    SCRootBarViewController *rootBarVC = [storyboard instantiateViewControllerWithIdentifier:@"SCRootBarViewController"];
-    
-    //初始化左视图
-    UIStoryboard *storyboards = [UIStoryboard storyboardWithName:@"AboutMenu" bundle:nil];
-    SCMenuLeftViewController * menuLeftVC = [storyboards instantiateViewControllerWithIdentifier:@"SCMenuLeftViewController"];
-    
-    UINavigationController * centerNvaVC = [[UINavigationController alloc] initWithRootViewController:rootBarVC];
-    UINavigationController * boutiqueNC = [[UINavigationController alloc] initWithRootViewController:menuLeftVC];
-    
-    //初始化抽屉视图控制器
-    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:centerNvaVC leftDrawerViewController:boutiqueNC];
-    
-    [self.drawerController setShowsShadow:NO];
-    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
-    //设置抽屉的宽度
-    [self.drawerController setMaximumLeftDrawerWidth:[UIScreen mainScreen].bounds.size.width - 100];
-    //
-    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-    
-    [self setViewControllers:@[self.drawerController]];
+//    //初始化中心视图
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    SCRootBarViewController *rootBarVC = [storyboard instantiateViewControllerWithIdentifier:@"SCRootBarViewController"];
+//    
+//    //初始化左视图
+//    UIStoryboard *storyboards = [UIStoryboard storyboardWithName:@"AboutMenu" bundle:nil];
+//    SCMenuLeftViewController * menuLeftVC = [storyboards instantiateViewControllerWithIdentifier:@"SCMenuLeftViewController"];
+//    
+//    UINavigationController * centerNvaVC = [[UINavigationController alloc] initWithRootViewController:rootBarVC];
+//    UINavigationController * boutiqueNC = [[UINavigationController alloc] initWithRootViewController:menuLeftVC];
+//    
+//    //初始化抽屉视图控制器
+//    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:centerNvaVC leftDrawerViewController:boutiqueNC];
+//    
+//    [self.drawerController setShowsShadow:NO];
+//    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
+//    //设置抽屉的宽度
+//    [self.drawerController setMaximumLeftDrawerWidth:[UIScreen mainScreen].bounds.size.width - 100];
+//    //
+//    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+//    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+//    
+//    [self setViewControllers:@[self.drawerController]];
 }
 
 

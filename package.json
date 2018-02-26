@@ -5,11 +5,11 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
-  
   "dependencies": {
     "react": "15.2.1",
     "react-native": "0.31.0",
     "react-native-looped-carousel": "0.0.12",
-    "react-native-swiper": "^1.4.9"
+    "react-native-swiper": "^1.5.4",
+    "react-timer-mixin": "^0.13.3"
   }
 }

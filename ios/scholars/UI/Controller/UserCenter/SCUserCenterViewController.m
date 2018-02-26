@@ -274,6 +274,9 @@
         NSLog(@"React-native");
         NSURL *jsCodeLocation = [NSURL
                                  URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios"];
+        
+//        NSURL *jsCodeLocation = [NSURL
+//                                 URLWithString:@"http://192.168.2.5:8081/index.ios.bundle?platform=ios"];
         RCTRootView *rootView =
         [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
                              moduleName        : @"scholars"
