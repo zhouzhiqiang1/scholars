@@ -23,6 +23,7 @@
 
 @interface SCPictureTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIButton *loveButton;
 @property (strong, nonatomic) SCPictureInfo *pictureInfo;
 @property (weak, nonatomic) id<SCPictureTableViewCellDelegate> delegate;
 - (void)dataLoad:(SCPictureInfo *)pictureInfo;

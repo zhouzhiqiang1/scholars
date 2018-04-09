@@ -14,6 +14,8 @@
 #import <MJRefresh/MJRefresh.h>
 #import "RCTRootView.h"
 #import "SCRootNavigationViewController.h"
+#import "GSDataEngine.h"
+#import "SCUserInfoViewController.h"
 
 @interface SCUserCenterViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -51,6 +53,14 @@
     
     
     
+//    [[GSDataEngine shareEngine] addGetNetworkDataActionTaskWithResponse:^(GSTaskResponse *aTaskResponse) {
+//        if (aTaskResponse.errorCode == GSErrorCMSuccess) {
+//
+//        } else {
+//
+//        }
+//    } userid:12];
+//
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -269,7 +279,12 @@
     NSInteger section = indexPath.section;
     NSInteger row = indexPath.row;
     if (section == 0) {
-        NSLog(@"登陆");
+//        NSLog(@"登陆");
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"UserCenter"  bundle:nil];
+        SCUserInfoViewController *userinfoVC = [storyboard instantiateViewControllerWithIdentifier:@"SCUserInfoViewController"];
+        userinfoVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:userinfoVC animated:YES];
     }else if (section == 1) {
         NSLog(@"React-native");
         NSURL *jsCodeLocation = [NSURL

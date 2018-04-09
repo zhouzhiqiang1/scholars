@@ -149,6 +149,8 @@ void dismissAllPresentedController()
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 //    [MobClick beginLogPageView:[self pageNameForMobClick]];
 //    [self.navigationController setNavigationBarHidden:self.isNavBarHide animated:YES];
 }

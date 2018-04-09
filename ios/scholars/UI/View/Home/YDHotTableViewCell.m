@@ -8,6 +8,7 @@
 //
 
 #import "YDHotTableViewCell.h"
+#import <UIImageView+WebCache.h>
 
 @interface YDHotTableViewCell ()
 @property (strong, nonatomic) IBOutlet UIImageView *headImageView;
@@ -20,6 +21,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    [super awakeFromNib];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -31,7 +33,8 @@
 
 - (void)loadTheData:(NSString *)imgeView title:(NSString *)title content:(NSString *)content
 {
-    [self.headImageView setImage:[UIImage imageNamed:imgeView]];
+//    [self.headImageView setImage:[UIImage imageNamed:imgeView]];
+    [self.headImageView sd_setImageWithURL:[NSURL URLWithString:imgeView] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
     self.titleLabel.text = title;
     self.contentLabel.text = content;
 }

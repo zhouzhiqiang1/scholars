@@ -57,7 +57,7 @@
 #pragma mark -- 本地数据(网络数据简单获取)
 -(GSHTTPTask *)addGetNetworkDataActionTaskWithResponse:(GSTaskBlock())aResponseBlock userid:(long long)userid
 {
-    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlOtherUserInfo
+    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlCeShi
                                                       httpType:YDHttpTypePost
                                                         params:nil];
     //    task.useFakeData = YES;
@@ -68,40 +68,56 @@
 }
 
 
--(GSHTTPTask *)addGetPictureFunActionTaskWithResponse:(GSTaskBlock())aResponseBlock
+-(GSHTTPTask *)addGetHomePageTaskWithResponse:(GSTaskBlock())aResponseBlock
 {
-    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlFalseDataInfo
+    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlHomePage
                                                       httpType:YDHttpTypePost
                                                         params:nil];
-    task.useFakeData = YES;
-    task.fakeJsonName = @"Photo";
+    [task setResponseBlock:aResponseBlock];
+    [task run];
+    return task;
+}
+
+-(GSHTTPTask *)addGetNewsTaskWithResponse:(GSTaskBlock())aResponseBlock
+{
+    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlGetNews
+                                                      httpType:YDHttpTypePost
+                                                        params:nil];
+    [task setResponseBlock:aResponseBlock];
+    [task run];
+    return task;
+}
+
+-(GSHTTPTask *)addGetVideoTaskWithResponse:(GSTaskBlock())aResponseBlock
+{
+    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlGetVideo
+                                                      httpType:YDHttpTypePost
+                                                        params:nil];
     [task setResponseBlock:aResponseBlock];
     [task run];
     return task;
 }
 
 
--(GSHTTPTask *)addGetNewsActionTaskWithResponse:(GSTaskBlock())aResponseBlock
+-(GSHTTPTask *)addGetFunPhotoDataTaskWithResponse:(GSTaskBlock())aResponseBlock
 {
-    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlFalseDataInfo
+    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlGetFunPhoto
                                                       httpType:YDHttpTypePost
                                                         params:nil];
-    task.useFakeData = YES;
-    task.fakeJsonName = @"News";
     [task setResponseBlock:aResponseBlock];
     [task run];
     return task;
 }
 
--(GSHTTPTask *)addGetVideoDataTaskWithResponse:(GSTaskBlock())aResponseBlock
+-(GSHTTPTask *)addPhotoLoveStatusTaskWithResponse:(GSTaskBlock())aResponseBlock loveStatus:(NSInteger)loveStatus photoID:(NSInteger)photoID;
 {
-    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlFalseDataInfo
+    ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlUpdatePhotoLoveStatus
                                                       httpType:YDHttpTypePost
-                                                        params:nil];
-    task.useFakeData = YES;
-    task.fakeJsonName = @"Video";
+                                                        params:@{@"lovestatus":@(loveStatus),
+                                                                    @"photoID":@(photoID)}];
     [task setResponseBlock:aResponseBlock];
     [task run];
     return task;
 }
+
 @end

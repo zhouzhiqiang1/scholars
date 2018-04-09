@@ -13,7 +13,7 @@
 @implementation SCWorkListViewModel
 - (void)asyncFetchListAtPage:(NSInteger)aPageIndex completion:(void (^)(BOOL isSuccess, NSArray *listArray,int count, int totalCount))completion
 {
-    [[GSDataEngine shareEngine] addGetVideoDataTaskWithResponse:^(GSTaskResponse *aTaskResponse) {
+    [[GSDataEngine shareEngine] addGetVideoTaskWithResponse:^(GSTaskResponse *aTaskResponse) {
         if (aTaskResponse.errorCode == GSErrorCMSuccess) {
             NSError *error = nil;
             SCVideoDataList *videoDataList = [[SCVideoDataList alloc] initWithDictionary:aTaskResponse.data error:&error];
@@ -22,7 +22,7 @@
                 if (videoDataList.pageSize <= 0) {
                     videoDataList.pageSize = 10;
                 }
-                completion(YES, videoDataList.rows, videoDataList.pageSize, videoDataList.count);
+                completion(YES, videoDataList.videoList, videoDataList.pageSize, videoDataList.count);
             }
 
         } else {

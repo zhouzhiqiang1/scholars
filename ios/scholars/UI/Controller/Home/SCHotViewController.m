@@ -15,12 +15,15 @@
 #import <MJRefresh.h>
 #import "SCEncapsulation.h"
 #import "ORIndicatorView.h"
+#import "SCHomePageViewModel.h"
+#import "GSDataEngine.h"
 
 @interface SCHotViewController ()<WMLoopViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, copy) NSNumber *age;
-@property (strong, nonatomic) NSArray *images;
-@property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
+//@property (strong, nonatomic) NSArray *images;
+//@property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
+@property (strong ,nonatomic) SCHomePageViewModel *homePageViewModel;
 @end
 
 @implementation SCHotViewController
@@ -33,7 +36,7 @@
     //设置回调
     MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
     
-    self.refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
+//    self.refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
     //    [header beginRefreshing];
     // 隐藏时间
     header.lastUpdatedTimeLabel.hidden = YES;
@@ -51,18 +54,16 @@
 
     
     
-    self.images = @[@"http://7xk3oj.com2.z0.glb.qiniucdn.com/banner-20150908-002-1.png",
-                    @"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114207-78f389d4",
-                    @"http://7xk3oj.com2.z0.glb.qiniucdn.com/20151209114210-ed2c0a1c"];
-    WMLoopView *loopView = [[WMLoopView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width/1.8) images:self.images autoPlay:YES delay:2.0];
+
+    NSLog(@"%@", self.age);
+}
+
+- (void)tableHead{
+    WMLoopView *loopView = [[WMLoopView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width/1.8) images:self.homePageViewModel.headUrlList autoPlay:YES delay:2.0];
     loopView.timeInterval = 5;
     loopView.delegate = self;
     self.tableView.tableHeaderView = loopView;
     self.tableView.rowHeight = 80;
-    NSLog(@"%@", self.age);
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,18 +81,18 @@
 - (void)loadModel
 {
     [self unloadModel];
-//    self.newsTableViewModel = [[SCNewsTableViewModel alloc] init];
-//    
-//    [self.newsTableViewModel addObserver:self forKeyPath:kKeyPathDataSource options:NSKeyValueObservingOptionNew context:nil];
-//    [self.newsTableViewModel addObserver:self forKeyPath:kKeyPathDataFetchResult options:NSKeyValueObservingOptionNew context:nil];
+    self.homePageViewModel = [[SCHomePageViewModel alloc] init];
+    
+    [self.homePageViewModel addObserver:self forKeyPath:kKeyPathDataSource options:NSKeyValueObservingOptionNew context:nil];
+    [self.homePageViewModel addObserver:self forKeyPath:kKeyPathDataFetchResult options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)unloadModel
 {
     @try {
-//        [self.newsTableViewModel removeObserver:self forKeyPath:kKeyPathDataSource];
-//        [self.newsTableViewModel removeObserver:self forKeyPath:kKeyPathDataFetchResult];
-//        [self setNewsTableViewModel:nil];
+        [self.homePageViewModel removeObserver:self forKeyPath:kKeyPathDataSource];
+        [self.homePageViewModel removeObserver:self forKeyPath:kKeyPathDataFetchResult];
+        [self setHomePageViewModel:nil];
     }
     @catch (NSException *exception) {
     }
@@ -101,17 +102,15 @@
 {
     NSLog(@"下拉刷新");
     [ORIndicatorView showLoading];
-    [self stopLoadingWithSuccess:YES];
-//    [self.newsTableViewModel fetchList];
+    [self.homePageViewModel fetchList];
 }
 
-- (void)startLoadMore
-{
-    NSLog(@"上拉刷新");
-    [ORIndicatorView showLoading];
-    [self stopLoadingWithSuccess:YES];
-//    [self.newsTableViewModel fetchMore];
-}
+//- (void)startLoadMore
+//{
+//    NSLog(@"上拉刷新");
+//    [ORIndicatorView showLoading];
+//    [self.homePageViewModel fetchMore];
+//}
 
 - (void)stopLoadingWithSuccess:(BOOL)aSuccess
 {
@@ -119,7 +118,7 @@
     [ORIndicatorView hideLoading];
 //    self.tableView.mj_footer = [self.newsTableViewModel hasMore]?self.refreshFooter:nil;
     [self.tableView.mj_header endRefreshing];
-    [self.tableView.mj_footer endRefreshing];
+//    [self.tableView.mj_footer endRefreshing];
 }
 
 
@@ -135,7 +134,7 @@
 #pragma mark -- (WMLoopViewDelegate)
 - (void)loopViewDidSelectedImage:(WMLoopView *)loopView index:(int)index
 {
-    GSImageCollectionViewController *imageVC = [GSImageCollectionViewController viewControllerWithDataSource:self.images];
+    GSImageCollectionViewController *imageVC = [GSImageCollectionViewController viewControllerWithDataSource:self.homePageViewModel.headUrlList];
     imageVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:imageVC animated:YES];
     imageVC.defaultPageIndex = index;
@@ -149,18 +148,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return self.homePageViewModel.count;
 }
-
 
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 // UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
  
- // Configure the cell...
      NSString *cell = @"YDHotTableViewCell";
      YDHotTableViewCell *hotTableView = [tableView dequeueReusableCellWithIdentifier:cell forIndexPath:indexPath];
-     [hotTableView loadTheData:@"imageThree.jpg" title:@"This is a project" content:@"Project data are local, welcome to watch"];
- 
+     SCHomePageInfo *homePageInfo = [self.homePageViewModel objectAtIndex:indexPath.row];
+     [hotTableView loadTheData:homePageInfo.imageUrl title:homePageInfo.title content:homePageInfo.content];
      return hotTableView;
  }
 
@@ -200,6 +197,23 @@
     [btnArray addObject:editRowAction];
     
     return btnArray;
+}
+
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (self.isViewLoaded == NO)
+    {
+        return;
+    }
+    
+    if ([keyPath isEqualToString:kKeyPathDataSource]) {
+        [self tableHead];
+        [self.tableView reloadData];
+    } else if ([keyPath isEqualToString:kKeyPathDataFetchResult]) {
+        [self stopLoadingWithSuccess:YES];
+        
+    }
 }
 
 @end

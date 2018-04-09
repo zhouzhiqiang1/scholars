@@ -14,7 +14,6 @@
 @interface SCPictureTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIView *view;
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
-@property (weak, nonatomic) IBOutlet UIButton *loveButton;
 @property (weak, nonatomic) IBOutlet UIButton *messageButton;
 
 @end
@@ -78,9 +77,9 @@
 {
     self.loveButton.selected = self.pictureInfo.lovestatus;
     
-    [self.loveButton setTitle:[NSString stringWithFormat:@"%d", self.pictureInfo.lovecount] forState:UIControlStateNormal];
+    [self.loveButton setTitle:[NSString stringWithFormat:@"%ld", (long)self.pictureInfo.lovecount] forState:UIControlStateNormal];
     
-    [self.messageButton setTitle:[NSString stringWithFormat:@"%d", self.pictureInfo.messagenumber] forState:UIControlStateNormal];
+    [self.messageButton setTitle:[NSString stringWithFormat:@"%ld", (long)self.pictureInfo.messagenumber] forState:UIControlStateNormal];
     
 }
 

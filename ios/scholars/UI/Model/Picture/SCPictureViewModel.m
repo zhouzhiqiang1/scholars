@@ -13,7 +13,7 @@
 @implementation SCPictureViewModel
 - (void)asyncFetchListAtPage:(NSInteger)aPageIndex completion:(void (^)(BOOL isSuccess, NSArray *listArray,int count, int totalCount))completion
 {
-    [[GSDataEngine shareEngine] addGetPictureFunActionTaskWithResponse:^(GSTaskResponse *aTaskResponse) {
+    [[GSDataEngine shareEngine] addGetFunPhotoDataTaskWithResponse:^(GSTaskResponse *aTaskResponse) {
         
         if (aTaskResponse.errorCode == GSErrorCMSuccess) {
             NSError *error = nil;
@@ -23,7 +23,7 @@
                 if (pictureList.pageSize <= 0) {
                     pictureList.pageSize = 10;
                 }
-                completion(YES, pictureList.rows, pictureList.pageSize, pictureList.count);
+                completion(YES, pictureList.photoList, pictureList.pageSize, pictureList.count);
             }
             
         } else {

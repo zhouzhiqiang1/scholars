@@ -20,6 +20,14 @@
 
 @end
 
+@implementation SCHomePageInfo
+
+@end
+
+@implementation RSHomePageList
+
+@end
+
 @implementation SCPictureInfo
 -(instancetype)initWithDictionary:(NSDictionary *)dict error:(NSError *__autoreleasing *)err
 {

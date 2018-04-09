@@ -154,38 +154,46 @@
 - (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onLoveButtonAction:(UIButton *)sender;
 {
     DDLogDebug(@"点赞");
-    UIButton *btn = sender;
-    sender.selected =! sender.selected;
     
-    aCell.pictureInfo.lovestatus = !aCell.pictureInfo.lovestatus;
-    aCell.pictureInfo.lovecount += aCell.pictureInfo.lovestatus?1:-1;
-    [aCell updateLikeButton];
+//    aCell.pictureInfo.lovestatus = !aCell.pictureInfo.lovestatus;
+//    aCell.pictureInfo.lovecount +=  !aCell.pictureInfo.lovestatus?1:-1;
+//    [aCell updateLikeButton];
     
-    //点赞动画
-    btn.imageView.hidden = YES;
-    UIImageView *imageView = [[UIImageView alloc] init];
-    UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
-    CGRect rect = [keyWindow convertRect:btn.imageView.frame fromView:btn.imageView.superview];
-    imageView.frame = rect;
-    imageView.image = [UIImage imageNamed:@"picture_like_highlight"];
-    [keyWindow addSubview:imageView];
-    CATransform3D transform = CATransform3DIdentity;
-    transform = CATransform3DScale(transform, 2.0, 2.0, 1.0f);
-    self.view.userInteractionEnabled = NO;
-    
-    [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        imageView.layer.transform = transform;
-        imageView.alpha = 0.4;
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            imageView.layer.transform = CATransform3DIdentity;
-            imageView.alpha = 1;
-        } completion:^(BOOL finished) {
-            [imageView removeFromSuperview];
-            btn.imageView.hidden = NO;
-            self.view.userInteractionEnabled = YES;
-        }];
-    }];
+    [[GSDataEngine shareEngine] addPhotoLoveStatusTaskWithResponse:^(GSTaskResponse *aTaskResponse) {
+        if (aTaskResponse.errorCode == GSErrorCMSuccess) {
+            
+            UIButton *btn = sender;
+            sender.selected =! sender.selected;
+            //点赞动画
+            btn.imageView.hidden = YES;
+            UIImageView *imageView = [[UIImageView alloc] init];
+            UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+            CGRect rect = [keyWindow convertRect:btn.imageView.frame fromView:btn.imageView.superview];
+            imageView.frame = rect;
+            imageView.image = [UIImage imageNamed:@"picture_like_highlight"];
+            [keyWindow addSubview:imageView];
+            CATransform3D transform = CATransform3DIdentity;
+            transform = CATransform3DScale(transform, 2.0, 2.0, 1.0f);
+            self.view.userInteractionEnabled = NO;
+            
+            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                imageView.layer.transform = transform;
+                imageView.alpha = 0.4;
+            } completion:^(BOOL finished) {
+                [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                    imageView.layer.transform = CATransform3DIdentity;
+                    imageView.alpha = 1;
+                } completion:^(BOOL finished) {
+                    [imageView removeFromSuperview];
+                    btn.imageView.hidden = NO;
+                    self.view.userInteractionEnabled = YES;
+                }];
+            }];
+            [self startRefresh];
+        } else {
+            
+        }
+    } loveStatus:!aCell.pictureInfo.lovestatus photoID:aCell.pictureInfo.photoID];
 }
 
 - (void)pictureTableViewCell:(SCPictureTableViewCell *)aCell onMessageButtonAction:(id)sender

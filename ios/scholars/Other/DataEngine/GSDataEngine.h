@@ -44,27 +44,43 @@ static NSString * const kKeyPathActionInfo = @"actionInfo";
 
 
 
+
+#pragma mark -- 首页
+/**
+ *   首页热门数据
+ *  @param aResponseBlock 回调block
+ *  @return task
+ **/
+-(GSHTTPTask *)addGetHomePageTaskWithResponse:(GSTaskBlock())aResponseBlock;
+
+/**
+ *   首页新闻数据
+ *  @param aResponseBlock 回调block
+ *  @return task
+ **/
+-(GSHTTPTask *)addGetNewsTaskWithResponse:(GSTaskBlock())aResponseBlock;
+
+/**
+ *   首页视频数据
+ *  @param aResponseBlock 回调block
+ *  @return task
+ **/
+-(GSHTTPTask *)addGetVideoTaskWithResponse:(GSTaskBlock())aResponseBlock;
+
 /**
  *   趣味图片
  *  @param aResponseBlock 回调block
  *  @return task
  **/
--(GSHTTPTask *)addGetPictureFunActionTaskWithResponse:(GSTaskBlock())aResponseBlock;
+-(GSHTTPTask *)addGetFunPhotoDataTaskWithResponse:(GSTaskBlock())aResponseBlock;
 
 /**
- *   新闻数据
+ *   趣味图片
  *  @param aResponseBlock 回调block
+ *  @param loveStatus     1喜欢/0不喜欢
+ *  @param photoID        id
  *  @return task
  **/
--(GSHTTPTask *)addGetNewsActionTaskWithResponse:(GSTaskBlock())aResponseBlock;
-
-
-/**
- *   视频数据
- *  @param aResponseBlock 回调block
- *  @return task
- **/
--(GSHTTPTask *)addGetVideoDataTaskWithResponse:(GSTaskBlock())aResponseBlock;
-
+-(GSHTTPTask *)addPhotoLoveStatusTaskWithResponse:(GSTaskBlock())aResponseBlock loveStatus:(NSInteger)loveStatus photoID:(NSInteger)photoID;
 
 @end

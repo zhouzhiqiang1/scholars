@@ -45,6 +45,32 @@ typedef NS_OPTIONS(NSInteger, YDRedirectActionType){
 @property (assign, nonatomic) int count;
 @end
 
+/**
+ *  获取首页热门数据
+ */
+@protocol SCHomePageInfo
+
+@end
+
+@interface SCHomePageInfo : SCBaseJsonModel
+/** keyID */
+@property (assign, nonatomic) int keyID;
+/** 标题 */
+@property (copy, nonatomic) NSString *title;
+/** 内容 */
+@property (copy, nonatomic) NSString *content;
+/** 图片 */
+@property (copy, nonatomic) NSString *imageUrl;
+@end
+
+@interface RSHomePageList : SCBaseJsonModel
+/** bannar图 **/
+@property (strong, nonatomic) NSArray <SCHomePageInfo> *headUrlList;
+/** 列表数据 **/
+@property (strong, nonatomic) NSArray <SCHomePageInfo> *homePageList;
+@end
+
+
 
 // 分页 例子
 @protocol SCPictureInfo
@@ -53,6 +79,7 @@ typedef NS_OPTIONS(NSInteger, YDRedirectActionType){
 
 @interface SCPictureInfo : SCBaseJsonModel
 
+@property (assign, nonatomic) NSInteger photoID;
 @property (copy, nonatomic) NSString *userid;
 @property (copy, nonatomic) NSString *nickname;
 @property (copy, nonatomic) NSString *content;
@@ -73,7 +100,7 @@ typedef NS_OPTIONS(NSInteger, YDRedirectActionType){
 @end
 
 @interface SCPictureList :SCBasePageListResult
-@property (strong, nonatomic) NSArray<SCPictureInfo> *rows;
+@property (strong, nonatomic) NSArray<SCPictureInfo> *photoList;
 @end
 
 
@@ -86,10 +113,9 @@ typedef NS_OPTIONS(NSInteger, YDRedirectActionType){
 
 @interface SCNewsInfo : SCBaseJsonModel
 
-@property (copy, nonatomic) NSString *objid;
+@property (copy, nonatomic) NSString *newsID;
 @property (copy, nonatomic) NSString *title;
 @property (copy, nonatomic) NSString *photos;
-@property (copy, nonatomic) NSString *publishTime;
 /*  数据来源  */
 @property (copy, nonatomic) NSString *source;
 /*  分享链接  */
@@ -97,7 +123,7 @@ typedef NS_OPTIONS(NSInteger, YDRedirectActionType){
 @end
 
 @interface SCNewsList :SCBasePageListResult
-@property (strong, nonatomic) NSArray<SCNewsInfo> *rows;
+@property (strong, nonatomic) NSArray<SCNewsInfo> *newsList;
 @end
 
 
@@ -108,7 +134,7 @@ typedef NS_OPTIONS(NSInteger, YDRedirectActionType){
 
 @interface SCVideoDataInfo : SCBaseJsonModel
 /*  objid  */
-@property (copy, nonatomic) NSString *objid;
+@property (copy, nonatomic) NSString *videoID;
 @property (copy, nonatomic) NSString *title;
 @property (copy, nonatomic) NSString *photos;
 /*  视频时长  */
@@ -118,7 +144,7 @@ typedef NS_OPTIONS(NSInteger, YDRedirectActionType){
 @end
 
 @interface SCVideoDataList :SCBasePageListResult
-@property (strong, nonatomic) NSArray<SCVideoDataInfo> *rows;
+@property (strong, nonatomic) NSArray<SCVideoDataInfo> *videoList;
 @end
 
 @interface YDRedirectActionInfo : NSObject
