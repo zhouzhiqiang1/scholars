@@ -9,6 +9,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GSDataDef.h"
+#import "GSDataEngine.h"
 
 @class SCPictureTableViewCell;
 
@@ -23,6 +24,7 @@
 
 @interface SCPictureTableViewCell : UITableViewCell
 
++ (CGFloat)sizeForCellWithData:(SCPictureInfo *)pictureInfo tableViewWidth:(CGFloat)aWidth;
 @property (weak, nonatomic) IBOutlet UIButton *loveButton;
 @property (strong, nonatomic) SCPictureInfo *pictureInfo;
 @property (weak, nonatomic) id<SCPictureTableViewCellDelegate> delegate;

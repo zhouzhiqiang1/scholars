@@ -15,13 +15,33 @@
 @property (weak, nonatomic) IBOutlet UIView *view;
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (weak, nonatomic) IBOutlet UIButton *messageButton;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 
 @end
 
 @implementation SCPictureTableViewCell
 
++ (CGFloat)sizeForCellWithData:(SCPictureInfo *)pictureInfo tableViewWidth:(CGFloat)aWidth
+{
+    CGFloat height = 0;
+    
+    if (pictureInfo.content.length > 0) {
+        CGFloat width = aWidth - 20;
+        CGRect stringRect = [pictureInfo.content boundingRectWithSize:CGSizeMake(width, 300)
+                                                             options:(NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading)
+                                                          attributes:@{ NSFontAttributeName : [UIFont systemFontOfSize:15] }
+                                                             context:nil];
+        CGSize stringSize = CGRectIntegral(stringRect).size;
+        height += 400 + stringSize.height;
+    } else {
+        height += 400;
+    }
+    return height;
+}
+
 - (void)awakeFromNib {
     // Initialization code
+    [super awakeFromNib];
     self.view.layer.cornerRadius = 15;
     self.view.layer.masksToBounds = YES;
 }
@@ -67,8 +87,10 @@
     
     self.pictureInfo = pictureInfo;
     
+    self.contentLabel.text = pictureInfo.content;
+    
     [self.headImageView sd_setImageWithURL:[NSURL URLWithString:pictureInfo.photos] placeholderImage:[UIImage imageNamed:@"imageOne.png"]];
-
+    
     [self updateLikeButton];
 }
 

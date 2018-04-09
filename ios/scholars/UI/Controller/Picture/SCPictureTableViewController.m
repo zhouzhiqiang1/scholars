@@ -15,6 +15,7 @@
 #import "GSDataEngine.h"
 #import "SCEncapsulation.h"
 #import "GSImageCollectionViewController.h"
+#import "ViewUtil.h"
 
 @interface SCPictureTableViewController ()<SCPictureTableViewCellDelegate>
 //@property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -28,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"趣味";
+    self.title = @"部落";
     
     //设置回调
     MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
@@ -147,7 +148,9 @@
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 400;
+//    return 400;
+    SCPictureInfo *pictureInfo = [self.pictureViewModel objectAtIndex:indexPath.row];
+    return [SCPictureTableViewCell sizeForCellWithData:pictureInfo tableViewWidth:[ViewUtil screenWidth]];
 }
 
 #pragma mark -- SCPictureTableViewCellDelegate
