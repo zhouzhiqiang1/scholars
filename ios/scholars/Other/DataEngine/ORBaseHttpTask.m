@@ -10,12 +10,14 @@
 #import "GSDataEngine.h"
 #import "DataUtil.h"
 #import "SecurityUtil.h"
+#import "AFHTTPSessionManager.h"
 
 @interface ORBaseHttpTask()
 @property (nonatomic, assign) YDHttpType httpType;
 @property (nonatomic, strong) NSString *url;
 @property (nonatomic, strong) NSDictionary *params;
 @property (nonatomic, strong) NSString *fakeJsonFileName;
+@property (strong, nonatomic) AFHTTPSessionManager *sessionManager;
 @end
 
 @implementation ORBaseHttpTask
@@ -26,6 +28,7 @@
         _httpType = aHttpType;
         _url = aUrl;
         _params = aParams;
+        _sessionManager = [AFHTTPSessionManager manager];
     }
     return self;
 }
@@ -56,6 +59,7 @@
 
 - (void)doRun
 {
+     [self.sessionManager.requestSerializer setTimeoutInterval:5];
     NSLog(@"%@",self.url);
     GSHTTPRequestOperationManager *manager = [GSHTTPRequestOperationManager manager];
     manager.requestSerializer.cachePolicy = NSURLRequestReturnCacheDataElseLoad;

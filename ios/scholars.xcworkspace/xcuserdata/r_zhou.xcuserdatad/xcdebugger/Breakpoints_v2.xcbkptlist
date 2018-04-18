@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.m"
-            timestampString = "542856920.1464159"
+            timestampString = "544951813.719313"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "233"
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "scholars/SCRootBarViewController.m"
-            timestampString = "543121331.226426"
+            timestampString = "545034303.8383991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,12 +202,26 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "scholars/Other/DataEngine/GSDataEngine.m"
-            timestampString = "542873123.1762151"
+            timestampString = "545733402.150631"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "-addPhotoLoveStatusTaskWithResponse:loveStatus:photoID:"
+            startingLineNumber = "120"
+            endingLineNumber = "120">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "scholars/UI/Controller/Home/SCHotViewController.m"
+            timestampString = "545731128.504501"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -217,44 +231,76 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "scholars/UI/Model/Picture/SCPictureViewModel.m"
-            timestampString = "542795066.779668"
+            filePath = "scholars/UI/View/Picture/SCPictureTableViewCell.m"
+            timestampString = "544959206.267171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-asyncFetchListAtPage:completion:"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "+sizeForCellWithData:tableViewWidth:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "scholars/UI/View/Picture/SCPictureTableViewCell.m"
+            timestampString = "544959206.267247"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "+sizeForCellWithData:tableViewWidth:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "scholars/Other/DataEngine/ORBaseHttpTask.m"
+            timestampString = "545733402.1507879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "-doRun"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[SCPictureViewModel asyncFetchListAtPage:completion:]"
+                  symbolName = "-[ORBaseHttpTask doRun]"
                   moduleName = "scholars"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/r_zhou/Documents/Github/scholars/ios/scholars/UI/Model/Picture/SCPictureViewModel.m"
-                  timestampString = "544931459.680873"
+                  urlString = "file:///Users/r_zhou/Documents/Github/scholars/ios/scholars/Other/DataEngine/ORBaseHttpTask.m"
+                  timestampString = "545732576.187528"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "47">
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "4190">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__54-[SCPictureViewModel asyncFetchListAtPage:completion:]_block_invoke"
+                  symbolName = "__23-[ORBaseHttpTask doRun]_block_invoke.163"
                   moduleName = "scholars"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/r_zhou/Documents/Github/scholars/ios/scholars/UI/Model/Picture/SCPictureViewModel.m"
-                  timestampString = "544931459.682786"
+                  urlString = "file:///Users/r_zhou/Documents/Github/scholars/ios/scholars/Other/DataEngine/ORBaseHttpTask.m"
+                  timestampString = "545732576.1895649"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "47">
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "19">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -265,13 +311,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "scholars/UI/Controller/Home/SCHotViewController.m"
-            timestampString = "544932298.898983"
+            filePath = "scholars/Other/DataEngine/ORBaseHttpTask.m"
+            timestampString = "545733402.150848"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "-doRun"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "scholars/Other/DataEngine/ORBaseHttpTask.m"
+            timestampString = "545733402.1509"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "-doRun"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "scholars/UI/Controller/Home/SCHotViewController.m"
+            timestampString = "545731128.504954"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "scholars/Other/DataEngine/ORBaseHttpTask.m"
+            timestampString = "545733402.150973"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-doRun"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

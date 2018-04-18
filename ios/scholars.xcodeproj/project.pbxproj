@@ -44,6 +44,8 @@
 		DD4478B61CB7BABE002EDB63 /* GSImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4478AF1CB7BABE002EDB63 /* GSImageCollectionViewController.m */; };
 		DD4478B71CB7BABE002EDB63 /* GSImagePreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4478B21CB7BABE002EDB63 /* GSImagePreviewCell.m */; };
 		DD4478B81CB7BABE002EDB63 /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4478B41CB7BABE002EDB63 /* UIImage+Bundle.m */; };
+		DD67F585207B14CD009B59F6 /* RSAdvertisingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD67F584207B14CD009B59F6 /* RSAdvertisingView.m */; };
+		DD67F588207B426F009B59F6 /* RSAdvertisingPackaging.m in Sources */ = {isa = PBXBuildFile; fileRef = DD67F587207B426F009B59F6 /* RSAdvertisingPackaging.m */; };
 		DD78DE6C2046A48300F5ECC7 /* SCHomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD78DE6B2046A48300F5ECC7 /* SCHomePageViewModel.m */; };
 		DD8305211E67C69D00B11838 /* FDFullscreenPopGesture in Resources */ = {isa = PBXBuildFile; fileRef = DD8305201E67C69D00B11838 /* FDFullscreenPopGesture */; };
 		DD8305241E67F77200B11838 /* SCMenuLeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8305231E67F77200B11838 /* SCMenuLeftTableViewCell.m */; };
@@ -225,6 +227,10 @@
 		DD4478B21CB7BABE002EDB63 /* GSImagePreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSImagePreviewCell.m; path = Other/GSImagePreview/GSImagePreviewCell.m; sourceTree = "<group>"; };
 		DD4478B31CB7BABE002EDB63 /* UIImage+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Bundle.h"; path = "Other/GSImagePreview/UIImage+Bundle.h"; sourceTree = "<group>"; };
 		DD4478B41CB7BABE002EDB63 /* UIImage+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Bundle.m"; path = "Other/GSImagePreview/UIImage+Bundle.m"; sourceTree = "<group>"; };
+		DD67F583207B14CD009B59F6 /* RSAdvertisingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RSAdvertisingView.h; path = Other/Advertising/RSAdvertisingView.h; sourceTree = "<group>"; };
+		DD67F584207B14CD009B59F6 /* RSAdvertisingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RSAdvertisingView.m; path = Other/Advertising/RSAdvertisingView.m; sourceTree = "<group>"; };
+		DD67F586207B426F009B59F6 /* RSAdvertisingPackaging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RSAdvertisingPackaging.h; path = Other/Advertising/RSAdvertisingPackaging.h; sourceTree = "<group>"; };
+		DD67F587207B426F009B59F6 /* RSAdvertisingPackaging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RSAdvertisingPackaging.m; path = Other/Advertising/RSAdvertisingPackaging.m; sourceTree = "<group>"; };
 		DD78DE6A2046A48300F5ECC7 /* SCHomePageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCHomePageViewModel.h; path = UI/Model/Home/SCHomePageViewModel.h; sourceTree = "<group>"; };
 		DD78DE6B2046A48300F5ECC7 /* SCHomePageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SCHomePageViewModel.m; path = UI/Model/Home/SCHomePageViewModel.m; sourceTree = "<group>"; };
 		DD8305201E67C69D00B11838 /* FDFullscreenPopGesture */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FDFullscreenPopGesture; path = Other/FDFullscreenPopGesture; sourceTree = "<group>"; };
@@ -594,6 +600,7 @@
 		4A9512F31C906172002658FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DD71D38B20873B6700CA91F2 /* New Group */,
 				DD10E49C1E66D7160041608C /* Menu */,
 				4A9512F21C906147002658FB /* Home */,
 				DDF0D4F11C96A5E9000D40E5 /* Picture */,
@@ -774,6 +781,24 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		DD67F582207B1481009B59F6 /* Advertising */ = {
+			isa = PBXGroup;
+			children = (
+				DD67F583207B14CD009B59F6 /* RSAdvertisingView.h */,
+				DD67F584207B14CD009B59F6 /* RSAdvertisingView.m */,
+				DD67F586207B426F009B59F6 /* RSAdvertisingPackaging.h */,
+				DD67F587207B426F009B59F6 /* RSAdvertisingPackaging.m */,
+			);
+			name = Advertising;
+			sourceTree = "<group>";
+		};
+		DD71D38B20873B6700CA91F2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		DDB285931D18E25400ED60FB /* uuid */ = {
 			isa = PBXGroup;
 			children = (
@@ -887,6 +912,7 @@
 		DDD0F7591C91503C00F81EBF /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DD67F582207B1481009B59F6 /* Advertising */,
 				DD8305201E67C69D00B11838 /* FDFullscreenPopGesture */,
 				DDCB7F7B1D88EBCA000B6C43 /* RCAnimatedImagesView */,
 				DDCB7F6B1D868827000B6C43 /* KxMenu */,
@@ -1247,6 +1273,7 @@
 				4A5D951C1CA65C41007F0660 /* GSHTTPTask.m in Sources */,
 				4A5D95211CA65C41007F0660 /* ORBaseHttpTask.m in Sources */,
 				4A5D952F1CA664AC007F0660 /* SCPictureViewModel.m in Sources */,
+				DD67F588207B426F009B59F6 /* RSAdvertisingPackaging.m in Sources */,
 				4A5D952A1CA65CAD007F0660 /* SecurityUtil.m in Sources */,
 				4A9512BE1C9054CD002658FB /* ViewController.m in Sources */,
 				DD4478B61CB7BABE002EDB63 /* GSImageCollectionViewController.m in Sources */,
@@ -1259,6 +1286,7 @@
 				DD4478B71CB7BABE002EDB63 /* GSImagePreviewCell.m in Sources */,
 				DDC075731C990802008DC9A3 /* ViewUtil.m in Sources */,
 				4A5D949A1CA63E1A007F0660 /* JastorRuntimeHelper.m in Sources */,
+				DD67F585207B14CD009B59F6 /* RSAdvertisingView.m in Sources */,
 				DDAB3B94205614A1001A1472 /* SCUserInfoViewController.m in Sources */,
 				DDCB7F781D869A47000B6C43 /* SCMessageLoginViewController.m in Sources */,
 				DDC8B2FE1CF305EF0082213C /* SCWorkListViewController.m in Sources */,

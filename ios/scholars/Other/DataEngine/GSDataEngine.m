@@ -12,6 +12,13 @@
 #import "GSUserSetting.h"
 #import "ORBaseHttpTask.h"
 #import "GSUrlDef.h"
+#import "AFHTTPSessionManager.h"
+
+
+@interface GSDataEngine ()
+@property (strong, nonatomic) AFHTTPSessionManager *sessionManager;
+@end
+
 @implementation GSDataEngine
 
 + (instancetype)shareEngine
@@ -30,7 +37,6 @@
     return _sharedEngine;
 }
 
-
 - (BOOL)isReachable
 {
     return [AFNetworkReachabilityManager sharedManager].networkReachabilityStatus != AFNetworkReachabilityStatusNotReachable;
@@ -42,7 +48,7 @@
 {
     
     
-    NSString *string = GSHttpServer;
+//    NSString *string = GSHttpServer;
     
     ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlOtherUserInfo
                                                       httpType:YDHttpTypePost

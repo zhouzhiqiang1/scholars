@@ -17,6 +17,7 @@
 #import "SCPictureTableViewController.h"
 #import "SCMessageLoginViewController.h"
 #import <UIViewController+MMDrawerController.h>
+#import "RSAdvertisingPackaging.h"
 
 @interface SCRootBarViewController ()<EAIntroDelegate>
 
@@ -95,6 +96,9 @@
     [viewControlles replaceObjectAtIndex:3 withObject:userCenterNavController];
     
     [self setViewControllers:viewControlles];
+    
+    // 设置启动页广告
+    [[RSAdvertisingPackaging advertising] setupAdvert];
 }
 
 - (void)viewWillAppear:(BOOL)animated

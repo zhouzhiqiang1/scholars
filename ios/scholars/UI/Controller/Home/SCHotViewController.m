@@ -17,6 +17,7 @@
 #import "ORIndicatorView.h"
 #import "SCHomePageViewModel.h"
 #import "GSDataEngine.h"
+#import "SCUserInfoViewController.h"
 
 @interface SCHotViewController ()<WMLoopViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -56,6 +57,18 @@
     
 
     NSLog(@"%@", self.age);
+
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushToAd) name:@"ZLPushToAdvert" object:nil];
+}
+
+// 进入广告链接页
+- (void)pushToAd {
+    
+    SCUserInfoViewController *userInfoVC = [[SCUserInfoViewController alloc] init];
+    userInfoVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:userInfoVC animated:YES];
+    
 }
 
 - (void)tableHead{
@@ -135,10 +148,9 @@
 - (void)loopViewDidSelectedImage:(WMLoopView *)loopView index:(int)index
 {
     GSImageCollectionViewController *imageVC = [GSImageCollectionViewController viewControllerWithDataSource:self.homePageViewModel.headUrlList];
+    imageVC.defaultPageIndex = index;
     imageVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:imageVC animated:YES];
-    imageVC.defaultPageIndex = index;
-
 }
 
 #pragma mark - Table view data source

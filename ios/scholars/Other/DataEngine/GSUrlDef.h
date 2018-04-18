@@ -11,13 +11,12 @@
 
 //pch 文件中修改地址
 #ifdef DEVSERVER
-#define GSHttpServer @"http://localhost:8080/"
-//#define GSHttpServer @"http://192.168.0.119:8080/"
+#define GSHttpServer @"http://172.16.0.182:8080/"
 #elif defined TESTSERVER
 #define GSHttpServer @"http://test.readyidu.com/"
 
 #else
-#define GSHttpServer @"https://api.readyidu.com/"
+#define GSHttpServer @"http://localhost:8080/"
 #endif
 
 
