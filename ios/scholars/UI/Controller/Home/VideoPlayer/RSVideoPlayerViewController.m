@@ -6,19 +6,18 @@
 //  Copyright © 2016年 r_zhous. All rights reserved.
 //
 
-#import "MoviePlayerViewController.h"
+#import "RSVideoPlayerViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "ZFPlayerView.h"
 #import <Masonry/Masonry.h>
 
-@interface MoviePlayerViewController ()
-
+@interface RSVideoPlayerViewController ()
 @property (weak, nonatomic) IBOutlet ZFPlayerView *playerView;
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
-@implementation MoviePlayerViewController
+@implementation RSVideoPlayerViewController
 
 -(void)dealloc
 {
@@ -46,6 +45,7 @@
     [super viewDidLoad];
     
     //if use Masonry,Please open this annotation
+    //代码创建
     /*
      self.playerView = [ZFPlayerView setupZFPlayer];
      [self.view addSubview:self.playerView];
@@ -54,14 +54,12 @@
         make.height.equalTo(self.playerView.mas_width).multipliedBy(9.0f/16.0f).with.priority(750);
      }];
     */
-    
+    //storyboard创建
     self.playerView.videoURL     = self.videoURL;
     __weak typeof(self) weakSelf = self;
     self.playerView.goBackBlock  = ^{
         [weakSelf.navigationController popViewControllerAnimated:YES];
     };
-    
-
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration

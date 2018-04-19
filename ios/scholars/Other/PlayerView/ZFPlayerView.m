@@ -113,6 +113,7 @@ static ZFPlayerView* playerView = nil;
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     self.backgroundColor                 = [UIColor blackColor];
     // 设置快进快退label
     self.horizontalLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Management_Mask"]];

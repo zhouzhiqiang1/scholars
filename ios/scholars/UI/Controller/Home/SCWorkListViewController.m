@@ -15,7 +15,7 @@
 #import "ORIndicatorView.h"
 #import "GSDataEngine.h"
 //转屏
-#import "MoviePlayerViewController.h"
+#import "RSVideoPlayerViewController.h"
 #import "AppDelegate.h"
 
 
@@ -58,7 +58,7 @@
     
     UINavigationController *nav = self.tabBarController.viewControllers[self.tabBarController.selectedIndex];
     // MoviePlayerViewController这个页面支持自动转屏
-    if ([nav.topViewController isKindOfClass:[MoviePlayerViewController class]]) {
+    if ([nav.topViewController isKindOfClass:[RSVideoPlayerViewController class]]) {
         return !ApplicationDelegate.isLockScreen;  // 调用AppDelegate单例记录播放状态是否锁屏
     }
     //    else if ([nav.topViewController isKindOfClass:[ZFTableViewController class]]) {
@@ -71,7 +71,7 @@
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations{
     
     UINavigationController *nav = self.tabBarController.viewControllers[self.tabBarController.selectedIndex];
-    if ([nav.topViewController isKindOfClass:[MoviePlayerViewController class]]) { // MoviePlayerViewController这个页面支持转屏方向
+    if ([nav.topViewController isKindOfClass:[RSVideoPlayerViewController class]]) { // MoviePlayerViewController这个页面支持转屏方向
         return UIInterfaceOrientationMaskAllButUpsideDown;
     }
     //    else if ([nav.topViewController isKindOfClass:[ZFTableViewController class]]) {
@@ -209,7 +209,7 @@
 {
     DDLogDebug(@"%ld",(long)indexPath.row);
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
-    MoviePlayerViewController *movie = [storyboard instantiateViewControllerWithIdentifier:@"MoviePlayerViewController"];
+    RSVideoPlayerViewController *movie = [storyboard instantiateViewControllerWithIdentifier:@"RSVideoPlayerViewController"];
     SCVideoDataInfo *videoDataInfo = [self.videoDataViewModel objectAtIndex:indexPath.row];
     NSURL *videoURL = [NSURL URLWithString:videoDataInfo.vediourl];
     movie.videoURL = videoURL;

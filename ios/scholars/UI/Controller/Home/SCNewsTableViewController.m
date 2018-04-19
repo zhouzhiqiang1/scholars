@@ -14,6 +14,7 @@
 #import "SCEncapsulation.h"
 #import "ORIndicatorView.h"
 #import "ORColorUtil.h"
+#import "ORCommonWebViewController.h"
 
 @interface SCNewsTableViewController ()<MGSwipeTableCellDelegate>
 @property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
@@ -113,7 +114,6 @@
     return self.newsTableViewModel.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSString *cell = @"SCNewsTableViewCell";
@@ -133,12 +133,22 @@
     return 70;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    SCNewsInfo *newsInfo = [self.newsTableViewModel objectAtIndex:indexPath.row];
+    ORCommonWebViewController *wedVC = [ORCommonWebViewController initWithUrl:newsInfo.shareurl showClose:YES];
+    wedVC.title = @"新闻";
+    wedVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:wedVC animated:YES];
+}
+
 #pragma mark -- MGSwipeTableCellDelegate
 -(BOOL) swipeTableCell:(MGSwipeTableCell*) cell tappedButtonAtIndex:(NSInteger) index direction:(MGSwipeDirection)direction fromExpansion:(BOOL) fromExpansion
 {
     DDLogDebug(@"Delegate: button tapped, %@ position, index %d, from Expansion: %@",
                direction == MGSwipeDirectionLeftToRight ? @"left" : @"right", (int)index, fromExpansion ? @"YES" : @"NO");
-    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+//    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     if (direction == MGSwipeDirectionRightToLeft && index == 0) {
         DDLogDebug(@"删除");
     }

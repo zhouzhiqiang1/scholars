@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MoviePlayerViewController : UIViewController
+@interface RSVideoPlayerViewController : UIViewController
 /** 视频URL */
 @property (nonatomic, strong) NSURL *videoURL;
 @end

@@ -24,14 +24,12 @@
 
 - (void)awakeFromNib {
     // Initialization code
-
+    [super awakeFromNib];
     self.image.layer.cornerRadius = self.image.frame.size.height/2;
     self.image.layer.masksToBounds = YES;
     
     self.sexImageView.layer.cornerRadius = self.sexImageView.frame.size.height/2;
     self.sexImageView.layer.masksToBounds = YES;
-
-
 }
 
 - (void)bindWithData:(id)aData
