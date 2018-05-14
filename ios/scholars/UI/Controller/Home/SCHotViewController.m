@@ -18,8 +18,15 @@
 #import "SCHomePageViewModel.h"
 #import "GSDataEngine.h"
 #import "SCUserInfoViewController.h"
+//Floating
+#import "YDRecommendView.h"
+#import "YDRobotFloatingView.h"
+#import "GSUserSetting.h"
 
-@interface SCHotViewController ()<WMLoopViewDelegate>
+@interface SCHotViewController ()<WMLoopViewDelegate,YDRecommendViewDelegate,YDRobotFloatingViewDelegate>
+@property (strong, nonatomic) YDRecommendView *recommendView;
+@property (strong, nonatomic) YDRobotFloatingView *robotView;
+
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, copy) NSNumber *age;
 //@property (strong, nonatomic) NSArray *images;
@@ -53,8 +60,6 @@
     self.tableView.mj_header = header;
     [self startRefresh];
 
-    
-    
 
     NSLog(@"%@", self.age);
 
@@ -64,11 +69,9 @@
 
 // 进入广告链接页
 - (void)pushToAd {
-    
     SCUserInfoViewController *userInfoVC = [[SCUserInfoViewController alloc] init];
     userInfoVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:userInfoVC animated:YES];
-    
 }
 
 - (void)tableHead{
@@ -152,6 +155,96 @@
     imageVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:imageVC animated:YES];
 }
+
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+ 
+//    dispatch_time_t timer = dispatch_time(DISPATCH_TIME_NOW, 2.0 * NSEC_PER_SEC);
+//    dispatch_after(timer, dispatch_get_main_queue(), ^(void){
+//        //Floating
+        [self configRobotButton];
+//    });
+   
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    if (self.robotView) {
+        NSLog(@"记录位子");
+        //记录位子
+        [GSUserSetting setPoint:self.robotView.frame.origin forKey:ORSettingsRobotPosition];
+        [GSUserSetting synchronize];
+        
+        [self.robotView removeFromSuperview];
+        self.robotView = nil;
+    }
+}
+
+- (void)configRobotButton
+{
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [window addSubview:self.robotView];
+    
+    //拿到记录的位子
+    CGPoint lastPosition = [GSUserSetting pointOfKey:ORSettingsRobotPosition];
+    if (CGPointEqualToPoint(lastPosition, CGPointZero)) {
+        self.robotView.frame = CGRectMake( window.bounds.size.width - 48 - 10,window.bounds.size.height - 54 - 48, 48, 48);
+    } else {
+        self.robotView.frame = CGRectMake(lastPosition.x, lastPosition.y, 48, 48);
+    }
+}
+
+
+#pragma mark - Robot
+- (YDRobotFloatingView *)robotView
+{
+    if (!_robotView) {
+        _robotView = [[YDRobotFloatingView alloc] initWithFrame:CGRectMake(0, 0, 48, 48)];
+        _robotView.image = [UIImage imageNamed:@"btn_chat_robot"];
+        _robotView.delegate = self;
+        _robotView.userInteractionEnabled = YES;
+    }
+    return _robotView;
+}
+
+#pragma mark - YDRobotFloatingViewDelegate
+- (void)didTapOnFloatingView:(YDRobotFloatingView *)aFloatingView
+{
+    [self showRecommendViewFromView:self.robotView];
+}
+
+- (void)showRecommendViewFromView:(UIView *)aView
+{
+    //    [self setChatSessionInputBarStatus:KBottomBarDefaultStatus animated:YES];
+    YDRecommendView *recommendView = [YDRecommendView recommendViewWithDelegate:self];
+    self.recommendView = recommendView;
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    [recommendView showFromView:aView targetView:window];
+}
+
+#pragma mark - YDRecommendViewDelegate
+- (void)recommendView:(YDRecommendView *)aView onChatButtonAction:(id)aChatButton
+{
+    
+}
+
+- (void)recommendView:(YDRecommendView *)aView didSelectItem:(NSString *)aData
+{
+    //    [self sendMessage:[RCTextMessage messageWithContent:aData] pushContent:aData];
+    NSLog(@"%@",aData);
+}
+
+- (void)didHideRecommendView:(YDRecommendView *)aView
+{
+    self.recommendView = nil;
+}
+
+
+
 
 #pragma mark - Table view data source
 

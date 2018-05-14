@@ -7,14 +7,21 @@
 //
 
 #import "RSVideoPlayerViewController.h"
-#import <AVFoundation/AVFoundation.h>
-#import <MediaPlayer/MediaPlayer.h>
 #import "ZFPlayerView.h"
-#import <Masonry/Masonry.h>
+#import "RSDataSource.h"
+#import <MJRefresh.h>
+#import "SCWorkListViewModel.h"
+#import "SCEncapsulation.h"
+#import "ORIndicatorView.h"
+#import "GSDataDef.h"
 
 @interface RSVideoPlayerViewController ()
 @property (weak, nonatomic) IBOutlet ZFPlayerView *playerView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet RSDataSource *dataSource;
+
+@property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
+@property (strong, nonatomic) SCWorkListViewModel *videoDataViewModel;
 @end
 
 @implementation RSVideoPlayerViewController
@@ -41,8 +48,34 @@
     self.navigationController.navigationBarHidden = NO;
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    //跳转多个页面关闭视频
+    [self.playerView resetPlayer];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //设置回调
+    MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
+    
+    self.refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(startLoadMore)];
+    //    [header beginRefreshing];
+    // 隐藏时间
+    header.lastUpdatedTimeLabel.hidden = YES;
+    // 隐藏状态
+    header.stateLabel.hidden = YES;
+    // 设置普通状态的动画图片
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStateIdle];
+    // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStatePulling];
+    // 设置正在刷新状态的动画图片
+    [header setImages:[SCEncapsulation nsarry] forState:MJRefreshStateRefreshing];
+    // 设置header
+    self.tableView.mj_header = header;
+    [self startRefresh];
     
     //if use Masonry,Please open this annotation
     //代码创建
@@ -58,8 +91,81 @@
     self.playerView.videoURL     = self.videoURL;
     __weak typeof(self) weakSelf = self;
     self.playerView.goBackBlock  = ^{
-        [weakSelf.navigationController popViewControllerAnimated:YES];
+        if (weakSelf.navigationController.viewControllers.count > 2) {
+            //跳转多个页面 直接返回视频列表页
+            self.tabBarController.selectedIndex = 0;
+            [self.navigationController popToRootViewControllerAnimated:YES];
+        } else {
+            [weakSelf.navigationController popViewControllerAnimated:YES];
+        }
     };
+    
+    //UITableView
+    _dataSource.cellIdentifier = @"RSVideoPlayerTableViewCell";
+}
+
+#pragma mark - Model
+-(void)commonInit
+{
+    [super commonInit];
+    [self loadModel];
+}
+
+- (void)loadModel
+{
+    [self unloadModel];
+    self.videoDataViewModel = [[SCWorkListViewModel alloc] init];
+    
+    [self.videoDataViewModel addObserver:self forKeyPath:kKeyPathDataSource options:NSKeyValueObservingOptionNew context:nil];
+    [self.videoDataViewModel addObserver:self forKeyPath:kKeyPathDataFetchResult options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)unloadModel
+{
+    @try {
+        [self.videoDataViewModel removeObserver:self forKeyPath:kKeyPathDataSource];
+        [self.videoDataViewModel removeObserver:self forKeyPath:kKeyPathDataFetchResult];
+        [self setVideoDataViewModel:nil];
+    }
+    @catch (NSException *exception) {
+    }
+}
+
+-(void)startRefresh
+{
+    NSLog(@"下拉刷新");
+    [ORIndicatorView showLoadingInView:self.view];
+    [self.videoDataViewModel fetchList];
+}
+
+- (void)startLoadMore
+{
+    NSLog(@"上拉刷新");
+    [ORIndicatorView showLoadingInView:self.view];
+    [self.videoDataViewModel fetchMore];
+}
+
+- (void)stopLoadingWithSuccess:(BOOL)aSuccess
+{
+    [super stopLoadingWithSuccess:aSuccess];
+    [ORIndicatorView hideAllInView:self.view];
+    self.tableView.mj_footer = [self.videoDataViewModel hasMore]?self.refreshFooter:nil;
+    [self.tableView.mj_header endRefreshing];
+    [self.tableView.mj_footer endRefreshing];
+}
+
+#pragma mark - RSTableDelegate 实现
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    SCVideoDataInfo *videoDataInfo =  [self.dataSource modelsAtIndexPath:indexPath];
+    RSVideoPlayerViewController *movie = [self.storyboard instantiateViewControllerWithIdentifier:@"RSVideoPlayerViewController"];
+    NSURL *videoURL = [NSURL URLWithString:videoDataInfo.vediourl];
+    movie.videoURL = videoURL;
+    [self.navigationController pushViewController:movie animated:YES];
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
@@ -76,14 +182,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (self.isViewLoaded == NO)
+    {
+        return;
+    }
+    
+    if ([keyPath isEqualToString:kKeyPathDataSource]) {
+        [_dataSource addModels:self.videoDataViewModel];
+        [self.tableView reloadData];
+    } else if ([keyPath isEqualToString:kKeyPathDataFetchResult]) {
+        [self stopLoadingWithSuccess:YES];
+        
+    }
 }
-*/
 
 @end

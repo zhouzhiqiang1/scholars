@@ -8,6 +8,7 @@ target 'scholars' do
 	pod 'CocoaLumberjack' # DDLog
 
 	# UI
+    pod 'pop', '~> 1.0'
 	pod 'Masonry'        #  代码约束
 	pod 'WMPageController' # 类似网易新闻首页效果的实现(OC) 
 	pod 'EAIntroView' # 启动时页

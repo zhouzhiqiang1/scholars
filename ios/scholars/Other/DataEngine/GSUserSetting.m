@@ -156,7 +156,41 @@
     return dictionary;
 }
 
++ (NSValue *)valueOfKey:(NSString *)aKey
+{
+    if (aKey.length <= 0) {
+        return nil;
+    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSValue *value = [defaults objectForKey:aKey];
+    return value;
+}
 
++ (void)setValue:(NSValue *)aValue forKey:(NSString *)aKey
+{
+    if (aKey.length <= 0) {
+        return;
+    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:aValue forKey:aKey];
+}
+
++ (CGPoint)pointOfKey:(NSString *)aKey
+{
+    if (aKey.length <= 0) {
+        return CGPointZero;
+    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    CGPoint thePoint = CGPointFromString([defaults objectForKey:aKey]);
+    return thePoint;
+}
+
++ (void)setPoint:(CGPoint)aPoint forKey:(NSString *)aKey
+{
+    NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
+    // Set
+    [userDefaults setObject:NSStringFromCGPoint(aPoint) forKey:aKey];
+}
 
 + (void)removeObjectForKey:(NSString *)aKey;
 {

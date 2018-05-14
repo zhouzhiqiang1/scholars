@@ -20,7 +20,7 @@
 #import "RSAdvertisingPackaging.h"
 
 @interface SCRootBarViewController ()<EAIntroDelegate>
-
+@property (strong, nonatomic) NSMutableArray *viewControlles;
 @end
 
 @implementation SCRootBarViewController
@@ -63,7 +63,6 @@
     
     if (isFirstLaunch) {
         [self showIntroduceView];
-        
         [GSUserSetting setBool:YES forKey:ORSettingsBoolEverLaunched];
         [GSUserSetting synchronize];
     }
@@ -74,28 +73,34 @@
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tabBar.frame.size.width, 0.5f)];
     [self.tabBar addSubview:lineView];
     
-    NSMutableArray *viewControlles = [NSMutableArray arrayWithArray:self.viewControllers];
+    self.viewControlles = [NSMutableArray arrayWithArray:self.viewControllers];
     
     UIStoryboard *homeStoryboard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
     UINavigationController *homeNavController = [homeStoryboard instantiateInitialViewController];
-    [viewControlles replaceObjectAtIndex:0 withObject:homeNavController];
+    [self.viewControlles replaceObjectAtIndex:0 withObject:homeNavController];
     
     UIStoryboard *pictureStoryboard = [UIStoryboard storyboardWithName:@"Picture" bundle:nil];
     UINavigationController *pictureNavController = [pictureStoryboard instantiateInitialViewController];
-    [viewControlles replaceObjectAtIndex:1 withObject:pictureNavController];
+    [self.viewControlles replaceObjectAtIndex:1 withObject:pictureNavController];
     
     
     UIStoryboard *messageStoryboard = [UIStoryboard storyboardWithName:@"Message" bundle:nil];
     UINavigationController *messageNavController = [messageStoryboard instantiateInitialViewController];
-    [viewControlles replaceObjectAtIndex:2 withObject:messageNavController];
+    [self.viewControlles replaceObjectAtIndex:2 withObject:messageNavController];
 
     
     UIStoryboard *userCenterStoryboard = [UIStoryboard storyboardWithName:@"UserCenter" bundle:nil];
     UINavigationController *userCenterNavController = [userCenterStoryboard instantiateInitialViewController];
     
-    [viewControlles replaceObjectAtIndex:3 withObject:userCenterNavController];
+    [self.viewControlles replaceObjectAtIndex:3 withObject:userCenterNavController];
     
-    [self setViewControllers:viewControlles];
+//    dispatch_time_t timer = dispatch_time(DISPATCH_TIME_NOW, 3.0 * NSEC_PER_SEC);
+//    dispatch_after(timer, dispatch_get_main_queue(), ^(void){
+//        //Floating
+////        [self configRobotButton];
+        [self setViewControllers:self.viewControlles];
+//    });
+    
     
     // 设置启动页广告
     [[RSAdvertisingPackaging advertising] setupAdvert];
@@ -147,6 +152,10 @@
 }
 
 #pragma mark - EAIntroViewDelegate
+- (void)introDidFinish:(EAIntroView *)introView
+{
+    [self setViewControllers:self.viewControlles];
+}
 
 - (void)intro:(EAIntroView *)introView pageAppeared:(EAIntroPage *)page withIndex:(NSInteger)pageIndex
 {
@@ -160,7 +169,8 @@
 
 - (void)intro:(EAIntroView *)introView pageEndScrolling:(EAIntroPage *)page withIndex:(NSInteger)pageIndex
 {
-    
+    NSLog(@"%@ %@  %ld",introView,page,pageIndex);
+    [self setViewControllers:self.viewControlles];
 }
 
 #pragma mark - TabbarDelegate

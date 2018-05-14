@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ORBaseViewController.h"
 
-@interface RSVideoPlayerViewController : UIViewController
+@interface RSVideoPlayerViewController : ORBaseViewController
 /** 视频URL */
 @property (nonatomic, strong) NSURL *videoURL;
 @end

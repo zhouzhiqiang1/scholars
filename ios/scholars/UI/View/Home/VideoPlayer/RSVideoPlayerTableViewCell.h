@@ -10,5 +10,18 @@
 #import "BaseTableViewCell.h"
 
 @interface RSVideoPlayerTableViewCell : BaseTableViewCell
+/**
+ * 图片
+ */
+@property (weak, nonatomic) IBOutlet UIImageView *imageV;
 
+/**
+ * 内容
+ */
+@property (weak, nonatomic) IBOutlet UILabel *contentL;
+
+/**
+ * 持续时间
+ */
+@property (weak, nonatomic) IBOutlet UILabel *durationL;
 @end

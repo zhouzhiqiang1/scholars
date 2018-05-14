@@ -17,6 +17,9 @@
 #import "GSDataEngine.h"
 #import "SCUserInfoViewController.h"
 
+//例子
+#import "ZZQFloatingViewController.h"
+
 @interface SCUserCenterViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *dataSource;
@@ -316,7 +319,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if (section == 2) {
         if (row == 0) {
-           
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ZZQFloatingViewController" bundle:nil];
+            ZZQFloatingViewController *floatingVC = [storyboard instantiateViewControllerWithIdentifier:@"ZZQFloatingViewController"];
+            [self.navigationController pushViewController:floatingVC animated:YES];
         } else if (row == 1) {
           
         }

@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-
+/**
+ *  聊天按钮悬浮窗口位置
+ */
+static NSString * const ORSettingsRobotPosition = @"ORSettingsRobotPosition";
 
 static NSString * const ORSettingsStrDeviceId = @"ORSettingsStrDeviceID";   // urs id
 static NSString * const ORSettingsStrUserCipher = @"ORSettingsStrUserCipher";  // LDSettingsStrUrsAESKey加密过的token
 static NSString * const ORSettingsBoolEverLaunched = @"ORSettingsBoolEverLaunched";    // 以前是否启动过，即“是否非首次登录”
+
+static NSString * const ORSettingsBoolisFloating = @"ORSettingsBoolFloating";    // 悬浮按钮是否延迟显示
 
 /** 融云token */
 static NSString * const ORSettingsStrRYToken = @"ORSettingsStrRYToken";
@@ -45,6 +50,14 @@ static NSString * const ORSettingsStrRYToken = @"ORSettingsStrRYToken";
 + (void)setData:(NSData *)aData forKey:(NSString *)aKey;
 
 + (NSDictionary *)dictionaryFromPListFile:(NSString *)aPListFile;
+
+
++ (NSValue *)valueOfKey:(NSString *)aKey;
++ (void)setValue:(NSValue *)aValue forKey:(NSString *)aKey;
+
++ (CGPoint)pointOfKey:(NSString *)aKey;
++ (void)setPoint:(CGPoint)aPoint forKey:(NSString *)aKey;
+
 
 
 + (void)removeObjectForKey:(NSString *)aKey;
