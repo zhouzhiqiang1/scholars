@@ -32,6 +32,9 @@
 //@property (strong, nonatomic) NSArray *images;
 //@property (strong, nonatomic) MJRefreshAutoNormalFooter *refreshFooter;
 @property (strong ,nonatomic) SCHomePageViewModel *homePageViewModel;
+
+
+@property (assign, nonatomic) BOOL isRemoveAdvertView;
 @end
 
 @implementation SCHotViewController
@@ -63,8 +66,9 @@
 
     NSLog(@"%@", self.age);
 
-
+    //ZLRemoveAdvertView
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushToAd) name:@"ZLPushToAdvert" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeAdvertView) name:@"ZLRemoveAdvertView" object:nil];
 }
 
 // 进入广告链接页
@@ -72,6 +76,13 @@
     SCUserInfoViewController *userInfoVC = [[SCUserInfoViewController alloc] init];
     userInfoVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:userInfoVC animated:YES];
+}
+
+- (void)removeAdvertView
+{
+     [self configRobotButton];
+    self.isRemoveAdvertView = YES;
+    NSLog(@"悬浮按钮");
 }
 
 - (void)tableHead{
@@ -160,13 +171,11 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
- 
-//    dispatch_time_t timer = dispatch_time(DISPATCH_TIME_NOW, 2.0 * NSEC_PER_SEC);
-//    dispatch_after(timer, dispatch_get_main_queue(), ^(void){
-//        //Floating
-        [self configRobotButton];
-//    });
-   
+    
+    if (self.isRemoveAdvertView) {
+        NSLog(@"悬浮按钮");
+         [self configRobotButton];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated

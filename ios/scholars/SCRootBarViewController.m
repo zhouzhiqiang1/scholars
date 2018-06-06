@@ -93,18 +93,14 @@
     UINavigationController *userCenterNavController = [userCenterStoryboard instantiateInitialViewController];
     
     [self.viewControlles replaceObjectAtIndex:3 withObject:userCenterNavController];
-    
-//    dispatch_time_t timer = dispatch_time(DISPATCH_TIME_NOW, 3.0 * NSEC_PER_SEC);
-//    dispatch_after(timer, dispatch_get_main_queue(), ^(void){
-//        //Floating
-////        [self configRobotButton];
-        [self setViewControllers:self.viewControlles];
-//    });
-    
-    
+
+    [self setViewControllers:self.viewControlles];
+
     // 设置启动页广告
     [[RSAdvertisingPackaging advertising] setupAdvert];
+
 }
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -154,7 +150,8 @@
 #pragma mark - EAIntroViewDelegate
 - (void)introDidFinish:(EAIntroView *)introView
 {
-    [self setViewControllers:self.viewControlles];
+    NSLog(@"悬浮按钮");
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ZLRemoveAdvertView" object:nil userInfo:nil];
 }
 
 - (void)intro:(EAIntroView *)introView pageAppeared:(EAIntroPage *)page withIndex:(NSInteger)pageIndex

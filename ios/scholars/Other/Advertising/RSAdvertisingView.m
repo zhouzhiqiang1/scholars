@@ -135,6 +135,7 @@ static int const showtime = 3;
 // 移除广告页面
 - (void)removeAdvertView {
     
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ZLRemoveAdvertView" object:nil userInfo:nil];
     // 停掉定时器
     [self.countTimer invalidate];
     self.countTimer = nil;
