@@ -32,7 +32,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"个人中心";
-    
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }
+
     
     self.dataSource = @[
                         @[
@@ -69,7 +72,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
 //- (void)viewDidAppear:(BOOL)animated
