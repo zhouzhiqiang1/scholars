@@ -1146,7 +1146,7 @@
 				TargetAttributes = {
 					4A9512B21C9054CD002658FB = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = Q958UC3434;
+						DevelopmentTeam = 2XM26QAEXT;
 					};
 					4A9512CB1C9054CD002658FB = {
 						CreatedOnToolsVersion = 7.2;
@@ -1529,7 +1529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = Q958UC3434;
+				DEVELOPMENT_TEAM = 2XM26QAEXT;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/scholars/scholars.pch";
 				INFOPLIST_FILE = scholars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1545,7 +1545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = Q958UC3434;
+				DEVELOPMENT_TEAM = 2XM26QAEXT;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/scholars/scholars.pch";
 				INFOPLIST_FILE = scholars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

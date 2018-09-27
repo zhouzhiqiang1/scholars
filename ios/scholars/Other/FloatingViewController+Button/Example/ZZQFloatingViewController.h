@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ORBaseViewController.h"
 
-@interface ZZQFloatingViewController : UIViewController
+@interface ZZQFloatingViewController : ORBaseViewController
 
 @end

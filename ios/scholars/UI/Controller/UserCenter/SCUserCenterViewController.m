@@ -324,6 +324,7 @@
         if (row == 0) {
             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ZZQFloatingViewController" bundle:nil];
             ZZQFloatingViewController *floatingVC = [storyboard instantiateViewControllerWithIdentifier:@"ZZQFloatingViewController"];
+            floatingVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:floatingVC animated:YES];
         } else if (row == 1) {
           

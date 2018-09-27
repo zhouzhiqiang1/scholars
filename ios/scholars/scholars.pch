@@ -27,7 +27,7 @@
 /**
  *  开发环境
  */
-//#define DEVSERVER
+#define DEVSERVER
 
 
 #ifdef DEBUG
