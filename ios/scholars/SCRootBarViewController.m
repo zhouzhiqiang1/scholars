@@ -58,6 +58,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
+    //iOS 12.1 tabbar从二级页面返回跳动问题的解决方法
+    [[UITabBar appearance] setTranslucent:NO];
+    
     //第一次登陆
     BOOL isFirstLaunch = ![GSUserSetting boolOfKey:ORSettingsBoolEverLaunched];
     

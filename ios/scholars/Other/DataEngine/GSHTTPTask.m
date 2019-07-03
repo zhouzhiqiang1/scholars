@@ -56,15 +56,6 @@
 - (void)setReadFromCache:(BOOL)readFromCache
 {
     _readFromCache = readFromCache;
-    
-    if ([self.operation isKindOfClass:[AFHTTPRequestOperation class]])
-    {
-        NSURLRequest *request = [(AFHTTPRequestOperation *)self.operation request];
-        if ([request isKindOfClass:[NSMutableURLRequest class]])
-        {
-            [(NSMutableURLRequest *)request setValue:[NSString stringWithFormat:@"%d",readFromCache] forHTTPHeaderField:kURLRequestHeaderIdReadFromCache];
-        }
-    }
 }
 @end
 

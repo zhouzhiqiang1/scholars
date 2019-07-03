@@ -1,24 +1,18 @@
 PODS:
-  - AFNetworking (2.5.4):
-    - AFNetworking/NSURLConnection (= 2.5.4)
-    - AFNetworking/NSURLSession (= 2.5.4)
-    - AFNetworking/Reachability (= 2.5.4)
-    - AFNetworking/Security (= 2.5.4)
-    - AFNetworking/Serialization (= 2.5.4)
-    - AFNetworking/UIKit (= 2.5.4)
-  - AFNetworking/NSURLConnection (2.5.4):
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.4):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.4)
-  - AFNetworking/Security (2.5.4)
-  - AFNetworking/Serialization (2.5.4)
-  - AFNetworking/UIKit (2.5.4):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - CocoaLumberjack (2.2.0):
     - CocoaLumberjack/Default (= 2.2.0)
@@ -72,7 +66,7 @@ PODS:
   - XXNibBridge (2.3.1)
 
 DEPENDENCIES:
-  - AFNetworking
+  - AFNetworking (~> 3.1.0)
   - CocoaLumberjack
   - CocoaSecurity
   - EAIntroView
@@ -96,12 +90,32 @@ DEPENDENCIES:
   - WMPageController
   - XXNibBridge
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - CocoaLumberjack
+    - CocoaSecurity
+    - EAIntroView
+    - iAppInfos
+    - JPFPSStatus
+    - JSONModel
+    - Masonry
+    - MBProgressHUD
+    - MGSwipeTableCell
+    - MJRefresh
+    - MMDrawerController
+    - pop
+    - RongCloudIMKit
+    - SDWebImage
+    - WMPageController
+    - XXNibBridge
+
 EXTERNAL SOURCES:
   React:
-    :path: ../node_modules/react-native
+    :path: "../node_modules/react-native"
 
 SPEC CHECKSUMS:
-  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
   EAIntroView: df7dc18da73e1831d06878b9c0e13da78e6bb3ce
@@ -120,6 +134,6 @@ SPEC CHECKSUMS:
   WMPageController: 3b6d2aa2ddcd53f2cbc2319f2473f27b4ea4fe89
   XXNibBridge: addb780e6db076eb2c61716aa60b176a6799b80f
 
-PODFILE CHECKSUM: db2a97d4a308867861e12af6fa25867ad2bdc328
+PODFILE CHECKSUM: 0579fd9768fa3cf04e7625bb17364a00d5c85752
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.6.1

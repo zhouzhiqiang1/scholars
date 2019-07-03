@@ -2,7 +2,7 @@ platform :ios, ‘8.0’
 
 target 'scholars' do
 	# Data
-	pod 'AFNetworking'
+	pod 'AFNetworking','~> 3.1.0'
 	pod 'iAppInfos', '~> 0.0.6'
 	pod 'JSONModel' # JSONModel 解析
 	pod 'CocoaLumberjack' # DDLog

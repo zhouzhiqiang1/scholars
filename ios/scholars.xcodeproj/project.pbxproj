@@ -18,6 +18,7 @@
 		4A9512DC1C9054CD002658FB /* scholarsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512DB1C9054CD002658FB /* scholarsUITests.m */; };
 		4A9512EB1C90591D002658FB /* SCRootNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512EA1C90591D002658FB /* SCRootNavigationViewController.m */; };
 		4A9512EE1C905969002658FB /* SCRootBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9512ED1C905969002658FB /* SCRootBarViewController.m */; };
+		DD2791E422CCA58F007B2EE8 /* YXHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2791E322CCA58E007B2EE8 /* YXHttpClient.m */; };
 		DD7E89EE20A29684003B2BFD /* YDRecommendView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7E89E620A29681003B2BFD /* YDRecommendView.xib */; };
 		DD7E89EF20A29684003B2BFD /* YDRecommendItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7E89E720A29681003B2BFD /* YDRecommendItemCell.xib */; };
 		DD7E89F120A29684003B2BFD /* YDRecommendItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7E89EB20A29683003B2BFD /* YDRecommendItemCell.m */; };
@@ -174,6 +175,8 @@
 		6F7C4CD312A58630DABD40E0 /* libPods-scholars.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scholars.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD2DF68E69D7C80F5360C5F /* Pods-scholars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scholars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scholars/Pods-scholars.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E73FA1E4C07CB4C0229CC1 /* Pods-scholars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scholars.release.xcconfig"; path = "Pods/Target Support Files/Pods-scholars/Pods-scholars.release.xcconfig"; sourceTree = "<group>"; };
+		DD2791E222CCA58C007B2EE8 /* YXHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHttpClient.h; sourceTree = "<group>"; };
+		DD2791E322CCA58E007B2EE8 /* YXHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHttpClient.m; sourceTree = "<group>"; };
 		DD7E89E620A29681003B2BFD /* YDRecommendView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDRecommendView.xib; sourceTree = "<group>"; };
 		DD7E89E720A29681003B2BFD /* YDRecommendItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDRecommendItemCell.xib; sourceTree = "<group>"; };
 		DD7E89EA20A29683003B2BFD /* YDRecommendItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRecommendItemCell.h; sourceTree = "<group>"; };
@@ -497,6 +500,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DD2791E122CCA582007B2EE8 /* YXHttpEncapsulation */ = {
+			isa = PBXGroup;
+			children = (
+				DD2791E222CCA58C007B2EE8 /* YXHttpClient.h */,
+				DD2791E322CCA58E007B2EE8 /* YXHttpClient.m */,
+			);
+			path = YXHttpEncapsulation;
+			sourceTree = "<group>";
+		};
 		DD7E89E520A29665003B2BFD /* FloatingViewController+Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -808,6 +820,7 @@
 		DDB6DCEA208888BC0043C146 /* DataEngine */ = {
 			isa = PBXGroup;
 			children = (
+				DD2791E122CCA582007B2EE8 /* YXHttpEncapsulation */,
 				DDB6DCEB208888BC0043C146 /* AppUtil.h */,
 				DDB6DCEC208888BC0043C146 /* AppUtil.m */,
 				DDB6DCED208888BC0043C146 /* DataUtil.h */,
@@ -1087,7 +1100,6 @@
 				4A9512AF1C9054CD002658FB /* Sources */,
 				4A9512B01C9054CD002658FB /* Frameworks */,
 				4A9512B11C9054CD002658FB /* Resources */,
-				EFDB13F027D17211AF03185A /* [CP] Embed Pods Frameworks */,
 				D6090C47307983D626E6E642 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1146,7 +1158,7 @@
 				TargetAttributes = {
 					4A9512B21C9054CD002658FB = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 2XM26QAEXT;
+						DevelopmentTeam = 4Z4KR73ZHH;
 					};
 					4A9512CB1C9054CD002658FB = {
 						CreatedOnToolsVersion = 7.2;
@@ -1163,6 +1175,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -1237,7 +1250,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-scholars/Pods-scholars-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-scholars/Pods-scholars-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/RongCloudIMKit/Rong_Cloud_iOS_IMKit_SDK_v2_6_5_stable/RongCloud.bundle",
 				"${PODS_ROOT}/RongCloudIMKit/Rong_Cloud_iOS_IMKit_SDK_v2_6_5_stable/en.lproj",
@@ -1247,11 +1260,16 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Emoji.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scholars/Pods-scholars-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scholars/Pods-scholars-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EBBB323ADDBF939B556ACAA2 /* [CP] Check Pods Manifest.lock */ = {
@@ -1272,21 +1290,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EFDB13F027D17211AF03185A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scholars/Pods-scholars-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1299,6 +1302,7 @@
 				DDB6DD76208888BD0043C146 /* GSDataDef.m in Sources */,
 				DDB6DD9B208888BD0043C146 /* ZFPlayerView.m in Sources */,
 				DDB6DD75208888BD0043C146 /* DataUtil.m in Sources */,
+				DD2791E422CCA58F007B2EE8 /* YXHttpClient.m in Sources */,
 				DDB6DCDB208875E70043C146 /* YDUserCenterTableViewCell.m in Sources */,
 				DDB6DDB1208888BD0043C146 /* UIDevice+IdentifierAddition.m in Sources */,
 				DDB6DD8D208888BD0043C146 /* JastorRuntimeHelper.m in Sources */,
@@ -1529,7 +1533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2XM26QAEXT;
+				DEVELOPMENT_TEAM = 4Z4KR73ZHH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/scholars/scholars.pch";
 				INFOPLIST_FILE = scholars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1545,7 +1549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2XM26QAEXT;
+				DEVELOPMENT_TEAM = 4Z4KR73ZHH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/scholars/scholars.pch";
 				INFOPLIST_FILE = scholars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

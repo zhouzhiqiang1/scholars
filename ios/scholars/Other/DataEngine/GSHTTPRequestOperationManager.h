@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 oread. All rights reserved.
 //
 
-#import "AFHTTPRequestOperationManager.h"
-
-@interface GSHTTPRequestOperationManager : AFHTTPRequestOperationManager
-
-@end
+//#import "AFHTTPRequestOperationManager.h"
+//
+//@interface GSHTTPRequestOperationManager : AFHTTPRequestOperationManager
+//
+//@end

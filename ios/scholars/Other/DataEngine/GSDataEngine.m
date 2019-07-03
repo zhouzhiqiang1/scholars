@@ -53,8 +53,8 @@
     ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlOtherUserInfo
                                                       httpType:YDHttpTypePost
                                                         params:nil];
-    task.useFakeData = YES;
-    task.fakeJsonName = @"SimpleData";
+//    task.useFakeData = YES;
+//    task.fakeJsonName = @"SimpleData";
     [task setResponseBlock:aResponseBlock];
     [task run];
     return task;
@@ -89,6 +89,8 @@
     ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlGetNews
                                                       httpType:YDHttpTypePost
                                                         params:nil];
+//    task.useFakeData = YES;
+//    task.fakeJsonName = @"News";
     [task setResponseBlock:aResponseBlock];
     [task run];
     return task;
@@ -99,6 +101,8 @@
     ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlGetVideo
                                                       httpType:YDHttpTypePost
                                                         params:nil];
+//    task.useFakeData = YES;
+//    task.fakeJsonName = @"Video";
     [task setResponseBlock:aResponseBlock];
     [task run];
     return task;
@@ -110,6 +114,8 @@
     ORBaseHttpTask *task = [[ORBaseHttpTask alloc] initWithUrl:GSUrlGetFunPhoto
                                                       httpType:YDHttpTypePost
                                                         params:nil];
+//    task.useFakeData = YES;
+//    task.fakeJsonName = @"Photo";
     [task setResponseBlock:aResponseBlock];
     [task run];
     return task;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '78D29FDDA61F65D7244C402E10584DB5'
-               BlueprintName = 'MMDrawerController'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMMDrawerController.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C6F704B6D8F7F8128698C44B0C61EB93"
+               BuildableName = "libMMDrawerController.a"
+               BlueprintName = "MMDrawerController"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

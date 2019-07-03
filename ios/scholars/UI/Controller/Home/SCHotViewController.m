@@ -128,7 +128,7 @@
 -(void)startRefresh
 {
     NSLog(@"下拉刷新");
-    [ORIndicatorView showLoading];
+//    [ORIndicatorView showLoading];
     [self.homePageViewModel fetchList];
 }
 
@@ -142,22 +142,12 @@
 - (void)stopLoadingWithSuccess:(BOOL)aSuccess
 {
     [super stopLoadingWithSuccess:aSuccess];
-    [ORIndicatorView hideLoading];
+//    [ORIndicatorView hideLoading];
 //    self.tableView.mj_footer = [self.newsTableViewModel hasMore]?self.refreshFooter:nil;
     [self.tableView.mj_header endRefreshing];
 //    [self.tableView.mj_footer endRefreshing];
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 #pragma mark -- (WMLoopViewDelegate)
 - (void)loopViewDidSelectedImage:(WMLoopView *)loopView index:(int)index
 {

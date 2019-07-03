@@ -49,7 +49,8 @@
                         @[
                             @{@"icon":@"icon_usercenter_mycomment", @"title":@"我的评价"},
                             @{@"icon":@"icon_usercenter_mynotification", @"title":@"我的通知"},
-                            @{@"icon":@"icon_usercenter_myqrcode", @"title":@"我的二维码"}]
+                            @{@"icon":@"icon_usercenter_myqrcode", @"title":@"我的二维码"},
+                            @{@"icon":@"", @"title":@"退出登录"}]
                         ];
     
     MJRefreshNormalHeader *nearbyHeader = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(startRefresh)];
@@ -282,6 +283,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSInteger section = indexPath.section;
     NSInteger row = indexPath.row;
     if (section == 0) {

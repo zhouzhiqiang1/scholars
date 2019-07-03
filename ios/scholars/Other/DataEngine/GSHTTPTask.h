@@ -8,8 +8,6 @@
 
 #import "GSTask.h"
 #import "GSTaskResponse.h"
-#import "GSHTTPRequestOperationManager.h"
-#import "GSHTTPURLRequestSerializer.h"
 #import "GSUrlDef.h"
 
 @interface GSHTTPTask : GSTask
@@ -29,15 +27,6 @@
 + (NSDictionary *)dictionaryOfResultString:(NSString *)aResultString;
 @end
 
-
-/**
- *  HTTP response 结构（URS）
- */
-//@interface ORUrsHTTPTaskResponse : ORHTTPTaskResponse
-//
-//+ (NSDictionary *)dictionaryOfResultString:(NSString *)aResultString;
-//
-//@end
 
 @interface GSHTTPShareSinaTaskResponse : GSHTTPTaskResponse
 

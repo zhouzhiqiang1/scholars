@@ -192,6 +192,9 @@
     
     if ([keyPath isEqualToString:kKeyPathDataSource]) {
         [_dataSource addModels:self.videoDataViewModel];
+        _dataSource.cellConfigureBefore = ^(id cell, id model, NSIndexPath *indexPath) {
+            
+        };
         [self.tableView reloadData];
     } else if ([keyPath isEqualToString:kKeyPathDataFetchResult]) {
         [self stopLoadingWithSuccess:YES];
